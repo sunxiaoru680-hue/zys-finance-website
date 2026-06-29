@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { navItems } from "@/components/siteData";
-import { companyName, contactChannels, location, phoneNumber } from "@/components/seo";
+import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappUrl } from "@/components/seo";
 
 export function Footer() {
   return (
@@ -11,9 +11,9 @@ export function Footer() {
           <p className="text-lg font-bold">{companyName}</p>
           <p className="mt-1 text-sm font-semibold text-white/75">Logo: ZYS</p>
           <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
-            Professional China company registration, China tax services,
-            accounting services in China, visa services in China, licensing, and
-            international business consulting.
+            Professional China company registration, accounting, tax advisory,
+            work visa, business license, audit, and overseas registration support
+            for international clients.
           </p>
         </div>
         <div>
@@ -33,14 +33,19 @@ export function Footer() {
               <Phone aria-hidden="true" className="h-4 w-4" />
               {phoneNumber}
             </p>
-            <p className="flex items-center gap-2">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white">
               <MessageCircle aria-hidden="true" className="h-4 w-4" />
-              {contactChannels}
-            </p>
+              WhatsApp: {contactChannels}
+            </a>
+            <a href={`mailto:${emailAddress}`} className="flex items-center gap-2 hover:text-white">
+              <Mail aria-hidden="true" className="h-4 w-4" />
+              {emailAddress}
+            </a>
             <p className="flex items-center gap-2">
               <MapPin aria-hidden="true" className="h-4 w-4" />
               {location}
             </p>
+            <p>{businessHours}</p>
           </div>
         </div>
       </div>

@@ -2,20 +2,24 @@ import type { Metadata } from "next";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 import { ServiceGrid } from "@/components/ServiceGrid";
-import { processSteps } from "@/components/siteData";
+import { processDescriptions, processSteps } from "@/components/siteData";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Services for China Company Registration, Tax, Accounting & Visas",
+  title: "China Company Registration, Accounting, Tax, Visa & Audit Services",
   description:
-    "Explore ZYS services for China company registration, China tax services, accounting services in China, visa services in China, business licenses, tax planning, audit services, and international business consulting.",
+    "Explore ZYS services for China company registration, accounting and bookkeeping, tax advisory, tax planning, audit services, business license applications, work visas, foreign investment consulting, and overseas company registration.",
   keywords: [
     "China company registration services",
-    "China tax services",
-    "accounting services in China",
-    "visa services in China",
-    "international business consulting services"
-  ]
+    "accounting and bookkeeping China",
+    "China tax advisory",
+    "tax planning China",
+    "audit services China",
+    "work visa China",
+    "foreign investment consulting China",
+    "overseas company registration"
+  ],
+  path: "/services"
 });
 
 export default function ServicesPage() {
@@ -24,26 +28,52 @@ export default function ServicesPage() {
       <StructuredData
         data={serviceSchema(
           "China Business Consulting Services",
-          "Company registration, tax, accounting, visas, business licenses, audit support, and international business consulting for China and overseas expansion.",
+          "Company registration, accounting, bookkeeping, tax advisory, tax planning, audit services, work visas, business licenses, foreign investment consulting, and overseas company registration.",
           [
             "China company registration services",
-            "China tax services",
-            "accounting services in China",
-            "visa services in China"
+            "accounting and bookkeeping China",
+            "China tax advisory",
+            "work visa China",
+            "overseas company registration"
           ]
         )}
       />
       <PageHero
         eyebrow="Services"
-        title="Company formation, finance, tax, visa, licensing, and audit services."
-        description="ZYS supports international clients that need coordinated execution across China company registration, China tax services, accounting services in China, business qualifications, visa services in China, and long-term corporate maintenance."
+        title="Company formation, accounting, tax, visa, licensing, audit, and overseas setup services."
+        description="ZYS supports international clients that need coordinated execution across China company registration, accounting and bookkeeping, tax advisory, tax planning, work visa support, business license applications, audit services, foreign investment consulting, overseas company registration, and long-term compliance."
       />
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-24">
         <div className="container-shell">
           <ServiceGrid />
         </div>
       </section>
-      <section id="overseas-registration" className="bg-white py-16 md:py-20">
+      <section id="foreign-investment-consulting" className="bg-white py-16 md:py-24">
+        <div className="container-shell grid gap-10 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-bold uppercase text-evergreen">
+              Foreign Investment Consulting
+            </p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight">
+              Plan your China market entry before documents are filed.
+            </h2>
+          </div>
+          <div className="space-y-4 text-base leading-8 text-graphite">
+            <p>
+              We help foreign investors assess entity structure, business scope,
+              registered capital, tax category, invoicing needs, licensing
+              exposure, payroll plans, and visa requirements before company
+              registration begins.
+            </p>
+            <p>
+              This planning helps international SMEs avoid common post-registration
+              problems and gives management a realistic view of timeline,
+              documentation, compliance obligations, and operating costs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="overseas-registration" className="py-16 md:py-24">
         <div className="container-shell grid gap-10 lg:grid-cols-2">
           <div>
             <p className="text-sm font-bold uppercase text-evergreen">
@@ -68,14 +98,18 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="py-16 md:py-20">
+      <section className="bg-white py-16 md:py-24">
         <div className="container-shell">
-          <h2 className="text-3xl font-bold">How we work</h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-5">
+          <p className="text-sm font-bold uppercase text-evergreen">Process</p>
+          <h2 className="mt-3 text-3xl font-bold leading-tight">How we work</h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-5">
             {processSteps.map((step, index) => (
-              <div key={step} className="rounded-md border border-line bg-white p-5">
+              <div key={step} className="rounded-md border border-line bg-paper p-5">
                 <p className="text-sm font-bold text-gold">0{index + 1}</p>
-                <p className="mt-3 text-sm font-semibold leading-7">{step}</p>
+                <h3 className="mt-3 text-base font-bold">{step}</h3>
+                <p className="mt-3 text-sm leading-7 text-graphite">
+                  {processDescriptions[index]}
+                </p>
               </div>
             ))}
           </div>

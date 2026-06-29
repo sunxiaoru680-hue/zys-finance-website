@@ -4,16 +4,18 @@ import { PageHero } from "@/components/PageHero";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Visa Services in China for Foreigners",
+  title: "Visa Services in China, Work Permit & Residence Permit Support",
   description:
-    "Visa services in China for foreign founders, executives, employees, and families, including business visa guidance, work permit support, residence permit coordination, and document preparation.",
+    "Visa services in China for foreign founders, executives, employees, and families, including business visa guidance, China work permit support, residence permit coordination, company sponsor planning, and document preparation.",
   keywords: [
     "visa services in China",
     "China work permit service",
     "China residence permit support",
     "business visa China",
-    "visa services for foreigners in China"
-  ]
+    "visa services for foreigners in China",
+    "China company sponsor work permit"
+  ],
+  path: "/visa-services"
 });
 
 export default function VisaServicesPage() {

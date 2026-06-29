@@ -13,7 +13,8 @@ export const metadata: Metadata = createPageMetadata({
     "China company registration consultant",
     "China tax services",
     "accounting services in China"
-  ]
+  ],
+  path: "/about"
 });
 
 export default function AboutPage() {

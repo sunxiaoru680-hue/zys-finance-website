@@ -4,16 +4,18 @@ import { PageHero } from "@/components/PageHero";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Business Licenses in China & Qualification Consulting",
+  title: "Business Licenses in China, Permits & Qualification Consulting",
   description:
-    "Business license and qualification consulting in China, including regulated industry assessment, permit planning, business scope review, application support, and compliance preparation.",
+    "Business license and qualification consulting in China for foreign-invested companies, including regulated industry assessment, permit planning, business scope review, application support, renewals, and compliance preparation.",
   keywords: [
     "business licenses in China",
     "China business license",
     "China business qualifications",
     "regulated business China",
-    "China company registration"
-  ]
+    "China company registration",
+    "China permit application support"
+  ],
+  path: "/business-licenses"
 });
 
 export default function BusinessLicensesPage() {

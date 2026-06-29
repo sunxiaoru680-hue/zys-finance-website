@@ -1,6 +1,5 @@
 import {
   BadgeCheck,
-  Banknote,
   BriefcaseBusiness,
   Calculator,
   ClipboardCheck,
@@ -8,9 +7,8 @@ import {
   Globe2,
   Landmark,
   Plane,
-  ReceiptText,
-  Scale,
-  ShieldCheck
+  ShieldCheck,
+  Timer
 } from "lucide-react";
 
 export const navItems = [
@@ -30,93 +28,106 @@ export const services = [
     href: "/china-company-registration",
     icon: Landmark,
     description:
-      "Practical support for foreign-invested enterprises, representative offices, entity structure, company name approval, registered address coordination, and compliance setup."
+      "End-to-end support for foreign investors establishing companies in China, including entity structure, name approval, business scope review, registered address coordination, and post-registration compliance."
   },
   {
-    title: "Overseas Company Registration",
-    href: "/services#overseas-registration",
-    icon: Globe2,
-    description:
-      "Overseas entity setup support for Chinese entrepreneurs, including structure review, document preparation, registration coordination, and ongoing maintenance guidance."
-  },
-  {
-    title: "Tax Agency Services",
-    href: "/tax-accounting",
-    icon: ReceiptText,
-    description:
-      "Tax filing calendars, declaration preparation, tax authority communication, and ongoing agency support for domestic and international operations."
-  },
-  {
-    title: "Bookkeeping & Accounting",
-    href: "/tax-accounting",
+    title: "Accounting & Bookkeeping",
+    href: "/tax-accounting#bookkeeping",
     icon: Calculator,
     description:
-      "Monthly bookkeeping, voucher review, financial statements, management accounts, and orderly accounting records aligned with China compliance requirements."
+      "Monthly bookkeeping, accounting services in China, voucher review, financial statements, management reports, and organized records for audit-ready compliance."
   },
   {
-    title: "Visa Services",
-    href: "/visa-services",
-    icon: Plane,
+    title: "Tax Advisory",
+    href: "/tax-accounting#tax-advisory",
+    icon: ShieldCheck,
     description:
-      "Business, work, residence, and family-related visa guidance for foreign founders, executives, employees, and accompanying family members in China."
-  },
-  {
-    title: "Business Licenses & Qualifications",
-    href: "/business-licenses",
-    icon: FileCheck2,
-    description:
-      "Sector-specific license assessment and application coordination for China market entry, operating permits, and regulated business qualifications."
-  },
-  {
-    title: "Tax Consulting",
-    href: "/tax-accounting#tax-consulting",
-    icon: Scale,
-    description:
-      "Clear, decision-ready advice on China tax obligations, VAT, corporate income tax, withholding tax, individual income tax, and cross-border tax matters."
+      "Practical China tax advisory for VAT, corporate income tax, cross-border payments, withholding tax, individual income tax, and tax authority communication."
   },
   {
     title: "Tax Planning",
     href: "/tax-accounting#tax-planning",
-    icon: Banknote,
+    icon: ClipboardCheck,
     description:
-      "Commercially grounded tax planning for entity setup, supply chains, profit repatriation, transfer pricing exposure, and founder compensation."
+      "Commercially grounded tax planning for entity structures, founder compensation, invoicing models, profit repatriation, and China expansion decisions."
   },
   {
     title: "Audit Services",
     href: "/tax-accounting#audit",
     icon: ClipboardCheck,
     description:
-      "Annual audit coordination, statutory reporting preparation, due diligence support, and audit-ready accounting records for shareholders and business stakeholders."
+      "Annual audit coordination, statutory reporting preparation, due diligence support, accounting record review, and compliance guidance for shareholders and management teams."
+  },
+  {
+    title: "Business License Application",
+    href: "/business-licenses",
+    icon: FileCheck2,
+    description:
+      "Assessment and application coordination for China business licenses, operating permits, regulated industry qualifications, scope amendments, renewals, and compliance checklists."
+  },
+  {
+    title: "Work Visa",
+    href: "/visa-services",
+    icon: Plane,
+    description:
+      "Visa services in China for foreign founders, executives, employees, and families, including business visa guidance, work permit support, and residence permit coordination."
+  },
+  {
+    title: "Foreign Investment Consulting",
+    href: "/services#foreign-investment-consulting",
+    icon: BriefcaseBusiness,
+    description:
+      "Market-entry consulting for foreign investors, including entity strategy, business scope planning, licensing risks, tax setup, hiring considerations, and long-term compliance."
+  },
+  {
+    title: "Overseas Company Registration",
+    href: "/services#overseas-registration",
+    icon: Globe2,
+    description:
+      "Overseas entity setup support for Chinese entrepreneurs and global companies, including structure review, document preparation, registration coordination, and ongoing maintenance planning."
   }
 ];
 
 export const strengths = [
   {
-    title: "Cross-Border Perspective",
+    title: "English-speaking consultants",
     icon: Globe2,
-    text: "We support foreign investors entering China and Chinese clients expanding overseas, giving each engagement a practical international business perspective."
+    text: "International clients receive clear English communication, practical document guidance, and direct explanations of China registration, tax, visa, and compliance requirements."
   },
   {
-    title: "Compliance-Led Delivery",
-    icon: ShieldCheck,
-    text: "Registration, tax, accounting, visas, and licenses are handled with careful attention to documentation, timelines, local procedures, and risk control."
-  },
-  {
-    title: "Business-Focused Advice",
+    title: "One-stop business services",
     icon: BriefcaseBusiness,
-    text: "Our recommendations consider ownership, operations, payroll, invoicing, tax exposure, and long-term maintenance, not only a one-time application."
+    text: "Company registration, accounting, tax, visas, licenses, audit coordination, and overseas setup are planned together instead of handled as disconnected tasks."
   },
   {
-    title: "Clear Process",
+    title: "Compliance experts",
+    icon: ShieldCheck,
+    text: "We focus on documentation quality, filing calendars, local procedures, audit readiness, and risk control after the business license is issued."
+  },
+  {
+    title: "Fast response",
+    icon: Timer,
+    text: "Clients get responsive answers, milestone updates, and practical next steps when timing matters for registration, tax filings, work visas, or license deadlines."
+  },
+  {
+    title: "Transparent pricing",
     icon: BadgeCheck,
-    text: "Clients receive transparent requirements, milestone updates, and practical next steps from consultation through post-registration compliance."
+    text: "We explain service scope, likely government steps, expected timelines, and pricing before work begins so international teams can plan with confidence."
   }
 ];
 
 export const processSteps = [
-  "Initial consultation and business objective review",
-  "Entity, license, tax, and visa requirement assessment",
-  "Document checklist and application preparation",
-  "Filing coordination with the relevant authorities",
-  "Post-approval tax, accounting, and compliance handover"
+  "Consultation",
+  "Planning",
+  "Registration",
+  "Compliance",
+  "Long-term Support"
+];
+
+export const processDescriptions = [
+  "Understand your ownership, activity, visa needs, target timeline, and China or overseas expansion goals.",
+  "Confirm entity structure, tax setup, license exposure, documentation, pricing, and implementation milestones.",
+  "Coordinate application materials, filings, authority communication, and approval steps for the chosen service.",
+  "Set up tax, accounting, reporting, audit readiness, visa follow-up, and post-approval compliance routines.",
+  "Provide ongoing advisory, renewals, bookkeeping, filings, reporting, and expansion support as the business grows."
 ];

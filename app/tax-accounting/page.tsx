@@ -4,28 +4,30 @@ import { PageHero } from "@/components/PageHero";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "China Tax Services & Accounting Services in China",
+  title: "China Tax Services, Accounting, Bookkeeping & Audit Compliance",
   description:
-    "China tax services and accounting services in China, including tax agency, bookkeeping, VAT, corporate income tax, tax consulting, tax planning, audit preparation, and financial compliance.",
+    "China tax services and accounting services in China for foreign-invested companies, including tax agency, bookkeeping, VAT, corporate income tax, tax consulting, tax planning, audit preparation, and financial compliance.",
   keywords: [
     "China tax services",
     "accounting services in China",
     "China tax agency",
     "bookkeeping services in China",
     "tax consulting China",
-    "audit services China"
-  ]
+    "audit services China",
+    "China accounting compliance"
+  ],
+  path: "/tax-accounting"
 });
 
 const sections = [
   {
-    id: "tax-agency",
-    title: "Tax Agency Services",
+    id: "tax-advisory",
+    title: "Tax Advisory",
     text: "We support periodic tax declarations, filing calendars, tax authority communication, VAT and corporate income tax matters, and routine compliance administration."
   },
   {
     id: "bookkeeping",
-    title: "Bookkeeping & Accounting",
+    title: "Accounting & Bookkeeping",
     text: "Monthly accounting services include voucher review, bookkeeping, financial statements, management reporting, and organized records for audit and tax inspection readiness."
   },
   {

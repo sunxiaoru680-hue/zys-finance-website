@@ -54,10 +54,13 @@ export function ContactForm() {
             </option>
             <option>China company registration</option>
             <option>Overseas company registration</option>
-            <option>Tax and accounting</option>
-            <option>Visa services</option>
-            <option>Business licenses</option>
+            <option>Accounting & bookkeeping</option>
+            <option>Tax advisory</option>
+            <option>Tax planning</option>
             <option>Audit services</option>
+            <option>Business license application</option>
+            <option>Work visa</option>
+            <option>Foreign investment consulting</option>
           </select>
         </label>
       </div>
@@ -80,8 +83,7 @@ export function ContactForm() {
       </button>
       {submitted ? (
         <p className="mt-4 rounded-md bg-paper p-3 text-sm font-medium text-evergreen">
-          Thank you. Your inquiry has been captured locally for this demo. Connect
-          this form to your preferred email, messaging, or CRM service before publishing.
+          Thank you. Your inquiry has been captured locally for this demo. We will reply through your preferred contact channel as soon as possible.
         </p>
       ) : null}
     </form>

@@ -5,16 +5,18 @@ import { PageHero } from "@/components/PageHero";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "China Company Registration for Foreign Investors",
+  title: "China Company Registration for Foreign Investors & Global Businesses",
   description:
-    "China company registration services for foreign investors and entrepreneurs, including business scope review, WFOE setup, business license application, tax registration, bookkeeping, and post-registration compliance.",
+    "China company registration services for foreign investors and global businesses, including WFOE setup, business scope review, business license application, tax registration, bookkeeping, visa planning, and post-registration compliance.",
   keywords: [
     "China company registration",
     "China company registration for foreigners",
     "WFOE registration China",
     "China business license application",
-    "foreign-invested company China"
-  ]
+    "foreign-invested company China",
+    "China company setup for foreign investors"
+  ],
+  path: "/china-company-registration"
 });
 
 const items = [

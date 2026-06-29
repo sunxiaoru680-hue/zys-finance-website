@@ -35,7 +35,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <ButtonLink href="/contact">Book a Consultation</ButtonLink>
+          <ButtonLink href="/contact">Book a Free Consultation</ButtonLink>
         </div>
 
         <details className="group lg:hidden">
@@ -55,7 +55,7 @@ export function Header() {
                 </Link>
               ))}
               <div className="pt-3">
-                <ButtonLink href="/contact">Book a Consultation</ButtonLink>
+                <ButtonLink href="/contact">Book a Free Consultation</ButtonLink>
               </div>
             </nav>
           </div>
