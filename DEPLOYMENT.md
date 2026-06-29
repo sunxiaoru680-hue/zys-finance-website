@@ -1,6 +1,6 @@
 # Vercel Deployment Guide
 
-This project is a Next.js website for Nanjing ZYS Financial Consulting Co., Ltd.
+This project is a Next.js website for Nanjing ZYS Advisory Co., Ltd.
 
 ## 1. Final Local Checks
 

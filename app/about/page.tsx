@@ -7,7 +7,7 @@ import { companyName, createPageMetadata } from "@/components/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "About ZYS International Business Consulting",
   description:
-    "Learn about Nanjing ZYS Financial Consulting Co., Ltd., a professional international business consulting firm for China company registration, China tax services, accounting services in China, visas, licenses, and audits.",
+    "Learn about Nanjing ZYS Advisory Co., Ltd., a professional international business consulting firm for China company registration, China tax services, accounting services in China, visas, licenses, and audits.",
   keywords: [
     "international business consulting",
     "China company registration consultant",

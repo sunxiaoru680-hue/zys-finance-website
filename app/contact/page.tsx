@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = createPageMetadata({
   title: "Contact ZYS for China Company Registration & Tax Services",
   description:
-    "Contact Nanjing ZYS Financial Consulting Co., Ltd. for China company registration, China tax services, accounting services in China, visa services in China, business licenses, and international business consulting.",
+    "Contact Nanjing ZYS Advisory Co., Ltd. for China company registration, China tax services, accounting services in China, visa services in China, business licenses, and international business consulting.",
   keywords: [
     "contact China company registration consultant",
     "China tax services consultation",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: `%s | ${companyName}`
   },
   description:
-    "Nanjing ZYS Financial Consulting Co., Ltd. provides China company registration, China tax services, accounting services in China, visa services in China, and international business consulting.",
+    "Nanjing ZYS Advisory Co., Ltd. provides China company registration, China tax services, accounting services in China, visa services in China, and international business consulting.",
   keywords: coreKeywords,
   openGraph: {
     title: `${companyName} | ZYS`,

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const companyName = "Nanjing ZYS Financial Consulting Co., Ltd.";
+export const companyName = "Nanjing ZYS Advisory Co., Ltd.";
 export const brandName = "ZYS";
 export const phoneNumber = "+86 18055161721";
 export const contactChannels = "WhatsApp, WeChat, Facebook";
