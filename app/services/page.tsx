@@ -3,6 +3,7 @@ import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 import { ServiceGrid } from "@/components/ServiceGrid";
 import { processDescriptions, processSteps } from "@/components/siteData";
+import { servicePages } from "@/lib/content";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -46,6 +47,21 @@ export default function ServicesPage() {
       <section className="py-16 md:py-24">
         <div className="container-shell">
           <ServiceGrid />
+        </div>
+      </section>
+
+      <section className="bg-white py-16 md:py-24">
+        <div className="container-shell">
+          <p className="text-sm font-bold uppercase text-evergreen">Dedicated service pages</p>
+          <h2 className="mt-3 text-3xl font-bold leading-tight">SEO landing pages for every core China advisory service.</h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {servicePages.map((service) => (
+              <a key={service.slug} href={`/services/${service.slug}`} className="focus-ring rounded-md border border-line bg-paper p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+                <h3 className="text-lg font-bold text-ink">{service.title}</h3>
+                <p className="mt-2 text-sm leading-7 text-graphite">{service.summary}</p>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
       <section id="foreign-investment-consulting" className="bg-white py-16 md:py-24">

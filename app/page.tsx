@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowDown, CheckCircle2, Mail, MessageCircle } from "lucide-react";
+import { ArrowDown, CheckCircle2, CalendarDays, Mail, MessageCircle } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { CTA } from "@/components/CTA";
 import { ServiceGrid } from "@/components/ServiceGrid";
@@ -8,6 +8,7 @@ import { processDescriptions, processSteps, strengths } from "@/components/siteD
 import {
   companyName,
   createPageMetadata,
+  calendlyUrl,
   emailAddress,
   faqSchema,
   serviceSchema,
@@ -142,22 +143,31 @@ export default function HomePage() {
             </div>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/contact" variant="light">
-                Book a Free Consultation
+                Request Consultation
               </ButtonLink>
               <a
-                href={whatsappUrl}
+                href={calendlyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:bg-paper"
               >
-                WhatsApp Us
+                Book Meeting
+                <CalendarDays aria-hidden="true" className="h-4 w-4" />
+              </a>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-[#25D366] bg-[#25D366] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95"
+              >
+                WhatsApp
                 <MessageCircle aria-hidden="true" className="h-4 w-4" />
               </a>
               <a
                 href={`mailto:${emailAddress}`}
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/70 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Email Us
+                Email
                 <Mail aria-hidden="true" className="h-4 w-4" />
               </a>
             </div>

@@ -15,73 +15,75 @@ export const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/china-company-registration", label: "China Registration" },
+  { href: "/services/company-registration-in-china", label: "China Registration" },
   { href: "/tax-accounting", label: "Tax & Accounting" },
-  { href: "/visa-services", label: "Visa Services" },
-  { href: "/business-licenses", label: "Business Licenses" },
+  { href: "/services/china-visa-service", label: "Visa Services" },
+  { href: "/services/business-license", label: "Business Licenses" },
+  { href: "/blog", label: "Blog" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/contact", label: "Contact" }
 ];
 
 export const services = [
   {
     title: "China Company Registration",
-    href: "/china-company-registration",
+    href: "/services/company-registration-in-china",
     icon: Landmark,
     description:
       "End-to-end support for foreign investors establishing companies in China, including entity structure, name approval, business scope review, registered address coordination, and post-registration compliance."
   },
   {
     title: "Accounting & Bookkeeping",
-    href: "/tax-accounting#bookkeeping",
+    href: "/services/bookkeeping",
     icon: Calculator,
     description:
       "Monthly bookkeeping, accounting services in China, voucher review, financial statements, management reports, and organized records for audit-ready compliance."
   },
   {
     title: "Tax Advisory",
-    href: "/tax-accounting#tax-advisory",
+    href: "/services/tax-consulting",
     icon: ShieldCheck,
     description:
       "Practical China tax advisory for VAT, corporate income tax, cross-border payments, withholding tax, individual income tax, and tax authority communication."
   },
   {
     title: "Tax Planning",
-    href: "/tax-accounting#tax-planning",
+    href: "/services/tax-planning",
     icon: ClipboardCheck,
     description:
       "Commercially grounded tax planning for entity structures, founder compensation, invoicing models, profit repatriation, and China expansion decisions."
   },
   {
     title: "Audit Services",
-    href: "/tax-accounting#audit",
+    href: "/services/audit-services",
     icon: ClipboardCheck,
     description:
       "Annual audit coordination, statutory reporting preparation, due diligence support, accounting record review, and compliance guidance for shareholders and management teams."
   },
   {
     title: "Business License Application",
-    href: "/business-licenses",
+    href: "/services/business-license",
     icon: FileCheck2,
     description:
       "Assessment and application coordination for China business licenses, operating permits, regulated industry qualifications, scope amendments, renewals, and compliance checklists."
   },
   {
     title: "Work Visa",
-    href: "/visa-services",
+    href: "/services/china-visa-service",
     icon: Plane,
     description:
       "Visa services in China for foreign founders, executives, employees, and families, including business visa guidance, work permit support, and residence permit coordination."
   },
   {
     title: "Foreign Investment Consulting",
-    href: "/services#foreign-investment-consulting",
+    href: "/services/foreign-investment",
     icon: BriefcaseBusiness,
     description:
       "Market-entry consulting for foreign investors, including entity strategy, business scope planning, licensing risks, tax setup, hiring considerations, and long-term compliance."
   },
   {
     title: "Overseas Company Registration",
-    href: "/services#overseas-registration",
+    href: "/services/china-company-formation",
     icon: Globe2,
     description:
       "Overseas entity setup support for Chinese entrepreneurs and global companies, including structure review, document preparation, registration coordination, and ongoing maintenance planning."

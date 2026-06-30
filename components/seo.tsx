@@ -4,14 +4,18 @@ export const companyName = "Nanjing ZYS Advisory Co., Ltd.";
 export const brandName = "ZYS";
 export const phoneNumber = "+86 18055161721";
 export const whatsappNumber = "8618055161721";
-export const emailAddress = "info@zysadvisory.com";
+export const emailAddress = "info@zysconsulting.com";
 export const contactChannels = "WhatsApp, WeChat, Facebook";
 export const location = "Nanjing, Jiangsu, China";
 export const officeAddress = "Nanjing, Jiangsu, China";
 export const businessHours = "Monday to Friday, 9:00 AM - 6:00 PM China Standard Time";
-export const siteUrl = "https://www.zysadvisory.com";
+export const siteUrl = "https://zysconsulting.com";
 export const ogImage = "/images/global-finance-consulting-hero.png";
 export const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20ZYS%2C%20I%20would%20like%20to%20book%20a%20free%20consultation%20about%20China%20company%20registration%2C%20tax%2C%20accounting%2C%20visa%2C%20or%20business%20advisory%20services.`;
+export const calendlyUrl = "https://calendly.com/zysconsulting/consultation";
+export const liveChatUrl = whatsappUrl;
+export const gtmId = "GTM-XXXXXXX";
+export const gaId = "G-XXXXXXXXXX";
 
 export const coreKeywords = [
   "China company registration",
@@ -48,7 +52,10 @@ export function createPageMetadata({
     description,
     keywords: allKeywords,
     alternates: {
-      canonical
+      canonical,
+      languages: {
+        en: canonical
+      }
     },
     openGraph: {
       title: `${title} | ${companyName}`,
@@ -91,7 +98,7 @@ export function StructuredData({ data }: StructuredDataProps) {
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": ["ProfessionalService", "LocalBusiness"],
     "@id": `${siteUrl}/#organization`,
     name: companyName,
     alternateName: brandName,
@@ -162,5 +169,38 @@ export function faqSchema(items: { question: string; answer: string }[]) {
         text: item.answer
       }
     }))
+  };
+}
+
+
+export function localBusinessSchema() {
+  return {
+    ...organizationSchema(),
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    name: companyName
+  };
+}
+
+export function articleSchema(article: { title: string; description: string; published: string; author: string; slug: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.published,
+    dateModified: article.published,
+    author: {
+      "@type": "Organization",
+      name: article.author
+    },
+    publisher: {
+      "@type": "Organization",
+      name: companyName,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}${ogImage}`
+      }
+    },
+    mainEntityOfPage: `${siteUrl}/blog/${article.slug}`
   };
 }

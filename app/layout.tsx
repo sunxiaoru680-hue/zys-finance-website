@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { StickyCTA } from "@/components/StickyCTA";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import {
   companyName,
   coreKeywords,
   ogImage,
+  gaId,
+  gtmId,
+  localBusinessSchema,
   organizationSchema,
   siteUrl,
   StructuredData
@@ -78,10 +83,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <StructuredData data={organizationSchema()} />
+        <StructuredData data={localBusinessSchema()} />
+        <Script id="gtm-ready" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "zys_site_ready", gtmId: "${gtmId}", gaId: "${gaId}" });`}</Script>
         <Header />
         <main>{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <StickyCTA />
       </body>
     </html>
   );
