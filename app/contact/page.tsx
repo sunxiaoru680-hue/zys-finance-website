@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHero } from "@/components/PageHero";
@@ -10,6 +11,8 @@ import {
   officeAddress,
   phoneNumber,
   StructuredData,
+  whatsappQrAlt,
+  whatsappQrImage,
   whatsappUrl
 } from "@/components/seo";
 
@@ -127,6 +130,43 @@ export default function ContactPage() {
             </div>
           </div>
           <ContactForm />
+        </div>
+      </section>
+      <section className="bg-white py-16 md:py-20">
+        <div className="container-shell grid items-center gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="text-sm font-bold uppercase text-evergreen">
+              WhatsApp Business
+            </p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight">
+              Scan the WhatsApp QR code to contact ZYS directly.
+            </h2>
+            <p className="mt-5 text-base leading-8 text-graphite">
+              Use WhatsApp Business for consultation requests, document
+              coordination, and follow-up questions about China company
+              registration, accounting, tax advisory, visas, licenses, audits,
+              or overseas setup.
+            </p>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus-ring mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[#25D366] px-5 py-3 text-sm font-bold text-white"
+            >
+              <MessageCircle aria-hidden="true" className="h-4 w-4" />
+              Open WhatsApp
+            </a>
+          </div>
+          <div className="max-w-sm rounded-md border border-line bg-paper p-4 shadow-sm">
+            <Image
+              src={whatsappQrImage}
+              alt={whatsappQrAlt}
+              width={480}
+              height={852}
+              className="h-auto w-full rounded-md border border-line bg-white"
+              sizes="(min-width: 1024px) 384px, 100vw"
+            />
+          </div>
         </div>
       </section>
     </>

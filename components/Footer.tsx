@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { navItems } from "@/components/siteData";
-import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappUrl } from "@/components/seo";
+import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappQrAlt, whatsappQrImage, whatsappUrl } from "@/components/seo";
 
 export function Footer() {
   return (
@@ -35,8 +36,22 @@ export function Footer() {
             </p>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white">
               <MessageCircle aria-hidden="true" className="h-4 w-4" />
-              WhatsApp: {contactChannels}
+              WhatsApp Business: {phoneNumber}
             </a>
+            <div className="mt-2 flex items-center gap-3">
+              <Image
+                src={whatsappQrImage}
+                alt={whatsappQrAlt}
+                width={96}
+                height={170}
+                className="h-auto w-20 rounded-md border border-white/15 bg-white"
+                sizes="80px"
+              />
+              <p className="leading-6">
+                Scan the WhatsApp Business QR code for China business and tax advisory support.
+              </p>
+            </div>
+            <p>Other channels: {contactChannels.replace("WhatsApp, ", "")}</p>
             <a href={`mailto:${emailAddress}`} className="flex items-center gap-2 hover:text-white">
               <Mail aria-hidden="true" className="h-4 w-4" />
               {emailAddress}

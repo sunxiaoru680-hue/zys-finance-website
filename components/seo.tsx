@@ -12,6 +12,8 @@ export const officeAddress = "Nanjing, Jiangsu, China";
 export const businessHours = "Monday to Friday, 9:00 AM - 6:00 PM China Standard Time";
 export const siteUrl = "https://zysconsulting.com";
 export const ogImage = "/images/global-finance-consulting-hero.png";
+export const whatsappQrImage = "/images/whatsapp-business-qr.webp";
+export const whatsappQrAlt = "WhatsApp Business QR code for Nanjing ZYS Advisory Co., Ltd. China business and tax advisory consultation";
 export const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20ZYS%2C%20I%20would%20like%20to%20book%20a%20free%20consultation%20about%20China%20company%20registration%2C%20tax%2C%20accounting%2C%20visa%2C%20or%20business%20advisory%20services.`;
 export const calendlyUrl = "https://calendly.com/zysconsulting/consultation";
 export const liveChatUrl = whatsappUrl;
