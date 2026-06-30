@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import {
   companyName,
+  brandSubtitle,
   coreKeywords,
   ogImage,
   gaId,
@@ -20,7 +21,7 @@ import {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${companyName} | China Company Registration, Tax & Business Advisory`,
+    default: `${companyName} | ${brandSubtitle}`,
     template: `%s | ${companyName}`
   },
   description:
@@ -38,9 +39,9 @@ export const metadata: Metadata = {
     canonical: siteUrl
   },
   openGraph: {
-    title: `${companyName} | China Company Registration & International Advisory`,
+    title: `${companyName} | ${brandSubtitle}`,
     description:
-      "Professional China company registration, accounting, tax advisory, visa, licensing, audit, and international business consulting for foreign investors and global businesses.",
+      "Professional China company registration, accounting, tax advisory, visa, licensing, audit, and China business advisory for foreign investors and global businesses.",
     url: siteUrl,
     siteName: companyName,
     type: "website",
@@ -50,13 +51,13 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: `${companyName} international business advisory`
+        alt: `${companyName} ${brandSubtitle}`
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${companyName} | China Company Registration & Tax Advisory`,
+    title: `${companyName} | ${brandSubtitle}`,
     description:
       "China company registration, accounting, tax advisory, work visa, business license, audit, and overseas registration support for international clients.",
     images: [ogImage]

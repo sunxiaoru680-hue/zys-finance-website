@@ -92,7 +92,7 @@ export default function HomePage() {
     <>
       <StructuredData
         data={serviceSchema(
-          "China Company Registration and International Business Consulting",
+          "Nanjing ZYS Advisory Co., Ltd. China Business & Tax Advisory",
           "China company registration, accounting, bookkeeping, tax advisory, tax planning, audit services, work visa support, business license applications, foreign investment consulting, and overseas company registration.",
           [
             "China company registration",

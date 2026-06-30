@@ -5,11 +5,12 @@ import { strengths } from "@/components/siteData";
 import { companyName, createPageMetadata } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "About ZYS International Business Consulting",
+  title: "About Nanjing ZYS Advisory Co., Ltd. China Business & Tax Advisory",
   description:
-    "Learn about Nanjing ZYS Advisory Co., Ltd., a professional international business consulting firm for China company registration, China tax services, accounting services in China, visas, licenses, and audits.",
+    "Learn about Nanjing ZYS Advisory Co., Ltd., a professional China business and tax advisory firm for China company registration, China tax services, accounting services in China, visas, licenses, and audits.",
   keywords: [
-    "international business consulting",
+    "China business advisory",
+    "China tax advisory",
     "China company registration consultant",
     "China tax services",
     "accounting services in China"
@@ -37,7 +38,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-base leading-8 text-graphite">
             <p>
-              International business consulting begins with practical questions:
+              China business and tax advisory begins with practical questions:
               which entity structure is appropriate, how China tax services will
               be managed, whether licenses are required, how foreign staff can
               work legally in China, and what accounting records must be

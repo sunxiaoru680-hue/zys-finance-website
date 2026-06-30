@@ -35,7 +35,7 @@ export default function Page() {
       <section className="py-16 md:py-24">
         <div className="container-shell grid gap-8 lg:grid-cols-[0.7fr_0.3fr]">
           <article className="rounded-md border border-line bg-white p-8 shadow-sm">
-            <p className="text-base leading-8 text-graphite">ZYS case studies reflect common international business scenarios: a foreign investor preparing a WFOE, an SME cleaning up accounting records before audit, a consulting company reviewing VAT invoice treatment, a founder planning a work permit after registration, and a Chinese entrepreneur preparing overseas company registration. Each project begins with scope, documents, timeline, compliance risk, and post-project support.</p>
+            <p className="text-base leading-8 text-graphite">ZYS case studies reflect common China business and tax advisory scenarios: a foreign investor preparing a WFOE, an SME cleaning up accounting records before audit, a consulting company reviewing VAT invoice treatment, a founder planning a work permit after registration, and a Chinese entrepreneur preparing overseas company registration. Each project begins with scope, documents, timeline, compliance risk, and post-project support.</p>
             <p className="mt-5 text-base leading-8 text-graphite">This page supports Google EEAT by making the company context, advisory experience, service boundaries, and trust signals easier for users and search engines to understand. It connects naturally to service pages, blog articles, contact options, and long-term compliance resources.</p>
           </article>
           <aside className="rounded-md border border-line bg-white p-6 shadow-sm">

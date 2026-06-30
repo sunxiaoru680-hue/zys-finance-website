@@ -67,7 +67,7 @@ export default function ContactPage() {
           "@type": "ContactPage",
           name: `Contact ${companyName}`,
           description:
-            "Book a consultation for China company registration, accounting, China tax advisory, work visas, business license applications, audit services, and international business consulting.",
+            "Book a consultation for China company registration, accounting, China tax advisory, work visas, business license applications, audit services, and China business advisory.",
           mainEntity: {
             "@type": "ProfessionalService",
             name: companyName,

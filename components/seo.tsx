@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 export const companyName = "Nanjing ZYS Advisory Co., Ltd.";
 export const brandName = "ZYS";
+export const brandSubtitle = "China Business & Tax Advisory";
 export const phoneNumber = "+86 18055161721";
 export const whatsappNumber = "8618055161721";
 export const emailAddress = "info@zysconsulting.com";
@@ -22,7 +23,8 @@ export const coreKeywords = [
   "China tax services",
   "accounting services in China",
   "visa services in China",
-  "international business consulting",
+  "China business advisory",
+  "China tax advisory",
   "China company registration for foreigners",
   "China tax agency",
   "bookkeeping services in China",
@@ -69,7 +71,7 @@ export function createPageMetadata({
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: `${companyName} international business advisory`
+          alt: `${companyName} ${brandSubtitle}`
         }
       ]
     },
