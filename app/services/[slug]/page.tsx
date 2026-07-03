@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
-import { createPageMetadata, faqSchema, serviceSchema, StructuredData } from "@/components/seo";
+import { companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, serviceSchema, StructuredData } from "@/components/seo";
 import { breadcrumbSchema, getServiceBySlug, serviceFaqs, servicePages } from "@/lib/content";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return createPageMetadata({
-    title: `${service.title} | ${service.keyword}`,
+    title: service.title === service.keyword ? `${service.title} | China Business & Tax Advisory` : `${service.title} | ${service.keyword}`,
     description: `${service.summary} ZYS provides ${service.keyword} support for foreign investors, international SMEs, and Chinese companies expanding overseas.`,
-    keywords: [service.keyword, service.title, "China Company Registration", "China Accounting", "China Tax Consultant", "Foreign Investment China"],
+    keywords: [service.keyword, service.title, "China Company Registration", "China WFOE Registration", "China Business License", "China Accounting Service", "China Bookkeeping", "China Tax Filing", "China VAT", "China Payroll Service", "China Work Permit", "China Tax Advisory", "China Audit", "Foreign Investment China"],
     path: `/services/${service.slug}`
   });
 }
@@ -40,7 +40,7 @@ const sectionTitles = [
 function serviceParagraphs(service: NonNullable<ReturnType<typeof getServiceBySlug>>) {
   return sectionTitles.map((title, index) => ({
     title,
-    body: `${service.title} is most effective when it is treated as part of a wider China operating plan rather than a single administrative filing. For ${service.audience}, the practical questions usually involve China Company Registration, China Accounting, China Tax Consultant support, China Business Registration, China Company Formation, Chinese Accounting Firm selection, and Foreign Investment China planning. ZYS reviews the commercial goal, ownership structure, target city, business scope, staffing plan, invoicing needs, licensing exposure, and annual compliance calendar before recommending a route. This reduces rework, clarifies the responsibilities of shareholders and managers, and gives international teams a realistic view of timing, document burden, pricing, and post-approval obligations. Section ${index + 1} focuses on ${title.toLowerCase()} so decision makers can understand both the immediate action and the long-term compliance effect.`
+    body: `${service.title} is most effective when it is treated as part of a wider China operating plan rather than a single administrative filing. For ${service.audience}, the practical questions usually involve China Company Registration, China WFOE Registration, China Business License, China Accounting Service, China Bookkeeping, China Tax Filing, China VAT, China Payroll Service, China Work Permit, China CFO Service, China Tax Advisory, China Audit, Chinese Accounting Firm selection, cross-border tax, and Foreign Investment China planning. ZYS reviews the commercial goal, ownership structure, target city, business scope, staffing plan, invoicing needs, licensing exposure, payroll plan, and annual compliance calendar before recommending a route. This reduces rework, clarifies the responsibilities of shareholders and managers, and gives international teams a realistic view of timing, document burden, pricing, and post-approval obligations. Section ${index + 1} focuses on ${title.toLowerCase()} so decision makers can understand both the immediate action and the long-term compliance effect.`
   }));
 }
 
@@ -61,7 +61,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <StructuredData data={serviceSchema(service.title, service.summary, [service.keyword, "China Company Registration", "China Accounting", "China Tax Consultant", "Foreign Investment China"])} />
+      <StructuredData data={serviceSchema(service.title, service.summary, [service.keyword, "China Company Registration", "China WFOE Registration", "China Business License", "China Accounting Service", "China Bookkeeping", "China Tax Filing", "China VAT", "China Payroll Service", "China Work Permit", "China Tax Advisory", "China Audit", "Hong Kong Company Registration", "Singapore Company Registration", "US Company Registration", "Dubai Company Registration", "Cross-border Tax", "Foreign Investment China"])} />
       <StructuredData data={faqSchema(faqs)} />
       <StructuredData data={breadcrumbSchema(breadcrumbs)} />
       <Breadcrumbs items={breadcrumbs.map((item) => ({ name: item.name, href: item.path }))} />
@@ -70,6 +70,11 @@ export default async function ServiceDetailPage({ params }: Props) {
           <p className="text-sm font-bold uppercase text-evergreen">{service.keyword}</p>
           <h1 className="mt-4 text-4xl font-bold leading-tight text-ink md:text-6xl">{service.title}</h1>
           <p className="mt-6 text-lg leading-8 text-graphite">{service.summary}</p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-graphite">
+            <span>By {companyName}</span>
+            <span>Last updated 2026-07-03</span>
+            <span>{phoneNumber}</span>
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a className="focus-ring rounded-md bg-evergreen px-5 py-3 text-sm font-bold text-white" href="/contact">Request Consultation</a>
             <Link className="focus-ring rounded-md border border-line px-5 py-3 text-sm font-bold text-ink" href="/blog">Read Insights</Link>
@@ -83,16 +88,24 @@ export default async function ServiceDetailPage({ params }: Props) {
               <section key={section.title} className="rounded-md border border-line bg-white p-7 shadow-sm">
                 <h2 className="text-2xl font-bold text-ink">{section.title}</h2>
                 <p className="mt-4 text-base leading-8 text-graphite">{section.body}</p>
+                <h3 className="mt-5 text-lg font-bold text-ink">SEO and conversion checkpoints</h3>
+                <p className="mt-3 text-base leading-8 text-graphite">For {service.keyword}, ZYS documents the responsible parties, filing timeline, expected evidence, authority touchpoints, tax and accounting impact, and follow-up obligations so overseas management can approve the work with fewer surprises.</p>
                 <p className="mt-4 text-base leading-8 text-graphite">A strong engagement also connects internal links between <a className="font-semibold text-evergreen" href="/china-company-registration">China company registration</a>, <a className="font-semibold text-evergreen" href="/tax-accounting">tax and accounting</a>, <a className="font-semibold text-evergreen" href="/business-licenses">business licenses</a>, <a className="font-semibold text-evergreen" href="/visa-services">visa services</a>, and <a className="font-semibold text-evergreen" href="/contact">consultation booking</a>. This gives search engines and users a clear understanding of how the service fits into the broader ZYS advisory model.</p>
               </section>
             ))}
           </article>
           <aside className="h-fit rounded-md border border-line bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold">What this includes</h2>
+            <h2 className="text-xl font-bold">Why choose ZYS</h2>
             <div className="mt-5 grid gap-3 text-sm leading-7 text-graphite">
-              {["Initial consultation", "Document checklist", "Compliance review", "Timeline and pricing", "Implementation support", "Long-term advisory"].map((item) => (
+              {["English and Chinese communication", "China tax and accounting context", "Company registration and license coordination", "Payroll, visa, and annual compliance links", "Clear timelines and document lists", "Long-term advisory support"].map((item) => (
                 <p key={item} className="flex gap-3"><CheckCircle2 aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-evergreen" />{item}</p>
               ))}
+            </div>
+            <div className="mt-7 rounded-md bg-paper p-4 text-sm leading-7 text-graphite">
+              <p className="font-bold text-ink">Company contact information</p>
+              <p>{companyName}</p>
+              <p>{phoneNumber}</p>
+              <p>{emailAddress}</p>
             </div>
           </aside>
         </div>

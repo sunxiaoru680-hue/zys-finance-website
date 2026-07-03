@@ -10,7 +10,7 @@ export const contactChannels = "WhatsApp, WeChat, Facebook";
 export const location = "Nanjing, Jiangsu, China";
 export const officeAddress = "Nanjing, Jiangsu, China";
 export const businessHours = "Monday to Friday, 9:00 AM - 6:00 PM China Standard Time";
-export const siteUrl = "https://zysconsulting.com";
+export const siteUrl = "https://www.zysadvisory.com";
 export const ogImage = "/images/global-finance-consulting-hero.png";
 export const whatsappQrImage = "/images/whatsapp-business-qr.webp";
 export const whatsappQrAlt = "WhatsApp Business QR code for Nanjing ZYS Advisory Co., Ltd. China business and tax advisory consultation";
@@ -31,7 +31,22 @@ export const coreKeywords = [
   "China tax agency",
   "bookkeeping services in China",
   "business licenses in China",
-  "overseas company registration"
+  "overseas company registration",
+  "China WFOE registration",
+  "China business license",
+  "China bookkeeping",
+  "China tax filing",
+  "China VAT",
+  "China payroll service",
+  "China work permit",
+  "China CFO service",
+  "China audit",
+  "Hong Kong company registration",
+  "Singapore company registration",
+  "US company registration",
+  "Dubai company registration",
+  "cross-border tax",
+  "foreign investment China"
 ];
 
 type SeoInput = {
@@ -110,8 +125,10 @@ export function organizationSchema() {
     image: `${siteUrl}${ogImage}`,
     email: emailAddress,
     telephone: phoneNumber,
-    priceRange: "$$",
-    areaServed: ["China", "International"],
+    priceRange: "$",
+    slogan: brandSubtitle,
+    foundingLocation: location,
+    areaServed: ["China", "Hong Kong", "Singapore", "United States", "Dubai", "International"],
     address: {
       "@type": "PostalAddress",
       addressLocality: "Nanjing",
@@ -132,8 +149,9 @@ export function organizationSchema() {
       email: emailAddress,
       contactType: "customer service",
       availableLanguage: ["English", "Chinese"],
-      areaServed: ["China", "International"]
+      areaServed: ["China", "Hong Kong", "Singapore", "United States", "Dubai", "International"]
     },
+    sameAs: [siteUrl],
     knowsAbout: coreKeywords
   };
 }
@@ -156,7 +174,8 @@ export function serviceSchema(name: string, description: string, keywords: strin
         addressCountry: "CN"
       }
     },
-    areaServed: ["China", "International"],
+    areaServed: ["China", "Hong Kong", "Singapore", "United States", "Dubai", "International"],
+    serviceType: keywords,
     keywords
   };
 }
@@ -185,21 +204,32 @@ export function localBusinessSchema() {
   };
 }
 
-export function articleSchema(article: { title: string; description: string; published: string; author: string; slug: string }) {
+export function articleSchema(article: { title: string; description: string; published: string; updated: string; author: string; slug: string; keyword: string; category: string; imageAlt: string }) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
     datePublished: article.published,
-    dateModified: article.published,
+    dateModified: article.updated,
+    articleSection: article.category,
+    keywords: [article.keyword, ...coreKeywords],
+    image: {
+      "@type": "ImageObject",
+      url: `${siteUrl}${ogImage}`,
+      caption: article.imageAlt
+    },
     author: {
       "@type": "Organization",
-      name: article.author
+      name: article.author,
+      url: siteUrl
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
       name: companyName,
+      telephone: phoneNumber,
+      email: emailAddress,
       logo: {
         "@type": "ImageObject",
         url: `${siteUrl}${ogImage}`

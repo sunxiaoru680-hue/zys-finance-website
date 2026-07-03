@@ -22,6 +22,13 @@ export const servicePages: ServicePage[] = [
   { slug: "trademark-registration", title: "Trademark Registration", keyword: "China Trademark Registration", summary: "Protect your China market entry with trademark filing coordination, class planning, document preparation, monitoring reminders, and brand protection guidance.", audience: "brands expanding into China" },
   { slug: "audit-services", title: "Audit Services", keyword: "China Audit Services", summary: "Coordinate annual audit preparation, statutory reporting support, due diligence materials, shareholder reporting, and audit-ready accounting records.", audience: "companies preparing audits" },
   { slug: "annual-compliance", title: "Annual Compliance", keyword: "China Annual Compliance", summary: "Manage recurring China compliance duties including annual reporting, tax calendars, audit preparation, accounting reviews, license checks, and corporate maintenance.", audience: "established China entities" },
+  { slug: "china-payroll-service", title: "China Payroll Service", keyword: "China Payroll Service", summary: "Run compliant China payroll with support for salary calculations, IIT withholding, social insurance, housing fund coordination, payslips, onboarding records, and monthly payroll reporting.", audience: "foreign-invested companies hiring employees in China" },
+  { slug: "company-deregistration", title: "Company Deregistration", keyword: "China Company Deregistration", summary: "Close a China company in an orderly way with tax clearance planning, accounting cleanup, creditor notices, license cancellation, bank closure, and document archiving support.", audience: "shareholders preparing to close or restructure a China entity" },
+  { slug: "cfo-advisory-china", title: "CFO Advisory China", keyword: "China CFO Service", summary: "Strengthen finance management with China CFO advisory covering reporting packs, budget controls, cash-flow planning, tax risk review, internal controls, and board-ready financial visibility.", audience: "founders and overseas finance leaders managing China operations" },
+  { slug: "hong-kong-company-registration", title: "Hong Kong Company Registration", keyword: "Hong Kong Company Registration", summary: "Plan Hong Kong company registration for trading, holding, regional sales, or cross-border structures with attention to ownership, banking readiness, maintenance duties, and tax touchpoints.", audience: "entrepreneurs comparing Hong Kong with mainland China structures" },
+  { slug: "singapore-company-registration", title: "Singapore Company Registration", keyword: "Singapore Company Registration", summary: "Assess Singapore company registration for regional operations, investment holding, trading, and cross-border expansion while coordinating China tax, banking, and compliance considerations.", audience: "international founders and Chinese companies expanding through Singapore" },
+  { slug: "us-company-registration", title: "US Company Registration", keyword: "US Company Registration", summary: "Coordinate US company registration planning for market entry, supplier relationships, overseas sales, and cross-border tax questions connected with China or Asia operations.", audience: "Chinese and international entrepreneurs entering the US market" },
+  { slug: "dubai-company-registration", title: "Dubai Company Registration", keyword: "Dubai Company Registration", summary: "Evaluate Dubai company registration options for trading, consulting, holding, and Middle East expansion with attention to licensing, banking preparation, and international tax coordination.", audience: "business owners considering UAE or Middle East expansion" },
 ];
 
 export type BlogArticle = {
@@ -31,6 +38,9 @@ export type BlogArticle = {
   description: string;
   published: string;
   author: string;
+  updated: string;
+  category: string;
+  imageAlt: string;
 };
 
 const blogTitles = [
@@ -134,15 +144,97 @@ const blogTitles = [
   "China Compliance Checklist for 2026",
   "China Company Registration Timeline",
   "China Consulting Firm Selection Guide",
+  "China WFOE Registration Requirements for Foreign Investors",
+  "China Business License for Consulting Companies",
+  "China Accounting Service for Foreign Invested Enterprises",
+  "China Bookkeeping Checklist for International SMEs",
+  "China Tax Filing Calendar for Foreign Companies",
+  "China VAT Filing and Fapiao Compliance",
+  "China Payroll Service Setup for Foreign Employees",
+  "China Work Permit Process for Company Founders",
+  "China Visa Planning After Company Registration",
+  "China CFO Service for Growing Foreign Companies",
+  "China Tax Advisory for Cross-border Payments",
+  "China Audit Preparation for WFOEs",
+  "Hong Kong Company Registration for China Trading Businesses",
+  "Singapore Company Registration for China Market Entry",
+  "US Company Registration for Chinese Entrepreneurs",
+  "Dubai Company Registration for Cross-border Trade",
+  "Cross-border Tax Planning for China and Hong Kong",
+  "Foreign Investment China Compliance Checklist",
+  "US Company Entering China Case Study",
+  "Singapore Investor Registering a China Company Case Study",
+  "Hong Kong Trading Company Setup Case Study",
+  "Restaurant Business License China Case Study",
+  "Foreign Employee Work Visa China Case Study",
+  "Manufacturing Company Registration China Case Study",
+  "China vs Hong Kong Company Registration",
+  "China vs Singapore Company Registration",
+  "WFOE vs Representative Office in China",
+  "China VAT vs GST for International Businesses",
+  "WFOE vs Joint Venture in China",
+  "China Company Registration for SaaS Businesses",
+  "China Import Export License for Trading Companies",
+  "China Payroll Outsourcing vs In-house Payroll",
+  "China Tax Advisory Before Profit Repatriation",
+  "China Business License Renewal and Amendments",
+  "China Company Deregistration Tax Clearance Guide",
+  "CFO Advisory China Reporting Pack Guide",
+  "China Bookkeeping for E-commerce Companies",
+  "China VAT Special Invoice Risk Checklist",
+  "China Work Permit for Foreign General Managers",
+  "China Visa and Residence Permit Compliance",
+  "Hong Kong vs Singapore Holding Company for China",
+  "Dubai Company Registration and China Tax Issues",
+  "US LLC vs Corporation for Chinese Founders",
+  "Cross-border Tax Risk for Service Fees from China",
+  "Foreign Investment China Negative List Overview",
+  "China Manufacturing WFOE Registration Checklist",
+  "China Restaurant Company Registration and Licensing",
+  "China CFO Service for Cash Flow Forecasting",
+  "China Annual Audit vs Tax Filing",
+  "China VAT for Consulting and Service Companies",
+  "China Payroll Social Insurance and Housing Fund",
+  "China Company Registration for Amazon Sellers",
+  "China Business License Scope Examples",
+  "China Tax Filing Mistakes Foreign Companies Make",
+  "China Accounting Service Selection Checklist",
+  "China Bookkeeping Document Retention Rules",
+  "China Work Permit Renewal Checklist",
+  "China Visa Support for Foreign Families",
+  "China Audit Trail for Management Reporting",
+  "Foreign Investment China Board Approval Checklist",
 ];
+
+function weeklyPublished(index: number) {
+  const first = new Date(Date.UTC(2023, 5, 16));
+  first.setUTCDate(first.getUTCDate() + index * 7);
+  return first.toISOString().slice(0, 10);
+}
+
+function articleCategory(title: string) {
+  if (title.includes("Case Study")) return "Case Study";
+  if (title.includes(" vs ") || title.includes("WFOE vs")) return "Comparison";
+  if (title.includes("Hong Kong") || title.includes("Singapore") || title.includes("US ") || title.includes("Dubai") || title.includes("Cross-border")) return "Cross-border Expansion";
+  if (title.includes("Tax") || title.includes("VAT") || title.includes("Audit")) return "Tax and Audit";
+  if (title.includes("Payroll") || title.includes("Visa") || title.includes("Work Permit")) return "Payroll and Visa";
+  return "China Market Entry";
+}
+
+function articleImageAlt(title: string, keyword: string) {
+  return `ZYS Advisory guide image for ${title} covering ${keyword} and China business compliance`;
+}
 
 export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   slug: title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
   title,
   keyword: title.includes("China") ? title : `${title} China`,
   description: `${title}: practical guidance for foreign investors, international SMEs, and Chinese companies expanding overseas, with compliance, tax, accounting, registration, visa, and operating considerations.`,
-  published: `2026-${String(Math.floor(index / 28) + 1).padStart(2, "0")}-${String((index % 28) + 1).padStart(2, "0")}`,
-  author: "ZYS Advisory Editorial Team"
+  published: weeklyPublished(index),
+  author: "ZYS Advisory Editorial Team",
+  updated: "2026-07-03",
+  category: articleCategory(title),
+  imageAlt: articleImageAlt(title, title.includes("China") ? title : `${title} China`)
 }));
 
 export function getServiceBySlug(slug: string) {

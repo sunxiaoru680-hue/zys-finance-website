@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 import { ServiceGrid } from "@/components/ServiceGrid";
 import { processDescriptions, processSteps } from "@/components/siteData";
-import { servicePages } from "@/lib/content";
-import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
+import { breadcrumbSchema, servicePages } from "@/lib/content";
+import { createPageMetadata, faqSchema, serviceSchema, StructuredData } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "China Company Registration, Accounting, Tax, Visa & Audit Services",
@@ -18,7 +19,14 @@ export const metadata: Metadata = createPageMetadata({
     "audit services China",
     "work visa China",
     "foreign investment consulting China",
-    "overseas company registration"
+    "overseas company registration",
+    "China payroll service",
+    "China CFO service",
+    "China company deregistration",
+    "Hong Kong company registration",
+    "Singapore company registration",
+    "US company registration",
+    "Dubai company registration"
   ],
   path: "/services"
 });
@@ -26,23 +34,40 @@ export const metadata: Metadata = createPageMetadata({
 export default function ServicesPage() {
   return (
     <>
+      <StructuredData data={breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Services", path: "/services" }])} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }]} />
+      <StructuredData
+        data={faqSchema([
+          { question: "Which China SEO landing pages does ZYS provide?", answer: "ZYS provides dedicated pages for China company registration, WFOE registration China, China accounting service, China tax advisory, China payroll service, China work visa, company deregistration, business license application, and CFO advisory China." },
+          { question: "Can ZYS support overseas company registration?", answer: "Yes. ZYS supports Hong Kong company registration, Singapore company registration, US company registration, Dubai company registration, and cross-border tax coordination connected with China operations." }
+        ])}
+      />
       <StructuredData
         data={serviceSchema(
           "China Business Consulting Services",
           "Company registration, accounting, bookkeeping, tax advisory, tax planning, audit services, work visas, business licenses, foreign investment consulting, and overseas company registration.",
           [
             "China company registration services",
-            "accounting and bookkeeping China",
+            "WFOE registration China",
+            "China accounting service",
+            "China bookkeeping",
             "China tax advisory",
-            "work visa China",
-            "overseas company registration"
+            "China tax filing",
+            "China VAT",
+            "China payroll service",
+            "China work permit",
+            "China CFO service",
+            "Hong Kong company registration",
+            "Singapore company registration",
+            "US company registration",
+            "Dubai company registration"
           ]
         )}
       />
       <PageHero
         eyebrow="Services"
         title="Company formation, accounting, tax, visa, licensing, audit, and overseas setup services."
-        description="ZYS supports international clients that need coordinated execution across China company registration, accounting and bookkeeping, tax advisory, tax planning, work visa support, business license applications, audit services, foreign investment consulting, overseas company registration, and long-term compliance."
+        description="ZYS supports international clients that need coordinated execution across China company registration, accounting and bookkeeping, tax advisory, tax planning, work visa support, business license applications, audit services, foreign investment consulting, payroll service, CFO advisory, company deregistration, Hong Kong company registration, Singapore company registration, US company registration, Dubai company registration, and long-term compliance."
       />
       <section className="py-16 md:py-24">
         <div className="container-shell">
