@@ -225,6 +225,10 @@ function articleImageAlt(title: string, keyword: string) {
   return `ZYS Advisory guide image for ${title} covering ${keyword} and China business compliance`;
 }
 
+function byPublishedDateDesc(a: BlogArticle, b: BlogArticle) {
+  return new Date(b.published).getTime() - new Date(a.published).getTime();
+}
+
 export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   slug: title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
   title,
@@ -235,7 +239,7 @@ export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   updated: "2026-07-03",
   category: articleCategory(title),
   imageAlt: articleImageAlt(title, title.includes("China") ? title : `${title} China`)
-}));
+})).sort(byPublishedDateDesc);
 
 export function getServiceBySlug(slug: string) {
   return servicePages.find((service) => service.slug === slug);
