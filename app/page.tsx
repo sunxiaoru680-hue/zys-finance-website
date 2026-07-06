@@ -82,7 +82,16 @@ export const metadata: Metadata = createPageMetadata({
     "work visa China",
     "business license application China",
     "foreign investment consulting China",
-    "overseas company registration"
+    "overseas company registration",
+    "Register Company in Shanghai",
+    "Register Company in Beijing",
+    "Register Company in Shenzhen",
+    "Register Company in Guangzhou",
+    "Register Company in Suzhou",
+    "Register Company in Hangzhou",
+    "Register Company in Nanjing",
+    "Register Company in Chengdu",
+    "Register Company in Tianjin"
   ],
   path: "/"
 });

@@ -14,7 +14,16 @@ export const metadata: Metadata = createPageMetadata({
     "WFOE registration China",
     "China business license application",
     "foreign-invested company China",
-    "China company setup for foreign investors"
+    "China company setup for foreign investors",
+    "Register Company in Shanghai",
+    "Register Company in Beijing",
+    "Register Company in Shenzhen",
+    "Register Company in Guangzhou",
+    "Register Company in Suzhou",
+    "Register Company in Hangzhou",
+    "Register Company in Nanjing",
+    "Register Company in Chengdu",
+    "Register Company in Tianjin"
   ],
   path: "/china-company-registration"
 });
@@ -28,6 +37,18 @@ const items = [
   "Tax registration, bookkeeping setup, and compliance handover"
 ];
 
+const cityServices = [
+  "Register Company in Shanghai",
+  "Register Company in Beijing",
+  "Register Company in Shenzhen",
+  "Register Company in Guangzhou",
+  "Register Company in Suzhou",
+  "Register Company in Hangzhou",
+  "Register Company in Nanjing",
+  "Register Company in Chengdu",
+  "Register Company in Tianjin"
+];
+
 export default function ChinaRegistrationPage() {
   return (
     <>
@@ -39,7 +60,16 @@ export default function ChinaRegistrationPage() {
             "China company registration",
             "China company registration for foreigners",
             "WFOE registration China",
-            "China business license application"
+            "China business license application",
+            "Register Company in Shanghai",
+            "Register Company in Beijing",
+            "Register Company in Shenzhen",
+            "Register Company in Guangzhou",
+            "Register Company in Suzhou",
+            "Register Company in Hangzhou",
+            "Register Company in Nanjing",
+            "Register Company in Chengdu",
+            "Register Company in Tianjin"
           ]
         )}
       />
@@ -82,6 +112,36 @@ export default function ChinaRegistrationPage() {
                 </p>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-16 md:py-20">
+        <div className="container-shell">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase text-evergreen">
+              China City Registration Support
+            </p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
+              Register a company in major China business cities.
+            </h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              ZYS supports foreign investors planning company registration in
+              leading commercial hubs across China. City-level requirements can
+              differ by business scope, registered address, documentation,
+              industry licensing, and tax administration, so we review the target
+              location before preparing the application.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {cityServices.map((city) => (
+              <div key={city} className="rounded-md border border-line bg-paper p-5">
+                <h3 className="font-bold text-ink">{city}</h3>
+                <p className="mt-2 text-sm leading-7 text-graphite">
+                  Company setup guidance, document coordination, tax registration,
+                  and post-registration compliance planning.
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
