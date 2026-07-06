@@ -9,6 +9,7 @@ import {
   companyName,
   createPageMetadata,
   faqSchema,
+  localBusinessSchema,
   serviceSchema,
   StructuredData
 } from "@/components/seo";
@@ -21,9 +22,14 @@ type CityRegistrationLandingProps = {
 
 const serviceLinks = [
   { href: "/china-company-registration", label: "China Registration" },
+  { href: "/services/company-registration-in-china", label: "Company Registration Service" },
+  { href: "/services/wfoe-registration", label: "WFOE Registration" },
   { href: "/tax-accounting", label: "Tax & Accounting" },
+  { href: "/services/accounting-services", label: "Accounting Services" },
+  { href: "/services/tax-consulting", label: "Tax Consulting" },
   { href: "/visa-services", label: "Visa Services" },
   { href: "/business-licenses", label: "Business Licenses" },
+  { href: "/services/annual-compliance", label: "Annual Compliance" },
   { href: "/contact", label: "Contact" }
 ];
 
@@ -117,6 +123,14 @@ function faqItems(page: NonNullable<ReturnType<typeof getCityRegistrationPage>>)
     {
       question: `How does ${brandName} support ${page.city} company registration?`,
       answer: `${brandName} reviews the registration plan, confirms documents, coordinates business scope and address issues, supports the filing process, and connects registration with tax, accounting, license, visa, and compliance steps.`
+    },
+    {
+      question: `What local tax issues should a ${page.city} company review first?`,
+      answer: page.localTaxPolicies
+    },
+    {
+      question: `What kind of office address works for company registration in ${page.city}?`,
+      answer: page.officeRentalInfo
     }
   ];
 }
@@ -177,6 +191,7 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
           ]
         )}
       />
+      <StructuredData data={localBusinessSchema()} />
       <StructuredData data={faqSchema(faqs)} />
       <StructuredData data={breadcrumbSchema(breadcrumbs)} />
       <Breadcrumbs items={breadcrumbs.map((item) => ({ name: item.name, href: item.path }))} />
@@ -230,6 +245,9 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
             <p>
               A service company may prioritize a flexible office and a smooth tax registration path. A trading company may care more about import-export registrations, supplier invoices, customs records, and VAT treatment. A technology company may need to consider online services, data activity, software revenue, intellectual property, and whether any filings apply before contracts begin.
             </p>
+            <p>
+              {page.localAdvantages}
+            </p>
           </div>
 
           <aside className="h-fit rounded-md border border-line bg-white p-6 shadow-sm">
@@ -251,18 +269,18 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
         <div className="container-shell">
           <div className="max-w-4xl">
             <h2 className="text-3xl font-bold leading-tight">
-              Step-by-step {page.city} company registration process
+              City-specific {page.city} company registration process
             </h2>
             <p className="mt-4 text-base leading-8 text-graphite">
-              The registration process should be managed in sequence because each decision affects the next step. A rushed filing can produce a company that is technically approved but difficult to operate, invoice, staff, or maintain. A stronger approach is to connect company registration with tax, accounting, licensing, banking, and visa planning from the beginning.
+              The registration process should be managed in sequence because each decision affects the next step. In {page.city}, the strongest filing strategy is the one that connects district selection, registered address, business scope, VAT registration, bank account opening, accounting setup, license review, and annual compliance before the application is submitted.
             </p>
           </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-2">
-            {processSteps.map((step) => (
-              <article key={step.title} className="rounded-md border border-line bg-paper p-6">
-                <h3 className="text-xl font-bold text-ink">{step.title}</h3>
+          <div className="mt-10 grid gap-5">
+            {page.localProcess.map((step, index) => (
+              <article key={step} className="rounded-md border border-line bg-paper p-6">
+                <h3 className="text-xl font-bold text-ink">Step {index + 1}: {step.split(".")[0]}</h3>
                 <p className="mt-3 text-base leading-8 text-graphite">
-                  {step.text} For {page.city}, this step should also consider {page.faqFocus}
+                  {step} {processSteps[index]?.text} For {page.city}, this step should also consider {page.faqFocus}
                 </p>
               </article>
             ))}
@@ -326,6 +344,39 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
       </section>
 
       <section className="py-16 md:py-20">
+        <div className="container-shell">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold leading-tight">
+              {page.city} company setup comparison table
+            </h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              A comparison table helps foreign investors avoid treating every China city as interchangeable. The best registration decision depends on industry, office needs, tax administration, banking, staffing, license exposure, and how the company will generate revenue after the business license is issued.
+            </p>
+          </div>
+          <div className="mt-8 overflow-x-auto rounded-md border border-line bg-white shadow-sm">
+            <table className="w-full min-w-[720px] border-collapse text-left text-sm">
+              <thead className="bg-paper text-ink">
+                <tr>
+                  <th className="border-b border-line p-4 font-bold">Decision area</th>
+                  <th className="border-b border-line p-4 font-bold">Recommended approach in {page.city}</th>
+                  <th className="border-b border-line p-4 font-bold">Common caution</th>
+                </tr>
+              </thead>
+              <tbody>
+                {page.comparisonRows.map((row) => (
+                  <tr key={row.factor} className="align-top">
+                    <td className="border-b border-line p-4 font-bold text-ink">{row.factor}</td>
+                    <td className="border-b border-line p-4 leading-7 text-graphite">{row.recommended}</td>
+                    <td className="border-b border-line p-4 leading-7 text-graphite">{row.caution}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20">
         <div className="container-shell grid gap-10 lg:grid-cols-[0.58fr_0.42fr]">
           <div className="space-y-5 text-base leading-8 text-graphite">
             <h2 className="text-3xl font-bold leading-tight text-ink">
@@ -343,6 +394,24 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
             <p>
               {page.licenseNote} License review should happen before registration whenever possible, because some permits affect address choice, registered capital expectation, personnel qualifications, site inspection, or the exact wording of the business scope.
             </p>
+            <h3 className="text-2xl font-bold leading-tight text-ink">
+              Local tax policies and VAT registration in {page.city}
+            </h3>
+            <p>
+              {page.localTaxPolicies}
+            </p>
+            <p>
+              {page.vatRegistration}
+            </p>
+            <h3 className="text-2xl font-bold leading-tight text-ink">
+              Accounting requirements and annual compliance
+            </h3>
+            <p>
+              {page.accountingRequirements}
+            </p>
+            <p>
+              {page.annualCompliance}
+            </p>
           </div>
           <div className="rounded-md border border-line bg-white p-6 shadow-sm">
             <h3 className="text-2xl font-bold text-ink">Internal planning links</h3>
@@ -355,6 +424,54 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
             </div>
             <p className="mt-6 text-sm leading-7 text-graphite">
               Use these pages to connect the {page.city} registration plan with business license review, tax and accounting setup, visa support, and a consultation before documents are prepared.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 md:py-20">
+        <div className="container-shell grid gap-10 lg:grid-cols-3">
+          <article className="rounded-md border border-line bg-paper p-6">
+            <h2 className="text-2xl font-bold text-ink">Office rental and registered address</h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              {page.officeRentalInfo}
+            </p>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              The address should be reviewed before signing a lease because registration, tax bureau records, bank account opening, fapiao setup, license inspections, and future change filings all depend on the address file being usable and consistent.
+            </p>
+          </article>
+          <article className="rounded-md border border-line bg-paper p-6">
+            <h2 className="text-2xl font-bold text-ink">Bank account opening</h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              {page.bankAccountOpening}
+            </p>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              Bank onboarding is easier when the company can explain its customers, suppliers, source of funds, expected currencies, foreign shareholder relationship, and why the selected city is commercially logical.
+            </p>
+          </article>
+          <article className="rounded-md border border-line bg-paper p-6">
+            <h2 className="text-2xl font-bold text-ink">Recommended industries</h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              {page.industryRecommendations}
+            </p>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              Industry choice affects scope wording, licenses, invoice categories, accounting controls, address suitability, staffing, and the advisory work needed before the application is filed.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20">
+        <div className="container-shell">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold leading-tight">
+              E-E-A-T notes for foreign investors comparing {page.city}
+            </h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              This page is written for founders, CFOs, legal teams, and overseas shareholders who need practical registration guidance before committing to a China entity. It reflects recurring issues seen in company setup projects: address mismatch, overly broad scope wording, late tax onboarding, weak invoice controls, bank questions, undocumented shareholder payments, and license assumptions that should have been checked earlier.
+            </p>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              {companyName} approaches {page.city} company registration as a connected compliance project. The registration filing, business license, tax registration, bank account, VAT invoice setup, accounting records, payroll plan, visa support, annual reporting, and later changes should tell one consistent story. That is the standard investors should use when comparing service providers and choosing where to register.
             </p>
           </div>
         </div>
