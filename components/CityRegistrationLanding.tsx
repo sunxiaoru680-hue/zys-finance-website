@@ -33,33 +33,6 @@ const serviceLinks = [
   { href: "/contact", label: "Contact" }
 ];
 
-const processSteps = [
-  {
-    title: "1. Confirm the city fit and entity structure",
-    text: "The first step is to confirm whether the city supports the commercial goal, shareholder structure, revenue model, staffing plan, and target customers. Most foreign investors choose a limited liability company, often called a WFOE in market-entry discussions, but the practical setup still depends on ownership, registered capital, business scope, licensing, and tax needs."
-  },
-  {
-    title: "2. Draft the business scope and registration profile",
-    text: "The business scope should be broad enough for the planned activity, but not so broad that it triggers avoidable review, licensing questions, or tax bureau concern. The company name, registered capital, director, supervisor, legal representative, financial contact, and address details should be checked together before filing."
-  },
-  {
-    title: "3. Prepare shareholder and officer documents",
-    text: "Foreign shareholders usually need identity or corporate documents, and overseas corporate shareholders often need notarization, legalization, translation, and consistency checks. Director, supervisor, legal representative, and finance contact documents must also match the local application forms and post-registration tax records."
-  },
-  {
-    title: "4. Submit the registration and business license application",
-    text: "Once the application file is ready, the registration is submitted to the market regulation authority. The review focuses on company name, shareholder information, registered address, legal representative, business scope, articles of association, and whether the filing matches local rules."
-  },
-  {
-    title: "5. Complete chops, tax registration, bank setup, and accounting handover",
-    text: "After the business license is issued, the company still needs practical operating steps. These usually include company chops, tax registration, bank account preparation, bookkeeping setup, VAT and fapiao planning, payroll registration where relevant, and internal controls for contracts, invoices, and expenses."
-  },
-  {
-    title: "6. Review licenses, visas, reporting, and annual compliance",
-    text: "Some activities require permits or additional filings after or before the license is issued. Foreign founders and employees may need work permits and residence permits. The company must also maintain monthly or quarterly tax filings, annual reporting, accounting records, and compliance documents."
-  }
-];
-
 const documentGroups = [
   {
     title: "Shareholder documents",
@@ -88,6 +61,27 @@ const timelineSteps = [
   "Name, scope, registered address, officer information, shareholder document, and articles of association preparation.",
   "Business license application, authority review, approval follow-up, and company chop coordination after license issuance.",
   "Tax registration, accounting setup, bank account preparation, VAT and fapiao planning, payroll review, and license or visa follow-up."
+];
+
+const taxFlowSteps = [
+  "Business license issued",
+  "Tax bureau onboarding",
+  "VAT taxpayer review",
+  "Fapiao access",
+  "Monthly bookkeeping",
+  "Annual reconciliation"
+];
+
+const chinaMapCities = [
+  { city: "Beijing", area: "North China" },
+  { city: "Tianjin", area: "North China port" },
+  { city: "Shanghai", area: "East China" },
+  { city: "Suzhou", area: "Yangtze River Delta" },
+  { city: "Nanjing", area: "Jiangsu" },
+  { city: "Hangzhou", area: "Zhejiang" },
+  { city: "Shenzhen", area: "Greater Bay Area" },
+  { city: "Guangzhou", area: "South China" },
+  { city: "Chengdu", area: "Western China" }
 ];
 
 function faqItems(page: NonNullable<ReturnType<typeof getCityRegistrationPage>>) {
@@ -269,18 +263,35 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
         <div className="container-shell">
           <div className="max-w-4xl">
             <h2 className="text-3xl font-bold leading-tight">
-              City-specific {page.city} company registration process
+              Company Registration Process in {page.city}
             </h2>
             <p className="mt-4 text-base leading-8 text-graphite">
               The registration process should be managed in sequence because each decision affects the next step. In {page.city}, the strongest filing strategy is the one that connects district selection, registered address, business scope, VAT registration, bank account opening, accounting setup, license review, and annual compliance before the application is submitted.
             </p>
+          </div>
+          <div className="mt-8 rounded-md border border-line bg-white p-6 shadow-sm">
+            <h3 className="text-2xl font-bold text-ink">Business Registration Steps</h3>
+            <div className="mt-5 grid gap-3 md:grid-cols-3">
+              {["Plan", "File", "Operate"].map((stage, index) => (
+                <div key={stage} className="rounded-md border border-line bg-paper p-4">
+                  <p className="text-sm font-bold uppercase text-evergreen">{stage}</p>
+                  <p className="mt-2 text-sm leading-7 text-graphite">
+                    {index === 0
+                      ? `Confirm the ${page.city} district, address, business scope, shareholders, registered capital, and license exposure.`
+                      : index === 1
+                        ? "Submit the market regulation filing, respond to review questions, and collect the business license and company chops."
+                        : "Complete bank, tax, VAT, fapiao, accounting, payroll, annual compliance, and any visa or license follow-up."}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="mt-10 grid gap-5">
             {page.localProcess.map((step, index) => (
               <article key={step} className="rounded-md border border-line bg-paper p-6">
                 <h3 className="text-xl font-bold text-ink">Step {index + 1}: {step.split(".")[0]}</h3>
                 <p className="mt-3 text-base leading-8 text-graphite">
-                  {step} {processSteps[index]?.text} For {page.city}, this step should also consider {page.faqFocus}
+                  {step} For {page.city}, this step should also consider {page.faqFocus}
                 </p>
               </article>
             ))}
@@ -311,7 +322,7 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
         <div className="container-shell grid gap-10 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold leading-tight">
-              Estimated timeline and approval path
+              Timeline and approval path
             </h2>
             <p className="mt-4 text-base leading-8 text-graphite">
               {page.timeline} The most common timeline risk is not the online filing itself. Delays usually come from incomplete shareholder documents, inconsistent names, address issues, unclear business scope, licensing questions, bank review, or missing tax registration materials after approval.
@@ -344,10 +355,42 @@ export function CityRegistrationLanding({ cityKey }: CityRegistrationLandingProp
       </section>
 
       <section className="py-16 md:py-20">
+        <div className="container-shell grid gap-10 lg:grid-cols-[0.45fr_0.55fr]">
+          <div className="rounded-md border border-line bg-white p-6 shadow-sm">
+            <h2 className="text-3xl font-bold leading-tight text-ink">China Map</h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              {page.city} sits within the broader China registration network that foreign investors often compare before choosing a city. The right location depends on customers, suppliers, tax administration, staff hiring, port access, and long-term compliance support.
+            </p>
+            <div className="mt-6 grid gap-2 sm:grid-cols-2">
+              {chinaMapCities.map((item) => (
+                <p key={item.city} className={`rounded-md border p-3 text-sm leading-6 ${item.city === page.city ? "border-evergreen bg-paper font-bold text-ink" : "border-line text-graphite"}`}>
+                  {item.city}: {item.area}
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="rounded-md border border-line bg-white p-6 shadow-sm">
+            <h2 className="text-3xl font-bold leading-tight text-ink">Tax Flow</h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              Tax work begins immediately after registration, not after the first invoice. A {page.city} company should move through tax onboarding, VAT review, invoice access, bookkeeping, payroll withholding, and annual reconciliation in a controlled sequence.
+            </p>
+            <div className="mt-6 grid gap-3 md:grid-cols-2">
+              {taxFlowSteps.map((step, index) => (
+                <p key={step} className="flex gap-3 rounded-md border border-line bg-paper p-4 text-sm leading-7 text-graphite">
+                  <CheckCircle2 aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-evergreen" />
+                  <span><strong className="text-ink">{index + 1}. {step}:</strong> confirm records, responsible staff, and deadline ownership.</span>
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20">
         <div className="container-shell">
           <div className="max-w-4xl">
             <h2 className="text-3xl font-bold leading-tight">
-              {page.city} company setup comparison table
+              Comparison Table: {page.city} company setup
             </h2>
             <p className="mt-4 text-base leading-8 text-graphite">
               A comparison table helps foreign investors avoid treating every China city as interchangeable. The best registration decision depends on industry, office needs, tax administration, banking, staffing, license exposure, and how the company will generate revenue after the business license is issued.
