@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/components/seo";
+import { cityRegistrationPages } from "@/lib/cityRegistration";
 import { blogArticles, servicePages } from "@/lib/content";
 
 const staticRoutes = [
@@ -25,11 +26,13 @@ const staticRoutes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-03T00:00:00.000Z");
   const serviceRoutes = servicePages.map((service) => `/services/${service.slug}`);
+  const cityRoutes = cityRegistrationPages.map((page) => page.path);
   const blogRoutes = blogArticles.map((article) => ({ route: `/blog/${article.slug}`, updated: article.updated }));
 
   return [
     ...staticRoutes.map((route) => ({ route, updated: "2026-07-03" })),
     ...serviceRoutes.map((route) => ({ route, updated: "2026-07-03" })),
+    ...cityRoutes.map((route) => ({ route, updated: "2026-07-07" })),
     ...blogRoutes
   ].map(({ route, updated }) => ({
     url: `${siteUrl}${route}`,

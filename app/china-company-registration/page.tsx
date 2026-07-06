@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 import { createPageMetadata, serviceSchema, StructuredData } from "@/components/seo";
+import { cityRegistrationPages } from "@/lib/cityRegistration";
 
 export const metadata: Metadata = createPageMetadata({
   title: "China Company Registration for Foreign Investors & Global Businesses",
@@ -35,18 +37,6 @@ const items = [
   "Registered address and application material coordination",
   "Business license application and company chop coordination",
   "Tax registration, bookkeeping setup, and compliance handover"
-];
-
-const cityServices = [
-  "Register Company in Shanghai",
-  "Register Company in Beijing",
-  "Register Company in Shenzhen",
-  "Register Company in Guangzhou",
-  "Register Company in Suzhou",
-  "Register Company in Hangzhou",
-  "Register Company in Nanjing",
-  "Register Company in Chengdu",
-  "Register Company in Tianjin"
 ];
 
 export default function ChinaRegistrationPage() {
@@ -133,14 +123,14 @@ export default function ChinaRegistrationPage() {
             </p>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {cityServices.map((city) => (
-              <div key={city} className="rounded-md border border-line bg-paper p-5">
-                <h3 className="font-bold text-ink">{city}</h3>
+            {cityRegistrationPages.map((city) => (
+              <Link key={city.path} href={city.path} className="focus-ring rounded-md border border-line bg-paper p-5 transition hover:-translate-y-1 hover:shadow-soft">
+                <h3 className="font-bold text-ink">Register Company in {city.city}</h3>
                 <p className="mt-2 text-sm leading-7 text-graphite">
                   Company setup guidance, document coordination, tax registration,
                   and post-registration compliance planning.
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
