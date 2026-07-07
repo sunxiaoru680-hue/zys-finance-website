@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
 import { companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, serviceSchema, StructuredData } from "@/components/seo";
 import { breadcrumbSchema, getServiceBySlug, serviceFaqs, servicePages } from "@/lib/content";
+import { relatedBlogLinksForService, relatedCityLinksForService, relatedServiceLinksForService } from "@/lib/internalLinks";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -53,6 +54,9 @@ export default async function ServiceDetailPage({ params }: Props) {
   }
 
   const faqs = serviceFaqs(service);
+  const relatedArticles = relatedBlogLinksForService(service, 5);
+  const relatedCities = relatedCityLinksForService(service, 3);
+  const relatedServices = relatedServiceLinksForService(service, 4);
   const breadcrumbs = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
@@ -108,6 +112,52 @@ export default async function ServiceDetailPage({ params }: Props) {
               <p>{emailAddress}</p>
             </div>
           </aside>
+        </div>
+      </section>
+      <section className="bg-white py-16 md:py-24">
+        <div className="container-shell">
+          <div className="max-w-4xl">
+            <p className="text-sm font-bold uppercase text-evergreen">Topic cluster</p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight">Related resources for {service.title}</h2>
+            <p className="mt-4 text-base leading-8 text-graphite">
+              These internal resources connect {service.keyword} with practical registration, tax, accounting, city selection, licensing, and long-term compliance decisions.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            <section className="rounded-md border border-line bg-paper p-6">
+              <h3 className="text-xl font-bold text-ink">Related Articles</h3>
+              <div className="mt-5 grid gap-4">
+                {relatedArticles.map((item) => (
+                  <Link key={item.href} href={item.href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                    {item.label}
+                    <span className="mt-1 block text-xs font-normal uppercase text-graphite">{item.context}</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+            <section className="rounded-md border border-line bg-paper p-6">
+              <h3 className="text-xl font-bold text-ink">Related Services</h3>
+              <div className="mt-5 grid gap-4">
+                {relatedServices.map((item) => (
+                  <Link key={item.href} href={item.href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                    {item.label}
+                    <span className="mt-1 block text-xs font-normal text-graphite">{item.context}</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+            <section className="rounded-md border border-line bg-paper p-6">
+              <h3 className="text-xl font-bold text-ink">City Landing Pages</h3>
+              <div className="mt-5 grid gap-4">
+                {relatedCities.map((item) => (
+                  <Link key={item.href} href={item.href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                    {item.label}
+                    <span className="mt-1 block text-xs font-normal text-graphite">{item.context}</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          </div>
         </div>
       </section>
       <section className="bg-white py-16 md:py-24">

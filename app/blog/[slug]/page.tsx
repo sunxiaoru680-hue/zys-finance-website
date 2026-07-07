@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
 import { articleSchema, companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, StructuredData } from "@/components/seo";
-import { articleFaqs, blogArticles, breadcrumbSchema, getArticleBySlug, relatedArticles } from "@/lib/content";
+import { articleFaqs, blogArticles, breadcrumbSchema, getArticleBySlug } from "@/lib/content";
+import { cityLinkForArticle, relatedBlogLinksForArticle, relatedServiceLinksForArticle } from "@/lib/internalLinks";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -58,7 +59,9 @@ export default async function BlogArticlePage({ params }: Props) {
   }
 
   const faqs = articleFaqs(article);
-  const related = relatedArticles(article.slug);
+  const relatedServices = relatedServiceLinksForArticle(article, 3);
+  const cityLink = cityLinkForArticle(article);
+  const related = relatedBlogLinksForArticle(article, 2);
   const breadcrumbs = [
     { name: "Home", path: "/" },
     { name: "Blog", path: "/blog" },
@@ -108,11 +111,10 @@ export default async function BlogArticlePage({ params }: Props) {
                 <div className="mt-5 grid gap-3 text-sm font-semibold text-evergreen sm:grid-cols-2">
                   <Link href="/">Homepage</Link>
                   <Link href="/services">All advisory services</Link>
-                  <Link href="/services/company-registration-in-china">China company registration</Link>
-                  <Link href="/services/wfoe-registration">WFOE registration China</Link>
-                  <Link href="/services/accounting-services">China accounting service</Link>
-                  <Link href="/services/tax-consulting">China tax advisory</Link>
-                  <Link href="/services/china-payroll-service">China payroll service</Link>
+                  <Link href={cityLink.href}>{cityLink.label}</Link>
+                  {related.map((item) => (
+                    <Link key={item.href} href={item.href}>{item.label}</Link>
+                  ))}
                   <Link href="/contact">Request a consultation</Link>
                 </div>
               </section>
@@ -122,7 +124,7 @@ export default async function BlogArticlePage({ params }: Props) {
                   <p className="mt-4 text-base leading-8 text-graphite">{section.body}</p>
                   <h3 className="mt-5 text-lg font-bold text-ink">What decision makers should verify</h3>
                   <p className="mt-3 text-base leading-8 text-graphite">Before acting on {article.keyword}, confirm the business scope, licensing exposure, tax filing calendar, invoice model, payroll obligations, banking path, and responsible contact person. These details determine whether the right solution is company registration, WFOE setup, accounting cleanup, tax advisory, payroll outsourcing, work permit support, audit preparation, or cross-border tax planning.</p>
-                  <p className="mt-4 text-base leading-8 text-graphite">For deeper planning, review ZYS pages on <Link className="font-semibold text-evergreen" href="/services/company-registration-in-china">Company Registration in China</Link>, <Link className="font-semibold text-evergreen" href="/services/accounting-services">Accounting Services</Link>, <Link className="font-semibold text-evergreen" href="/services/tax-consulting">Tax Consulting</Link>, <Link className="font-semibold text-evergreen" href="/services/china-visa-service">China Visa Service</Link>, and <Link className="font-semibold text-evergreen" href="/services/annual-compliance">Annual Compliance</Link>.</p>
+                  <p className="mt-4 text-base leading-8 text-graphite">For deeper planning, connect this topic with the right service scope, city choice, tax filing calendar, license review, and monthly accounting workflow before documents are submitted.</p>
                 </section>
               ))}
             </div>
@@ -138,10 +140,21 @@ export default async function BlogArticlePage({ params }: Props) {
               <h2 className="mt-8 text-xl font-bold">Related articles</h2>
               <div className="mt-5 grid gap-4">
                 {related.map((item) => (
-                  <Link key={item.slug} href={`/blog/${item.slug}`} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
-                    {item.title}
+                  <Link key={item.href} href={item.href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                    {item.label}
                   </Link>
                 ))}
+              </div>
+              <h2 className="mt-8 text-xl font-bold">Related services</h2>
+              <div className="mt-5 grid gap-4">
+                {relatedServices.map((item) => (
+                  <Link key={item.href} href={item.href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                    {item.label}
+                  </Link>
+                ))}
+                <Link href={cityLink.href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                  {cityLink.label}
+                </Link>
               </div>
             </aside>
           </div>
