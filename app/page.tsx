@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowDown, CheckCircle2, CalendarDays, Mail, MessageCircle } from "lucide-react";
+import { ArrowDown, CheckCircle2, CalendarDays, Download, Mail, MessageCircle } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { CorporateVideo } from "@/components/CorporateVideo";
 import { CTA } from "@/components/CTA";
 import { ServiceGrid } from "@/components/ServiceGrid";
 import { processDescriptions, processSteps, strengths } from "@/components/siteData";
+import { companyProfilePdfPath } from "@/lib/companyProfile";
 import {
   companyName,
   createPageMetadata,
@@ -228,6 +229,43 @@ export default function HomePage() {
       </section>
 
       <CorporateVideo />
+
+      <section className="bg-ink py-16 text-white md:py-20">
+        <div className="container-shell grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase text-gold">
+              Company Profile
+            </p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
+              Download Our Company Profile
+            </h2>
+            <p className="mt-5 text-base leading-8 text-white/78">
+              Get a complete overview of our company registration, accounting,
+              tax, visa and international corporate services. Download our
+              professional company profile and service guide.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+            <a
+              href={companyProfilePdfPath}
+              download
+              className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-gold bg-gold px-5 py-3 text-sm font-semibold text-ink transition hover:bg-white"
+            >
+              Download PDF
+              <Download aria-hidden="true" className="h-4 w-4" />
+            </a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              Contact Us on WhatsApp
+              <MessageCircle aria-hidden="true" className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-white py-16 md:py-24">
         <div className="container-shell grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">

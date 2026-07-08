@@ -15,6 +15,7 @@ export const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/company-profile", label: "Company Profile" },
   { href: "/services/company-registration-in-china", label: "China Registration" },
   { href: "/tax-accounting", label: "Tax & Accounting" },
   { href: "/services/china-visa-service", label: "Visa Services" },
