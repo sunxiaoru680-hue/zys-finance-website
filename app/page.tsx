@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowDown, CheckCircle2, CalendarDays, Mail, MessageCircle } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
+import { CorporateVideo } from "@/components/CorporateVideo";
 import { CTA } from "@/components/CTA";
 import { ServiceGrid } from "@/components/ServiceGrid";
 import { processDescriptions, processSteps, strengths } from "@/components/siteData";
@@ -225,6 +226,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <CorporateVideo />
 
       <section className="bg-white py-16 md:py-24">
         <div className="container-shell grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
