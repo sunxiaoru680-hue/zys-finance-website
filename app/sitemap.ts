@@ -13,6 +13,7 @@ const staticRoutes = [
   "/testimonials",
   "/timeline",
   "/services",
+  "/company-profile",
   "/china-company-registration",
   "/tax-accounting",
   "/visa-services",
@@ -23,6 +24,8 @@ const staticRoutes = [
   "/terms"
 ];
 
+const zhRoutes = ["/zh", "/zh/company-profile", "/zh/contact"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-03T00:00:00.000Z");
   const serviceRoutes = servicePages.map((service) => `/services/${service.slug}`);
@@ -31,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes.map((route) => ({ route, updated: "2026-07-03" })),
+    ...zhRoutes.map((route) => ({ route, updated: "2026-07-10" })),
     ...serviceRoutes.map((route) => ({ route, updated: "2026-07-03" })),
     ...cityRoutes.map((route) => ({ route, updated: "2026-07-07" })),
     ...blogRoutes

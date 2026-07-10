@@ -28,11 +28,12 @@ import {
   faqSchema,
   phoneNumber,
   serviceSchema,
+  siteUrl,
   StructuredData,
   whatsappUrl
 } from "@/components/seo";
 
-export const metadata: Metadata = createPageMetadata({
+const baseMetadata = createPageMetadata({
   title: "ZYS Advisory Company Profile | China Company Registration & Tax Services",
   description:
     "Download ZYS Advisory company profile for China company registration, accounting, tax, visa, work permit, Hong Kong, USA, Singapore and Dubai company formation services.",
@@ -50,6 +51,17 @@ export const metadata: Metadata = createPageMetadata({
   ],
   path: "/company-profile"
 });
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  alternates: {
+    canonical: `${siteUrl}/company-profile`,
+    languages: {
+      en: `${siteUrl}/company-profile`,
+      "zh-CN": `${siteUrl}/zh/company-profile`
+    }
+  }
+};
 
 const highlights = [
   "Global Business Expansion Partner",

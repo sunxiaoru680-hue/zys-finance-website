@@ -14,6 +14,7 @@ import {
   emailAddress,
   faqSchema,
   serviceSchema,
+  siteUrl,
   StructuredData,
   whatsappUrl
 } from "@/components/seo";
@@ -71,7 +72,7 @@ const faqItems = [
   }
 ];
 
-export const metadata: Metadata = createPageMetadata({
+const baseMetadata = createPageMetadata({
   title: "China Company Registration, Tax, Accounting & Business Advisory",
   description:
     "Nanjing ZYS Advisory Co., Ltd. helps foreign investors, international SMEs, and Chinese companies expanding overseas with China company registration, accounting, tax advisory, work visas, business licenses, audit services, and overseas company registration.",
@@ -97,6 +98,17 @@ export const metadata: Metadata = createPageMetadata({
   ],
   path: "/"
 });
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  alternates: {
+    canonical: siteUrl,
+    languages: {
+      en: siteUrl,
+      "zh-CN": `${siteUrl}/zh`
+    }
+  }
+};
 
 export default function HomePage() {
   return (

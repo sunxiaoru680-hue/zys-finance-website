@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { navItems } from "@/components/siteData";
 import { ButtonLink } from "@/components/ButtonLink";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { brandSubtitle, companyName } from "@/components/seo";
 
 export function Header() {
@@ -34,7 +35,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <LanguageSwitcher />
           <ButtonLink href="/contact">Book a Free Consultation</ButtonLink>
         </div>
 
@@ -54,6 +56,9 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <div className="px-3 py-2">
+                <LanguageSwitcher />
+              </div>
               <div className="pt-3">
                 <ButtonLink href="/contact">Book a Free Consultation</ButtonLink>
               </div>

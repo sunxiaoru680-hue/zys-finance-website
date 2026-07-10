@@ -10,13 +10,14 @@ import {
   emailAddress,
   officeAddress,
   phoneNumber,
+  siteUrl,
   StructuredData,
   whatsappQrAlt,
   whatsappQrImage,
   whatsappUrl
 } from "@/components/seo";
 
-export const metadata: Metadata = createPageMetadata({
+const baseMetadata = createPageMetadata({
   title: "Contact ZYS for China Company Registration & Tax Advisory",
   description:
     "Contact Nanjing ZYS Advisory Co., Ltd. by WhatsApp or email for China company registration, accounting, tax advisory, work visas, business license applications, audit services, and overseas company registration.",
@@ -29,6 +30,17 @@ export const metadata: Metadata = createPageMetadata({
   ],
   path: "/contact"
 });
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  alternates: {
+    canonical: `${siteUrl}/contact`,
+    languages: {
+      en: `${siteUrl}/contact`,
+      "zh-CN": `${siteUrl}/zh/contact`
+    }
+  }
+};
 
 const contactDetails = [
   {
