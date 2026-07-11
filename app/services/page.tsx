@@ -2,10 +2,51 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
-import { ServiceGrid } from "@/components/ServiceGrid";
 import { processDescriptions, processSteps } from "@/components/siteData";
 import { breadcrumbSchema, servicePages } from "@/lib/content";
 import { createPageMetadata, faqSchema, serviceSchema, StructuredData } from "@/components/seo";
+
+const serviceCategories = [
+  {
+    title: "Enter China",
+    services: [
+      ["China Company Registration", "/services/company-registration-in-china"],
+      ["WFOE Registration", "/services/wfoe-registration"],
+      ["Foreign Investment Consulting", "/services/foreign-investment"],
+      ["Business Licenses", "/services/business-license"],
+      ["Trademark Registration", "/services/trademark-registration"]
+    ]
+  },
+  {
+    title: "Operate in China",
+    services: [
+      ["Accounting and Bookkeeping", "/services/bookkeeping"],
+      ["Tax Advisory", "/services/tax-consulting"],
+      ["Payroll", "/services/china-payroll-service"],
+      ["Annual Compliance", "/services/annual-compliance"],
+      ["Audit Support", "/services/audit-services"],
+      ["CFO Advisory", "/services/cfo-advisory-china"],
+      ["Company Deregistration", "/services/company-deregistration"]
+    ]
+  },
+  {
+    title: "People and Visas",
+    services: [
+      ["Work Permit", "/services/china-visa-service"],
+      ["Residence Permit", "/services/china-visa-service"],
+      ["Visa Support for Foreign Employees and Families", "/services/china-visa-service"]
+    ]
+  },
+  {
+    title: "Expand Overseas",
+    services: [
+      ["Hong Kong Company Registration", "/services/hong-kong-company-registration"],
+      ["Singapore Company Registration", "/services/singapore-company-registration"],
+      ["US Company Registration", "/services/us-company-registration"],
+      ["Dubai Company Registration", "/services/dubai-company-registration"]
+    ]
+  }
+];
 
 export const metadata: Metadata = createPageMetadata({
   title: "China Company Registration, Accounting, Tax, Visa & Audit Services",
@@ -38,7 +79,7 @@ export default function ServicesPage() {
       <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }]} />
       <StructuredData
         data={faqSchema([
-          { question: "Which China SEO landing pages does ZYS provide?", answer: "ZYS provides dedicated pages for China company registration, WFOE registration China, China accounting service, China tax advisory, China payroll service, China work visa, company deregistration, business license application, and CFO advisory China." },
+          { question: "Which specialist services does ZYS provide?", answer: "ZYS provides support for China company registration, WFOE registration, accounting and bookkeeping, tax advisory, payroll, visas, company deregistration, business license applications, CFO advisory, and overseas company formation." },
           { question: "Can ZYS support overseas company registration?", answer: "Yes. ZYS supports Hong Kong company registration, Singapore company registration, US company registration, Dubai company registration, and cross-border tax coordination connected with China operations." }
         ])}
       />
@@ -71,14 +112,31 @@ export default function ServicesPage() {
       />
       <section className="py-16 md:py-24">
         <div className="container-shell">
-          <ServiceGrid />
+          <p className="text-sm font-bold uppercase text-evergreen">Service Architecture</p>
+          <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-tight">
+            Four coordinated service groups for entering, operating, staffing, and expanding across borders.
+          </h2>
+          <div className="mt-10 grid gap-5 lg:grid-cols-4">
+            {serviceCategories.map((category) => (
+              <section key={category.title} className="rounded-md border border-line bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-ink">{category.title}</h3>
+                <div className="mt-5 grid gap-3">
+                  {category.services.map(([label, href]) => (
+                    <a key={`${category.title}-${label}`} href={href} className="text-sm font-semibold leading-6 text-evergreen hover:text-ink">
+                      {label}
+                    </a>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="bg-white py-16 md:py-24">
         <div className="container-shell">
-          <p className="text-sm font-bold uppercase text-evergreen">Dedicated service pages</p>
-          <h2 className="mt-3 text-3xl font-bold leading-tight">SEO landing pages for every core China advisory service.</h2>
+          <p className="text-sm font-bold uppercase text-evergreen">Specialist Services</p>
+          <h2 className="mt-3 text-3xl font-bold leading-tight">Detailed guidance for each core advisory service.</h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {servicePages.map((service) => (
               <a key={service.slug} href={`/services/${service.slug}`} className="focus-ring rounded-md border border-line bg-paper p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">

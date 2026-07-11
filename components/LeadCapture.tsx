@@ -7,7 +7,7 @@ export function LeadCapture({ title = "Request a consultation", text = "Share yo
     <section className="bg-evergreen py-14 text-white md:py-18">
       <div className="container-shell grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
         <div>
-          <p className="text-sm font-bold uppercase text-white/70">Lead generation</p>
+          <p className="text-sm font-bold uppercase text-white/70">Consultation</p>
           <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">{title}</h2>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-white/82">{text}</p>
         </div>

@@ -30,19 +30,41 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-const sectionTitles = [
-  "Strategic context",
-  "Documents and preparation",
-  "Compliance risks",
-  "How ZYS manages delivery",
-  "Internal links and next steps"
-];
-
 function serviceParagraphs(service: NonNullable<ReturnType<typeof getServiceBySlug>>) {
-  return sectionTitles.map((title, index) => ({
-    title,
-    body: `${service.title} is most effective when it is treated as part of a wider China operating plan rather than a single administrative filing. For ${service.audience}, the practical questions usually involve China Company Registration, China WFOE Registration, China Business License, China Accounting Service, China Bookkeeping, China Tax Filing, China VAT, China Payroll Service, China Work Permit, China CFO Service, China Tax Advisory, China Audit, Chinese Accounting Firm selection, cross-border tax, and Foreign Investment China planning. ZYS reviews the commercial goal, ownership structure, target city, business scope, staffing plan, invoicing needs, licensing exposure, payroll plan, and annual compliance calendar before recommending a route. This reduces rework, clarifies the responsibilities of shareholders and managers, and gives international teams a realistic view of timing, document burden, pricing, and post-approval obligations. Section ${index + 1} focuses on ${title.toLowerCase()} so decision makers can understand both the immediate action and the long-term compliance effect.`
-  }));
+  return [
+    {
+      title: "Clear introduction",
+      body: `${service.title} helps ${service.audience} plan and execute a specific China or cross-border business requirement with attention to commercial purpose, document readiness, timeline, and ongoing obligations.`
+    },
+    {
+      title: "Who this service is for",
+      body: `This service is typically relevant when founders, shareholders, finance teams, HR teams, or overseas management need a practical implementation path and want to avoid treating registration, tax, accounting, licensing, visa, or maintenance issues in isolation.`
+    },
+    {
+      title: "Scope of service",
+      body: `ZYS may assist with initial consultation, requirement mapping, document checklist preparation, filing or advisory coordination, authority communication support where applicable, and post-project handover for related accounting, tax, visa, license, or reporting tasks.`
+    },
+    {
+      title: "Required information or documents",
+      body: `Typical information includes business activity, target city or jurisdiction, shareholder and director details, ownership chain, registered address or operating location, contract model, expected invoices, staffing plan, and any existing registration, tax, license, or visa documents.`
+    },
+    {
+      title: "Process",
+      body: `The usual process is consultation, scope confirmation, document preparation, implementation, authority or provider follow-up, and compliance handover. Timing depends on the city, jurisdiction, document completeness, and whether additional licenses or reviews are required.`
+    },
+    {
+      title: "Typical considerations",
+      body: `Decision makers should consider business scope, tax category, invoice requirements, payroll obligations, banking readiness, document translations, annual maintenance, and the internal person responsible for future filings and records.`
+    },
+    {
+      title: "Compliance risks",
+      body: `Risks may include incomplete shareholder documents, business scope mismatch, late filings, inconsistent accounting records, unsupported invoices, missed renewals, unclear employment arrangements, or assumptions that differ from local authority practice.`
+    },
+    {
+      title: "Deliverables",
+      body: `Deliverables usually include a service plan, document checklist, filing or advisory status updates, practical next steps, and handover notes for related registration, tax, accounting, license, visa, or maintenance work.`
+    }
+  ];
 }
 
 export default async function ServiceDetailPage({ params }: Props) {
@@ -92,9 +114,9 @@ export default async function ServiceDetailPage({ params }: Props) {
               <section key={section.title} className="rounded-md border border-line bg-white p-7 shadow-sm">
                 <h2 className="text-2xl font-bold text-ink">{section.title}</h2>
                 <p className="mt-4 text-base leading-8 text-graphite">{section.body}</p>
-                <h3 className="mt-5 text-lg font-bold text-ink">SEO and conversion checkpoints</h3>
-                <p className="mt-3 text-base leading-8 text-graphite">For {service.keyword}, ZYS documents the responsible parties, filing timeline, expected evidence, authority touchpoints, tax and accounting impact, and follow-up obligations so overseas management can approve the work with fewer surprises.</p>
-                <p className="mt-4 text-base leading-8 text-graphite">A strong engagement also connects internal links between <a className="font-semibold text-evergreen" href="/china-company-registration">China company registration</a>, <a className="font-semibold text-evergreen" href="/tax-accounting">tax and accounting</a>, <a className="font-semibold text-evergreen" href="/business-licenses">business licenses</a>, <a className="font-semibold text-evergreen" href="/visa-services">visa services</a>, and <a className="font-semibold text-evergreen" href="/contact">consultation booking</a>. This gives search engines and users a clear understanding of how the service fits into the broader ZYS advisory model.</p>
+                <h3 className="mt-5 text-lg font-bold text-ink">Related planning points</h3>
+                <p className="mt-3 text-base leading-8 text-graphite">For {service.keyword}, ZYS documents the responsible parties, likely timeline, expected evidence, authority touchpoints where applicable, tax and accounting impact, and follow-up obligations so overseas management can approve the work with fewer surprises.</p>
+                <p className="mt-4 text-base leading-8 text-graphite">A strong engagement may connect <a className="font-semibold text-evergreen" href="/china-company-registration">China company registration</a>, <a className="font-semibold text-evergreen" href="/tax-accounting">tax and accounting</a>, <a className="font-semibold text-evergreen" href="/business-licenses">business licenses</a>, <a className="font-semibold text-evergreen" href="/visa-services">visa services</a>, and <a className="font-semibold text-evergreen" href="/contact">consultation booking</a>, depending on the client's circumstances.</p>
               </section>
             ))}
           </article>
@@ -117,7 +139,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       <section className="bg-white py-16 md:py-24">
         <div className="container-shell">
           <div className="max-w-4xl">
-            <p className="text-sm font-bold uppercase text-evergreen">Topic cluster</p>
+            <p className="text-sm font-bold uppercase text-evergreen">Related Services and Resources</p>
             <h2 className="mt-3 text-3xl font-bold leading-tight">Related resources for {service.title}</h2>
             <p className="mt-4 text-base leading-8 text-graphite">
               These internal resources connect {service.keyword} with practical registration, tax, accounting, city selection, licensing, and long-term compliance decisions.

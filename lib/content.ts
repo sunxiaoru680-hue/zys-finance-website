@@ -38,9 +38,11 @@ export type BlogArticle = {
   description: string;
   published: string;
   author: string;
+  reviewedBy: string;
   updated: string;
   category: string;
   imageAlt: string;
+  readingTime: string;
 };
 
 const blogTitles = [
@@ -225,6 +227,29 @@ function articleImageAlt(title: string, keyword: string) {
   return `ZYS Advisory guide image for ${title} covering ${keyword} and China business compliance`;
 }
 
+function articleDescription(title: string, category: string) {
+  if (category === "Case Study") {
+    return `${title}: an anonymized client scenario showing how scope, documents, timing, compliance risks, and ongoing support can be coordinated without disclosing confidential client information.`;
+  }
+  if (category === "Comparison") {
+    return `${title}: a practical comparison for management teams weighing structure, compliance obligations, operating flexibility, and implementation tradeoffs.`;
+  }
+  if (category === "Cross-border Expansion") {
+    return `${title}: guidance for evaluating overseas company formation, banking readiness, maintenance duties, and China-related tax or operating touchpoints.`;
+  }
+  if (category === "Tax and Audit") {
+    return `${title}: key considerations for tax filing, VAT, audit preparation, documentation quality, and management review in China operations.`;
+  }
+  if (category === "Payroll and Visa") {
+    return `${title}: planning notes for employment, payroll, work permit, residence permit, and visa coordination for foreign-invested companies.`;
+  }
+  return `${title}: a practical overview for foreign investors planning China market entry, company setup, licensing, tax registration, and operating compliance.`;
+}
+
+function articleReadingTime(title: string) {
+  return title.length > 42 ? "7 min read" : "5 min read";
+}
+
 function byPublishedDateDesc(a: BlogArticle, b: BlogArticle) {
   return new Date(b.published).getTime() - new Date(a.published).getTime();
 }
@@ -233,12 +258,14 @@ export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   slug: title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
   title,
   keyword: title.includes("China") ? title : `${title} China`,
-  description: `${title}: practical guidance for foreign investors, international SMEs, and Chinese companies expanding overseas, with compliance, tax, accounting, registration, visa, and operating considerations.`,
+  description: articleDescription(title, articleCategory(title)),
   published: weeklyPublished(index),
   author: "ZYS Advisory Editorial Team",
+  reviewedBy: "ZYS Advisory Compliance Review",
   updated: "2026-07-03",
   category: articleCategory(title),
-  imageAlt: articleImageAlt(title, title.includes("China") ? title : `${title} China`)
+  imageAlt: articleImageAlt(title, title.includes("China") ? title : `${title} China`),
+  readingTime: articleReadingTime(title)
 })).sort(byPublishedDateDesc);
 
 export function getServiceBySlug(slug: string) {
@@ -258,7 +285,7 @@ export function serviceFaqs(service: ServicePage) {
   return [
     {
       question: `Who needs ${service.title}?`,
-      answer: `${service.title} is designed for ${service.audience}, especially when China Company Registration, China Accounting, China Tax Consultant, China Business Registration, China Company Formation, Chinese Accounting Firm, and Foreign Investment China requirements overlap.`
+      answer: `${service.title} is designed for ${service.audience}, especially when setup, accounting, tax, licensing, payroll, visa, or annual compliance requirements need to be coordinated.`
     },
     {
       question: `How does ZYS deliver ${service.keyword}?`,
@@ -278,7 +305,7 @@ export function serviceFaqs(service: ServicePage) {
 export function articleFaqs(article: BlogArticle) {
   return [
     { question: `Is ${article.title} relevant for foreign investors?`, answer: `Yes. ${article.title} is written for foreign investors and international SMEs that need practical China market-entry, accounting, tax, visa, and compliance guidance.` },
-    { question: `Does ZYS provide advisory support for ${article.keyword}?`, answer: `Yes. ZYS supports China Company Registration, China Accounting, China Tax Consultant, China Business Registration, China Company Formation, Chinese Accounting Firm, and Foreign Investment China matters connected with this topic.` },
+    { question: `Does ZYS provide advisory support for ${article.keyword}?`, answer: `Yes. ZYS supports registration, accounting, tax, licensing, payroll, visa, audit preparation, and cross-border planning matters connected with this topic.` },
     { question: `What should I prepare before discussing ${article.title}?`, answer: `Prepare your shareholder information, target business activity, expected city, operating model, staffing plan, invoicing needs, and any current documents or deadlines.` }
   ];
 }

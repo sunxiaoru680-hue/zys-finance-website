@@ -204,7 +204,7 @@ export function localBusinessSchema() {
   };
 }
 
-export function articleSchema(article: { title: string; description: string; published: string; updated: string; author: string; slug: string; keyword: string; category: string; imageAlt: string }) {
+export function articleSchema(article: { title: string; description: string; published: string; updated: string; author: string; reviewedBy?: string; slug: string; keyword: string; category: string; imageAlt: string }) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -224,6 +224,13 @@ export function articleSchema(article: { title: string; description: string; pub
       name: article.author,
       url: siteUrl
     },
+    reviewedBy: article.reviewedBy
+      ? {
+          "@type": "Organization",
+          name: article.reviewedBy,
+          url: siteUrl
+        }
+      : undefined,
     publisher: {
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
