@@ -1,57 +1,135 @@
 import Link from "next/link";
-import { Menu } from "lucide-react";
-import { navItems } from "@/components/siteData";
-import { ButtonLink } from "@/components/ButtonLink";
+import { ChevronDown, Menu } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { brandSubtitle, companyName } from "@/components/seo";
 
+const aboutItems = [
+  { href: "/about", label: "About ZYS" },
+  { href: "/company-profile", label: "Company Profile" },
+  { href: "/our-team", label: "Our Team" },
+  { href: "/experience", label: "Experience" },
+  { href: "/why-choose-us", label: "Why Choose Us" }
+];
+
+const serviceItems = [
+  { href: "/services", label: "All Services" },
+  { href: "/services/company-registration-in-china", label: "China Registration" },
+  { href: "/tax-accounting", label: "Tax & Accounting" },
+  { href: "/services/china-visa-service", label: "Visa Services" },
+  { href: "/services/business-license", label: "Business Licenses" }
+];
+
+const mainItems = [
+  { href: "/blog", label: "Blog" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/contact", label: "Contact" }
+];
+
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
-      <div className="container-shell flex min-h-20 items-center justify-between gap-4">
-        <Link href="/" className="focus-ring flex min-w-0 items-center gap-3 rounded-md">
-          <span className="grid h-11 w-11 place-items-center rounded-md bg-evergreen text-white">
-            <span className="text-sm font-black">ZYS</span>
+    <header className="sticky top-0 z-50 border-b border-line bg-white/95 shadow-[0_8px_24px_rgba(15,36,31,0.04)] backdrop-blur">
+      <div className="container-shell flex min-h-[88px] items-center justify-between gap-8">
+        <Link href="/" className="focus-ring flex w-[280px] flex-none items-center gap-3 rounded-md">
+          <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
+            <span className="text-sm font-black tracking-normal">ZYS</span>
           </span>
-          <span className="min-w-0 max-w-[13.75rem] leading-tight sm:max-w-none">
-            <span className="block text-[13px] font-bold tracking-normal text-ink sm:text-sm md:text-base">
+          <span className="min-w-0 leading-tight">
+            <span className="block whitespace-nowrap text-[15px] font-bold tracking-normal text-ink">
               {companyName}
             </span>
-            <span className="block text-[11px] font-semibold uppercase text-graphite sm:text-xs">
+            <span className="mt-1 block whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.08em] text-graphite">
               {brandSubtitle}
             </span>
           </span>
         </Link>
 
-        <nav aria-label="Primary navigation" className="hidden items-center gap-1 lg:flex">
-          {navItems.map((item) => (
+        <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-8 lg:flex">
+          <Link
+            href="/"
+            className="focus-ring rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+          >
+            Home
+          </Link>
+
+          <div className="group relative">
+            <Link
+              href="/about"
+              className="focus-ring flex items-center gap-1 rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+            >
+              About
+              <ChevronDown aria-hidden="true" className="h-3.5 w-3.5 text-gold" />
+            </Link>
+            <div className="invisible absolute left-1/2 top-full w-56 -translate-x-1/2 pt-5 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="rounded-sm border border-line bg-white py-2 shadow-[0_18px_45px_rgba(15,36,31,0.14)]">
+                {aboutItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="focus-ring block px-4 py-2.5 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative">
+            <Link
+              href="/services"
+              className="focus-ring flex items-center gap-1 rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+            >
+              Services
+              <ChevronDown aria-hidden="true" className="h-3.5 w-3.5 text-gold" />
+            </Link>
+            <div className="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 pt-5 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="rounded-sm border border-line bg-white py-2 shadow-[0_18px_45px_rgba(15,36,31,0.14)]">
+                {serviceItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="focus-ring block px-4 py-2.5 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {mainItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="focus-ring rounded-md px-3 py-2 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
+              className="focus-ring rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden flex-none items-center gap-5 lg:flex">
           <LanguageSwitcher />
-          <ButtonLink href="/contact">Book a Free Consultation</ButtonLink>
+          <Link
+            href="/contact"
+            className="focus-ring inline-flex min-h-10 items-center justify-center rounded-sm border border-ink bg-ink px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:border-gold hover:bg-gold hover:text-ink"
+          >
+            Book Consultation
+          </Link>
         </div>
 
         <details className="group lg:hidden">
-          <summary className="focus-ring flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-line bg-white">
+          <summary className="focus-ring flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-sm border border-line bg-white">
             <Menu aria-hidden="true" className="h-5 w-5" />
             <span className="sr-only">Open navigation</span>
           </summary>
-          <div className="absolute left-0 right-0 top-20 border-b border-line bg-white p-4 shadow-soft">
+          <div className="absolute left-0 right-0 top-[88px] border-b border-line bg-white p-4 shadow-soft">
             <nav aria-label="Mobile navigation" className="container-shell grid gap-1">
-              {navItems.map((item) => (
+              {[{ href: "/", label: "Home" }, ...aboutItems, ...serviceItems, ...mainItems].map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="focus-ring rounded-md px-3 py-3 text-sm font-semibold text-ink hover:bg-paper"
+                  className="focus-ring rounded-sm px-3 py-3 text-sm font-semibold text-ink hover:bg-paper"
                 >
                   {item.label}
                 </Link>
@@ -60,7 +138,12 @@ export function Header() {
                 <LanguageSwitcher />
               </div>
               <div className="pt-3">
-                <ButtonLink href="/contact">Book a Free Consultation</ButtonLink>
+                <Link
+                  href="/contact"
+                  className="focus-ring inline-flex min-h-10 items-center justify-center rounded-sm border border-ink bg-ink px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-white"
+                >
+                  Book Consultation
+                </Link>
               </div>
             </nav>
           </div>
