@@ -31,8 +31,8 @@ const mainItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/95 shadow-[0_8px_24px_rgba(15,36,31,0.04)] backdrop-blur">
-      <div className="container-shell flex min-h-[92px] items-center justify-between gap-5 xl:gap-7">
-        <Link href="/" className="focus-ring flex min-w-[240px] flex-none items-center gap-3 rounded-md lg:basis-[300px] xl:basis-[340px]">
+      <div className="mx-auto flex min-h-[92px] w-full max-w-[1520px] items-center justify-between gap-4 px-5 xl:gap-6 xl:px-8">
+        <Link href="/" className="focus-ring flex min-w-0 flex-none basis-[260px] items-center gap-3 rounded-md xl:basis-[320px] 2xl:basis-[340px]">
           <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
             <span className="text-sm font-black tracking-normal">ZYS</span>
           </span>
@@ -46,7 +46,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-5 xl:gap-7 2xl:gap-9 lg:flex">
+        <nav aria-label="Primary navigation" className="hidden min-w-0 flex-1 items-center justify-center gap-4 xl:gap-6 2xl:gap-8 lg:flex">
           <Link
             href="/"
             className="focus-ring whitespace-nowrap rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
@@ -116,7 +116,7 @@ export function Header() {
           <TrackedLink
             href="/contact"
             source="header_consultation"
-            className="focus-ring inline-flex min-h-9 items-center justify-center whitespace-nowrap rounded-sm border border-ink bg-ink px-3.5 py-2 text-xs font-semibold tracking-normal text-white transition hover:border-gold hover:bg-gold hover:text-ink"
+            className="focus-ring inline-flex min-h-9 items-center justify-center whitespace-nowrap rounded-sm border border-ink bg-ink px-3 py-2 text-xs font-semibold tracking-normal text-white transition hover:border-gold hover:bg-gold hover:text-ink xl:px-3.5"
           >
             Book a Consultation
           </TrackedLink>

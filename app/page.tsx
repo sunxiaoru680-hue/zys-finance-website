@@ -335,10 +335,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-paper py-16 md:py-24">
-        <div className="container-shell grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div className="relative overflow-hidden rounded-md border border-line bg-ink shadow-soft">
-            <div className="relative aspect-[4/3] min-h-[340px]">
+      <section className="bg-paper py-14 md:py-20">
+        <div className="container-shell grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-stretch">
+          <div className="relative min-w-0 overflow-hidden rounded-md border border-line bg-ink shadow-soft">
+            <div className="relative h-full min-h-[360px] lg:min-h-[460px]">
               {companyMedia.map((image, index) => (
                 <Image
                   key={image.src}
@@ -346,7 +346,7 @@ export default function HomePage() {
                   alt={image.alt}
                   fill
                   className="corporate-video-slide object-cover"
-                  sizes="(min-width: 1024px) 540px, calc(100vw - 32px)"
+                  sizes="(min-width: 1024px) 560px, calc(100vw - 32px)"
                   style={{ animationDelay: `${index * 5.6}s` }}
                 />
               ))}
@@ -356,16 +356,16 @@ export default function HomePage() {
                   <PlayCircle aria-hidden="true" className="h-4 w-4 text-gold" />
                   Company Introduction
                 </div>
-                <h2 className="mt-4 max-w-xl text-2xl font-bold leading-tight md:text-3xl">
+                <h2 className="mt-4 max-w-xl text-2xl font-bold leading-tight md:text-[30px]">
                   Professional advisory support for China market entry and international expansion.
                 </h2>
               </div>
             </div>
           </div>
 
-          <div className="rounded-md border border-line bg-white p-7 shadow-sm md:p-9">
+          <div className="min-w-0 rounded-md border border-line bg-white p-6 shadow-sm md:p-8 lg:flex lg:flex-col lg:justify-center">
             <p className="text-sm font-bold uppercase text-evergreen">About ZYS Advisory</p>
-            <h2 className="mt-3 text-3xl font-bold leading-tight text-ink md:text-4xl">
+            <h2 className="mt-3 text-2xl font-bold leading-tight text-ink md:text-3xl">
               A coordinated business, tax and compliance partner for international clients.
             </h2>
             <p className="mt-5 text-base leading-8 text-graphite">
