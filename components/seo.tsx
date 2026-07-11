@@ -12,6 +12,8 @@ export const officeAddress = "Nanjing, Jiangsu, China";
 export const businessHours = "Monday to Friday, 9:00 AM - 6:00 PM China Standard Time";
 export const siteUrl = "https://www.zysadvisory.com";
 export const ogImage = "/images/global-finance-consulting-hero.png";
+export const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://www.facebook.com/ZYSAdvisory";
+export const linkedInUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://www.linkedin.com/company/zys-advisory";
 export const whatsappQrImage = "/images/whatsapp-business-qr.webp";
 export const whatsappQrAlt = "WhatsApp Business QR code for Nanjing ZYS Advisory Co., Ltd. China business and tax advisory consultation";
 export const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20ZYS%2C%20I%20would%20like%20to%20book%20a%20free%20consultation%20about%20China%20company%20registration%2C%20tax%2C%20accounting%2C%20visa%2C%20or%20business%20advisory%20services.`;
@@ -19,6 +21,10 @@ export const calendlyUrl = "https://calendly.com/zysconsulting/consultation";
 export const liveChatUrl = whatsappUrl;
 export const gtmId = "GTM-XXXXXXX";
 export const gaId = "G-XXXXXXXXXX";
+export const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID || "";
+export const metaConversionApiPixelId = process.env.META_CONVERSION_API_PIXEL_ID || "";
+export const metaConversionApiAccessToken = process.env.META_CONVERSION_API_ACCESS_TOKEN || "";
+export const metaConversionApiTestEventCode = process.env.META_CONVERSION_API_TEST_EVENT_CODE || "";
 
 export const coreKeywords = [
   "China company registration",
@@ -151,7 +157,7 @@ export function organizationSchema() {
       availableLanguage: ["English", "Chinese"],
       areaServed: ["China", "Hong Kong", "Singapore", "United States", "Dubai", "International"]
     },
-    sameAs: [siteUrl],
+    sameAs: [siteUrl, facebookUrl, linkedInUrl],
     knowsAbout: coreKeywords
   };
 }
