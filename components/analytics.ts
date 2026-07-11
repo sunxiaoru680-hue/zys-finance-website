@@ -5,6 +5,7 @@ type MetaEventName =
   | "ViewContent"
   | "Contact"
   | "ConsultationRequest"
+  | "SocialClick"
   | "WhatsAppClick";
 
 type MetaEventParams = Record<string, string | number | boolean | undefined>;
@@ -39,4 +40,8 @@ export function trackConsultationRequest(source: string) {
 
 export function trackWhatsAppClick(source: string) {
   trackMetaEvent("WhatsAppClick", { source, channel: "whatsapp" });
+}
+
+export function trackSocialClick(platform: string, source: string) {
+  trackMetaEvent("SocialClick", { platform, source });
 }

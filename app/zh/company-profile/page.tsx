@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BadgeDollarSign, CheckCircle2, Download, HelpCircle, MessageCircle } from "lucide-react";
+import { ArrowRight, BadgeDollarSign, CheckCircle2, Download, HelpCircle } from "lucide-react";
 import {
   companyProfilePdfPath,
   companyProfilePricing,
@@ -8,7 +8,8 @@ import {
   requiredDocuments,
   visaPricing
 } from "@/lib/companyProfile";
-import { companyName, emailAddress, phoneNumber, siteUrl, whatsappUrl } from "@/components/seo";
+import { companyName, emailAddress, phoneNumber, siteUrl } from "@/components/seo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "ZYS Advisory 公司资料 | 中国公司注册、财税、签证服务",
@@ -88,15 +89,12 @@ export default function ZhCompanyProfilePage() {
                 下载 PDF
                 <Download aria-hidden="true" className="h-4 w-4" />
               </a>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppButton
+                source="zh_company_profile_hero"
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/55 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 WhatsApp 咨询
-                <MessageCircle aria-hidden="true" className="h-4 w-4" />
-              </a>
+              </WhatsAppButton>
             </div>
           </div>
           <div className="rounded-md border border-white/12 bg-white/8 p-6 shadow-soft backdrop-blur">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHero } from "@/components/PageHero";
+import { SocialIcons } from "@/components/SocialIcons";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import {
   businessHours,
@@ -184,6 +185,26 @@ export default function ContactPage() {
               className="h-auto w-full rounded-md border border-line bg-white"
               sizes="(min-width: 1024px) 384px, 100vw"
             />
+          </div>
+        </div>
+      </section>
+      <section className="py-16 md:py-20">
+        <div className="container-shell rounded-md border border-line bg-white p-7 shadow-sm md:p-9">
+          <p className="text-sm font-bold uppercase text-evergreen">
+            Follow ZYS Advisory
+          </p>
+          <div className="mt-3 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h2 className="text-3xl font-bold leading-tight text-ink">
+                Follow our social channels for business and tax updates.
+              </h2>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-graphite">
+                Connect with ZYS Advisory on Facebook and LinkedIn for updates
+                on China company registration, tax, accounting, visas and
+                cross-border corporate services.
+              </p>
+            </div>
+            <SocialIcons showLabel />
           </div>
         </div>
       </section>

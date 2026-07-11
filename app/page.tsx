@@ -12,7 +12,6 @@ import {
   FileCheck2,
   Globe2,
   Landmark,
-  MessageCircle,
   Plane,
   PlayCircle,
   ShieldCheck,
@@ -21,14 +20,14 @@ import {
 import { CTA } from "@/components/CTA";
 import { SocialIcons } from "@/components/SocialIcons";
 import { TrackedLink } from "@/components/TrackedLink";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import {
   companyName,
   createPageMetadata,
   faqSchema,
   serviceSchema,
   siteUrl,
-  StructuredData,
-  whatsappUrl
+  StructuredData
 } from "@/components/seo";
 
 const priorityServices = [
@@ -314,15 +313,13 @@ export default function HomePage() {
                 <ArrowRight aria-hidden="true" className="h-4 w-4" />
               </Link>
             </div>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppButton
+              source="home_hero_whatsapp"
               className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white/78 transition hover:text-white"
+              iconClassName="h-4 w-4 text-[#25D366]"
             >
-              <MessageCircle aria-hidden="true" className="h-4 w-4 text-[#25D366]" />
               Prefer WhatsApp? Contact ZYS directly
-            </a>
+            </WhatsAppButton>
           </div>
         </div>
       </section>

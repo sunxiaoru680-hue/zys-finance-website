@@ -1,4 +1,7 @@
+"use client";
+
 import { facebookUrl, linkedInUrl } from "@/components/seo";
+import { trackSocialClick } from "@/components/analytics";
 
 type SocialIconsProps = {
   className?: string;
@@ -43,6 +46,7 @@ export function SocialIcons({ className = "", tone = "dark", showLabel = false }
           rel="noopener noreferrer"
           aria-label={`Follow ZYS Advisory on ${link.label}`}
           className={`focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-sm border px-2.5 text-sm font-semibold transition ${baseClass}`}
+          onClick={() => trackSocialClick(link.label.toLowerCase(), "social_icons")}
         >
           {link.icon}
           {showLabel ? <span>{link.label}</span> : null}

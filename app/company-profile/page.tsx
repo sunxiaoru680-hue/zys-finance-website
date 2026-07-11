@@ -8,7 +8,6 @@ import {
   FileCheck2,
   Globe2,
   HelpCircle,
-  MessageCircle,
   Plane,
   ShieldCheck
 } from "lucide-react";
@@ -29,9 +28,9 @@ import {
   phoneNumber,
   serviceSchema,
   siteUrl,
-  StructuredData,
-  whatsappUrl
+  StructuredData
 } from "@/components/seo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const baseMetadata = createPageMetadata({
   title: "ZYS Advisory Company Profile | China Company Registration & Tax Services",
@@ -128,15 +127,12 @@ export default function CompanyProfilePage() {
                 Download PDF
                 <Download aria-hidden="true" className="h-4 w-4" />
               </a>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppButton
+                source="company_profile_hero"
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/55 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 WhatsApp CTA
-                <MessageCircle aria-hidden="true" className="h-4 w-4" />
-              </a>
+              </WhatsAppButton>
             </div>
           </div>
           <div className="rounded-md border border-white/12 bg-white/8 p-6 shadow-soft backdrop-blur">
@@ -348,15 +344,12 @@ export default function CompanyProfilePage() {
               Download PDF
               <Download aria-hidden="true" className="h-4 w-4" />
             </a>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppButton
+              source="company_profile_final"
               className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/55 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
               Contact Us on WhatsApp
-              <MessageCircle aria-hidden="true" className="h-4 w-4" />
-            </a>
+            </WhatsAppButton>
           </div>
         </div>
       </section>

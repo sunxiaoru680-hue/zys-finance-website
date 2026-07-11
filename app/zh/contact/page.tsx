@@ -10,9 +10,9 @@ import {
   phoneNumber,
   siteUrl,
   whatsappQrAlt,
-  whatsappQrImage,
-  whatsappUrl
+  whatsappQrImage
 } from "@/components/seo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "联系 ZYS Advisory | 中国公司注册、财税与签证咨询",
@@ -39,7 +39,6 @@ const contactDetails = [
   {
     label: "WhatsApp",
     value: phoneNumber,
-    href: whatsappUrl,
     icon: MessageCircle
   },
   {
@@ -79,15 +78,12 @@ export default function ZhContactPage() {
             请告诉我们你的业务类型、目标城市、股东结构、签证需求和时间计划。ZYS 顾问会根据实际情况提供下一步建议。
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppButton
+              source="zh_contact_hero"
               className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-[#25D366] bg-[#25D366] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95"
             >
-              <MessageCircle aria-hidden="true" className="h-4 w-4" />
               WhatsApp 联系
-            </a>
+            </WhatsAppButton>
             <a
               href={`mailto:${emailAddress}`}
               className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -122,6 +118,19 @@ export default function ZhContactPage() {
                   </span>
                 );
 
+                if (detail.label === "WhatsApp") {
+                  return (
+                    <WhatsAppButton
+                      key={detail.label}
+                      source="zh_contact_details"
+                      className="focus-ring block text-left"
+                      iconClassName="hidden"
+                    >
+                      {content}
+                    </WhatsAppButton>
+                  );
+                }
+
                 return detail.href ? (
                   <a key={detail.label} href={detail.href} target={detail.href.startsWith("http") ? "_blank" : undefined} rel={detail.href.startsWith("http") ? "noopener noreferrer" : undefined}>
                     {content}
@@ -149,15 +158,12 @@ export default function ZhContactPage() {
               sizes="320px"
             />
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppButton
+                source="zh_contact_qr"
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[#25D366] px-5 py-3 text-sm font-bold text-white"
               >
-                <MessageCircle aria-hidden="true" className="h-4 w-4" />
                 Open WhatsApp
-              </a>
+              </WhatsAppButton>
               <Link
                 href="/zh/company-profile"
                 className="focus-ring inline-flex min-h-11 items-center justify-center rounded-md border border-line px-5 py-3 text-sm font-bold text-ink"

@@ -2,9 +2,7 @@ import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { brandSubtitle } from "@/components/seo";
-import { SocialIcons } from "@/components/SocialIcons";
 import { TrackedLink } from "@/components/TrackedLink";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const headerBrandName = "ZYS Advisory";
 
@@ -33,8 +31,8 @@ const mainItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/95 shadow-[0_8px_24px_rgba(15,36,31,0.04)] backdrop-blur">
-      <div className="container-shell flex min-h-[92px] items-center justify-between gap-7">
-        <Link href="/" className="focus-ring flex w-[260px] flex-none items-center gap-3 rounded-md lg:w-[360px]">
+      <div className="container-shell flex min-h-[92px] items-center justify-between gap-5 xl:gap-7">
+        <Link href="/" className="focus-ring flex min-w-[240px] flex-none items-center gap-3 rounded-md lg:basis-[300px] xl:basis-[340px]">
           <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
             <span className="text-sm font-black tracking-normal">ZYS</span>
           </span>
@@ -48,7 +46,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-7 xl:gap-9 lg:flex">
+        <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-5 xl:gap-7 2xl:gap-9 lg:flex">
           <Link
             href="/"
             className="focus-ring whitespace-nowrap rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
@@ -114,13 +112,6 @@ export function Header() {
         </nav>
 
         <div className="hidden flex-none items-center gap-3 lg:flex">
-          <SocialIcons />
-          <WhatsAppButton
-            source="header"
-            className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-3 py-2 text-xs font-semibold text-white transition hover:brightness-95"
-          >
-            WhatsApp
-          </WhatsAppButton>
           <LanguageSwitcher />
           <TrackedLink
             href="/contact"
@@ -149,12 +140,6 @@ export function Header() {
               ))}
               <div className="px-3 py-2">
                 <LanguageSwitcher />
-              </div>
-              <div className="flex items-center gap-2 px-3 py-2">
-                <SocialIcons showLabel />
-              </div>
-              <div className="px-3 py-2">
-                <WhatsAppButton source="mobile_header" />
               </div>
               <div className="pt-3">
                 <TrackedLink
