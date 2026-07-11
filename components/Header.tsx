@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { brandSubtitle, companyName } from "@/components/seo";
+import { brandSubtitle } from "@/components/seo";
+
+const headerBrandName = "ZYS Advisory";
 
 const aboutItems = [
   { href: "/about", label: "About ZYS" },
@@ -28,14 +30,14 @@ const mainItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/95 shadow-[0_8px_24px_rgba(15,36,31,0.04)] backdrop-blur">
-      <div className="container-shell flex min-h-[88px] items-center justify-between gap-8">
-        <Link href="/" className="focus-ring flex w-[280px] flex-none items-center gap-3 rounded-md">
+      <div className="container-shell flex min-h-[92px] items-center justify-between gap-7">
+        <Link href="/" className="focus-ring flex w-[360px] flex-none items-center gap-3 rounded-md">
           <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
             <span className="text-sm font-black tracking-normal">ZYS</span>
           </span>
           <span className="min-w-0 leading-tight">
-            <span className="block whitespace-nowrap text-[15px] font-bold tracking-normal text-ink">
-              {companyName}
+            <span className="block whitespace-nowrap text-[18px] font-bold tracking-normal text-ink">
+              {headerBrandName}
             </span>
             <span className="mt-1 block whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.08em] text-graphite">
               {brandSubtitle}
@@ -43,10 +45,10 @@ export function Header() {
           </span>
         </Link>
 
-        <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-8 lg:flex">
+        <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-7 xl:gap-9 lg:flex">
           <Link
             href="/"
-            className="focus-ring rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+            className="focus-ring whitespace-nowrap rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
           >
             Home
           </Link>
@@ -54,7 +56,7 @@ export function Header() {
           <div className="group relative">
             <Link
               href="/about"
-              className="focus-ring flex items-center gap-1 rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+              className="focus-ring flex items-center gap-1 whitespace-nowrap rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
             >
               About
               <ChevronDown aria-hidden="true" className="h-3.5 w-3.5 text-gold" />
@@ -77,7 +79,7 @@ export function Header() {
           <div className="group relative">
             <Link
               href="/services"
-              className="focus-ring flex items-center gap-1 rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+              className="focus-ring flex items-center gap-1 whitespace-nowrap rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
             >
               Services
               <ChevronDown aria-hidden="true" className="h-3.5 w-3.5 text-gold" />
@@ -101,20 +103,20 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="focus-ring rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
+              className="focus-ring whitespace-nowrap rounded-sm py-2 text-sm font-semibold text-graphite transition hover:text-ink"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden flex-none items-center gap-5 lg:flex">
+        <div className="hidden flex-none items-center gap-4 lg:flex">
           <LanguageSwitcher />
           <Link
             href="/contact"
-            className="focus-ring inline-flex min-h-10 items-center justify-center rounded-sm border border-ink bg-ink px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:border-gold hover:bg-gold hover:text-ink"
+            className="focus-ring inline-flex min-h-9 items-center justify-center whitespace-nowrap rounded-sm border border-ink bg-ink px-3.5 py-2 text-xs font-semibold tracking-normal text-white transition hover:border-gold hover:bg-gold hover:text-ink"
           >
-            Book Consultation
+            Book a Consultation
           </Link>
         </div>
 
@@ -123,7 +125,7 @@ export function Header() {
             <Menu aria-hidden="true" className="h-5 w-5" />
             <span className="sr-only">Open navigation</span>
           </summary>
-          <div className="absolute left-0 right-0 top-[88px] border-b border-line bg-white p-4 shadow-soft">
+          <div className="absolute left-0 right-0 top-[92px] border-b border-line bg-white p-4 shadow-soft">
             <nav aria-label="Mobile navigation" className="container-shell grid gap-1">
               {[{ href: "/", label: "Home" }, ...aboutItems, ...serviceItems, ...mainItems].map((item) => (
                 <Link
@@ -140,9 +142,9 @@ export function Header() {
               <div className="pt-3">
                 <Link
                   href="/contact"
-                  className="focus-ring inline-flex min-h-10 items-center justify-center rounded-sm border border-ink bg-ink px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-white"
+                  className="focus-ring inline-flex min-h-9 items-center justify-center rounded-sm border border-ink bg-ink px-3.5 py-2 text-xs font-semibold text-white"
                 >
-                  Book Consultation
+                  Book a Consultation
                 </Link>
               </div>
             </nav>
