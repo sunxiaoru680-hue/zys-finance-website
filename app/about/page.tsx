@@ -19,6 +19,20 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function AboutPage() {
+  const trustItems = [
+    // TODO: Replace with verified office details after ZYS confirms the publishable address and office description.
+    ["Real office", "To be confirmed by ZYS with publishable office details."],
+    // TODO: Replace with verified consultant names, roles, qualifications, and languages after internal approval.
+    ["Real consultants", "To be confirmed by ZYS with approved consultant information."],
+    // TODO: Replace with verified years, team background, or project categories only after factual confirmation.
+    ["Professional experience", "To be confirmed by ZYS with factual experience information."],
+    ["Languages", "English and Chinese communication are currently referenced across the website."],
+    // TODO: Replace with verified service-location list after ZYS confirms where services can be actively supported.
+    ["Service locations", "China and selected overseas jurisdictions are described by service scope; detailed locations to be confirmed."],
+    // TODO: Add verified business registration number or publishable registration details after ZYS approval.
+    ["Business registration information", "To be confirmed by ZYS before publication of registration details."]
+  ];
+
   return (
     <>
       <PageHero
@@ -69,6 +83,22 @@ export default function AboutPage() {
               </div>
             );
           })}
+        </div>
+      </section>
+      <section className="py-16 md:py-20">
+        <div className="container-shell">
+          <p className="text-sm font-bold uppercase text-evergreen">Trust Information</p>
+          <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-tight">
+            Factual company information to support client due diligence.
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {trustItems.map(([title, text]) => (
+              <article key={title} className="rounded-md border border-line bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-ink">{title}</h3>
+                <p className="mt-3 text-sm leading-7 text-graphite">{text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
       <CTA />

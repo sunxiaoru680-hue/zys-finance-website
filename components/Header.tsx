@@ -31,7 +31,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/95 shadow-[0_8px_24px_rgba(15,36,31,0.04)] backdrop-blur">
       <div className="container-shell flex min-h-[92px] items-center justify-between gap-7">
-        <Link href="/" className="focus-ring flex w-[360px] flex-none items-center gap-3 rounded-md">
+        <Link href="/" className="focus-ring flex w-[260px] flex-none items-center gap-3 rounded-md lg:w-[360px]">
           <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
             <span className="text-sm font-black tracking-normal">ZYS</span>
           </span>
@@ -125,7 +125,7 @@ export function Header() {
             <Menu aria-hidden="true" className="h-5 w-5" />
             <span className="sr-only">Open navigation</span>
           </summary>
-          <div className="absolute left-0 right-0 top-[92px] border-b border-line bg-white p-4 shadow-soft">
+          <div className="absolute left-0 right-0 top-[92px] hidden border-b border-line bg-white p-4 shadow-soft group-open:block">
             <nav aria-label="Mobile navigation" className="container-shell grid gap-1">
               {[{ href: "/", label: "Home" }, ...aboutItems, ...serviceItems, ...mainItems].map((item) => (
                 <Link

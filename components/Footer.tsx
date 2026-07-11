@@ -4,10 +4,17 @@ import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { navItems } from "@/components/siteData";
 import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappQrAlt, whatsappQrImage, whatsappUrl } from "@/components/seo";
 
+const legalLinks = [
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/cookie-policy", label: "Cookie Policy" },
+  { href: "/terms", label: "Terms of Use" },
+  { href: "/professional-disclaimer", label: "Professional Disclaimer" }
+];
+
 export function Footer() {
   return (
     <footer className="bg-ink text-white">
-      <div className="container-shell grid gap-10 py-14 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+      <div className="container-shell grid gap-10 py-14 md:grid-cols-[1.15fr_0.7fr_0.7fr_0.9fr]">
         <div>
           <p className="text-lg font-bold">{companyName}</p>
           <p className="mt-1 text-sm font-semibold text-white/75">Logo: ZYS</p>
@@ -61,6 +68,16 @@ export function Footer() {
               {location}
             </p>
             <p>{businessHours}</p>
+          </div>
+        </div>
+        <div>
+          <p className="font-semibold">Legal</p>
+          <div className="mt-4 grid gap-2">
+            {legalLinks.map((item) => (
+              <Link key={item.href} href={item.href} className="text-sm text-white/75 hover:text-white">
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

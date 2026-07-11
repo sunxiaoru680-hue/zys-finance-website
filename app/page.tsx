@@ -14,6 +14,7 @@ import {
   Landmark,
   MessageCircle,
   Plane,
+  PlayCircle,
   ShieldCheck,
   Timer
 } from "lucide-react";
@@ -71,6 +72,36 @@ const trustSignals = [
   "Bilingual English and Chinese communication",
   "Coordinated registration, tax, accounting, visa, and license support",
   "Clear timelines, document checklists, and compliance handover"
+];
+
+const companyMedia = [
+  {
+    src: "/images/corporate-video/zys-office-lobby.jpg",
+    alt: "ZYS Advisory office lobby for client meetings"
+  },
+  {
+    src: "/images/corporate-video/zys-meeting-room.jpg",
+    alt: "ZYS Advisory meeting room for China business advisory consultations"
+  },
+  {
+    src: "/images/corporate-video/zys-conference-table.jpg",
+    alt: "Conference table prepared for company registration and tax advisory discussion"
+  },
+  {
+    src: "/images/corporate-video/zys-display-wall.jpg",
+    alt: "ZYS Advisory corporate display area"
+  },
+  {
+    src: "/images/corporate-video/zys-policy-consulting-desk.jpg",
+    alt: "Advisory desk with China policy and corporate service documents"
+  }
+];
+
+const introServices = [
+  "China company registration and WFOE setup",
+  "Accounting, bookkeeping, tax and audit support",
+  "Work permit, residence permit and visa coordination",
+  "Business licenses, trademarks and cross-border formation"
 ];
 
 const clientGroups = [
@@ -286,6 +317,65 @@ export default function HomePage() {
               <p className="text-sm font-semibold leading-7 text-ink">{item}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-paper py-16 md:py-24">
+        <div className="container-shell grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="relative overflow-hidden rounded-md border border-line bg-ink shadow-soft">
+            <div className="relative aspect-[4/3] min-h-[340px]">
+              {companyMedia.map((image, index) => (
+                <Image
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="corporate-video-slide object-cover"
+                  sizes="(min-width: 1024px) 540px, calc(100vw - 32px)"
+                  style={{ animationDelay: `${index * 5.6}s` }}
+                />
+              ))}
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/76 via-ink/18 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white md:p-8">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/12 px-3 py-1 text-xs font-semibold backdrop-blur">
+                  <PlayCircle aria-hidden="true" className="h-4 w-4 text-gold" />
+                  Company Introduction
+                </div>
+                <h2 className="mt-4 max-w-xl text-2xl font-bold leading-tight md:text-3xl">
+                  Professional advisory support for China market entry and international expansion.
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-md border border-line bg-white p-7 shadow-sm md:p-9">
+            <p className="text-sm font-bold uppercase text-evergreen">About ZYS Advisory</p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-ink md:text-4xl">
+              A coordinated business, tax and compliance partner for international clients.
+            </h2>
+            <p className="mt-5 text-base leading-8 text-graphite">
+              ZYS Advisory supports founders, investors and management teams
+              that need clear execution across company formation, finance,
+              taxation, licensing, visas and ongoing compliance. Our work is
+              designed for cross-border decision makers who need practical
+              guidance in English and Chinese.
+            </p>
+            <div className="mt-7 grid gap-3">
+              {introServices.map((service) => (
+                <div key={service} className="flex gap-3">
+                  <CheckCircle2 aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-gold" />
+                  <p className="text-sm font-semibold leading-7 text-ink">{service}</p>
+                </div>
+              ))}
+            </div>
+            <Link
+              href="/contact"
+              className="focus-ring mt-8 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-evergreen px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink"
+            >
+              Book Consultation
+              <ArrowRight aria-hidden="true" className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

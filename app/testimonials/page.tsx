@@ -5,8 +5,8 @@ import { LeadCapture } from "@/components/LeadCapture";
 import { createPageMetadata } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Testimonials",
-  description: "Client feedback themes from international founders, SMEs, and expanding Chinese companies.",
+  title: "Client Feedback Policy",
+  description: "How ZYS handles client feedback, confidentiality, and public testimonials.",
   keywords: ["China Company Registration", "China Accounting", "China Tax Consultant", "Foreign Investment China"],
   path: "/testimonials"
 });
@@ -24,19 +24,19 @@ const points = [
 export default function Page() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Testimonials", href: "/testimonials" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Client Feedback", href: "/testimonials" }]} />
       <section className="bg-white py-16 md:py-24">
         <div className="container-shell max-w-4xl">
-          <p className="text-sm font-bold uppercase text-evergreen">EEAT</p>
-          <h1 className="mt-4 text-4xl font-bold leading-tight md:text-6xl">Testimonials</h1>
-          <p className="mt-6 text-lg leading-8 text-graphite">Client feedback themes from international founders, SMEs, and expanding Chinese companies.</p>
+          <p className="text-sm font-bold uppercase text-evergreen">Client Feedback</p>
+          <h1 className="mt-4 text-4xl font-bold leading-tight md:text-6xl">Client Feedback Policy</h1>
+          <p className="mt-6 text-lg leading-8 text-graphite">ZYS protects client confidentiality and does not publish testimonials without clear authorization.</p>
         </div>
       </section>
       <section className="py-16 md:py-24">
         <div className="container-shell grid gap-8 lg:grid-cols-[0.7fr_0.3fr]">
           <article className="rounded-md border border-line bg-white p-8 shadow-sm">
-            <p className="text-base leading-8 text-graphite">ZYS testimonials consistently emphasize clear English communication, practical document checklists, responsive answers, transparent pricing, and coordinated support after registration. International clients value having one advisory team for company formation, accounting, tax consulting, business licenses, visa matters, audit preparation, and annual compliance.</p>
-            <p className="mt-5 text-base leading-8 text-graphite">This page supports Google EEAT by making the company context, advisory experience, service boundaries, and trust signals easier for users and search engines to understand. It connects naturally to service pages, blog articles, contact options, and long-term compliance resources.</p>
+            <p className="text-base leading-8 text-graphite">Public testimonials, named clients, project results, or quoted feedback should appear only when ZYS has genuine client authorization. Until then, the website uses anonymized client scenarios and service descriptions rather than invented endorsements.</p>
+            <p className="mt-5 text-base leading-8 text-graphite">Prospective clients may ask ZYS about relevant experience, service process, confidentiality, and communication expectations during a consultation.</p>
           </article>
           <aside className="rounded-md border border-line bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold">Core focus</h2>
