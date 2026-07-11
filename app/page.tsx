@@ -78,23 +78,35 @@ const trustSignals = [
 const companyMedia = [
   {
     src: "/images/corporate-video/zys-office-lobby.jpg",
-    alt: "ZYS Advisory office lobby for client meetings"
+    alt: "ZYS Advisory office lobby for client meetings",
+    caption: "ZYS Advisory Office Lobby"
   },
   {
     src: "/images/corporate-video/zys-meeting-room.jpg",
-    alt: "ZYS Advisory meeting room for China business advisory consultations"
+    alt: "ZYS Advisory meeting room for China business advisory consultations",
+    caption: "Client Meeting and Advisory Space"
   },
   {
     src: "/images/corporate-video/zys-conference-table.jpg",
-    alt: "Conference table prepared for company registration and tax advisory discussion"
+    alt: "Conference table prepared for company registration and tax advisory discussion",
+    caption: "Corporate Advisory Meeting Room"
   },
   {
     src: "/images/corporate-video/zys-display-wall.jpg",
-    alt: "ZYS Advisory corporate display area"
+    alt: "ZYS Advisory corporate display area",
+    caption: "ZYS Advisory Corporate Environment"
   },
   {
     src: "/images/corporate-video/zys-policy-consulting-desk.jpg",
-    alt: "Advisory desk with China policy and corporate service documents"
+    alt: "Advisory desk with China policy and corporate service documents",
+    caption: "Policy and Tax Advisory Workspace"
+  },
+  {
+    src: "/images/corporate-video/90ec9bc6-c26d-4e87-b1f5-d6ce5fe2b817.jpg",
+    alt: "Professional tax policy training session with presenter, audience, and presentation screen",
+    caption: "Professional Tax Policy Training and Internal Knowledge Sharing",
+    captionZh: "专业税务政策培训与内部知识分享",
+    fit: "contain"
   }
 ];
 
@@ -345,9 +357,11 @@ export default function HomePage() {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="corporate-video-slide object-cover"
+                  className={`corporate-video-slide ${
+                    image.fit === "contain" ? "object-contain" : "object-cover"
+                  }`}
                   sizes="(min-width: 1024px) 560px, calc(100vw - 32px)"
-                  style={{ animationDelay: `${index * 5.6}s` }}
+                  style={{ animationDelay: `${index * 4}s` }}
                 />
               ))}
               <div className="absolute inset-0 bg-gradient-to-t from-ink/76 via-ink/18 to-transparent" />
@@ -359,6 +373,22 @@ export default function HomePage() {
                 <h2 className="mt-4 max-w-xl text-2xl font-bold leading-tight md:text-[30px]">
                   Professional advisory support for China market entry and international expansion.
                 </h2>
+                <div className="relative mt-4 min-h-[42px]">
+                  {companyMedia.map((image, index) => (
+                    <div
+                      key={`${image.src}-caption`}
+                      className="corporate-video-caption-slide absolute max-w-xl text-xs font-semibold leading-5 text-white/88"
+                      style={{ animationDelay: `${index * 4}s` }}
+                    >
+                      <p>{image.caption}</p>
+                      {image.captionZh ? (
+                        <p className="mt-0.5 text-[11px] font-medium text-white/70">
+                          {image.captionZh}
+                        </p>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -392,6 +422,24 @@ export default function HomePage() {
               <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </TrackedLink>
           </div>
+        </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {companyMedia.map((image) => (
+            <div
+              key={`${image.src}-gallery`}
+              className="relative overflow-hidden rounded-md border border-line bg-ink"
+            >
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className={image.fit === "contain" ? "object-contain" : "object-cover"}
+                  sizes="(min-width: 1024px) 176px, (min-width: 640px) 33vw, calc(100vw - 32px)"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

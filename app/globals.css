@@ -48,9 +48,15 @@ a {
 }
 
 .corporate-video-slide {
-  animation: corporate-video-fade 28s ease-in-out infinite;
+  animation: corporate-video-fade 24s ease-in-out infinite;
   opacity: 0;
   transform: scale(1.04);
+}
+
+.corporate-video-caption-slide {
+  animation: corporate-video-caption-fade 24s ease-in-out infinite;
+  opacity: 0;
+  transform: translateY(4px);
 }
 
 @keyframes lift-in {
@@ -71,15 +77,33 @@ a {
     transform: scale(1);
   }
 
-  18% {
+  13.5% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.025);
   }
 
-  23%,
+  17%,
   100% {
     opacity: 0;
-    transform: scale(1.04);
+    transform: scale(1.045);
+  }
+}
+
+@keyframes corporate-video-caption-fade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  13.5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  17%,
+  100% {
+    opacity: 0;
+    transform: translateY(4px);
   }
 }
 
