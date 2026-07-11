@@ -1,8 +1,6 @@
-import {
-  metaConversionApiAccessToken,
-  metaConversionApiPixelId,
-  metaConversionApiTestEventCode
-} from "@/components/seo";
+const metaConversionApiPixelId = process.env.META_CONVERSION_API_PIXEL_ID || "";
+const metaConversionApiAccessToken = process.env.META_CONVERSION_API_ACCESS_TOKEN || "";
+const metaConversionApiTestEventCode = process.env.META_CONVERSION_API_TEST_EVENT_CODE || "";
 
 export const metaConversionApiConfig = {
   pixelId: metaConversionApiPixelId,

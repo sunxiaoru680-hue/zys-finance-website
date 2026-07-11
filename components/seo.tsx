@@ -22,9 +22,6 @@ export const liveChatUrl = whatsappUrl;
 export const gtmId = "GTM-XXXXXXX";
 export const gaId = "G-XXXXXXXXXX";
 export const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID || "";
-export const metaConversionApiPixelId = process.env.META_CONVERSION_API_PIXEL_ID || "";
-export const metaConversionApiAccessToken = process.env.META_CONVERSION_API_ACCESS_TOKEN || "";
-export const metaConversionApiTestEventCode = process.env.META_CONVERSION_API_TEST_EVENT_CODE || "";
 
 export const coreKeywords = [
   "China company registration",

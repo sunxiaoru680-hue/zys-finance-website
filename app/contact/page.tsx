@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHero } from "@/components/PageHero";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import {
   businessHours,
   companyName,
@@ -13,8 +14,7 @@ import {
   siteUrl,
   StructuredData,
   whatsappQrAlt,
-  whatsappQrImage,
-  whatsappUrl
+  whatsappQrImage
 } from "@/components/seo";
 
 const baseMetadata = createPageMetadata({
@@ -46,7 +46,6 @@ const contactDetails = [
   {
     label: "WhatsApp",
     value: phoneNumber,
-    href: whatsappUrl,
     icon: MessageCircle
   },
   {
@@ -131,6 +130,19 @@ export default function ContactPage() {
                   </span>
                 );
 
+                if (detail.label === "WhatsApp") {
+                  return (
+                    <WhatsAppButton
+                      key={detail.label}
+                      source="contact_details"
+                      className="focus-ring block text-left"
+                      iconClassName="hidden"
+                    >
+                      {content}
+                    </WhatsAppButton>
+                  );
+                }
+
                 return detail.href ? (
                   <a key={detail.label} href={detail.href} target={detail.href.startsWith("http") ? "_blank" : undefined} rel={detail.href.startsWith("http") ? "noopener noreferrer" : undefined}>
                     {content}
@@ -159,15 +171,9 @@ export default function ContactPage() {
               registration, accounting, tax advisory, visas, licenses, audits,
               or overseas setup.
             </p>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus-ring mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[#25D366] px-5 py-3 text-sm font-bold text-white"
-            >
-              <MessageCircle aria-hidden="true" className="h-4 w-4" />
+            <WhatsAppButton source="contact_page" className="focus-ring mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[#25D366] px-5 py-3 text-sm font-bold text-white">
               Open WhatsApp
-            </a>
+            </WhatsAppButton>
           </div>
           <div className="max-w-sm rounded-md border border-line bg-paper p-4 shadow-sm">
             <Image

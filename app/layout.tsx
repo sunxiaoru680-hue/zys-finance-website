@@ -6,6 +6,7 @@ import { StickyCTA } from "@/components/StickyCTA";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { LanguagePrompt } from "@/components/LanguagePrompt";
+import { MetaPixel } from "@/components/MetaPixel";
 import {
   companyName,
   brandSubtitle,
@@ -87,6 +88,7 @@ export default function RootLayout({
         <StructuredData data={organizationSchema()} />
         <StructuredData data={localBusinessSchema()} />
         <Script id="gtm-ready" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "zys_site_ready", gtmId: "${gtmId}", gaId: "${gaId}" });`}</Script>
+        <MetaPixel />
         <Header />
         <LanguagePrompt />
         <main>{children}</main>

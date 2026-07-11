@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "@/components/siteData";
-import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappQrAlt, whatsappQrImage, whatsappUrl } from "@/components/seo";
+import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappQrAlt, whatsappQrImage } from "@/components/seo";
+import { SocialIcons } from "@/components/SocialIcons";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const legalLinks = [
   { href: "/privacy-policy", label: "Privacy Policy" },
@@ -23,6 +25,10 @@ export function Footer() {
             work visa, business license, audit, and overseas registration support
             for international clients.
           </p>
+          <div className="mt-5">
+            <p className="text-sm font-semibold text-white">Follow ZYS Advisory</p>
+            <SocialIcons className="mt-3" tone="light" showLabel />
+          </div>
         </div>
         <div>
           <p className="font-semibold">Company</p>
@@ -41,10 +47,12 @@ export function Footer() {
               <Phone aria-hidden="true" className="h-4 w-4" />
               {phoneNumber}
             </p>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white">
-              <MessageCircle aria-hidden="true" className="h-4 w-4" />
+            <WhatsAppButton
+              source="footer"
+              className="focus-ring flex min-h-0 items-center justify-start gap-2 rounded-none p-0 text-left text-sm text-white/75 transition hover:text-white"
+            >
               WhatsApp Business: {phoneNumber}
-            </a>
+            </WhatsAppButton>
             <div className="mt-2 flex items-center gap-3">
               <Image
                 src={whatsappQrImage}

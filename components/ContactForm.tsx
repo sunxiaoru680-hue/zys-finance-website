@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
+import { trackConsultationRequest } from "@/components/analytics";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -11,6 +12,7 @@ export function ContactForm() {
       className="rounded-md border border-line bg-white p-6 shadow-soft"
       onSubmit={(event) => {
         event.preventDefault();
+        trackConsultationRequest("contact_form");
         setSubmitted(true);
       }}
     >

@@ -2,6 +2,9 @@ import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { brandSubtitle } from "@/components/seo";
+import { SocialIcons } from "@/components/SocialIcons";
+import { TrackedLink } from "@/components/TrackedLink";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const headerBrandName = "ZYS Advisory";
 
@@ -110,14 +113,22 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden flex-none items-center gap-4 lg:flex">
+        <div className="hidden flex-none items-center gap-3 lg:flex">
+          <SocialIcons />
+          <WhatsAppButton
+            source="header"
+            className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-sm bg-[#25D366] px-3 py-2 text-xs font-semibold text-white transition hover:brightness-95"
+          >
+            WhatsApp
+          </WhatsAppButton>
           <LanguageSwitcher />
-          <Link
+          <TrackedLink
             href="/contact"
+            source="header_consultation"
             className="focus-ring inline-flex min-h-9 items-center justify-center whitespace-nowrap rounded-sm border border-ink bg-ink px-3.5 py-2 text-xs font-semibold tracking-normal text-white transition hover:border-gold hover:bg-gold hover:text-ink"
           >
             Book a Consultation
-          </Link>
+          </TrackedLink>
         </div>
 
         <details className="group lg:hidden">
@@ -139,13 +150,20 @@ export function Header() {
               <div className="px-3 py-2">
                 <LanguageSwitcher />
               </div>
+              <div className="flex items-center gap-2 px-3 py-2">
+                <SocialIcons showLabel />
+              </div>
+              <div className="px-3 py-2">
+                <WhatsAppButton source="mobile_header" />
+              </div>
               <div className="pt-3">
-                <Link
+                <TrackedLink
                   href="/contact"
+                  source="mobile_header_consultation"
                   className="focus-ring inline-flex min-h-9 items-center justify-center rounded-sm border border-ink bg-ink px-3.5 py-2 text-xs font-semibold text-white"
                 >
                   Book a Consultation
-                </Link>
+                </TrackedLink>
               </div>
             </nav>
           </div>

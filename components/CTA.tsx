@@ -1,6 +1,7 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
-import { emailAddress, whatsappUrl } from "@/components/seo";
+import { emailAddress } from "@/components/seo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export function CTA() {
   return (
@@ -23,15 +24,12 @@ export function CTA() {
           <ButtonLink href="/contact" variant="light">
             Book a Free Consultation
           </ButtonLink>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppButton
+            source="cta"
             className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:bg-paper"
           >
             WhatsApp Us
-            <MessageCircle aria-hidden="true" className="h-4 w-4" />
-          </a>
+          </WhatsAppButton>
           <a
             href={`mailto:${emailAddress}`}
             className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 bg-transparent px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"

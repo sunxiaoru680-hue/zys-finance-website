@@ -1,6 +1,7 @@
-import { CalendarDays, Mail, MessageCircle } from "lucide-react";
+import { CalendarDays, Mail } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
-import { calendlyUrl, emailAddress, whatsappUrl } from "@/components/seo";
+import { calendlyUrl, emailAddress } from "@/components/seo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export function LeadCapture({ title = "Request a consultation", text = "Share your China business objective, ownership structure, tax questions, visa needs, and target timeline. ZYS will outline practical next steps." }) {
   return (
@@ -17,10 +18,12 @@ export function LeadCapture({ title = "Request a consultation", text = "Share yo
             <CalendarDays aria-hidden="true" className="h-4 w-4" />
             Book Meeting
           </a>
-          <a className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            <MessageCircle aria-hidden="true" className="h-4 w-4" />
+          <WhatsAppButton
+            source="lead_capture"
+            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
             WhatsApp
-          </a>
+          </WhatsAppButton>
           <a className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10" href={`mailto:${emailAddress}`}>
             <Mail aria-hidden="true" className="h-4 w-4" />
             Email

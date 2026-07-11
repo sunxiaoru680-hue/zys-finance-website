@@ -19,6 +19,8 @@ import {
   Timer
 } from "lucide-react";
 import { CTA } from "@/components/CTA";
+import { SocialIcons } from "@/components/SocialIcons";
+import { TrackedLink } from "@/components/TrackedLink";
 import {
   companyName,
   createPageMetadata,
@@ -102,6 +104,21 @@ const introServices = [
   "Accounting, bookkeeping, tax and audit support",
   "Work permit, residence permit and visa coordination",
   "Business licenses, trademarks and cross-border formation"
+];
+
+const latestUpdates = [
+  {
+    title: "China market entry guidance",
+    text: "Practical notes on entity setup, tax registration, licenses, and ongoing compliance for international businesses."
+  },
+  {
+    title: "Tax and accounting reminders",
+    text: "Updates can highlight filing calendars, bookkeeping priorities, and documents management teams should prepare."
+  },
+  {
+    title: "Visa and work permit insights",
+    text: "Future posts can cover planning points for foreign founders, employees, and eligible family members."
+  }
 ];
 
 const clientGroups = [
@@ -281,13 +298,14 @@ export default function HomePage() {
               licenses and ongoing advisory.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link
+              <TrackedLink
                 href="/contact"
+                source="home_hero_consultation"
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:bg-paper"
               >
                 Book a Consultation
                 <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </Link>
+              </TrackedLink>
               <Link
                 href="/services"
                 className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/70 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -368,13 +386,14 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <Link
+            <TrackedLink
               href="/contact"
+              source="home_company_intro_consultation"
               className="focus-ring mt-8 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-evergreen px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink"
             >
               Book Consultation
               <ArrowRight aria-hidden="true" className="h-4 w-4" />
-            </Link>
+            </TrackedLink>
           </div>
         </div>
       </section>
@@ -422,6 +441,44 @@ export default function HomePage() {
                 <p className="mt-3 text-sm leading-7 text-graphite">{group.text}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper py-16 md:py-24">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div>
+            <p className="text-sm font-bold uppercase text-evergreen">
+              Follow ZYS Advisory
+            </p>
+            <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
+              Connect with ZYS for business, tax and China market updates.
+            </h2>
+            <p className="mt-5 text-base leading-8 text-graphite">
+              Follow our social channels for practical commentary on company
+              registration, accounting, tax, visas, business licenses and
+              international expansion planning.
+            </p>
+            <SocialIcons className="mt-7" showLabel />
+          </div>
+          <div className="rounded-md border border-line bg-white p-6 shadow-sm md:p-8">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-sm font-bold uppercase text-evergreen">Latest Updates</p>
+                <h3 className="mt-2 text-2xl font-bold text-ink">
+                  Prepared for future Facebook posts.
+                </h3>
+              </div>
+              <p className="text-sm font-semibold text-gold">Facebook feed ready</p>
+            </div>
+            <div className="mt-7 grid gap-4">
+              {latestUpdates.map((update) => (
+                <article key={update.title} className="rounded-md border border-line bg-paper p-5">
+                  <h4 className="font-bold text-ink">{update.title}</h4>
+                  <p className="mt-2 text-sm leading-7 text-graphite">{update.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>

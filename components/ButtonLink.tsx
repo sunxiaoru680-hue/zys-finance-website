@@ -1,16 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { trackConsultationRequest } from "@/components/analytics";
 
 type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "light";
+  trackingSource?: string;
 };
 
 export function ButtonLink({
   href,
   children,
-  variant = "primary"
+  variant = "primary",
+  trackingSource
 }: ButtonLinkProps) {
   const styles = {
     primary:
@@ -24,6 +29,11 @@ export function ButtonLink({
   return (
     <Link
       href={href}
+      onClick={() => {
+        if (href === "/contact" || trackingSource) {
+          trackConsultationRequest(trackingSource || "consultation_button");
+        }
+      }}
       className={`focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border px-5 py-3 text-sm font-semibold transition ${styles[variant]}`}
     >
       {children}
