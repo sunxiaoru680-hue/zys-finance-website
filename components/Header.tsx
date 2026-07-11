@@ -67,7 +67,7 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="focus-ring block px-4 py-2.5 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
+                    className="focus-ring block whitespace-nowrap px-4 py-2.5 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
                   >
                     {item.label}
                   </Link>
@@ -90,7 +90,7 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="focus-ring block px-4 py-2.5 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
+                    className="focus-ring block whitespace-nowrap px-4 py-2.5 text-sm font-medium text-graphite transition hover:bg-paper hover:text-ink"
                   >
                     {item.label}
                   </Link>
