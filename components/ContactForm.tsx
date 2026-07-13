@@ -1,29 +1,80 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Send } from "lucide-react";
 import { trackConsultationRequest } from "@/components/analytics";
 
 export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const router = useRouter();
+  const [submittedAt] = useState(() => Date.now().toString());
+  const [status, setStatus] = useState<"idle" | "submitting" | "error">("idle");
+  const [error, setError] = useState("");
 
   return (
     <form
       className="rounded-md border border-line bg-white p-6 shadow-soft"
-      onSubmit={(event) => {
+      onSubmit={async (event) => {
         event.preventDefault();
-        trackConsultationRequest("contact_form");
-        setSubmitted(true);
+        setStatus("submitting");
+        setError("");
+
+        const formData = new FormData(event.currentTarget);
+        const payload = {
+          firstName: String(formData.get("firstName") || ""),
+          lastName: String(formData.get("lastName") || ""),
+          company: String(formData.get("company") || ""),
+          country: String(formData.get("country") || ""),
+          email: String(formData.get("email") || ""),
+          whatsapp: String(formData.get("whatsapp") || ""),
+          serviceInterested: String(formData.get("serviceInterested") || ""),
+          budget: String(formData.get("budget") || ""),
+          message: String(formData.get("message") || ""),
+          website: String(formData.get("website") || ""),
+          submittedAt
+        };
+
+        try {
+          const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+          });
+          const result = (await response.json()) as { ok?: boolean; error?: string };
+
+          if (!response.ok || !result.ok) {
+            throw new Error(result.error || "Unable to submit the form.");
+          }
+
+          trackConsultationRequest("contact_form");
+          router.push("/contact/thank-you");
+        } catch (submitError) {
+          setStatus("error");
+          setError(submitError instanceof Error ? submitError.message : "Unable to submit the form.");
+        }
       }}
     >
       <div className="grid gap-4 md:grid-cols-2">
         <label className="grid gap-2 text-sm font-semibold text-ink">
-          Full name
+          First Name
           <input
             required
-            name="name"
+            name="firstName"
+            autoComplete="given-name"
             className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
-            placeholder="Your name"
+            placeholder="First name"
+          />
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-ink">
+          Last Name
+          <input
+            required
+            name="lastName"
+            autoComplete="family-name"
+            className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
+            placeholder="Last name"
           />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-ink">
@@ -32,22 +83,43 @@ export function ContactForm() {
             required
             type="email"
             name="email"
+            autoComplete="email"
             className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
             placeholder="name@company.com"
           />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-ink">
-          Mobile / WhatsApp / WeChat / Facebook
+          Company
           <input
-            name="phone"
+            name="company"
+            autoComplete="organization"
             className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
-            placeholder="+86 18055161721 or your preferred contact"
+            placeholder="Company name"
           />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-ink">
-          Service interest
+          Country
+          <input
+            name="country"
+            autoComplete="country-name"
+            className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
+            placeholder="Country or region"
+          />
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-ink">
+          WhatsApp
+          <input
+            name="whatsapp"
+            autoComplete="tel"
+            className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
+            placeholder="+86 18055161721"
+          />
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-ink">
+          Service Interested
           <select
-            name="service"
+            required
+            name="serviceInterested"
             className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
             defaultValue=""
           >
@@ -65,7 +137,27 @@ export function ContactForm() {
             <option>Foreign investment consulting</option>
           </select>
         </label>
+        <label className="grid gap-2 text-sm font-semibold text-ink">
+          Budget
+          <select
+            name="budget"
+            className="focus-ring min-h-11 rounded-md border border-line px-3 font-normal"
+            defaultValue=""
+          >
+            <option value="">Select a budget range</option>
+            <option>Under USD 1,000</option>
+            <option>USD 1,000 - 3,000</option>
+            <option>USD 3,000 - 5,000</option>
+            <option>USD 5,000 - 10,000</option>
+            <option>USD 10,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
       </div>
+      <label className="hidden" aria-hidden="true">
+        Website
+        <input name="website" tabIndex={-1} autoComplete="off" />
+      </label>
       <label className="mt-4 grid gap-2 text-sm font-semibold text-ink">
         Message
         <textarea
@@ -78,14 +170,15 @@ export function ContactForm() {
       </label>
       <button
         type="submit"
+        disabled={status === "submitting"}
         className="focus-ring mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-evergreen bg-evergreen px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink"
       >
         <Send aria-hidden="true" className="h-4 w-4" />
-        Send Inquiry
+        {status === "submitting" ? "Sending..." : "Send Inquiry"}
       </button>
-      {submitted ? (
-        <p className="mt-4 rounded-md bg-paper p-3 text-sm font-medium text-evergreen">
-          Thank you. Your inquiry has been captured locally for this demo. We will reply through your preferred contact channel as soon as possible.
+      {status === "error" ? (
+        <p className="mt-4 rounded-md bg-red-50 p-3 text-sm font-medium text-red-700">
+          {error}
         </p>
       ) : null}
     </form>
