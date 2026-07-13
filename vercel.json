@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/admin/facebook/publish-morning-articles",
-      "schedule": "5 10 13 7 *"
+      "schedule": "20 10 13 7 *"
     },
     {
       "path": "/api/cron/publish-social",
