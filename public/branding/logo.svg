@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ZYS Advisory Logo</title>
+  <desc id="desc">A dark square ZYS Advisory logo with white ZYS lettering and a gold accent border.</desc>
+  <rect x="48" y="48" width="416" height="416" rx="28" fill="#17211f"/>
+  <rect x="72" y="72" width="368" height="368" rx="18" fill="none" stroke="#b99145" stroke-width="8" opacity="0.92"/>
+  <text x="256" y="292" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="138" font-weight="900" letter-spacing="2">ZYS</text>
+</svg>
