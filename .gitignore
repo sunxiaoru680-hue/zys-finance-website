@@ -20,6 +20,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# local automation state
+data/
+
 # OS/editor
 .DS_Store
 *.swp

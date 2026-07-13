@@ -26,7 +26,7 @@ The first run upgrades two existing URLs instead of creating duplicate posts:
 
 ## Syndication
 
-External automation tools should use:
+External automation tools can use:
 
 `https://www.zysadvisory.com/rss.xml`
 
@@ -34,4 +34,4 @@ The RSS feed includes article title, canonical URL, summary, publication date, a
 
 ## Facebook post templates
 
-Templates for approved articles are stored in `lib/editorialArticles.ts` under `facebookPost`. They are not automatically posted by the website. Use them in Make, Zapier or Buffer only after review and approval.
+Templates for approved editorial articles are stored in `lib/editorialArticles.ts` under `facebookPost`. The site also includes a secure Facebook Pages API publishing workflow documented in `docs/facebook-auto-publishing.md`. Use dry-run mode to review the exact post before enabling real Page publishing.
