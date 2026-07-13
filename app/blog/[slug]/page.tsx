@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
 import { articleSchema, companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, siteUrl, StructuredData } from "@/components/seo";
-import { articleCanonicalUrl, articleFaqs, articleFeaturedImageUrl, blogArticles, breadcrumbSchema, getArticleBySlug } from "@/lib/content";
+import { articleCanonicalUrl, articleFaqs, articleFeaturedImageUrl, blogArticles, breadcrumbSchema, getArticleBySlug, servicePages } from "@/lib/content";
 import { cityLinkForArticle, relatedBlogLinksForArticle, relatedServiceLinksForArticle } from "@/lib/internalLinks";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const baseMetadata = createPageMetadata({
-    title: `${article.title} | ${article.category}`,
+    title: article.metaTitle || `${article.title} | ${article.category}`,
     description: article.description,
     keywords: [article.keyword, article.category, "China Company Registration", "China WFOE Registration", "China Accounting Service", "China Tax Filing", "China VAT", "China Payroll Service", "China Tax Advisory", "Foreign Investment China"],
     path: `/blog/${article.slug}`
@@ -84,9 +84,15 @@ const pillars = [
 ];
 
 function articleSections(article: NonNullable<ReturnType<typeof getArticleBySlug>>) {
+  if (article.sections?.length) {
+    return article.sections;
+  }
+
   return pillars.map((pillar, index) => ({
     heading: `${index + 1}. ${pillar}`,
-    body: `${article.title} should be reviewed in the context of the company's commercial purpose, target city, ownership chain, contract model, hiring plan, invoicing needs, overseas payment requirements, and filing calendar. Requirements may differ by city, business activity, and document readiness, so ZYS recommends confirming assumptions before submitting filings or making tax, accounting, visa, or licensing decisions.`
+    paragraphs: [
+      `${article.title} should be reviewed in the context of the company's commercial purpose, target city, ownership chain, contract model, hiring plan, invoicing needs, overseas payment requirements, and filing calendar. Requirements may differ by city, business activity, and document readiness, so ZYS recommends confirming assumptions before submitting filings or making tax, accounting, visa, or licensing decisions.`
+    ]
   }));
 }
 
@@ -99,9 +105,22 @@ export default async function BlogArticlePage({ params }: Props) {
   }
 
   const faqs = articleFaqs(article);
-  const relatedServices = relatedServiceLinksForArticle(article, 3);
+  const curatedServices = article.relatedServiceHrefs
+    ?.map((href) => {
+      const slug = href.replace("/services/", "");
+      const service = servicePages.find((item) => item.slug === slug);
+      return service ? { href, label: service.title } : null;
+    })
+    .filter((item): item is { href: string; label: string } => Boolean(item));
+  const relatedServices = curatedServices?.length ? curatedServices : relatedServiceLinksForArticle(article, 3);
   const cityLink = cityLinkForArticle(article);
-  const related = relatedBlogLinksForArticle(article, 2);
+  const curatedRelated = article.relatedArticleSlugs
+    ?.map((relatedSlug) => {
+      const relatedArticle = getArticleBySlug(relatedSlug);
+      return relatedArticle ? { href: `/blog/${relatedArticle.slug}`, label: relatedArticle.title } : null;
+    })
+    .filter((item): item is { href: string; label: string } => Boolean(item));
+  const related = curatedRelated?.length ? curatedRelated : relatedBlogLinksForArticle(article, 2);
   const breadcrumbs = [
     { name: "Home", path: "/" },
     { name: "Blog", path: "/blog" },
@@ -120,6 +139,11 @@ export default async function BlogArticlePage({ params }: Props) {
             <p className="text-sm font-bold uppercase text-evergreen">{article.category}</p>
             <h1 className="mt-4 text-4xl font-bold leading-tight text-ink md:text-6xl">{article.title}</h1>
             <p className="mt-6 text-lg leading-8 text-graphite">{article.description}</p>
+            {article.summary ? (
+              <p className="mt-5 rounded-md border border-line bg-paper p-5 text-base leading-8 text-graphite">
+                {article.summary}
+              </p>
+            ) : null}
             <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-graphite">
               <span>By {article.author}</span>
               <span>Reviewed by {article.reviewedBy}</span>
@@ -163,10 +187,11 @@ export default async function BlogArticlePage({ params }: Props) {
               {articleSections(article).map((section) => (
                 <section key={section.heading} className="rounded-md border border-line bg-white p-7 shadow-sm">
                   <h2 className="text-2xl font-bold text-ink">{section.heading}</h2>
-                  <p className="mt-4 text-base leading-8 text-graphite">{section.body}</p>
-                  <h3 className="mt-5 text-lg font-bold text-ink">What decision makers should verify</h3>
-                  <p className="mt-3 text-base leading-8 text-graphite">Before acting on {article.keyword}, confirm the business scope, licensing exposure, tax filing calendar, invoice model, payroll obligations, banking path, responsible contact person, and document availability.</p>
-                  <p className="mt-4 text-base leading-8 text-graphite">For deeper planning, connect this topic with the right service scope, city choice, license review, and monthly accounting workflow before documents are submitted.</p>
+                  {section.paragraphs.map((paragraph) => (
+                    <p key={paragraph} className="mt-4 text-base leading-8 text-graphite">
+                      {paragraph}
+                    </p>
+                  ))}
                 </section>
               ))}
             </div>

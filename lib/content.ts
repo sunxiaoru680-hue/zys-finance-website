@@ -1,4 +1,5 @@
 import { siteUrl } from "@/components/seo";
+import { editorialArticles, type EditorialFaq, type EditorialSection } from "@/lib/editorialArticles";
 
 export type ServicePage = {
   slug: string;
@@ -34,8 +35,10 @@ export const servicePages: ServicePage[] = [
 export type BlogArticle = {
   slug: string;
   title: string;
+  metaTitle?: string;
   keyword: string;
   description: string;
+  summary?: string;
   published: string;
   author: string;
   reviewedBy: string;
@@ -44,6 +47,11 @@ export type BlogArticle = {
   imageAlt: string;
   featuredImage: string;
   readingTime: string;
+  sections?: EditorialSection[];
+  faqs?: EditorialFaq[];
+  relatedServiceHrefs?: string[];
+  relatedArticleSlugs?: string[];
+  facebookPost?: string;
 };
 
 const blogTitles = [
@@ -255,7 +263,7 @@ function byPublishedDateDesc(a: BlogArticle, b: BlogArticle) {
   return new Date(b.published).getTime() - new Date(a.published).getTime();
 }
 
-export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
+const generatedBlogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   slug: title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
   title,
   keyword: title.includes("China") ? title : `${title} China`,
@@ -268,7 +276,25 @@ export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   imageAlt: articleImageAlt(title, title.includes("China") ? title : `${title} China`),
   featuredImage: `/blog/${title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}/opengraph-image`,
   readingTime: articleReadingTime(title)
-})).sort(byPublishedDateDesc);
+}));
+
+const editorialBySlug = new Map(editorialArticles.map((article) => [article.slug, article]));
+
+export const blogArticles: BlogArticle[] = generatedBlogArticles.map((article) => {
+  const editorial = editorialBySlug.get(article.slug);
+
+  if (!editorial) {
+    return article;
+  }
+
+  return {
+    ...article,
+    ...editorial,
+    author: "ZYS Advisory Editorial Team",
+    reviewedBy: "ZYS Advisory Compliance Review",
+    featuredImage: `/blog/${editorial.slug}/opengraph-image`
+  };
+}).sort(byPublishedDateDesc);
 
 export function articleCanonicalUrl(article: BlogArticle) {
   return `${siteUrl}/blog/${article.slug}`;
@@ -313,6 +339,10 @@ export function serviceFaqs(service: ServicePage) {
 }
 
 export function articleFaqs(article: BlogArticle) {
+  if (article.faqs?.length) {
+    return article.faqs;
+  }
+
   return [
     { question: `Is ${article.title} relevant for foreign investors?`, answer: `Yes. ${article.title} is written for foreign investors and international SMEs that need practical China market-entry, accounting, tax, visa, and compliance guidance.` },
     { question: `Does ZYS provide advisory support for ${article.keyword}?`, answer: `Yes. ZYS supports registration, accounting, tax, licensing, payroll, visa, audit preparation, and cross-border planning matters connected with this topic.` },

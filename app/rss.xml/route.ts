@@ -36,6 +36,7 @@ export function GET() {
       <guid isPermaLink="true">${escapeXml(canonical)}</guid>
       <pubDate>${rfc822Date(article.published)}</pubDate>
       <author>${escapeXml(emailAddress)} (${escapeXml(article.author)})</author>
+      <dc:creator>${escapeXml(article.author)}</dc:creator>
       <category>${escapeXml(article.category)}</category>
       <media:content url="${escapeXml(featuredImage)}" medium="image" width="1200" height="630" />
       <media:thumbnail url="${escapeXml(featuredImage)}" width="1200" height="630" />
@@ -46,6 +47,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>${escapeXml(companyName)} Insights</title>
