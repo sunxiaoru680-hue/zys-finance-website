@@ -44,7 +44,7 @@ export function SocialIcons({ className = "", tone = "dark", showLabel = false }
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Follow ZYS Advisory on ${link.label}`}
+          aria-label={link.label === "Facebook" ? "Visit our Facebook Page" : `Follow ZYS Advisory on ${link.label}`}
           className={`focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-sm border px-2.5 text-sm font-semibold transition ${baseClass}`}
           onClick={() => trackSocialClick(link.label.toLowerCase(), "social_icons")}
         >

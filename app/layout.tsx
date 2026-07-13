@@ -12,6 +12,8 @@ import {
   brandSubtitle,
   coreKeywords,
   ogImage,
+  socialSharingDescription,
+  socialSharingTitle,
   gaId,
   gtmId,
   localBusinessSchema,
@@ -44,11 +46,10 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: `${companyName} | ${brandSubtitle}`,
-    description:
-      "Professional China company registration, accounting, tax advisory, visa, licensing, audit, and China business advisory for foreign investors and global businesses.",
+    title: socialSharingTitle,
+    description: socialSharingDescription,
     url: siteUrl,
-    siteName: companyName,
+    siteName: "ZYS Advisory",
     type: "website",
     locale: "en_US",
     images: [
@@ -62,9 +63,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${companyName} | ${brandSubtitle}`,
-    description:
-      "China company registration, accounting, tax advisory, work visa, business license, audit, and overseas registration support for international clients.",
+    title: socialSharingTitle,
+    description: socialSharingDescription,
     images: [ogImage]
   },
   robots: {
