@@ -42,6 +42,7 @@ export type BlogArticle = {
   updated: string;
   category: string;
   imageAlt: string;
+  featuredImage: string;
   readingTime: string;
 };
 
@@ -265,8 +266,17 @@ export const blogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   updated: "2026-07-03",
   category: articleCategory(title),
   imageAlt: articleImageAlt(title, title.includes("China") ? title : `${title} China`),
+  featuredImage: `/blog/${title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}/opengraph-image`,
   readingTime: articleReadingTime(title)
 })).sort(byPublishedDateDesc);
+
+export function articleCanonicalUrl(article: BlogArticle) {
+  return `${siteUrl}/blog/${article.slug}`;
+}
+
+export function articleFeaturedImageUrl(article: BlogArticle) {
+  return `${siteUrl}${article.featuredImage}`;
+}
 
 export function getServiceBySlug(slug: string) {
   return servicePages.find((service) => service.slug === slug);

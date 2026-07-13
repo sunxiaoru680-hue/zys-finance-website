@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { createPageMetadata, StructuredData } from "@/components/seo";
+import { createPageMetadata, siteUrl, StructuredData } from "@/components/seo";
 import { blogArticles, breadcrumbSchema } from "@/lib/content";
 
-export const metadata: Metadata = createPageMetadata({
+const baseMetadata = createPageMetadata({
   title: "China Business, Tax, Accounting and Company Registration Insights",
   description: "Read ZYS Advisory insights on China company registration, business licenses, accounting, bookkeeping, tax filing, payroll, work permits, visas, audit preparation, and cross-border company setup.",
   keywords: ["China Company Registration blog", "China WFOE registration", "China Accounting guide", "China tax filing", "China VAT", "China payroll service", "China Tax Consultant insights", "Foreign Investment China", "Hong Kong company registration", "Singapore company registration"],
   path: "/blog"
 });
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  alternates: {
+    canonical: `${siteUrl}/blog`,
+    types: {
+      "application/rss+xml": `${siteUrl}/rss.xml`
+    }
+  }
+};
 
 export default function BlogPage() {
   return (
@@ -26,14 +37,24 @@ export default function BlogPage() {
       <section className="py-16 md:py-24">
         <div className="container-shell grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {blogArticles.map((article) => (
-            <Link key={article.slug} href={`/blog/${article.slug}`} className="focus-ring rounded-md border border-line bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
-              <p className="text-xs font-bold uppercase text-gold">{article.category} | {article.readingTime}</p>
-              <h2 className="mt-3 text-xl font-bold text-ink">{article.title}</h2>
-              <p className="mt-3 text-sm leading-7 text-graphite">{article.description}</p>
-              <p className="mt-4 text-xs leading-6 text-graphite">
-                By {article.author} | Reviewed by {article.reviewedBy} | Published {article.published} | Updated {article.updated}
-              </p>
-              <p className="mt-5 text-sm font-bold text-evergreen">Read article</p>
+            <Link key={article.slug} href={`/blog/${article.slug}`} className="focus-ring overflow-hidden rounded-md border border-line bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+              <Image
+                src={article.featuredImage}
+                alt={article.imageAlt}
+                width={1200}
+                height={630}
+                className="aspect-[1200/630] w-full object-cover"
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, calc(100vw - 32px)"
+              />
+              <div className="p-6">
+                <p className="text-xs font-bold uppercase text-gold">{article.category} | {article.readingTime}</p>
+                <h2 className="mt-3 text-xl font-bold text-ink">{article.title}</h2>
+                <p className="mt-3 text-sm leading-7 text-graphite">{article.description}</p>
+                <p className="mt-4 text-xs leading-6 text-graphite">
+                  By {article.author} | Reviewed by {article.reviewedBy} | Published {article.published} | Updated {article.updated}
+                </p>
+                <p className="mt-5 text-sm font-bold text-evergreen">Read article</p>
+              </div>
             </Link>
           ))}
         </div>

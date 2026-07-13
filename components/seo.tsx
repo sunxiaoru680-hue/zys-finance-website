@@ -207,10 +207,19 @@ export function localBusinessSchema() {
   };
 }
 
-export function articleSchema(article: { title: string; description: string; published: string; updated: string; author: string; reviewedBy?: string; slug: string; keyword: string; category: string; imageAlt: string }) {
+export function articleSchema(article: { title: string; description: string; published: string; updated: string; author: string; reviewedBy?: string; slug: string; keyword: string; category: string; imageAlt: string; featuredImage?: string }) {
+  const articleUrl = `${siteUrl}/blog/${article.slug}`;
+  const imageUrl = article.featuredImage?.startsWith("http")
+    ? article.featuredImage
+    : `${siteUrl}${article.featuredImage || ogImage}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl
+    },
     headline: article.title,
     description: article.description,
     datePublished: article.published,
@@ -219,7 +228,9 @@ export function articleSchema(article: { title: string; description: string; pub
     keywords: [article.keyword, ...coreKeywords],
     image: {
       "@type": "ImageObject",
-      url: `${siteUrl}${ogImage}`,
+      url: imageUrl,
+      width: 1200,
+      height: 630,
       caption: article.imageAlt
     },
     author: {
@@ -244,7 +255,6 @@ export function articleSchema(article: { title: string; description: string; pub
         "@type": "ImageObject",
         url: `${siteUrl}${ogImage}`
       }
-    },
-    mainEntityOfPage: `${siteUrl}/blog/${article.slug}`
+    }
   };
 }

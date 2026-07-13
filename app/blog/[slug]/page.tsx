@@ -4,8 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
-import { articleSchema, companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, StructuredData } from "@/components/seo";
-import { articleFaqs, blogArticles, breadcrumbSchema, getArticleBySlug } from "@/lib/content";
+import { articleSchema, companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, siteUrl, StructuredData } from "@/components/seo";
+import { articleCanonicalUrl, articleFaqs, articleFeaturedImageUrl, blogArticles, breadcrumbSchema, getArticleBySlug } from "@/lib/content";
 import { cityLinkForArticle, relatedBlogLinksForArticle, relatedServiceLinksForArticle } from "@/lib/internalLinks";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -22,12 +22,58 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  return createPageMetadata({
+  const baseMetadata = createPageMetadata({
     title: `${article.title} | ${article.category}`,
     description: article.description,
     keywords: [article.keyword, article.category, "China Company Registration", "China WFOE Registration", "China Accounting Service", "China Tax Filing", "China VAT", "China Payroll Service", "China Tax Advisory", "Foreign Investment China"],
     path: `/blog/${article.slug}`
   });
+  const canonical = articleCanonicalUrl(article);
+  const featuredImage = articleFeaturedImageUrl(article);
+
+  return {
+    ...baseMetadata,
+    authors: [{ name: article.author }],
+    publisher: companyName,
+    alternates: {
+      canonical,
+      types: {
+        "application/rss+xml": `${siteUrl}/rss.xml`
+      }
+    },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: canonical,
+      siteName: companyName,
+      type: "article",
+      locale: "en_US",
+      publishedTime: article.published,
+      modifiedTime: article.updated,
+      authors: [article.author],
+      section: article.category,
+      images: [
+        {
+          url: featuredImage,
+          width: 1200,
+          height: 630,
+          alt: article.imageAlt
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [featuredImage]
+    },
+    other: {
+      "article:author": article.author,
+      "article:published_time": article.published,
+      "article:modified_time": article.updated,
+      "article:section": article.category
+    }
+  };
 }
 
 const pillars = [
@@ -88,7 +134,7 @@ export default async function BlogArticlePage({ params }: Props) {
             <div className="space-y-8">
               <figure className="overflow-hidden rounded-md border border-line bg-white shadow-sm">
                 <Image
-                  src="/images/global-finance-consulting-hero.png"
+                  src={article.featuredImage}
                   alt={article.imageAlt}
                   width={1200}
                   height={630}

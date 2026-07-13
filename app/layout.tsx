@@ -38,7 +38,10 @@ export const metadata: Metadata = {
     "foreign investment consulting China"
   ],
   alternates: {
-    canonical: siteUrl
+    canonical: siteUrl,
+    types: {
+      "application/rss+xml": `${siteUrl}/rss.xml`
+    }
   },
   openGraph: {
     title: `${companyName} | ${brandSubtitle}`,
