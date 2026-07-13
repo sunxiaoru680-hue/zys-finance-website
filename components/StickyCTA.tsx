@@ -1,7 +1,7 @@
 "use client";
 
 import { CalendarDays, Mail, MessageCircle } from "lucide-react";
-import { calendlyUrl, emailAddress, whatsappUrl } from "@/components/seo";
+import { calendlyUrl, emailMailto, whatsappUrl } from "@/components/seo";
 import { trackConsultationRequest, trackWhatsAppClick } from "@/components/analytics";
 
 export function StickyCTA() {
@@ -16,7 +16,7 @@ export function StickyCTA() {
           <MessageCircle aria-hidden="true" className="h-4 w-4" />
           WhatsApp
         </a>
-        <a className="focus-ring flex min-h-11 items-center justify-center gap-1 rounded-md border border-line px-2 text-ink" href={`mailto:${emailAddress}`}>
+        <a className="focus-ring flex min-h-11 items-center justify-center gap-1 rounded-md border border-line px-2 text-ink" href={emailMailto}>
           <Mail aria-hidden="true" className="h-4 w-4" />
           Email
         </a>

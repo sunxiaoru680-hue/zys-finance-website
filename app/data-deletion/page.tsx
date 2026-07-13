@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { createPageMetadata, companyName, emailAddress } from "@/components/seo";
+import { createPageMetadata, companyName, emailAddress, emailMailto } from "@/components/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Data Deletion Request | ZYS Advisory",
@@ -69,7 +69,7 @@ export default function Page() {
           <article className="rounded-md border border-gold bg-white p-7 shadow-sm">
             <h2 className="text-2xl font-bold text-ink">Request by email</h2>
             <p className="mt-4 text-base leading-8 text-graphite">
-              Email <a className="font-semibold text-evergreen underline" href={`mailto:${emailAddress}?subject=Data%20Deletion%20Request`}>{emailAddress}</a> with your request details. Please do not send identity documents unless ZYS specifically asks for verification.
+              Email <a className="font-semibold text-evergreen underline" href={`${emailMailto}?subject=Data%20Deletion%20Request`}>{emailAddress}</a> with your request details. Please do not send identity documents unless ZYS specifically asks for verification.
             </p>
           </article>
         </div>

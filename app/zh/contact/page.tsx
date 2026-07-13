@@ -6,6 +6,7 @@ import {
   businessHours,
   companyName,
   emailAddress,
+  emailMailto,
   officeAddress,
   phoneNumber,
   siteUrl,
@@ -44,7 +45,7 @@ const contactDetails = [
   {
     label: "Email",
     value: emailAddress,
-    href: `mailto:${emailAddress}`,
+    href: emailMailto,
     icon: Mail
   },
   {
@@ -85,7 +86,7 @@ export default function ZhContactPage() {
               WhatsApp 联系
             </WhatsAppButton>
             <a
-              href={`mailto:${emailAddress}`}
+              href={emailMailto}
               className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
               <Mail aria-hidden="true" className="h-4 w-4" />

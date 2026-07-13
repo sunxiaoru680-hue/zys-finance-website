@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "@/components/siteData";
-import { businessHours, companyName, contactChannels, emailAddress, location, phoneNumber, whatsappQrAlt, whatsappQrImage } from "@/components/seo";
+import { businessHours, companyName, contactChannels, emailAddress, emailMailto, location, phoneNumber, whatsappQrAlt, whatsappQrImage } from "@/components/seo";
 import { SocialIcons } from "@/components/SocialIcons";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
@@ -68,7 +68,7 @@ export function Footer() {
               </p>
             </div>
             <p>Other channels: {contactChannels.replace("WhatsApp, ", "")}</p>
-            <a href={`mailto:${emailAddress}`} className="flex items-center gap-2 hover:text-white">
+            <a href={emailMailto} className="flex items-center gap-2 hover:text-white">
               <Mail aria-hidden="true" className="h-4 w-4" />
               {emailAddress}
             </a>

@@ -1,6 +1,6 @@
 import { CalendarDays, Mail } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
-import { calendlyUrl, emailAddress } from "@/components/seo";
+import { calendlyUrl, emailMailto } from "@/components/seo";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export function LeadCapture({ title = "Request a consultation", text = "Share your China business objective, ownership structure, tax questions, visa needs, and target timeline. ZYS will outline practical next steps." }) {
@@ -24,7 +24,7 @@ export function LeadCapture({ title = "Request a consultation", text = "Share yo
           >
             WhatsApp
           </WhatsAppButton>
-          <a className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10" href={`mailto:${emailAddress}`}>
+          <a className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10" href={emailMailto}>
             <Mail aria-hidden="true" className="h-4 w-4" />
             Email
           </a>

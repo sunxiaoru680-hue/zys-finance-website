@@ -1,6 +1,6 @@
 import { Mail } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
-import { emailAddress } from "@/components/seo";
+import { emailMailto } from "@/components/seo";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export function CTA() {
@@ -31,7 +31,7 @@ export function CTA() {
             WhatsApp Us
           </WhatsAppButton>
           <a
-            href={`mailto:${emailAddress}`}
+            href={emailMailto}
             className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/60 bg-transparent px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
           >
             Email Us

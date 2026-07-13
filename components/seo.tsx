@@ -6,6 +6,7 @@ export const brandSubtitle = "China Business & Tax Advisory";
 export const phoneNumber = "+86 18055161721";
 export const whatsappNumber = "8618055161721";
 export const emailAddress = "info@zysadvisory.com";
+export const emailMailto = "mailto:info@zysadvisory.com";
 export const contactChannels = "WhatsApp, WeChat, Facebook";
 export const location = "Nanjing, Jiangsu, China";
 export const officeAddress = "Nanjing, Jiangsu, China";

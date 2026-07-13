@@ -10,6 +10,7 @@ import {
   companyName,
   createPageMetadata,
   emailAddress,
+  emailMailto,
   officeAddress,
   phoneNumber,
   siteUrl,
@@ -52,7 +53,7 @@ const contactDetails = [
   {
     label: "Email",
     value: emailAddress,
-    href: `mailto:${emailAddress}`,
+    href: emailMailto,
     icon: Mail
   },
   {
