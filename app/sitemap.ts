@@ -22,6 +22,7 @@ const staticRoutes = [
   "/rss.xml",
   "/contact",
   "/privacy-policy",
+  "/data-deletion",
   "/cookie-policy",
   "/professional-disclaimer",
   "/terms"

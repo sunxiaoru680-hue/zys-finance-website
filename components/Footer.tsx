@@ -8,6 +8,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const legalLinks = [
   { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/data-deletion", label: "Data Deletion" },
   { href: "/cookie-policy", label: "Cookie Policy" },
   { href: "/terms", label: "Terms of Use" },
   { href: "/professional-disclaimer", label: "Professional Disclaimer" }
