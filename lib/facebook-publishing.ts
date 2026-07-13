@@ -19,7 +19,7 @@ type PublishStore = {
   get(slug: string): Promise<FacebookPublishRecord | null>;
   set(record: FacebookPublishRecord): Promise<void>;
   list(): Promise<FacebookPublishRecord[]>;
-  mode: "kv" | "file";
+  mode: "kv" | "file" | "none";
 };
 
 export type FacebookPostPreview = {
@@ -40,6 +40,25 @@ type FacebookApiResponse = {
     error_subcode?: number;
     fbtrace_id?: string;
   };
+};
+
+type FacebookFeedSearchResponse = {
+  data?: Array<{
+    id?: string;
+    message?: string;
+    created_time?: string;
+    permalink_url?: string;
+    attachments?: {
+      data?: Array<{
+        url?: string;
+        unshimmed_url?: string;
+        target?: {
+          url?: string;
+        };
+      }>;
+    };
+  }>;
+  error?: FacebookApiResponse["error"];
 };
 
 const defaultAutoPublishAfter = "2026-07-13";
@@ -231,6 +250,19 @@ function createFileStore(): PublishStore {
   };
 }
 
+function createNoopStore(): PublishStore {
+  return {
+    mode: "none",
+    async get() {
+      return null;
+    },
+    async set() {},
+    async list() {
+      return [];
+    }
+  };
+}
+
 export function createPublishStore() {
   const { kvRestApiUrl, kvRestApiToken } = getFacebookPublishConfig();
 
@@ -238,14 +270,11 @@ export function createPublishStore() {
     return createKvStore();
   }
 
-  return createFileStore();
-}
-
-export function assertProductionStoreConfigured() {
-  const { kvRestApiUrl, kvRestApiToken } = getFacebookPublishConfig();
-  if (process.env.VERCEL === "1" && (!kvRestApiUrl || !kvRestApiToken)) {
-    throw new Error("Configure KV_REST_API_URL and KV_REST_API_TOKEN for persistent duplicate prevention on Vercel.");
+  if (process.env.VERCEL === "1") {
+    return createNoopStore();
   }
+
+  return createFileStore();
 }
 
 export async function publishArticleToFacebook(article: BlogArticle) {
@@ -288,6 +317,47 @@ export async function publishArticleToFacebook(article: BlogArticle) {
   };
 }
 
+function postIncludesCanonicalUrl(post: NonNullable<FacebookFeedSearchResponse["data"]>[number], canonicalUrl: string) {
+  const candidates = [
+    post.message,
+    post.permalink_url,
+    ...(post.attachments?.data || []).flatMap((attachment) => [
+      attachment.url,
+      attachment.unshimmed_url,
+      attachment.target?.url
+    ])
+  ].filter(Boolean);
+
+  return candidates.some((candidate) => candidate?.includes(canonicalUrl));
+}
+
+export async function findFacebookPostByCanonicalUrl(canonicalUrl: string) {
+  const config = getFacebookPublishConfig();
+
+  if (!config.pageId || !config.pageAccessToken) {
+    return null;
+  }
+
+  const endpoint = new URL(
+    `https://graph.facebook.com/${config.graphApiVersion}/${encodeURIComponent(config.pageId)}/posts`
+  );
+  endpoint.searchParams.set("fields", "id,message,created_time,permalink_url,attachments{url,unshimmed_url,target}");
+  endpoint.searchParams.set("limit", "50");
+  endpoint.searchParams.set("access_token", config.pageAccessToken);
+
+  const response = await fetch(endpoint, { cache: "no-store" });
+  const data = (await response.json()) as FacebookFeedSearchResponse;
+
+  if (!response.ok || data.error) {
+    const details = data.error
+      ? `${data.error.message || "Facebook API error"}${data.error.code ? ` (code ${data.error.code})` : ""}`
+      : `Facebook API request failed with status ${response.status}`;
+    throw new Error(redactSecret(details));
+  }
+
+  return (data.data || []).find((post) => post.id && postIncludesCanonicalUrl(post, canonicalUrl)) || null;
+}
+
 export async function getArticlePreviewBySlug(slug: string) {
   const article = getArticleBySlug(slug);
 
@@ -320,6 +390,28 @@ export async function publishSlugToFacebook(slug: string, options: { dryRun?: bo
     };
   }
 
+  const facebookPost = await findFacebookPostByCanonicalUrl(preview.canonicalUrl);
+  if (facebookPost?.id && !options.force) {
+    const record: FacebookPublishRecord = {
+      slug: article.slug,
+      canonicalUrl: preview.canonicalUrl,
+      publicationDate: article.published,
+      facebookPostId: facebookPost.id,
+      facebookPublishedAt: facebookPost.created_time,
+      status: "published",
+      updatedAt: new Date().toISOString()
+    };
+    await store.set(record);
+
+    return {
+      status: "skipped" as const,
+      reason: "Article was already published to Facebook.",
+      existing: record,
+      preview,
+      storeMode: store.mode
+    };
+  }
+
   if (options.dryRun) {
     return {
       status: "dry-run" as const,
@@ -328,8 +420,6 @@ export async function publishSlugToFacebook(slug: string, options: { dryRun?: bo
       storeMode: store.mode
     };
   }
-
-  assertProductionStoreConfigured();
 
   try {
     const result = await publishArticleToFacebook(article);
@@ -383,17 +473,19 @@ export async function getFacebookPublishRecords(slugs: string[]) {
   const store = createPublishStore();
   const records = await store.list();
 
-  return slugs.map((slug) => {
+  return Promise.all(slugs.map(async (slug) => {
     const article = getArticleBySlug(slug);
     const record = records.find((entry) => entry.slug === slug) || null;
+    const canonicalUrl = article ? articleCanonicalUrl(article) : "";
+    const facebookPost = !record && canonicalUrl ? await findFacebookPostByCanonicalUrl(canonicalUrl) : null;
 
     return {
       slug,
-      canonicalUrl: article ? articleCanonicalUrl(article) : "",
-      status: record?.status || "not-recorded",
-      facebookPostId: record?.facebookPostId,
-      facebookPublishedAt: record?.facebookPublishedAt,
+      canonicalUrl,
+      status: record?.status || (facebookPost ? "published" : "not-recorded"),
+      facebookPostId: record?.facebookPostId || facebookPost?.id,
+      facebookPublishedAt: record?.facebookPublishedAt || facebookPost?.created_time,
       errorMessage: record?.errorMessage
     };
-  });
+  }));
 }
