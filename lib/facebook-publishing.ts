@@ -45,6 +45,10 @@ type FacebookApiResponse = {
 const defaultAutoPublishAfter = "2026-07-13";
 const defaultGraphApiVersion = "v20.0";
 const publishStoreKey = "zys:facebook:published-articles";
+export const morningFacebookArticleSlugs = [
+  "how-to-register-a-company-in-china",
+  "wfoe-registration-guide"
+];
 
 export function getFacebookPublishConfig() {
   return {
@@ -373,4 +377,23 @@ export async function findPendingFacebookArticles(options: { includeBackfill?: b
     .filter((article) => isEligibleForCron(article, options.includeBackfill))
     .filter((article) => !postedSlugs.has(article.slug))
     .sort((a, b) => new Date(a.published).getTime() - new Date(b.published).getTime());
+}
+
+export async function getFacebookPublishRecords(slugs: string[]) {
+  const store = createPublishStore();
+  const records = await store.list();
+
+  return slugs.map((slug) => {
+    const article = getArticleBySlug(slug);
+    const record = records.find((entry) => entry.slug === slug) || null;
+
+    return {
+      slug,
+      canonicalUrl: article ? articleCanonicalUrl(article) : "",
+      status: record?.status || "not-recorded",
+      facebookPostId: record?.facebookPostId,
+      facebookPublishedAt: record?.facebookPublishedAt,
+      errorMessage: record?.errorMessage
+    };
+  });
 }
