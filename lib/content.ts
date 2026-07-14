@@ -279,8 +279,9 @@ const generatedBlogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
 }));
 
 const editorialBySlug = new Map(editorialArticles.map((article) => [article.slug, article]));
+const generatedSlugs = new Set(generatedBlogArticles.map((article) => article.slug));
 
-export const blogArticles: BlogArticle[] = generatedBlogArticles.map((article) => {
+const generatedWithEditorialArticles: BlogArticle[] = generatedBlogArticles.map((article) => {
   const editorial = editorialBySlug.get(article.slug);
 
   if (!editorial) {
@@ -294,7 +295,18 @@ export const blogArticles: BlogArticle[] = generatedBlogArticles.map((article) =
     reviewedBy: "ZYS Advisory Compliance Review",
     featuredImage: `/blog/${editorial.slug}/opengraph-image`
   };
-}).sort(byPublishedDateDesc);
+});
+
+const editorialOnlyArticles: BlogArticle[] = editorialArticles
+  .filter((article) => !generatedSlugs.has(article.slug))
+  .map((article) => ({
+    ...article,
+    author: "ZYS Advisory Editorial Team",
+    reviewedBy: "ZYS Advisory Compliance Review",
+    featuredImage: `/blog/${article.slug}/opengraph-image`
+  }));
+
+export const blogArticles: BlogArticle[] = [...generatedWithEditorialArticles, ...editorialOnlyArticles].sort(byPublishedDateDesc);
 
 export function articleCanonicalUrl(article: BlogArticle) {
   return `${siteUrl}/blog/${article.slug}`;
