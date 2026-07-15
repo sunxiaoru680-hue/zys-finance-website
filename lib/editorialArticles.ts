@@ -8,6 +8,10 @@ export type EditorialFaq = {
 export type EditorialSection = {
   heading: string;
   paragraphs: string[];
+  subsections?: {
+    heading: string;
+    paragraphs: string[];
+  }[];
 };
 
 export type EditorialArticle = {
@@ -52,6 +56,7 @@ export const editorialArticles: EditorialArticle[] = [
       "/services/tax-consulting"
     ],
     relatedArticleSlugs: [
+      "how-to-register-foreign-owned-company-in-china-2026",
       "china-company-registration-timeline",
       "china-company-formation-checklist",
       "china-business-scope-planning"
@@ -187,6 +192,7 @@ ${siteUrl}/blog/how-to-register-a-company-in-china
       "/services/tax-consulting"
     ],
     relatedArticleSlugs: [
+      "how-to-register-foreign-owned-company-in-china-2026",
       "wfoe-vs-representative-office-in-china",
       "china-representative-office-vs-wfoe",
       "foreign-invested-enterprise-setup"
@@ -330,6 +336,7 @@ ${siteUrl}/blog/wfoe-registration-guide
       "/services/accounting-services"
     ],
     relatedArticleSlugs: [
+      "how-to-register-foreign-owned-company-in-china-2026",
       "how-to-register-a-company-in-china",
       "wfoe-registration-guide",
       "china-company-registration-documents-checklist"
@@ -464,6 +471,7 @@ ${siteUrl}/blog/representative-office-vs-wfoe-in-china
       "/services/tax-consulting"
     ],
     relatedArticleSlugs: [
+      "how-to-register-foreign-owned-company-in-china-2026",
       "how-to-register-a-company-in-china",
       "wfoe-registration-guide",
       "representative-office-vs-wfoe-in-china"
@@ -583,6 +591,191 @@ ${siteUrl}/blog/china-company-registration-documents-checklist
         question: "Can ZYS review a document package before filing?",
         answer:
           "ZYS can review document readiness, identify missing information, coordinate registration planning and connect the filing package with accounting, tax, banking and visa considerations."
+      }
+    ]
+  },
+  {
+    slug: "how-to-register-foreign-owned-company-in-china-2026",
+    title: "How to Register a Foreign-Owned Company in China in 2026: Step-by-Step Guide",
+    metaTitle: "Register a Foreign-Owned Company in China in 2026 | ZYS Advisory",
+    description:
+      "A practical 2026 guide for foreign investors on registering a foreign-owned company in China, covering WFOE setup, business license, documents, capital, address, banking, tax and accounting.",
+    summary:
+      "Foreign-owned company registration in China should be planned as an operating project, not only a filing task. Investors need to align structure, shareholder documents, registered address, business scope, registered capital, bank readiness, tax setup, accounting records and first-year compliance before launch.",
+    published: "2026-07-15",
+    updated: "2026-07-15",
+    category: "China Market Entry",
+    readingTime: "12 min read",
+    keyword: "register a company in China",
+    imageAlt:
+      "ZYS Advisory 2026 guide image for foreign investors registering a foreign-owned company in China",
+    relatedServiceHrefs: [
+      "/services/company-registration-in-china",
+      "/services/wfoe-registration",
+      "/services/china-company-formation",
+      "/services/accounting-services",
+      "/services/tax-consulting",
+      "/services/business-license",
+      "/services/china-visa-service"
+    ],
+    relatedArticleSlugs: [
+      "how-to-register-a-company-in-china",
+      "wfoe-registration-guide",
+      "china-company-registration-documents-checklist",
+      "representative-office-vs-wfoe-in-china"
+    ],
+    facebookPost: `New Insight from ZYS Advisory
+
+How to Register a Foreign-Owned Company in China in 2026: Step-by-Step Guide
+
+Foreign investors entering China need more than a filing checklist. This guide explains how to plan a foreign-owned company setup around structure, documents, business license, banking, tax registration, accounting and first-year compliance.
+
+Read the full guide:
+${siteUrl}/blog/how-to-register-foreign-owned-company-in-china-2026
+
+#ChinaBusiness #CompanyRegistration #WFOE #ChinaTax #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Introduction",
+        paragraphs: [
+          "Registering a foreign-owned company in China in 2026 remains a practical route for international founders, overseas SMEs and multinational groups that need a local operating platform. A properly planned China company can sign local contracts, hire employees, open bank accounts, apply for a China business license, issue invoices, maintain accounting records and support work permit planning for eligible foreign staff.",
+          "The process is often described as China company registration or WFOE registration China, but investors should be careful with labels. A foreign-owned company in China is not only a certificate. It becomes a compliance, finance and operating vehicle. The decisions made before filing can affect invoices, taxes, contracts, banking, registered capital, address use, work permits and future amendments.",
+          "This guide is written for overseas investors who want to start a business in China with clear expectations. It explains the common planning steps, documents to prepare, timing factors and mistakes to avoid. It is general business information, not formal legal, tax, accounting or immigration advice. Specific requirements may vary by city, industry, shareholder type, document readiness and current local review practice."
+        ]
+      },
+      {
+        heading: "Who this guide is for",
+        paragraphs: [
+          "This article is for foreign shareholders planning a wholly foreign-owned or foreign-invested company in mainland China, overseas companies comparing China with Hong Kong, Singapore or other structures, and founders who need a company that can operate locally rather than only test the market from abroad.",
+          "It is also useful for finance teams, legal teams and regional managers who need to coordinate company setup with accounting and tax services in China, payroll, visa support, business license planning and internal governance. If your activity is regulated, involves import and export, food, education, medical devices, online platforms, manufacturing or employment of foreign staff, review the plan carefully before filing."
+        ]
+      },
+      {
+        heading: "Step 1: Confirm whether a foreign-owned company is the right structure",
+        paragraphs: [
+          "Before starting registration, confirm why the China entity is needed. A foreign-owned company is usually considered when the business needs local contracts, local invoicing, employee hiring, tax registration, supplier management, customer support, import or export planning, or a long-term China presence.",
+          "For some early-stage activities, an overseas company may first work through distributors, service providers or limited market research. A representative office may be considered for restricted liaison activity in some cases. However, if the plan involves revenue-generating operations, a local team, VAT invoices, customer contracts or work permit sponsorship, a foreign-owned operating company is often the structure investors need to evaluate."
+        ],
+        subsections: [
+          {
+            heading: "WFOE or broader foreign-invested company",
+            paragraphs: [
+              "Many international investors still use the term WFOE for a wholly foreign-owned enterprise. In practice, the registration should be planned around the shareholder, business activity, city, business scope, capital plan and compliance workflow. The label matters less than whether the company can lawfully and practically perform the intended activity."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Step 2: Define business scope and company name",
+        paragraphs: [
+          "The proposed business scope should describe what the China company will actually do. It can affect invoice descriptions, license exposure, bank review, tax setup and future amendments. A scope that is too narrow may block ordinary operations. A scope that is too broad or unclear may create review questions or operational mismatch.",
+          "Investors should prepare a plain-English business model first, then convert it into filing language with local review in mind. For example, consulting, trading, technology services and manufacturing support can create different questions about registered address, invoices, permits, import-export registration and staffing.",
+          "The company name should also be checked before public use. Name review can depend on city, industry wording and similarity with existing companies. Avoid printing marketing materials, signing leases or announcing a Chinese name before it is confirmed."
+        ]
+      },
+      {
+        heading: "Step 3: Prepare shareholder and officer documents",
+        paragraphs: [
+          "Document preparation is often the part that controls the timeline. Individual foreign shareholders usually prepare identity documents, contact details and signatures. Corporate shareholders usually prepare company registration documents, authorized signatory information, ownership or control details where requested, and documents that may need formal handling, translation or verification depending on the jurisdiction and local requirements.",
+          "The company also needs officer and governance information. This may include the legal representative, director or executive director, supervisor or other governance role, manager, finance contact and tax contact. The people named in filings should understand their responsibilities, signing obligations and internal control role.",
+          "Keep document consistency in mind. Names, addresses, passport details, company names and signing authority should match across the application package, bank preparation, tax records and internal approvals. Small inconsistencies can delay filing or create later banking and compliance questions."
+        ],
+        subsections: [
+          {
+            heading: "Documents commonly reviewed",
+            paragraphs: [
+              "Typical planning items include shareholder identification or registration documents, proposed company names, business scope, registered address materials, registered capital plan, articles of association, officer information, contact details, signatures and tax setup information. The exact list should be confirmed for the specific city and shareholder profile."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Step 4: Choose a registered address and capital plan",
+        paragraphs: [
+          "A registered address is more than a formality. It may affect filing review, tax authority communication, bank account opening, license applications, document delivery and credibility with counterparties. Some businesses may need an address that supports physical operations, staff presence, storage, licensing or inspections. Very low-cost address arrangements should be reviewed carefully before use.",
+          "Registered capital should be commercially realistic. Investors should consider expected startup expenses, payroll, rent, supplier payments, professional fees, equipment, working capital and the time before revenue begins. The capital plan should match the business model and funding ability. Do not treat registered capital as only a symbolic number, and do not assume one fixed amount fits every company.",
+          "The funding plan should also be coordinated with the overseas shareholder. If the company will receive funds from a parent company or foreign shareholder, internal approvals, treasury timing, bank expectations and accounting treatment should be prepared before the company needs cash."
+        ]
+      },
+      {
+        heading: "Step 5: Submit registration and obtain the business license",
+        paragraphs: [
+          "After the name, scope, shareholder documents, address, capital plan and officer information are ready, the application can be submitted through the local filing process. Review questions may relate to name wording, business scope, shareholder documents, address materials, signatures or activity description.",
+          "If approved, the company receives its China business license. This is the core registration milestone, but it is not the end of setup. A business license confirms that the entity exists; it does not automatically mean the company is ready to invoice customers, hire staff, sponsor work permits, handle tax filings or operate with clean internal controls.",
+          "Investors should keep a complete corporate file after approval. This file should include the business license, articles of association, address records, shareholder materials, officer appointments, registration confirmations, chop custody records, tax setup documents, bank documents and accounting handover notes."
+        ]
+      },
+      {
+        heading: "Step 6: Complete banking, tax and accounting setup",
+        paragraphs: [
+          "Bank account preparation should begin with a clear business explanation. Banks may ask about shareholder background, source of funds, expected customers, transaction purpose, address, responsible contacts and supporting documents. The explanation given to the bank should match the registered business scope and actual operating model.",
+          "Tax registration and invoice planning should be coordinated before transactions begin. The company should understand what invoices it expects to issue, who the customers are, what supplier invoices it will receive, how payroll will be handled, whether cross-border payments may arise and who will communicate with the tax authority.",
+          "Accounting and tax services in China should start from the first month of operation, even when activity is limited. The company needs voucher collection, bank reconciliation, contract records, expense approvals, payroll information, invoice records and periodic tax filing support. Reconstructing books later is more expensive and riskier than maintaining records from the beginning."
+        ],
+        subsections: [
+          {
+            heading: "First transaction test",
+            paragraphs: [
+              "Before signing the first customer contract, walk through the full transaction: who signs, which chop is used, which bank account receives funds, what invoice is issued, how revenue is recorded, what tax filing follows, and where supporting documents are stored. If the team cannot answer these questions, the company is not yet operationally ready."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Estimated timing and planning assumptions",
+        paragraphs: [
+          "There is no responsible single timeline for every foreign-owned company registration in China. Timing depends on the city, shareholder type, overseas document readiness, name review, address review, business scope, signatures, whether formal document handling is needed and whether additional permits are involved.",
+          "A simple case with ready documents may move more quickly than a case involving overseas corporate shareholders, regulated activities, address changes or complex internal approvals. Investors should build a schedule around document readiness rather than public launch expectations. Do not promise customers, employees or investors a fixed start date until the filing route and post-registration setup have been reviewed.",
+          "The first 90 days after license issuance should also be planned. This period often includes bank preparation, tax setup, accounting file creation, invoice planning, payroll readiness, contract review, work permit planning where relevant and internal reporting setup."
+        ]
+      },
+      {
+        heading: "Common mistakes foreign investors should avoid",
+        paragraphs: [
+          "The first mistake is treating registration as a low-cost paperwork task. A company that is approved with the wrong address, weak scope, unclear capital plan or no accounting workflow may face problems as soon as it tries to operate.",
+          "The second mistake is separating company registration from tax, accounting, visa and business license planning. These areas are connected. A business scope decision can affect invoices. An address decision can affect banking. A hiring plan can affect payroll and work permit preparation. A licensing issue can affect whether the company can begin activity.",
+          "The third mistake is underestimating internal controls. The company should decide who manages chops, who approves contracts, who stores documents, who reviews payments, who provides accounting records and who communicates with advisors. Foreign investors should not wait until after a dispute or tax question to define these responsibilities."
+        ]
+      },
+      {
+        heading: "How ZYS Advisory supports foreign-owned company registration",
+        paragraphs: [
+          "ZYS Advisory supports international clients with China company registration, WFOE registration planning, business license coordination, registered address review, document preparation, accounting setup, tax filing support, payroll coordination, visa and work permit planning, and ongoing compliance management.",
+          "For a practical consultation, prepare a short summary of your shareholders, target city, business activity, expected customers, staffing plan, invoice needs, registered address situation, capital assumptions and timeline. ZYS can then help identify the registration path, documents to prepare and post-registration compliance steps.",
+          "To discuss a foreign-owned company setup in China, contact ZYS Advisory through the website contact page, WhatsApp, or email at info@zysadvisory.com. A clear early review can reduce avoidable delays and help the company start operations with stronger finance and compliance discipline."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can foreigners register a company in China in 2026?",
+        answer:
+          "Yes, many foreign investors can register a foreign-owned company in China, subject to business scope, shareholder documents, registered address, industry access, local review and any required licenses or filings."
+      },
+      {
+        question: "Is a WFOE the same as a foreign-owned company in China?",
+        answer:
+          "A WFOE is commonly used to describe a wholly foreign-owned China company. The practical setup should still be reviewed around ownership, activity, city, business scope, tax setup, accounting and ongoing compliance."
+      },
+      {
+        question: "How long does China company registration take?",
+        answer:
+          "Timing depends on the city, shareholder document readiness, name and address review, business scope, signatures and whether additional licenses or formal overseas document handling are needed. A fixed timeline should not be promised before document review."
+      },
+      {
+        question: "What documents are needed to start a business in China?",
+        answer:
+          "Common planning items include shareholder identity or corporate documents, proposed names, business scope, registered address materials, officer information, registered capital plan, articles of association, signatures and tax setup information."
+      },
+      {
+        question: "Does a foreign-owned company need accounting after registration?",
+        answer:
+          "Yes. A China company should maintain accounting records, supporting vouchers, invoice records, bank records and tax filings from the beginning, even if early transaction volume is low."
+      },
+      {
+        question: "Can ZYS Advisory help with registration, tax and visas together?",
+        answer:
+          "Yes. ZYS Advisory supports coordinated company registration, business license planning, accounting, tax services, payroll, work permit and residence permit preparation, and ongoing compliance for international clients."
       }
     ]
   }

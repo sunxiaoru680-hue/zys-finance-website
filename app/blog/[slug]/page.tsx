@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
 import { articleSchema, companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, siteUrl, StructuredData } from "@/components/seo";
 import { articleCanonicalUrl, articleFaqs, articleFeaturedImageUrl, blogArticles, breadcrumbSchema, getArticleBySlug, servicePages } from "@/lib/content";
+import type { EditorialSection } from "@/lib/editorialArticles";
 import { cityLinkForArticle, relatedBlogLinksForArticle, relatedServiceLinksForArticle } from "@/lib/internalLinks";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -83,7 +84,7 @@ const pillars = [
   "Practical next steps"
 ];
 
-function articleSections(article: NonNullable<ReturnType<typeof getArticleBySlug>>) {
+function articleSections(article: NonNullable<ReturnType<typeof getArticleBySlug>>): EditorialSection[] {
   if (article.sections?.length) {
     return article.sections;
   }
@@ -177,6 +178,7 @@ export default async function BlogArticlePage({ params }: Props) {
                 <div className="mt-5 grid gap-3 text-sm font-semibold text-evergreen sm:grid-cols-2">
                   <Link href="/">Homepage</Link>
                   <Link href="/services">All advisory services</Link>
+                  <Link href="/case-studies">Case studies</Link>
                   <Link href={cityLink.href}>{cityLink.label}</Link>
                   {related.map((item) => (
                     <Link key={item.href} href={item.href}>{item.label}</Link>
@@ -191,6 +193,16 @@ export default async function BlogArticlePage({ params }: Props) {
                     <p key={paragraph} className="mt-4 text-base leading-8 text-graphite">
                       {paragraph}
                     </p>
+                  ))}
+                  {section.subsections?.map((subsection) => (
+                    <div key={subsection.heading} className="mt-6">
+                      <h3 className="text-xl font-bold text-ink">{subsection.heading}</h3>
+                      {subsection.paragraphs.map((paragraph) => (
+                        <p key={paragraph} className="mt-3 text-base leading-8 text-graphite">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
                   ))}
                 </section>
               ))}

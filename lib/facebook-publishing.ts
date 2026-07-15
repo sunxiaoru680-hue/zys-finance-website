@@ -136,7 +136,7 @@ export function buildFacebookPost(article: BlogArticle): FacebookPostPreview {
   const canonicalUrl = articleCanonicalUrl(article);
   const featuredImage = articleFeaturedImageUrl(article);
   const summary = article.summary || article.description;
-  const message = `${article.title}
+  const message = article.facebookPost || `${article.title}
 
 ${summary}
 

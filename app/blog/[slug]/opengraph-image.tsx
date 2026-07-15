@@ -58,7 +58,7 @@ export default async function Image({ params }: Props) {
             </div>
           </div>
         </div>
-        <div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ color: "#b99145", fontSize: "24px", fontWeight: 800, textTransform: "uppercase" }}>
             {category}
           </div>
