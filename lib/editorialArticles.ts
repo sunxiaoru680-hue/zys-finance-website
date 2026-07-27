@@ -339,7 +339,8 @@ ${siteUrl}/blog/wfoe-registration-guide
       "how-to-register-foreign-owned-company-in-china-2026",
       "how-to-register-a-company-in-china",
       "wfoe-registration-guide",
-      "china-company-registration-documents-checklist"
+      "china-company-registration-documents-checklist",
+      "china-accounting-bookkeeping-requirements-2026"
     ],
     facebookPost: `New Insight from ZYS Advisory
 
@@ -914,6 +915,168 @@ ${siteUrl}/blog/china-company-registration-timeline-2026
         question: "Can ZYS Advisory help estimate a realistic timeline?",
         answer:
           "Yes. ZYS can review shareholder documents, business activity, city, address, scope, banking needs, tax setup and post-registration requirements to create a practical implementation plan."
+      }
+    ]
+  },
+  {
+    slug: "china-accounting-bookkeeping-requirements-2026",
+    title: "China Accounting and Bookkeeping Requirements in 2026: A Practical Guide for Foreign Companies",
+    metaTitle: "China Accounting and Bookkeeping Requirements 2026 | Foreign Company Guide",
+    description:
+      "A practical 2026 guide to China accounting and bookkeeping requirements for foreign companies, covering monthly records, tax filing, fapiao, payroll, bank documents, annual compliance and common mistakes.",
+    summary:
+      "Foreign-invested companies in China should build accounting and tax workflows from the first month of operation. Clean bookkeeping connects bank activity, contracts, fapiao, payroll, expense approvals, tax filings and management reporting before small issues become compliance risks.",
+    published: "2026-07-27",
+    updated: "2026-07-27",
+    category: "Accounting & Tax",
+    readingTime: "11 min read",
+    keyword: "China accounting and bookkeeping requirements",
+    imageAlt:
+      "ZYS Advisory guide to China accounting and bookkeeping requirements for foreign companies",
+    relatedServiceHrefs: [
+      "/services/accounting-services",
+      "/services/bookkeeping",
+      "/services/tax-consulting",
+      "/services/payroll-service",
+      "/services/company-registration-in-china",
+      "/contact"
+    ],
+    relatedArticleSlugs: [
+      "how-to-register-foreign-owned-company-in-china-2026",
+      "china-company-registration-timeline-2026",
+      "how-to-register-a-company-in-china",
+      "wfoe-registration-guide"
+    ],
+    facebookPost: `China Accounting and Bookkeeping Requirements in 2026: A Practical Guide for Foreign Companies
+
+Foreign companies in China need more than a business license. This guide explains how monthly bookkeeping, fapiao records, bank documents, payroll information, tax filing and annual compliance should be organized from the first month.
+
+Read the full guide:
+${siteUrl}/blog/china-accounting-bookkeeping-requirements-2026
+
+#ChinaBusiness #Accounting #ChinaTax #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Introduction",
+        paragraphs: [
+          "After registering a company in China, many foreign investors quickly discover that accounting is not a back-office detail. It is the system that connects contracts, bank receipts, invoices, expenses, payroll, tax filings, internal approvals and annual compliance. A company may have a valid business license but still face operational friction if its bookkeeping workflow is not ready when the first transaction occurs.",
+          "This 2026 guide is written for foreign-invested companies, WFOEs, overseas founders, finance managers and international SMEs operating or preparing to operate in China. It explains the practical accounting and bookkeeping requirements that should be planned from the first month. It is general business guidance, not a substitute for advice on a specific tax position, industry license or city-level filing requirement.",
+          "The core message is simple: clean bookkeeping is easier to build at the beginning than to repair later. When a company waits until tax filing, audit preparation or headquarters reporting to organize documents, missing contracts, unclear expense approvals, incomplete bank explanations and inconsistent invoice records can create unnecessary compliance pressure."
+        ]
+      },
+      {
+        heading: "Who this article is for",
+        paragraphs: [
+          "This article is for foreign shareholders that have registered or plan to register a mainland China company, overseas finance teams supervising a China subsidiary, founders that need fapiao and tax filing support, and managers preparing payroll, reimbursements, cross-border service fees or supplier payments.",
+          "It is also useful for companies that are still in the registration stage. Accounting should not start after the first problem appears. The business scope, bank account, invoice needs, payroll plan and document approval process should be aligned before revenue and expenses begin."
+        ]
+      },
+      {
+        heading: "What China bookkeeping normally needs to cover",
+        paragraphs: [
+          "A China company should maintain records that explain its business activity in a consistent way. At minimum, the accounting file should connect bank transactions, contracts, fapiao or invoice records, expense documents, payroll information, tax filings, corporate registration materials and internal approval evidence.",
+          "Bookkeeping is not only data entry. It is the monthly process of reviewing whether the company can explain why money was received or paid, whether the documents match the registered business activity, whether expenses are supported, whether payroll and individual tax information are ready, and whether management can understand the company position.",
+          "For foreign-invested companies, accounting also supports communication with the parent company. Headquarters may need management reports, intercompany balances, cash flow explanations, expense categories and evidence for cross-border payments. A local accounting workflow should therefore serve both China compliance and group reporting needs."
+        ]
+      },
+      {
+        heading: "Documents to prepare every month",
+        paragraphs: [
+          "The exact monthly document package depends on the company's business model, but most companies should prepare bank statements, bank slips or transaction details, sales contracts, purchase contracts, fapiao records, supplier invoices, expense reimbursement forms, payroll information, employee social security or benefit information where relevant, and supporting explanations for unusual payments.",
+          "Companies should also keep the business license, articles of association, chop custody records, tax registration information, bank account documents, lease or registered address materials, officer information and any license documents in an organized corporate file. These materials may not be used every month, but they are often needed for amendments, banking questions, audits, tax reviews or annual compliance.",
+          "For expense claims, the company should define who approves the expense, what document is required, how the business purpose is recorded and how missing or informal documents are handled. A clear reimbursement policy reduces later disputes between the finance team, employees and management."
+        ]
+      },
+      {
+        heading: "Fapiao, invoices and revenue records",
+        paragraphs: [
+          "Fapiao planning is a central part of China accounting. Companies should understand what services or goods they provide, what type of invoice customers expect, how the invoice description relates to the business scope, and how sales contracts, payment receipts and tax filings will be matched.",
+          "Foreign investors should avoid treating invoicing as a purely administrative step. If the company's actual business activity, contract wording, invoice content and bank receipt explanation do not align, the finance file becomes harder to defend. Before issuing invoices, the company should confirm the revenue model, customer type, service description and document flow.",
+          "Companies should also track unpaid invoices, advance receipts, refunds, credit notes or contract changes. These events can affect monthly reporting and should be explained clearly in the accounting records."
+        ]
+      },
+      {
+        heading: "Bank transactions and payment explanations",
+        paragraphs: [
+          "Every bank movement should have a business explanation. Incoming payments should link to a customer, contract, invoice or shareholder funding arrangement. Outgoing payments should link to supplier documents, payroll, tax payments, reimbursements, intercompany arrangements or other approved business purposes.",
+          "Foreign-invested companies should pay particular attention to cross-border payments and intercompany transactions. The accounting team should understand whether a payment is a service fee, reimbursement, capital injection, loan-related movement, dividend-related item or other transaction. The label used internally should match the supporting documents and bank explanation.",
+          "Unexplained bank activity creates work later. If the finance team waits several months to ask what a payment was for, the person who approved it may not remember the details, documents may be missing and tax filing treatment may become harder to confirm."
+        ]
+      },
+      {
+        heading: "Payroll, individual tax and employee records",
+        paragraphs: [
+          "If the company hires employees, payroll data should be included in the monthly accounting workflow. The finance team should confirm employee names, salary amounts, allowances, reimbursements, start dates, termination dates, leave information, bank details and any benefit-related items that affect payroll reporting.",
+          "Foreign employees may also have visa, work permit and residence permit considerations. Payroll, employment contracts, tax reporting and immigration records should be managed consistently. A mismatch between employment arrangements and compliance records can create avoidable questions later.",
+          "Even small teams should keep payroll approvals and employee cost records organized. Payroll affects cash flow, tax filing, management reporting and annual compliance, so it should not be handled informally."
+        ]
+      },
+      {
+        heading: "Monthly tax filing and management reporting",
+        paragraphs: [
+          "China companies generally need regular tax handling after registration, even when business activity is limited. The exact filing items and frequency depend on the company profile, tax status, payroll situation and local practice. Investors should confirm the filing calendar with their accounting provider instead of assuming that no revenue means no work.",
+          "A useful monthly reporting package can include a balance sheet, profit and loss statement, bank reconciliation, tax filing status, accounts receivable, accounts payable, payroll summary, major expense notes and open document issues. International management teams often need a concise English explanation of the company's position, not only local accounting entries.",
+          "The monthly close should identify missing documents early. If an invoice, contract, approval or bank explanation is missing, the issue should be raised immediately while the transaction is still fresh."
+        ]
+      },
+      {
+        heading: "Annual compliance and audit preparation",
+        paragraphs: [
+          "Annual compliance is easier when monthly bookkeeping has been consistent. Companies that maintain clean records throughout the year are better prepared for annual reporting, audit-related requests, tax review questions, shareholder reporting and future company changes.",
+          "Before year-end, management should review whether accounting records match bank activity, whether major contracts are filed, whether fapiao records are complete, whether payroll information is consistent, whether intercompany balances are explained and whether any license or registration changes are needed.",
+          "Annual work should not be treated as a separate project disconnected from monthly accounting. The annual file is the result of the monthly file. If monthly records are weak, year-end work becomes reconstruction rather than review."
+        ]
+      },
+      {
+        heading: "Common mistakes foreign companies make",
+        paragraphs: [
+          "One common mistake is starting accounting only after revenue begins. In practice, setup costs, capital movements, lease payments, bank charges and early expenses may already require documentation before the first customer invoice.",
+          "A second mistake is separating tax filing from business operations. The accounting provider needs to understand what the company actually does, who its customers are, how contracts are signed, what invoices are issued, how payroll works and how headquarters expects reports.",
+          "A third mistake is relying on informal communication instead of a document workflow. Verbal explanations are not enough when a company later needs to answer banking, tax, audit or management questions. A simple monthly checklist is usually more effective than trying to remember details later."
+        ]
+      },
+      {
+        heading: "Practical next steps",
+        paragraphs: [
+          "Foreign companies should start by building a monthly accounting checklist. The checklist should cover bank statements, contracts, fapiao, supplier documents, reimbursement approvals, payroll data, tax filing status and management reporting needs.",
+          "Next, assign responsibility. Someone inside the company should own document collection, internal approvals, bank explanations and communication with the accounting provider. Outsourcing bookkeeping does not remove the company's responsibility to provide accurate information.",
+          "Finally, review the accounting workflow before scaling. If the company plans to hire employees, sign larger contracts, import goods, issue more invoices, make cross-border payments or apply for licenses, the finance process should be upgraded before transaction volume increases."
+        ]
+      },
+      {
+        heading: "How ZYS Advisory can help",
+        paragraphs: [
+          "ZYS Advisory supports foreign-invested companies with accounting services, bookkeeping, tax filing, payroll coordination, fapiao planning, company registration, business license support and compliance advisory in China.",
+          "For an accounting review, prepare your business license, bank account status, current bookkeeping records, contracts, invoice needs, payroll plan, expense workflow and any questions from headquarters. ZYS can help identify missing documents, improve the monthly process and connect accounting with tax and business operations.",
+          "To discuss accounting and bookkeeping support for your China company, contact ZYS Advisory through the website contact page, WhatsApp or email at info@zysadvisory.com."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Does a China company need bookkeeping if it has little or no revenue?",
+        answer:
+          "Yes. A company may still have bank activity, setup costs, capital movements, expenses, payroll or tax filing obligations. The exact filing status should be confirmed for the specific company."
+      },
+      {
+        question: "What documents should foreign companies prepare for monthly bookkeeping in China?",
+        answer:
+          "Common documents include bank statements, transaction slips, contracts, fapiao records, supplier invoices, expense approvals, payroll information and explanations for unusual payments."
+      },
+      {
+        question: "Why is fapiao planning important for foreign-invested companies?",
+        answer:
+          "Fapiao records connect contracts, revenue, customer expectations and tax filing. The invoice description, business scope, contract wording and bank receipt explanation should be consistent."
+      },
+      {
+        question: "Can bookkeeping be fixed at year-end?",
+        answer:
+          "Some issues can be corrected, but year-end reconstruction is usually less efficient and may leave gaps. Monthly bookkeeping is the better way to support annual compliance and management reporting."
+      },
+      {
+        question: "Can ZYS Advisory handle bookkeeping and tax filing for a China WFOE?",
+        answer:
+          "Yes. ZYS Advisory supports WFOEs and foreign-invested companies with bookkeeping, tax filing, payroll coordination, fapiao planning and ongoing compliance support."
       }
     ]
   }
