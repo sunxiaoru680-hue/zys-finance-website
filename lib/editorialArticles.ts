@@ -1201,5 +1201,144 @@ ${siteUrl}/blog/china-vat-fapiao-compliance-guide-2026
           "Yes. ZYS Advisory supports foreign-invested companies with tax consulting, bookkeeping, accounting services and fapiao workflow planning."
       }
     ]
+  },
+  {
+    slug: "china-company-chops-guide-2026",
+    title: "China Company Chops Guide 2026: Control, Use and Risk Management",
+    metaTitle: "China Company Chops Guide 2026 | Seal Control for Foreign Companies",
+    description:
+      "A practical guide to China company chops for foreign investors, covering common seal types, custody, approval controls, electronic seals, loss response and management handover.",
+    summary:
+      "Company chops are part of a China entity's operating authority. Foreign investors should identify which seals the business uses, assign custody, document approvals and keep a reliable usage register before contracts, banking and invoicing begin.",
+    published: "2026-08-03",
+    updated: "2026-08-03",
+    category: "China Market Entry",
+    readingTime: "9 min read",
+    keyword: "China company chops",
+    imageAlt:
+      "ZYS Advisory guide to China company chop custody, approval and risk management",
+    relatedServiceHrefs: [
+      "/services/company-registration-in-china",
+      "/services/business-license",
+      "/services/accounting-services",
+      "/services/cfo-advisory-china",
+      "/contact"
+    ],
+    relatedArticleSlugs: [
+      "how-to-register-foreign-owned-company-in-china-2026",
+      "china-company-registration-documents-checklist",
+      "china-accounting-bookkeeping-requirements-2026",
+      "china-vat-fapiao-compliance-guide-2026"
+    ],
+    facebookPost: `China Company Chops Guide 2026: Control, Use and Risk Management
+
+In China, company chops are not just office supplies. They are part of how a company authorizes contracts, banking, finance and other business actions. This guide explains the common chop types and the internal controls foreign investors should put in place.
+
+Read the full guide:
+${siteUrl}/blog/china-company-chops-guide-2026
+
+#ChinaBusiness #CompanyChops #RiskManagement #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Introduction",
+        paragraphs: [
+          "Company chops, sometimes called company seals, are a practical part of operating a legal entity in China. They may be used in contracts, banking documents, finance processes, government filings and other company matters. For overseas shareholders, the important question is not only which chops are issued, but who controls them and how their use is approved.",
+          "A company can complete registration and still face avoidable risk if chops are kept by one person without oversight, used without a written record or left with an employee or service provider after responsibilities change. Chop governance should therefore be designed alongside signing authority, online banking access, invoice controls and corporate document custody.",
+          "This guide provides general operational guidance for foreign-invested companies. The exact seal set, engraving or filing procedure and acceptable use can depend on the city, authority, bank, transaction and document type. Companies should confirm current local requirements before relying on a chop for a specific filing or transaction."
+        ]
+      },
+      {
+        heading: "Common company chops and their practical roles",
+        paragraphs: [
+          "The official company chop is the entity's general-purpose seal and is commonly requested for corporate documents and external matters. Because it can represent broad company authority, it should normally receive the strongest custody and approval controls.",
+          "Other seals may include a finance chop, a legal representative's personal-name chop, a contract chop and an invoice chop. Their practical roles differ. Banking processes may involve the finance chop and legal representative chop; commercial teams may request a contract chop; and paper invoice procedures may involve the invoice chop. A company should not assume that every seal is interchangeable.",
+          "The required set should be confirmed during incorporation and post-registration setup. Beijing's official foreign-invested company registration guidance, for example, allows applicants to request official seal engraving as part of the setup process. Local handling and the company's real business needs should determine the final list."
+        ]
+      },
+      {
+        heading: "Why chop control matters",
+        paragraphs: [
+          "A chop can be used to express company approval, so uncontrolled access can expose the business to unauthorized contracts, payment instructions, guarantees, filings or internal disputes. Overseas shareholders may discover a problem late if they review only signed PDFs and do not know who physically holds the seals.",
+          "Chop control should be connected with authority control. A person who can negotiate a contract should not automatically have unrestricted access to the official chop. A person who prepares a bank payment should not necessarily control every item needed to approve that payment. Separating preparation, approval and execution reduces single-person dependency.",
+          "The company should also control scanned chop images and digital files. A high-resolution image of a seal should not circulate through informal chat groups or remain on shared computers without access restrictions. Digital convenience should not remove the approval trail."
+        ]
+      },
+      {
+        heading: "A practical chop custody and approval system",
+        paragraphs: [
+          "Start with a seal inventory. Record each chop's name, purpose, issue date, custodian, storage location and any related registration or handover documents. Keep clear specimen records, but restrict access to copies that could be misused.",
+          "Create an approval matrix by document type and value. Routine government forms, customer contracts, supplier contracts, bank matters, HR documents and shareholder matters may need different reviewers. The policy should state who requests use, who checks the document, who approves it and who applies the chop.",
+          "Maintain a usage register that records the date, requesting person, document name, counterparty, number of originals, approving person and custodian. Where practical, keep a final scanned copy of the fully executed document linked to the register entry.",
+          "Physical storage should match the risk. High-authority seals should be kept in controlled storage, access should be limited and spare keys or codes should not sit with the same person who can independently approve use. Remote teams should agree how originals move between offices and how receipt is confirmed."
+        ]
+      },
+      {
+        heading: "Electronic seals in 2026",
+        paragraphs: [
+          "China's national Electronic Seal Management Measures took effect in September 2025. The measures describe electronic seals as data based on cryptographic and related digital technologies that supports reliable electronic signatures, and they apply to organizations including enterprises.",
+          "An electronic seal should be managed as an authorization tool, not as a picture pasted into a document. Companies should confirm the approved platform, identity verification, certificate status, user permissions, signing logs, revocation process and document retention before adoption.",
+          "Electronic and physical seal controls should be documented together. The authority to use an electronic seal should not remain active after a user changes role or leaves the company, and access reviews should be part of regular finance and compliance checks."
+        ]
+      },
+      {
+        heading: "Invoice chops and finance workflows",
+        paragraphs: [
+          "Invoice procedures should be reviewed with the company's accountant and tax adviser. Current national invoice rules state that paper invoices are generally issued with the invoice-specific seal, while electronic invoice formats and platform procedures may differ. Companies should not add or omit a seal based only on habit.",
+          "The invoice chop should sit inside a controlled revenue process. Customer information, contract terms, invoice description, amount, bank receipt and bookkeeping record should align. The person issuing an invoice should have a clear request and approval trail.",
+          "Finance teams should periodically compare invoice records, seal-use records and accounting data. This helps identify unusual issuance, missing support or activity that does not match the company's contracts and business scope."
+        ]
+      },
+      {
+        heading: "Loss, suspected misuse and management changes",
+        paragraphs: [
+          "If a chop is lost or suspected of misuse, the company should act quickly. Preserve relevant records, restrict connected access, inform company leadership and obtain local advice on reporting, public notice, cancellation, replacement and counterparty communication. The correct response depends on the seal, location and facts, so a generic internet checklist is not enough.",
+          "Management or service-provider changes also require a formal handover. The company should count each chop, verify its condition, transfer storage access, review recent usage and obtain signed handover records. Online banking credentials, tax accounts, electronic seal permissions and document archives should be reviewed at the same time.",
+          "When a legal representative, company name or other registered information changes, the company should confirm whether any physical or electronic seals, bank records or authority profiles need replacement or updating."
+        ]
+      },
+      {
+        heading: "Practical next steps",
+        paragraphs: [
+          "Foreign investors should first ask for a current inventory of every physical and electronic seal. Compare it with the company's registration, banking, tax, invoicing and contracting activity. If no inventory exists, create one before the next transaction is approved.",
+          "Next, adopt a short written policy covering custody, approval, use logs, prohibited conduct, emergency response and handover. Test it with three real scenarios: signing a customer contract, approving a bank-related document and issuing a paper invoice.",
+          "Finally, include seal control in quarterly or annual compliance reviews. Confirm that custodians are still appropriate, departed staff have no access, usage records match executed documents and overseas shareholders can obtain an accurate report when needed."
+        ]
+      },
+      {
+        heading: "How ZYS Advisory can help",
+        paragraphs: [
+          "ZYS Advisory supports foreign investors with China company registration, post-registration setup, accounting, tax, internal controls, business license matters and ongoing compliance coordination.",
+          "For a company chop control review, prepare the business license, articles of association, current seal inventory, custodian list, sample usage register, signing authority policy, online banking access list and recent management handover records.",
+          "To discuss China company registration or chop governance, contact ZYS Advisory through the website contact page, WhatsApp or email at info@zysadvisory.com."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "What is a China company chop?",
+        answer:
+          "A company chop is a physical or approved electronic seal used in company documents and business processes. Different chops may serve official, finance, contract, legal representative or invoice functions."
+      },
+      {
+        question: "Which company chops does a foreign-invested company need?",
+        answer:
+          "The appropriate set depends on local setup procedures and the company's banking, contracting, invoicing and operating needs. Confirm the list during registration and post-registration implementation."
+      },
+      {
+        question: "Who should keep the official company chop?",
+        answer:
+          "The company should appoint a documented custodian and separate custody from approval where practical. Access should be restricted, recorded and reviewed when responsibilities change."
+      },
+      {
+        question: "Are electronic seals valid in China?",
+        answer:
+          "China has a national electronic seal management framework. Validity and acceptance still depend on compliant technology, identity and certificate controls, the document and transaction context, and any applicable legal or platform requirements."
+      },
+      {
+        question: "What should a company do if a chop is lost?",
+        answer:
+          "Restrict related access, preserve records, notify company leadership and obtain local advice promptly on reporting, cancellation, replacement, notices and counterparty communication."
+      }
+    ]
   }
 ];
