@@ -1340,5 +1340,144 @@ ${siteUrl}/blog/china-company-chops-guide-2026
           "Restrict related access, preserve records, notify company leadership and obtain local advice promptly on reporting, cancellation, replacement, notices and counterparty communication."
       }
     ]
+  },
+  {
+    slug: "china-annual-compliance-checklist-2026",
+    title: "China Annual Compliance Checklist 2026: What Foreign Companies Should Prepare",
+    metaTitle: "China Annual Compliance Checklist 2026 | Foreign Company Guide",
+    description:
+      "A practical 2026 annual compliance checklist for foreign companies in China, covering accounting records, tax filings, annual reporting, payroll, licenses, chops, banking and document retention.",
+    summary:
+      "Foreign-invested companies in China should treat annual compliance as the result of clean monthly work. Accounting records, tax filings, payroll documents, license status, bank activity, chop controls and corporate records should be reviewed before year-end pressure begins.",
+    published: "2026-08-04",
+    updated: "2026-08-04",
+    category: "Accounting & Tax",
+    readingTime: "10 min read",
+    keyword: "China annual compliance checklist",
+    imageAlt:
+      "ZYS Advisory annual compliance checklist for foreign companies in China",
+    relatedServiceHrefs: [
+      "/services/accounting-services",
+      "/services/tax-consulting",
+      "/services/bookkeeping",
+      "/services/payroll-service",
+      "/services/business-license",
+      "/contact"
+    ],
+    relatedArticleSlugs: [
+      "china-accounting-bookkeeping-requirements-2026",
+      "china-vat-fapiao-compliance-guide-2026",
+      "china-company-chops-guide-2026",
+      "how-to-register-foreign-owned-company-in-china-2026"
+    ],
+    facebookPost: `China Annual Compliance Checklist 2026: What Foreign Companies Should Prepare
+
+Foreign companies in China should review accounting records, tax filings, payroll, licenses, bank activity, chop controls and corporate documents before annual compliance pressure begins.
+
+Read the full guide:
+${siteUrl}/blog/china-annual-compliance-checklist-2026
+
+#ChinaBusiness #ChinaTax #Accounting #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Introduction",
+        paragraphs: [
+          "Annual compliance in China is not a single year-end task. For foreign-invested companies, annual work is the result of monthly bookkeeping, tax filing, payroll handling, document retention, bank reconciliation, license management and corporate record control.",
+          "This guide is written for WFOEs, foreign-invested companies, overseas founders and finance managers that need a practical annual compliance checklist for 2026. It is general business guidance and should be reviewed against the company's city, tax status, industry and operating facts.",
+          "The best annual compliance work starts before the year-end rush. If monthly records are clean, annual reporting and review become a confirmation exercise. If records are incomplete, annual work becomes reconstruction."
+        ]
+      },
+      {
+        heading: "Review accounting records",
+        paragraphs: [
+          "Start with the accounting file. The company should confirm that bank statements, contracts, fapiao records, supplier invoices, expense approvals, payroll documents and tax filing records are complete for the year.",
+          "A useful review checks whether every major bank movement has a business explanation. Incoming payments should link to customers, contracts, invoices or shareholder funding. Outgoing payments should link to suppliers, payroll, tax payments, reimbursements or approved business purposes.",
+          "Foreign headquarters teams should also check whether local accounting records support management reporting. If intercompany balances, service fees, reimbursements or capital movements exist, the supporting documents should be organized before annual review begins."
+        ]
+      },
+      {
+        heading: "Check tax filing status",
+        paragraphs: [
+          "The company should confirm that regular tax filings were submitted according to its filing profile and local requirements. Any missed filing, unusual balance or unexplained adjustment should be reviewed early.",
+          "VAT, fapiao records, corporate income tax-related information, payroll-related filings and other applicable items should be compared with accounting records. The goal is consistency between invoices, bank activity, contracts and tax filings.",
+          "Companies should avoid waiting until the final annual deadline to identify missing information. Early review gives management time to correct document gaps and ask practical questions."
+        ]
+      },
+      {
+        heading: "Review payroll and employee records",
+        paragraphs: [
+          "If the company has employees, payroll records should be checked for the full year. Review salary amounts, employee start or termination dates, reimbursements, allowances, payroll approvals and individual tax-related information.",
+          "Foreign employees may also have work permit and residence permit records that should align with employment contracts, payroll and company records. Immigration and payroll information should not be managed as isolated files.",
+          "A clean employee file helps with annual review, internal reporting and future compliance questions. It also reduces confusion when employees change roles or leave the company."
+        ]
+      },
+      {
+        heading: "Confirm license, registration and address status",
+        paragraphs: [
+          "Annual compliance is also a good time to review corporate registration information. Check whether the business scope, registered address, legal representative, shareholder information, finance contact and license status remain accurate.",
+          "If the company changed office, expanded business activity, added regulated services, changed management responsibilities or stopped using a registered address, the compliance implications should be reviewed.",
+          "Business licenses and special permits should not be treated as static files. Some companies need additional filings, amendments or renewals depending on activity and local requirements."
+        ]
+      },
+      {
+        heading: "Check chops, banking and document custody",
+        paragraphs: [
+          "Company chops, bank tokens, online banking access, invoice tools and tax platform access should be reviewed periodically. The company should know who controls each item, who approves use and how access is recorded.",
+          "If personnel changed during the year, custody records should be updated. Access that remains with a former employee, vendor or informal custodian can create avoidable risk.",
+          "Document retention also matters. Keep corporate records, accounting vouchers, contracts, invoices, bank materials, payroll records, license files and tax records in a clear archive."
+        ]
+      },
+      {
+        heading: "Common annual compliance mistakes",
+        paragraphs: [
+          "A common mistake is treating annual compliance as a last-minute filing job. In reality, year-end work depends on the quality of monthly records.",
+          "Another mistake is separating accounting, tax, payroll, licenses and company chops into different conversations. These areas often overlap. A bank payment may affect bookkeeping, tax filing, management reporting and document retention at the same time.",
+          "A third mistake is assuming that a low-activity company has no compliance work. Even companies with limited revenue may still need bookkeeping, filings, annual checks and corporate record maintenance."
+        ]
+      },
+      {
+        heading: "Practical next steps",
+        paragraphs: [
+          "Create a checklist covering accounting records, tax filings, payroll, bank activity, fapiao, contracts, licenses, corporate registration data, chops and document custody.",
+          "Assign responsibility for each item. Outsourced accounting support can help, but company management should still own internal approvals, document collection and business explanations.",
+          "If issues are found, address them before the annual deadline period. Early review is usually easier than urgent year-end reconstruction."
+        ]
+      },
+      {
+        heading: "How ZYS Advisory can help",
+        paragraphs: [
+          "ZYS Advisory supports foreign companies in China with bookkeeping, tax filing, accounting services, payroll coordination, annual compliance review, business license support and corporate maintenance.",
+          "For an annual compliance review, prepare accounting records, tax filing status, payroll files, bank statements, contracts, fapiao records, license documents and any open questions from headquarters.",
+          "To discuss annual compliance support, contact ZYS Advisory through the website contact page, WhatsApp or email at info@zysadvisory.com."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "When should a foreign company start annual compliance preparation in China?",
+        answer:
+          "Preparation should begin before year-end pressure starts. Monthly accounting, tax filing, payroll and document retention should be reviewed during the year."
+      },
+      {
+        question: "What documents are usually needed for annual compliance review?",
+        answer:
+          "Common documents include accounting records, bank statements, contracts, fapiao, supplier invoices, payroll records, tax filings, license files and corporate registration documents."
+      },
+      {
+        question: "Does a low-activity company still need annual compliance work?",
+        answer:
+          "Often yes. Limited revenue does not automatically remove bookkeeping, tax filing, record retention or corporate maintenance responsibilities."
+      },
+      {
+        question: "Should payroll be reviewed during annual compliance?",
+        answer:
+          "Yes. Payroll, individual tax-related information, employment changes and foreign employee records should be checked for consistency."
+      },
+      {
+        question: "Can ZYS Advisory support annual compliance for WFOEs?",
+        answer:
+          "Yes. ZYS Advisory supports WFOEs and foreign-invested companies with accounting, tax filing, payroll coordination and annual compliance review."
+      }
+    ]
   }
 ];
