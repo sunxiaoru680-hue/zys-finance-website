@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { brandSubtitle } from "@/components/seo";
+import { brandSubtitle, emailAddress, emailMailto, phoneNumber, whatsappUrl } from "@/components/seo";
 import { TrackedLink } from "@/components/TrackedLink";
 
 const headerBrandName = "ZYS Advisory";
@@ -31,6 +31,21 @@ const mainItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/95 shadow-[0_8px_24px_rgba(15,36,31,0.04)] backdrop-blur">
+      <div className="bg-ink text-white">
+        <div className="mx-auto flex min-h-9 w-full max-w-[1520px] items-center justify-center px-5 text-[11px] font-semibold leading-none text-white/85 sm:justify-end sm:text-xs xl:px-8">
+          <div className="flex min-w-0 items-center gap-2 overflow-x-auto whitespace-nowrap sm:gap-3">
+            <a className="transition hover:text-gold" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              WhatsApp: {phoneNumber}
+            </a>
+            <span className="text-white/35">|</span>
+            <span>WeChat: {phoneNumber}</span>
+            <span className="text-white/35">|</span>
+            <a className="transition hover:text-gold" href={emailMailto}>
+              Email: {emailAddress}
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto flex min-h-[92px] w-full max-w-[1520px] items-center justify-between gap-4 px-5 xl:gap-6 xl:px-8">
         <Link href="/" className="focus-ring flex min-w-0 flex-none basis-[260px] items-center gap-3 rounded-md xl:basis-[320px] 2xl:basis-[340px]">
           <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
@@ -127,7 +142,7 @@ export function Header() {
             <Menu aria-hidden="true" className="h-5 w-5" />
             <span className="sr-only">Open navigation</span>
           </summary>
-          <div className="absolute left-0 right-0 top-[92px] hidden border-b border-line bg-white p-4 shadow-soft group-open:block">
+          <div className="absolute left-0 right-0 top-[128px] hidden border-b border-line bg-white p-4 shadow-soft group-open:block">
             <nav aria-label="Mobile navigation" className="container-shell grid gap-1">
               {[{ href: "/", label: "Home" }, ...aboutItems, ...serviceItems, ...mainItems].map((item) => (
                 <Link
