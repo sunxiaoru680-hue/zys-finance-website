@@ -1479,5 +1479,136 @@ ${siteUrl}/blog/china-annual-compliance-checklist-2026
           "Yes. ZYS Advisory supports WFOEs and foreign-invested companies with accounting, tax filing, payroll coordination and annual compliance review."
       }
     ]
+  },
+  {
+    slug: "china-payroll-individual-income-tax-guide-2026",
+    title: "China Payroll and Individual Income Tax Guide 2026: What Foreign Employers Should Know",
+    metaTitle: "China Payroll and Individual Income Tax Guide 2026 | Foreign Employer Guide",
+    description:
+      "A practical 2026 guide for foreign employers in China covering payroll setup, employee records, individual income tax, social insurance, reimbursements, work permits and compliance mistakes.",
+    summary:
+      "Foreign companies hiring in China need a payroll workflow that connects employment contracts, salary approvals, individual income tax, social insurance, reimbursements, work permit records and monthly bookkeeping.",
+    published: "2026-08-06",
+    updated: "2026-08-06",
+    category: "Payroll & Tax",
+    readingTime: "10 min read",
+    keyword: "China payroll and individual income tax",
+    imageAlt:
+      "ZYS Advisory guide to China payroll and individual income tax for foreign employers",
+    relatedServiceHrefs: [
+      "/services/payroll-service",
+      "/services/accounting-services",
+      "/services/tax-consulting",
+      "/services/china-visa-service",
+      "/services/company-registration-in-china",
+      "/contact"
+    ],
+    relatedArticleSlugs: [
+      "china-annual-compliance-checklist-2026",
+      "china-accounting-bookkeeping-requirements-2026",
+      "china-vat-fapiao-compliance-guide-2026",
+      "how-to-register-foreign-owned-company-in-china-2026"
+    ],
+    facebookPost: `China Payroll and Individual Income Tax Guide 2026: What Foreign Employers Should Know
+
+Foreign companies hiring in China need a clear payroll workflow covering employment records, salary approvals, individual income tax, social insurance, reimbursements and work permit consistency.
+
+Read the full guide:
+${siteUrl}/blog/china-payroll-individual-income-tax-guide-2026
+
+#ChinaBusiness #ChinaTax #Payroll #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Introduction",
+        paragraphs: [
+          "Payroll in China is more than transferring salary to employees. For foreign-invested companies, payroll connects employment contracts, salary approvals, individual income tax, social insurance, reimbursements, accounting records, work permit information and management reporting.",
+          "This guide is written for WFOEs, foreign employers, overseas founders and finance managers that need a practical payroll and individual income tax overview for 2026. It is general business guidance and should be checked against the company's city, employee profile, employment terms and tax situation.",
+          "A clean payroll process should be built before the first employee is paid. When payroll is handled informally, later corrections can affect accounting, tax filing, employee trust and annual compliance."
+        ]
+      },
+      {
+        heading: "Set up payroll before hiring",
+        paragraphs: [
+          "Before hiring, the company should confirm who approves salary, who collects employee information, who prepares payroll calculations, who checks tax filing status and who authorizes payment. These steps should be documented even for a small team.",
+          "The employer should maintain employment contracts, employee identity information, bank details, salary terms, start dates, probation arrangements, benefits, reimbursement rules and internal approval records.",
+          "Foreign employees may also need work permit and residence permit coordination. Payroll records, employment contracts and immigration materials should be consistent."
+        ]
+      },
+      {
+        heading: "Individual income tax and monthly payroll data",
+        paragraphs: [
+          "Individual income tax handling depends on employee income, deductions, benefits, tax residency and other facts. Employers should avoid making assumptions without reviewing the employee profile and local filing requirements.",
+          "Each month, payroll data should include salary, allowances, reimbursements, deductions, leave adjustments, employee changes and any special payments. The accounting provider or payroll team needs this information early enough to complete payroll and related filings.",
+          "If the employee is foreign, the company should be careful that payroll, visa, work permit, contract and actual working arrangement support the same story."
+        ]
+      },
+      {
+        heading: "Social insurance, housing fund and benefits",
+        paragraphs: [
+          "Payroll planning should consider applicable social insurance, housing fund and benefit arrangements. Requirements can vary by city, employee profile and local practice, so employers should confirm details before committing to compensation packages.",
+          "Foreign investors sometimes quote a salary without estimating employer-side costs. A better approach is to review total employment cost, cash salary, benefits, reimbursements and reporting obligations together.",
+          "Benefit and reimbursement policies should be written clearly. Informal reimbursements can create accounting and tax questions if they are not supported by documents and business explanations."
+        ]
+      },
+      {
+        heading: "Bookkeeping and payroll records",
+        paragraphs: [
+          "Payroll should be connected with monthly bookkeeping. Salary payments, tax-related items, reimbursements, employee advances and benefit costs should be recorded with supporting documents.",
+          "The company should keep payroll approvals, payment records, employee files, reimbursement documents and filing confirmations. These records help with annual compliance, audits, management reporting and employee questions.",
+          "If management receives monthly reports, payroll costs should be explained clearly so headquarters understands employee cost, tax handling and cash flow."
+        ]
+      },
+      {
+        heading: "Common payroll mistakes",
+        paragraphs: [
+          "One common mistake is hiring before payroll responsibilities are clear. Another is treating employee reimbursements as informal payments without approval records or supporting documents.",
+          "A third mistake is separating work permit planning from payroll. For foreign employees, salary, job title, employer, work location and immigration records should be reviewed together.",
+          "Companies also make mistakes when they only check net salary. Employer-side cost, tax treatment, benefits and filing responsibilities should be considered before an offer is finalized."
+        ]
+      },
+      {
+        heading: "Practical next steps",
+        paragraphs: [
+          "Create a payroll checklist covering employee documents, contract terms, salary approval, bank details, tax data, benefit information, reimbursement policy and monthly filing responsibility.",
+          "Assign a person to collect payroll changes each month. New hires, resignations, salary changes, bonuses, leave and reimbursements should be communicated before payroll is processed.",
+          "Review payroll together with bookkeeping and annual compliance. This avoids treating employee costs as a separate workflow disconnected from finance records."
+        ]
+      },
+      {
+        heading: "How ZYS Advisory can help",
+        paragraphs: [
+          "ZYS Advisory supports foreign-invested companies with payroll coordination, accounting services, tax filing, bookkeeping, work permit planning, residence permit support and annual compliance review.",
+          "For a payroll review, prepare employee contracts, salary details, reimbursement policies, payroll records, work permit information, accounting records and any questions from headquarters.",
+          "To discuss payroll and individual income tax support in China, contact ZYS Advisory through the website contact page, WhatsApp or email at info@zysadvisory.com."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "When should a foreign company set up payroll in China?",
+        answer:
+          "Payroll should be planned before the first employee is paid. The employer should confirm contracts, salary approvals, employee data, tax handling, benefits and payment controls early."
+      },
+      {
+        question: "Does payroll affect annual compliance?",
+        answer:
+          "Yes. Payroll records support accounting, tax filing, employee cost reporting, annual review and employment-related compliance questions."
+      },
+      {
+        question: "What payroll documents should employers keep?",
+        answer:
+          "Common records include employment contracts, salary approvals, payroll calculations, payment records, reimbursement documents, tax filing confirmations and employee change records."
+      },
+      {
+        question: "Should foreign employee work permits be reviewed with payroll?",
+        answer:
+          "Yes. Employment contracts, payroll records, job information and work permit materials should be consistent."
+      },
+      {
+        question: "Can ZYS Advisory support China payroll for foreign-invested companies?",
+        answer:
+          "Yes. ZYS Advisory supports payroll coordination, bookkeeping, tax filing, work permit planning and annual compliance review for foreign-invested companies."
+      }
+    ]
   }
 ];
