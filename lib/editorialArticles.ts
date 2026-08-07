@@ -1504,6 +1504,7 @@ ${siteUrl}/blog/china-annual-compliance-checklist-2026
       "/contact"
     ],
     relatedArticleSlugs: [
+      "china-work-permit-residence-permit-guide-2026",
       "china-annual-compliance-checklist-2026",
       "china-accounting-bookkeeping-requirements-2026",
       "china-vat-fapiao-compliance-guide-2026",
@@ -1608,6 +1609,158 @@ ${siteUrl}/blog/china-payroll-individual-income-tax-guide-2026
         question: "Can ZYS Advisory support China payroll for foreign-invested companies?",
         answer:
           "Yes. ZYS Advisory supports payroll coordination, bookkeeping, tax filing, work permit planning and annual compliance review for foreign-invested companies."
+      }
+    ]
+  },
+  {
+    slug: "china-work-permit-residence-permit-guide-2026",
+    title: "China Work Permit and Residence Permit Guide 2026 for Foreign Employees",
+    metaTitle: "China Work Permit and Residence Permit Guide 2026 | ZYS Advisory",
+    description:
+      "A practical 2026 guide for foreign companies hiring foreign employees in China, covering work permit planning, residence permits, employer readiness, documents, payroll consistency and common mistakes.",
+    summary:
+      "Foreign employee onboarding in China should connect work permit planning, residence permit timing, employer records, payroll, tax, contracts and document preparation before the employee relocates or starts work.",
+    published: "2026-08-07",
+    updated: "2026-08-07",
+    category: "Payroll & Visa",
+    readingTime: "10 min read",
+    keyword: "China work permit and residence permit",
+    imageAlt:
+      "ZYS Advisory guide to China work permit and residence permit planning for foreign employees",
+    relatedServiceHrefs: [
+      "/services/china-visa-service",
+      "/services/company-registration-in-china",
+      "/services/china-payroll-service",
+      "/services/accounting-services",
+      "/services/tax-consulting",
+      "/contact"
+    ],
+    relatedArticleSlugs: [
+      "china-payroll-individual-income-tax-guide-2026",
+      "how-to-register-foreign-owned-company-in-china-2026",
+      "china-company-registration-documents-checklist",
+      "china-business-license-application-guide"
+    ],
+    facebookPost: `China Work Permit and Residence Permit Guide 2026 for Foreign Employees
+
+Foreign companies hiring international staff in China should coordinate work permit planning, residence permit timing, payroll, tax records and employer documentation before the employee starts work.
+
+Read the full guide:
+${siteUrl}/blog/china-work-permit-residence-permit-guide-2026
+
+#ChinaBusiness #ChinaVisa #ForeignInvestment #CrossBorderBusiness #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Introduction",
+        paragraphs: [
+          "Hiring a foreign employee in China is not only an HR decision. For a foreign-invested company, the process usually connects company registration status, employment contracts, role planning, work permit preparation, residence permit timing, payroll setup, individual income tax handling and ongoing compliance records.",
+          "Many companies first think about the employee's visa. In practice, the employer should start earlier by checking whether the China entity is ready to sponsor the employee, whether the job title and work location match the real business, whether payroll and tax records can support the employment arrangement, and whether the employee's personal documents are complete enough for review.",
+          "This guide is written for foreign founders, WFOEs, international SMEs and HR or finance teams that plan to employ foreign staff in mainland China in 2026. It provides general business guidance and does not replace legal, immigration, tax or HR advice for a specific case. Requirements and review practice can vary by city, company profile, employee background and document readiness."
+        ]
+      },
+      {
+        heading: "Who this guide is for",
+        paragraphs: [
+          "This article is useful for newly registered China companies preparing to hire a foreign general manager, overseas founders relocating to China, foreign-invested companies moving regional staff into China, and finance teams that need payroll and tax records to match immigration documents.",
+          "It is also relevant for companies that already employ foreign staff but want to reduce renewal risk, document gaps or inconsistencies between the employment contract, work permit, payroll records and actual work arrangement."
+        ]
+      },
+      {
+        heading: "Start with employer readiness",
+        paragraphs: [
+          "Before preparing an employee's documents, the company should confirm that the China entity can support the application. The business license, registered address, company contact information, legal representative details, employment plan and supporting records should be organized.",
+          "A newly registered company should not assume that a business license alone completes the preparation. The employer may also need internal responsibility for document signing, official seals, online account access, HR records, payroll setup and communication with relevant service providers.",
+          "If the company has recently changed address, legal representative, business scope or tax registration information, those changes should be reviewed before starting the work permit process. Inconsistent company records can slow down practical handling."
+        ]
+      },
+      {
+        heading: "Plan the role, title and work location",
+        paragraphs: [
+          "The proposed role should match the company's real business activity. A foreign employee's job title, responsibilities, work location and contract terms should be understandable from the company's business model and registration profile.",
+          "Companies should avoid using a generic title only because it sounds senior. The role should connect with actual management, technical, sales, consulting, finance or operational needs. If the employee will work across multiple cities or with an overseas headquarters, the company should discuss how that arrangement will be documented.",
+          "Work location matters because local processing and residence permit handling are usually tied to where the company and employee are based. A remote or frequently changing arrangement should be reviewed carefully before documents are submitted."
+        ]
+      },
+      {
+        heading: "Documents to prepare",
+        paragraphs: [
+          "The exact document list depends on the city, employer profile, employee nationality, role and application type. As a planning baseline, companies should prepare employer documents, business license information, employment contract or offer materials, company contact details and authorized signing arrangements.",
+          "Employees typically need identity and personal background documents, education or professional qualification materials where applicable, work experience information, photos, health-related materials if required, and other supporting documents requested for the specific filing route.",
+          "Foreign documents may require additional formalities, translation or formatting before they are accepted. Companies should check document requirements early rather than waiting until the planned start date is close.",
+          "A practical document review should also check consistency. Names, passport information, job title, employer name, work location, contract dates and salary information should align across the application materials, employment contract and internal payroll plan."
+        ]
+      },
+      {
+        heading: "Step-by-step work permit and residence permit workflow",
+        paragraphs: [
+          "The first step is a feasibility review. The employer confirms the company status, role, employee background, target city, expected timeline and document readiness. This review should identify obvious gaps before forms or filings are prepared.",
+          "The second step is document collection and preparation. Employer files, employee documents, translations, signatures and company seals are organized according to the planned route. If overseas documents need formal handling, the schedule should allow enough time.",
+          "The third step is application preparation and submission. The specific process depends on the employee's current location, visa status, city and application category. The company should avoid promising a start date until the filing path is confirmed.",
+          "The fourth step is work permit handling. Once the relevant work authorization steps are completed, the employee and employer should confirm what the authorization covers, including employer, role and location.",
+          "The fifth step is residence permit coordination when applicable. A residence permit is separate from the business purpose of the company and must be coordinated with the employee's legal stay, timing, passport validity and local procedures.",
+          "The sixth step is post-approval compliance. The company should keep records, update payroll, monitor renewal dates, retain supporting documents and review any change in role, employer, location or passport information before it becomes a problem."
+        ]
+      },
+      {
+        heading: "Payroll, tax and accounting consistency",
+        paragraphs: [
+          "Foreign employee compliance should not be separated from payroll. The employment contract, salary arrangement, individual income tax handling, social insurance or benefit assumptions, accounting records and work permit information should tell a consistent story.",
+          "For finance teams, this means payroll setup should be completed before salary payments begin. Employee records, bank payment records, reimbursement documents and tax-related information should be maintained in the company's accounting files.",
+          "If the employee is a founder or senior manager, the company should be especially careful with compensation, reimbursements, overseas payments and management reporting. Informal payments can create avoidable questions later."
+        ]
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: [
+          "A common mistake is starting the process too late. Foreign documents, translations, company records and local review steps can take longer than expected, especially when the employee is already planning travel or relocation.",
+          "Another mistake is treating the work permit as separate from the employment contract and payroll. If the contract, salary records and actual work arrangement do not align, the company may face questions during renewal or later compliance review.",
+          "Companies also make mistakes when they change an employee's role, office location, passport or employer arrangement without checking whether an update is needed. Changes should be reviewed before they are implemented.",
+          "A final mistake is relying on informal advice from another city or another company. Local practice can differ, and the right approach depends on the employer, role, documents and timing."
+        ]
+      },
+      {
+        heading: "Practical next steps",
+        paragraphs: [
+          "Before hiring a foreign employee, prepare a short role memo covering the employer, job title, responsibilities, work location, expected start date, salary approach and reporting line. This helps advisors identify whether the employment plan is coherent.",
+          "Next, collect company documents and employee documents early. Check passport validity, name consistency, education or experience records where relevant, contract terms and any timing constraints.",
+          "Then connect the visa plan with payroll and accounting. Confirm who will process payroll, who will maintain employee records, who will track renewals and who will notify advisors when the employee's role or location changes.",
+          "For companies that already have foreign employees, schedule a file review before renewal season. A simple review of work permit records, residence permit status, employment contracts, payroll data and company information can prevent last-minute pressure."
+        ]
+      },
+      {
+        heading: "How ZYS Advisory can help",
+        paragraphs: [
+          "ZYS Advisory supports foreign-invested companies with China visa service, work permit planning, residence permit coordination, company registration, payroll support, accounting services, tax filing and annual compliance review.",
+          "For a work permit or residence permit consultation, prepare the company's business license information, employee passport details, proposed role, target city, expected start date, contract information and any current visa or residence status.",
+          "To discuss foreign employee onboarding in China, contact ZYS Advisory through the website contact page, WhatsApp or email at info@zysadvisory.com."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can a newly registered China company sponsor a foreign employee?",
+        answer:
+          "A newly registered company may be able to sponsor a foreign employee, but employer readiness, company records, role, location, employee background and local review requirements should be checked first."
+      },
+      {
+        question: "Is a work permit the same as a residence permit?",
+        answer:
+          "No. Work authorization and residence permission are related but separate steps. Timing and requirements should be coordinated based on the employee's situation and local procedures."
+      },
+      {
+        question: "What should employers prepare before hiring foreign staff in China?",
+        answer:
+          "Employers should prepare company documents, role information, employment contract terms, contact and signing arrangements, payroll setup, and employee personal documents for review."
+      },
+      {
+        question: "Does payroll need to match the work permit application?",
+        answer:
+          "Payroll, employment contract, job title, employer information and work permit records should be consistent. Inconsistencies can create renewal or compliance questions."
+      },
+      {
+        question: "Can ZYS Advisory help with China work permit and residence permit matters?",
+        answer:
+          "Yes. ZYS Advisory supports work permit planning, residence permit coordination, payroll setup, tax filing and company compliance for foreign-invested businesses in China."
       }
     ]
   }
