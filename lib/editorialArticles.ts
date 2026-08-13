@@ -2239,5 +2239,163 @@ ${siteUrl}/blog/china-wfoe-registered-capital-requirements-2026
           "Yes. ZYS can coordinate registered capital planning with company registration, business scope, licensing, bank preparation, accounting, tax filing and post-registration compliance based on the investor’s actual operating plan."
       }
     ]
+  },
+  {
+    slug: "china-profit-repatriation-guide-2026",
+    title: "China Profit Repatriation Guide 2026: Dividends for Foreign Shareholders",
+    metaTitle: "China Profit Repatriation 2026 | Dividend Guide",
+    description:
+      "A practical 2026 guide to repatriating profits from a China company through dividends, covering distributable profit, corporate approvals, withholding tax, treaty relief, bank documents and compliance.",
+    summary:
+      "Foreign shareholders can generally receive dividends from a profitable China subsidiary, but the payment should follow a documented sequence: close compliant accounts, settle relevant taxes, confirm distributable profit, approve the distribution, assess withholding and treaty eligibility, and prepare a consistent bank remittance file.",
+    published: "2026-08-13",
+    updated: "2026-08-13",
+    category: "Cross-Border Tax",
+    readingTime: "12 min read",
+    keyword: "China profit repatriation",
+    imageAlt:
+      "ZYS Advisory guide to China profit repatriation and dividend payments to foreign shareholders",
+    relatedServiceHrefs: [
+      "/services/tax-consulting",
+      "/services/accounting-services",
+      "/services/audit-services",
+      "/services/cfo-advisory-china"
+    ],
+    relatedArticleSlugs: [
+      "china-annual-compliance-checklist-2026",
+      "china-accounting-bookkeeping-requirements-2026",
+      "china-vat-fapiao-compliance-guide-2026",
+      "china-wfoe-registered-capital-requirements-2026"
+    ],
+    facebookPost: `New Guide from ZYS Advisory
+
+China Profit Repatriation Guide 2026: Dividends for Foreign Shareholders
+
+Before a China subsidiary sends dividends overseas, finance teams should align distributable profit, corporate approvals, withholding tax, treaty eligibility and bank documentation. Our new guide explains the practical sequence and the records foreign shareholders should prepare.
+
+Read the full guide:
+${siteUrl}/blog/china-profit-repatriation-guide-2026
+
+#ChinaBusiness #ProfitRepatriation #ChinaTax #ForeignInvestment #CrossBorderFinance #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why profit repatriation should be planned before year-end",
+        paragraphs: [
+          "A foreign-invested company in mainland China may generate cash locally while its overseas shareholder needs funds for group operations, debt service or reinvestment. A dividend is often the clearest route for returning after-tax profit to an equity investor, but available cash and legally distributable profit are not the same thing. A bank balance can include registered capital, customer advances, unpaid taxes, amounts owed to suppliers or cash needed for payroll. None of those automatically becomes a dividend.",
+          "A workable repatriation starts with the company’s accounts and corporate records. The China entity should be able to show how profit was earned, whether expenses and taxes were recorded, how prior losses were treated, what amount remains available for distribution and which shareholder is entitled to receive it. The shareholder should separately consider tax and reporting in its own jurisdiction.",
+          "This guide focuses on ordinary dividends from a mainland China company to a foreign corporate shareholder. It is general business information, not a conclusion for a particular payment. Rules and bank practice can depend on the payer, recipient, ownership chain, treaty, location and supporting evidence. Confirm the file with the company’s accountant, tax adviser and remitting bank before approving a transfer."
+        ]
+      },
+      {
+        heading: "What can be distributed as a dividend?",
+        paragraphs: [
+          "The starting point is accumulated after-tax profit shown in reliable financial records, not revenue and not cash on hand. Before distributing profit, the company should account for relevant taxes, cover prior-year losses and make any statutory allocations that apply. The precise distributable amount should be supported by the financial statements and reviewed against the articles of association and shareholder records.",
+          "China’s Company Law provides the corporate framework for profit distributions and statutory reserve allocations. The accounting team should not simply copy a management-reporting number into a shareholder resolution. Management accounts, statutory books, tax returns and the proposed distribution should reconcile. If they do not, the company should resolve the difference before approaching the bank.",
+          "The company also needs sufficient working capital after the proposed payment. A lawful dividend can still be commercially unwise if it leaves the subsidiary unable to pay salaries, rent, suppliers or upcoming taxes. Finance teams should prepare a post-distribution cash-flow forecast and preserve a buffer suitable for the actual business rather than distributing the maximum theoretical amount."
+        ],
+        subsections: [
+          {
+            heading: "Why an audit or financial review may matter",
+            paragraphs: [
+              "The supporting financial package depends on the company and the reviewing institutions. A bank or adviser may request audited financial statements, a profit distribution schedule or other evidence. Even where a particular audit is not assumed to be universally mandatory, an audit or focused review can help identify unreconciled balances, unsupported expenses, related-party items and tax exposures before the shareholder relies on the distributable-profit figure. Confirm the required form and period with the bank and local advisers rather than ordering documents from a generic checklist."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "A practical dividend repatriation process",
+        paragraphs: [
+          "First, close and reconcile the relevant accounting period. Confirm revenue, costs, expenses, tax provisions, bank balances, receivables, payables and related-party accounts. Review whether earlier losses remain and whether tax filings are consistent with the books. A dividend file built on incomplete bookkeeping is likely to create questions later.",
+          "Second, calculate a proposed distributable amount. The calculation should start from the applicable financial statements, reflect loss recovery and reserve considerations, and identify profit already distributed. Keep a clear bridge from retained earnings to the amount proposed for payment.",
+          "Third, obtain corporate approval under the articles of association and applicable company law. Prepare the shareholder decision or resolution and any board or internal approvals required by the company’s governance documents. Names, ownership percentages, currency and payment amount should agree across the resolution, shareholder register, business registration information and bank account records.",
+          "Fourth, assess China tax treatment. A dividend paid to a non-resident enterprise is generally China-source income and the payer normally has withholding responsibilities. The domestic treatment and any available tax-treaty relief must be reviewed for the actual recipient. Do not assume that a holding company’s location alone produces a reduced rate.",
+          "Fifth, complete the relevant tax reporting and retain evidence. If treaty treatment is claimed, prepare the recipient’s tax-residence evidence and the documents supporting eligibility. The current non-resident treaty-benefit system generally uses self-assessment with supporting information retained for review, but the company should confirm the applicable filing process and forms at the time of payment.",
+          "Sixth, submit the remittance application to the company’s bank. The bank performs its own authenticity and compliance review and may ask for corporate, tax, financial, ownership and payment documents. Respond with one consistent evidence set. After remittance, archive the bank advice, accounting entry, tax evidence, approvals and correspondence so the transaction can be explained during future audits or tax reviews."
+        ]
+      },
+      {
+        heading: "Withholding tax and treaty relief",
+        paragraphs: [
+          "For a foreign corporate shareholder without an applicable exemption or lower treaty treatment, China’s domestic rules commonly result in enterprise income tax withholding on China-source dividends at an effective 10 percent rate. This is a general reference point, not a quotation for every recipient. Different rules can apply to individuals, permanent establishments and special circumstances, and a treaty should be checked article by article.",
+          "A tax treaty or arrangement may reduce the source-country rate when its conditions are satisfied. Relevant questions can include whether the recipient is a tax resident of the treaty jurisdiction, whether it is the beneficial owner of the dividend, whether a required direct ownership threshold and holding period are met, whether the investment is connected with a permanent establishment, and whether anti-abuse provisions apply.",
+          "The State Taxation Administration’s beneficial-owner rules require a facts-and-circumstances analysis. Ownership and control of the income, substantive activity, onward-payment obligations and the wider ownership chain may matter. A conduit company should not be assumed to qualify merely because it holds the shares on paper.",
+          "Finance teams should obtain a current certificate of tax residence and map the legal and beneficial ownership chain early. They should also keep evidence of the recipient’s functions, decision-making, personnel, premises, risks and use of the dividend where relevant. Treaty relief is a compliance position supported by facts, not an automatic discount selected during bank processing."
+        ]
+      },
+      {
+        heading: "Documents to prepare for the bank and tax file",
+        paragraphs: [
+          "The exact request varies, so the remitting bank should provide the current checklist. A planning file commonly includes the business license, articles of association, shareholder register or ownership evidence, corporate approval for the dividend, financial statements, distributable-profit calculation, relevant tax filing or payment evidence, recipient bank details and the remittance application.",
+          "Where treaty benefits are used, the file may also include a certificate of tax residence, treaty-benefit reporting materials, beneficial-owner analysis and supporting ownership documents. Translations or certifications may be requested depending on the source and reviewing institution. The names of the payer, recipient and shareholder must be checked carefully, especially after reorganizations or changes of registered particulars.",
+          "A short transaction memo is useful. It can state the profit period, approved gross dividend, withholding position, net amount, recipient, ownership percentage and attached evidence. This helps local management, the bank, the overseas treasury team and future auditors understand the same transaction without relying on scattered email explanations."
+        ],
+        subsections: [
+          {
+            heading: "Keep the currency and payment trail consistent",
+            paragraphs: [
+              "Confirm the resolution currency, conversion approach, beneficiary account and payment reference before submission. If the dividend is approved in one currency and remitted in another, document the conversion and accounting treatment. The net payment, withholding evidence and ledger entry should form a traceable chain from shareholder approval to bank debit."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Common profit repatriation mistakes",
+        paragraphs: [
+          "One frequent mistake is treating excess cash as distributable profit. Another is preparing the resolution before the accounts are finalized, then discovering that losses, reserves or tax adjustments reduce the available amount. Companies also create avoidable delays when their statutory accounts, tax filings and management reports use different figures.",
+          "Some groups select a treaty rate by looking only at the immediate shareholder’s jurisdiction. That overlooks tax residence, beneficial ownership, holding conditions and anti-abuse rules. Others request a residence certificate too late or submit a certificate for the wrong period or entity.",
+          "A further risk is using service fees, royalties, loans or reimbursements as informal substitutes for dividends. Those payments have different legal, commercial, tax, transfer-pricing and foreign-exchange requirements. They should reflect real transactions, contracts and value, not be created solely to move cash. Mislabeling a payment can create more exposure than following a properly documented dividend process.",
+          "Finally, companies sometimes distribute nearly all available cash without forecasting local obligations. Profit repatriation should sit inside a treasury plan that accounts for seasonal working capital, tax payments, payroll, supplier terms, capital expenditure and contingency."
+        ]
+      },
+      {
+        heading: "Pre-remittance checklist and next steps",
+        paragraphs: [
+          "Before approval, confirm the proposed recipient, ownership chain, recipient tax residence, applicable treaty or domestic treatment and any beneficial-owner questions. Reconcile the statutory accounts and tax filings, calculate distributable profit, check earlier distributions and prepare a post-payment cash forecast.",
+          "Then confirm the governance path under the articles, obtain the current bank checklist, prepare tax and treaty evidence, and appoint one person to reconcile every figure and name across the package. Do not promise a transfer date until the accounting, tax and bank reviewers have assessed the actual documents.",
+          "After payment, book the gross dividend, withholding and net remittance correctly. Retain the resolution, calculation, financial statements, tax-residence and treaty materials, withholding evidence, bank records and correspondence in a single permanent file. The overseas shareholder should obtain its own advice on receipt-side tax, foreign tax credits and reporting.",
+          "ZYS Advisory helps foreign shareholders coordinate China accounting, tax review, audit preparation, dividend documentation and cross-border remittance readiness. To request a scoped review, send the company name, shareholder structure, target distribution period, latest financial statements and recipient jurisdiction through the consultation form, WhatsApp or info@zysadvisory.com. ZYS does not guarantee a tax outcome, treaty rate, bank approval or completion date."
+        ],
+        subsections: [
+          {
+            heading: "Official sources checked for this update",
+            paragraphs: [
+              "This guide was reviewed on August 13, 2026 against the Enterprise Income Tax Law and its implementing framework, the Company Law effective July 1, 2024, State Taxation Administration Announcement No. 35 of 2019 on non-resident taxpayers claiming treaty benefits, and State Taxation Administration Announcement No. 9 of 2018 on beneficial ownership for dividends, interest and royalties. It also reflects the general foreign-exchange principle that banks review the authenticity and compliance of supporting materials. Project-specific treatment and current local bank requirements should be confirmed before payment."
+            ]
+          }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can a China WFOE send profits to its foreign shareholder?",
+        answer:
+          "Generally yes, through a properly approved dividend from distributable after-tax profit. The company should first reconcile its accounts, cover relevant losses and allocations, complete tax handling and satisfy the bank’s document review."
+      },
+      {
+        question: "Is cash in the China company’s bank account automatically available for dividends?",
+        answer:
+          "No. Cash may represent capital, advances or amounts needed for liabilities. The dividend must be supported by distributable profit and corporate approval, and the company should retain enough working capital."
+      },
+      {
+        question: "What is the China withholding tax rate on dividends to a foreign company?",
+        answer:
+          "China’s domestic rules commonly produce an effective 10 percent enterprise income tax withholding rate for dividends paid to a non-resident enterprise, but the actual result depends on the recipient and facts. An applicable treaty may provide different treatment if all conditions are met."
+      },
+      {
+        question: "Can a foreign shareholder automatically claim a lower treaty rate?",
+        answer:
+          "No. The recipient should satisfy the relevant treaty conditions, which may include tax residence, beneficial ownership, direct holding and holding-period requirements, as well as anti-abuse provisions. Supporting documents should be prepared and retained."
+      },
+      {
+        question: "Does every dividend remittance require an audit?",
+        answer:
+          "The supporting package depends on the company, bank and current local requirements. Audited financial statements or another financial review may be requested or advisable, but the precise requirement should be confirmed rather than assumed."
+      },
+      {
+        question: "How long does China profit repatriation take?",
+        answer:
+          "There is no reliable universal timeline. Timing depends on accounting readiness, corporate approvals, tax and treaty documentation, bank review and whether questions arise. Review the actual file before setting a payment date."
+      }
+    ]
   }
 ];
