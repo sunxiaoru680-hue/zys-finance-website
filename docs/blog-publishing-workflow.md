@@ -35,3 +35,13 @@ The RSS feed includes article title, canonical URL, summary, publication date, a
 ## Facebook post templates
 
 Templates for approved editorial articles are stored in `lib/editorialArticles.ts` under `facebookPost`. The site also includes a secure Facebook Pages API publishing workflow documented in `docs/facebook-auto-publishing.md`. Use dry-run mode to review the exact post before enabling real Page publishing.
+
+### Required publishing order
+
+1. After the public blog URL returns HTTP 200, use the server-side `/api/social/facebook/publish` endpoint as the primary publishing path.
+2. Run a dry-run first, then publish the single approved article slug through the endpoint and retain the returned Facebook post ID or permalink.
+3. If the first call fails, check the deployed article, Vercel configuration, Page token validity, API permissions, duplicate-publish record and Meta response, then retry safely.
+4. Use the logged-in Facebook Page interface only when the backend endpoint remains unavailable or fails after those checks. Browser publishing is a fallback, not the normal workflow.
+5. Before using the fallback, verify that the article has not already been published. After publishing by either route, verify the public post URL and record initial performance data.
+
+Page access tokens and cron secrets must remain in server-side configuration. Never place them in the repository, browser post text, task output or logs.
