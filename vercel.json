@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/publish-social/china-company-deregistration-liquidation-guide-2026",
-      "schedule": "35 8 * * *"
+      "schedule": "42 8 * * *"
     }
   ]
 }
