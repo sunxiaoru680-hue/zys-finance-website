@@ -2552,5 +2552,168 @@ ${siteUrl}/blog/china-beneficial-owner-information-filing-2026
           "The People's Bank of China or its branches may order correction within a specified period. Refusal to correct may lead to a fine of up to RMB 50,000. Other filing failures are handled under the relevant entity-registration administrative rules."
       }
     ]
+  },
+  {
+    slug: "china-company-deregistration-liquidation-guide-2026",
+    title: "China Company Deregistration and Liquidation Guide 2026 for Foreign Investors",
+    metaTitle: "China Company Deregistration 2026 | Liquidation Guide",
+    description:
+      "A practical 2026 guide to China company deregistration and liquidation for foreign investors, covering shareholder decisions, creditor notices, tax clearance, employees, assets, debts and final cancellation.",
+    summary:
+      "Closing a China company is a controlled legal, tax and operational project—not the same as stopping business. Foreign shareholders should preserve records, map assets and liabilities, complete the applicable liquidation and creditor procedures, settle employees and taxes, and coordinate registration, customs, social insurance, banking and chop closure in the correct sequence.",
+    published: "2026-08-21",
+    updated: "2026-08-21",
+    category: "China Corporate Compliance",
+    readingTime: "13 min read",
+    keyword: "China company deregistration",
+    imageAlt:
+      "ZYS Advisory 2026 guide to China company deregistration and liquidation for foreign investors",
+    relatedServiceHrefs: [
+      "/services/company-deregistration",
+      "/services/accounting-services",
+      "/services/tax-consulting",
+      "/services/annual-compliance"
+    ],
+    relatedArticleSlugs: [
+      "china-annual-compliance-checklist-2026",
+      "china-accounting-bookkeeping-requirements-2026",
+      "china-beneficial-owner-information-filing-2026",
+      "china-profit-repatriation-guide-2026"
+    ],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China Company Deregistration and Liquidation for Foreign Investors
+
+Stopping operations does not close a China company. Our new guide explains how to plan the shareholder decision, liquidation, creditor notices, employee settlement, tax clearance, asset and debt handling, and final cancellation without losing control of records, bank access or compliance deadlines.
+
+Read the full guide:
+${siteUrl}/blog/china-company-deregistration-liquidation-guide-2026
+
+#ChinaBusiness #CompanyDeregistration #CorporateCompliance #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why China company deregistration needs an exit plan",
+        paragraphs: [
+          "A foreign shareholder may decide to close a China subsidiary because the project has ended, the group is restructuring, the entity has remained inactive, a distributor model is replacing direct operations or the cost of compliance no longer matches the commercial opportunity. Whatever the reason, ceasing sales, dismissing staff or emptying a bank account does not terminate the company. The legal entity continues to exist until the required liquidation and deregistration steps are completed.",
+          "That distinction creates real exposure. While the entity remains registered, it may continue to have accounting, tax, annual reporting, employment, banking, customs or licensing matters to manage. Abandoning it can also make a later closure harder because people leave, seals and records disappear, digital accounts expire and historic balances become difficult to explain.",
+          "The State Administration for Market Regulation's Enterprise Deregistration Guide (2025 Revision), issued jointly with five other national authorities, describes three broad phases for a normal exit: a dissolution decision, liquidation and distribution, and deregistration. The revised Company Law, effective July 1, 2024, supplies the core company-law duties. This article turns those national rules into a planning framework for foreign-invested limited liability companies. Local filing interfaces and case-specific tax, employment and foreign-exchange treatment still need to be confirmed."
+        ]
+      },
+      {
+        heading: "Choose the correct exit route before filing anything",
+        paragraphs: [
+          "A solvent company that can pay its obligations normally follows voluntary dissolution, liquidation and ordinary deregistration. The shareholder decision and company articles should be reviewed first, particularly where the overseas ownership chain, authorized signatory or registered officers have changed since formation.",
+          "A simplified deregistration route may be available where the company incurred no debts during its existence or has fully paid all debts, and all shareholders make the required commitment. Under the Company Law, the simplified procedure includes an announcement through the National Enterprise Credit Information Publicity System for at least 20 days. If there is no objection, the company may apply for deregistration within 20 days after the announcement period ends. A false shareholder commitment can create joint liability for pre-deregistration debts, so this is not a shortcut for a company with unclear balances, employees, taxes or creditor claims.",
+          "If the company cannot pay its debts, management should not distribute remaining cash or improvise a solvent liquidation. The Company Law states that when a liquidation team discovers the company's assets are insufficient to discharge its debts, it must apply to the people's court for bankruptcy liquidation. Distressed, disputed or court-involved cases need separate legal advice.",
+          "Revocation of a business license is also not voluntary deregistration. A revoked company may still require liquidation and closure work, and the liabilities of shareholders or persons responsible for liquidation do not disappear merely because an authority later removes a registration in a special statutory process."
+        ]
+      },
+      {
+        heading: "Build a closure inventory before the shareholder decision",
+        paragraphs: [
+          "Before announcing an exit, assemble one control file. It should cover the business license, articles, shareholder and officer records, company chops, bank accounts and tokens, tax accounts, accounting books, invoices, contracts, leases, employee records, social insurance, customs status, permits, intellectual property, litigation, guarantees, receivables, payables, inventory, fixed assets, intercompany balances and overseas funding history.",
+          "Prepare a current trial balance and reconcile it to bank statements, tax filings and supporting vouchers. Old shareholder loans, unexplained cash withdrawals, unreconciled VAT, missing invoices and dormant receivables often become bottlenecks during tax clearance. Confirm who controls each digital account and physical seal before employees or service providers depart.",
+          "The shareholder should also approve a realistic closure budget. Professional fees, employee settlements, lease termination, tax, document retrieval, storage, translations and bank or courier costs may arise after revenue stops. Keep enough liquidity inside the company until the liquidation team has validated all obligations."
+        ]
+      },
+      {
+        heading: "Dissolution, liquidation team and creditor notices",
+        paragraphs: [
+          "The corporate decision should record the legal basis for dissolution, effective date, authorization and proposed liquidation arrangements. Under the current Company Law, directors are the persons responsible for liquidation and should form the liquidation team within 15 days after a qualifying dissolution event arises. The liquidation team consists of directors unless the articles provide otherwise or the shareholders appoint other persons.",
+          "The dissolution cause must be publicized through the National Enterprise Credit Information Publicity System within 10 days after it arises. Once formed, the liquidation team inventories company property, prepares a balance sheet and property list, handles unfinished business related to liquidation, collects receivables, identifies debts, settles taxes, prepares a liquidation plan and represents the company where necessary.",
+          "Creditor communication follows statutory timing. The liquidation team must notify known creditors within 10 days after it is formed and publish an announcement in a newspaper or through the national publicity system within 60 days. Creditors generally declare claims within 30 days after receiving notice, or within 45 days after publication if they did not receive notice. During the claim-declaration period, the liquidation team may not pay creditors selectively.",
+          "These periods are legal guardrails, not a guaranteed total project timeline. A company with clean books and no employees is different from one with tax questions, disputed receivables, customs records, licenses or cross-border balances."
+        ]
+      },
+      {
+        heading: "Settle employees, contracts, assets and liabilities",
+        paragraphs: [
+          "Employment closure should be planned before announcements are made. Review the legal basis and timing for termination, consultation or notice requirements, unused leave, wages, bonuses, statutory economic compensation where applicable, social insurance and housing fund records, work and residence permits for foreign employees, confidentiality, return of property and issuance of separation documents. Employment outcomes depend on the facts and local implementation, so a single formula should not be promised without reviewing each employee.",
+          "Create a contract register showing notice periods, deposits, termination rights, data-return duties and surviving obligations. Landlords, customers, suppliers, software vendors, logistics providers and related parties may all require different handling. Keep the company chops and bank controls active until authorized closure transactions are complete.",
+          "For assets, decide whether each item will be sold, transferred, abandoned or distributed only after debts and taxes are addressed. Sales or transfers can create VAT, enterprise income tax, customs, valuation, foreign-exchange or related-party questions. Collect receivables early and document bad-debt positions rather than simply writing balances to zero.",
+          "The statutory payment order matters. After liquidation expenses, company property is used for employee wages, social insurance and statutory compensation, taxes owed and company debts; only the remaining property may be distributed to shareholders in the applicable proportions. No shareholder distribution should be made before the required liabilities are discharged."
+        ]
+      },
+      {
+        heading: "Tax clearance is more than submitting a final form",
+        paragraphs: [
+          "Before business deregistration, the tax position must be reviewed and cleared. Tax authorities perform a pre-check for unresolved matters. The 2025 national deregistration guide explains that companies with uncompleted tax matters may need to finish them before cancellation, including filing outstanding returns, paying taxes, late-payment charges or penalties, handling invoices and tax-control equipment, and addressing assets, investments or export tax refund matters where relevant.",
+          "A liquidation may require enterprise income tax liquidation reporting and tax treatment for asset disposals, debt settlement, receivables, provisions, employee payments, related-party balances and the residual distribution to shareholders. The tax result cannot be inferred from the accounting cash balance. Where value moves to a foreign shareholder, the company should separately analyze withholding, treaty and foreign-exchange documentation.",
+          "Some compliant taxpayers may qualify for immediate or commitment-based tax deregistration procedures, and entities that never handled tax matters may have a simplified path. Eligibility must be checked against the current conditions; it should not be assumed from inactivity alone. Where registration and tax authorities share clearance information, a paper tax-clearance certificate may not need to be submitted, but the underlying tax work still needs to be complete."
+        ],
+        subsections: [
+          {
+            heading: "Questions the finance team should resolve",
+            paragraphs: [
+              "Can every balance-sheet item be supported? Are all invoices, returns and payments reconciled? Are there unrecovered input VAT balances, outstanding export refunds, fixed assets, property, equity investments or intercompany amounts? Does the company have tax losses, pending audits or abnormal tax status? What tax evidence will the overseas shareholder need for any final distribution? Resolve these questions before losing access to staff, ledgers or banking records."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Complete deregistration and close connected registrations",
+        paragraphs: [
+          "After liquidation, the liquidation team prepares a liquidation report for confirmation by the shareholders or the people's court and submits the required application to the registration authority. The 2025 national guide also identifies connected closure matters such as tax, social insurance, customs filing, bank settlement accounts and company seals. The applicable government platform may support coordinated 'one matter' processing, but the team still needs to verify each result.",
+          "Branches should generally be deregistered before the parent company's final application, and external investments may need to be transferred or the invested entities closed. Regulated permits, import-export records, websites, data, leases, utilities and commercial accounts require their own checklist. Bank accounts should not be closed so early that the company cannot receive receivables, pay taxes or employees, or make the authorized residual distribution.",
+          "Retain the final approvals, creditor evidence, liquidation report, tax records, employee files, bank closure evidence, chop handling records and accounting archives under an assigned custodian. Deregistration ends the entity; it does not make historic transactions or record-retention needs irrelevant."
+        ]
+      },
+      {
+        heading: "Common mistakes that delay China company closure",
+        paragraphs: [
+          "The most damaging mistake is waiting until the legal representative, finance employee or registered contact has left. Another is assuming a zero bank balance proves there are no debts. Tax ledgers, employee claims, leases, deposits, guarantees, lawsuits and intercompany accounts may tell a different story.",
+          "Groups also lose time when overseas corporate records no longer match the China registration, shareholder approvals are signed by the wrong person or originals must be recreated. Other frequent problems include lost chops, inaccessible tax accounts, unclosed branches, unresolved customs status, missing accounting vouchers and distributing cash to the shareholder too early.",
+          "A company should not use simplified deregistration merely because it appears faster. The route depends on the truth of the no-debt or fully-settled-debt commitment. Nor should management promise a fixed completion date before tax, employee, creditor and document readiness have been assessed."
+        ]
+      },
+      {
+        heading: "2026 closure checklist and consultation CTA",
+        paragraphs: [
+          "Start by confirming the intended exit date, solvency, shareholder authority, local registration, tax and customs status, current employees and whether the entity has branches or external investments. Secure all originals, seals, banking devices, passwords through authorized company processes and complete a reconciled closure balance sheet.",
+          "Then map the ordinary or simplified route, approve dissolution, establish the liquidation team where required, complete publicity and creditor notices, settle employees and contracts, collect receivables, dispose of assets lawfully, complete tax clearance, confirm the liquidation report and process the connected deregistrations in a controlled sequence.",
+          "ZYS Advisory helps foreign shareholders coordinate China company deregistration, accounting cleanup, tax clearance preparation, employee and document workstreams, and communication with relevant service providers. To request a scoped closure review, send the company name, registered city, ownership structure, latest trial balance, employee count, last filing status and target exit date through the consultation form, WhatsApp or info@zysadvisory.com. Do not send passwords, bank tokens or sensitive identity documents in an unsecured first message. ZYS does not guarantee eligibility for simplified deregistration, tax outcomes or a completion date."
+        ],
+        subsections: [
+          {
+            heading: "Official sources checked for this update",
+            paragraphs: [
+              "This article was reviewed on August 21, 2026 against the Company Law of the People's Republic of China, revised in 2023 and effective July 1, 2024, and the Enterprise Deregistration Guide (2025 Revision), issued by the State Administration for Market Regulation, Ministry of Public Security, Ministry of Human Resources and Social Security, People's Bank of China, General Administration of Customs and State Taxation Administration. The official guide was published on December 30, 2025. Local procedures and the facts of each company should be confirmed before action."
+            ]
+          }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can a foreign investor close a WFOE in China?",
+        answer:
+          "Yes. A foreign-invested company can be dissolved and deregistered, but stopping operations is not enough. The shareholder and company should follow the applicable dissolution, liquidation, creditor, employee, tax and registration procedures."
+      },
+      {
+        question: "Can an inactive China company use simplified deregistration?",
+        answer:
+          "Inactivity alone is not the test. Simplified deregistration may be available where the company incurred no debts or has fully paid all debts and every shareholder makes the required commitment. The records and actual obligations should be checked first."
+      },
+      {
+        question: "How long does China company deregistration take?",
+        answer:
+          "There is no reliable universal timeline. The route, statutory announcement periods, accounting quality, tax clearance, employees, creditors, assets, customs status, branches and local review all affect completion."
+      },
+      {
+        question: "Does a China company need tax clearance before deregistration?",
+        answer:
+          "Tax status must be cleared as part of closure. The company may need to complete returns, payments, invoice handling, liquidation tax reporting and other unresolved matters. Certain eligible taxpayers have simplified or commitment-based procedures."
+      },
+      {
+        question: "Can shareholders receive the remaining cash before creditors are paid?",
+        answer:
+          "No. Company property must first cover liquidation expenses, employee amounts, taxes and company debts in the statutory order. Only the lawful residual may be distributed to shareholders."
+      },
+      {
+        question: "What happens if the company cannot pay all its debts?",
+        answer:
+          "If the liquidation team finds that company assets are insufficient to discharge debts, the Company Law requires an application to the people's court for bankruptcy liquidation. The company should obtain case-specific legal advice promptly."
+      }
+    ]
   }
 ];
