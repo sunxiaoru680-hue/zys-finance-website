@@ -2885,5 +2885,149 @@ ${siteUrl}/blog/cross-border-tax-risk-for-service-fees-from-china
           "Typically prepare the signed contract, invoice, service and location explanation, deliverables or acceptance evidence, tax analysis and filings, payment calculation, supplier bank information and company approvals. Related-party payments also need benefit and pricing support."
       }
     ]
+  },
+  {
+    slug: "china-import-export-company-registration-customs-guide-2026",
+    title: "China Import-Export Company Registration and Customs Setup Guide 2026",
+    metaTitle: "China Import-Export Company Registration Guide 2026",
+    description:
+      "A practical 2026 guide to setting up a China import-export company, covering business scope, customs registration, product controls, tax, foreign exchange, brokers and launch readiness.",
+    summary:
+      "A China trading company needs more than a business license. Before the first shipment, investors should align the entity's business scope, Customs registration, commodity classification, product-specific permits, tax and invoice settings, foreign-exchange collection or payment, logistics evidence and internal compliance controls.",
+    published: "2026-08-25",
+    updated: "2026-08-25",
+    category: "China Trading Company Setup",
+    readingTime: "13 min read",
+    keyword: "China import export company registration",
+    imageAlt:
+      "ZYS Advisory 2026 guide to China import-export company registration and customs setup",
+    relatedServiceHrefs: [
+      "/services/company-registration-in-china",
+      "/services/china-company-formation",
+      "/services/business-license",
+      "/services/tax-consulting"
+    ],
+    relatedArticleSlugs: [
+      "china-trading-company-registration",
+      "china-import-export-license-guide",
+      "china-customs-registration-guide",
+      "china-vat-fapiao-compliance-guide-2026"
+    ],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China Import-Export Company Registration and Customs Setup
+
+A China trading company needs more than a business license. Our new guide explains how foreign investors can coordinate business scope, Customs registration, product controls, tax and invoicing, foreign exchange, logistics documents and pre-shipment compliance.
+
+Read the full guide:
+${siteUrl}/blog/china-import-export-company-registration-customs-guide-2026
+
+#ChinaBusiness #ImportExport #CustomsCompliance #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why a trading company needs an operating plan before registration",
+        paragraphs: [
+          "Foreign investors often ask how to obtain an import-export license in China. The more useful question is how to build an entity that can lawfully contract, clear goods, receive or send foreign currency, issue or collect compliant invoices and maintain evidence for tax and Customs review. There is no single approval that makes every product and transaction ready for trade.",
+          "China removed the general foreign-trade-operator filing requirement from the Foreign Trade Law at the end of 2022. That reform did not eliminate Customs registration, commodity controls, inspection or quarantine requirements, product-specific permissions, tax obligations or bank review. A company should therefore avoid treating the old foreign-trade filing form as the center of its launch checklist.",
+          "The setup should begin with a shipment map: which goods will move, their specifications and intended use, origin and destination, Incoterms, buyer and seller, payment currency, responsible importer or exporter, expected commodity codes, permits, labels, storage and logistics route. That map informs company formation and is far more reliable than copying a generic trading-company business scope."
+        ]
+      },
+      {
+        heading: "Choose the company structure, city and business scope",
+        paragraphs: [
+          "A foreign-invested limited liability company can conduct import, export and domestic trading when its approved business scope and any required industry permissions support the actual activity. The shareholder should decide whether the China entity will buy and resell goods, act as importer of record, export its own products, provide sourcing services, earn commission or combine trading with another activity. Each model produces different contracts, invoices, working-capital needs and risk allocation.",
+          "Business scope wording should identify the intended trading activities without implying that restricted goods are automatically permitted. Products involving food, animals or plants, medical devices, cosmetics, chemicals, dual-use items, encryption, waste, publications or other controlled categories can require separate registrations, licenses, testing, inspection or approvals. Product feasibility should be checked before the company promises delivery.",
+          "The registered city affects practical coordination with Customs, tax authorities, banks, ports, warehouses and logistics providers. Investors should compare the real supply chain and staffing plan, not simply choose the nearest famous port. A company registered inland can trade internationally, but the team still needs workable declaration, document and cargo arrangements."
+        ]
+      },
+      {
+        heading: "Prepare company and transaction information",
+        paragraphs: [
+          "For company formation, prepare shareholder and beneficial-ownership information, proposed name, registered address, registered-capital plan, articles of association, legal representative and governance details, business scope, contact information and documents required for the chosen city and shareholder type. Overseas corporate documents may require formal authentication, translation or other handling depending on the filing route and jurisdiction.",
+          "For trade readiness, build a product master containing the Chinese and English descriptions, material, function, model, brand, composition, origin, unit, packaging, estimated HS classification, duty and tax assumptions, regulatory status and responsible internal owner. The commercial contract, invoice, packing list, transport document and Customs declaration should describe the same transaction consistently.",
+          "Also forecast shipment value, currencies, payment terms, import VAT and duty cash needs, export receivable timing, freight, insurance, broker and storage costs. Registered capital should be planned around the company's real operating cycle and the current Company Law contribution framework, not selected as a marketing number or assumed to be a government fee."
+        ]
+      },
+      {
+        heading: "Complete Customs registration and digital access",
+        paragraphs: [
+          "A consignee of imported goods or consignor of exported goods must be registered with Customs before handling declaration procedures. The enterprise can declare itself or appoint a registered Customs broker, but outsourcing the declaration does not remove the enterprise's responsibility for truthful, accurate, complete and standardized information.",
+          "Current enterprise processes are commonly handled through government online systems, including China Customs and the China International Trade Single Window. The exact account, electronic-port, operator, signature or local activation steps should be confirmed at launch because system interfaces and local implementation can change. Access should belong to the company, with named users and controlled credentials, rather than remaining only with a broker or departing employee.",
+          "After registration, verify the enterprise information, Customs code, responsible contacts and authority granted to brokers. Establish a change process for company name, address, legal representative, contacts or other registered data. A business-license amendment should trigger a connected review of Customs, tax, banking, permits and contractual records."
+        ]
+      },
+      {
+        heading: "Classify goods and check product-specific controls",
+        paragraphs: [
+          "Commodity classification drives declaration elements, duty rates, import VAT, statistical reporting and whether licensing, inspection, quarantine, origin or other controls apply. Classification should be based on the goods' objective characteristics and the applicable tariff rules. A supplier's code from another country or an old shipment is useful evidence but is not automatically correct for China.",
+          "Prepare technical specifications, composition, photographs, catalogs, function descriptions and intended use before asking a broker to classify the goods. Where uncertainty is material, consider the available Customs advance-ruling or classification procedures and obtain specialist advice before the shipment. The Customs Law requires accurate declaration and submission of relevant licensing documents; restricted goods are not released without the required documents.",
+          "Review each product and trade direction separately. Import rules can differ from export rules, and a finished product can be treated differently from samples, parts or equipment for temporary use. Country of origin, preferential tariff claims, valuation additions, related-party pricing, intellectual-property rights and packaging materials may also change the declaration file."
+        ]
+      },
+      {
+        heading: "Align tax, invoices and foreign-exchange evidence",
+        paragraphs: [
+          "The finance team should model Customs duty, import VAT, consumption tax where relevant, domestic VAT invoicing, export VAT treatment and enterprise income tax before pricing the transaction. Export refund eligibility and rate depend on the goods, taxpayer status, purchase evidence, declaration and current rules; a company should not promise a refund merely because goods will be exported.",
+          "Imports and exports create a document chain. Contracts, purchase orders, invoices, packing lists, bills of lading or waybills, declarations, tax payment records, warehouse records, domestic fapiao and bank receipts or payments should reconcile. Differences in quantity, currency, price, Incoterms, product description or parties need a documented explanation rather than an informal correction after filing.",
+          "Banks review the authenticity and consistency of cross-border receipts and payments under applicable foreign-exchange and anti-money-laundering controls. Confirm account capability, payment purpose, beneficiary or remitter details and supporting documents before funds are due. Related-party transactions also require a commercial rationale, pricing support and coordination with transfer-pricing and Customs valuation positions."
+        ]
+      },
+      {
+        heading: "Control brokers, shipments and recordkeeping",
+        paragraphs: [
+          "Select a Customs broker and freight provider based on experience with the actual product, port and trade mode. Define who prepares classification, reviews declaration drafts, confirms licenses, reports inspection issues, approves amendments and keeps final records. Do not authorize a broker to choose values or descriptions solely to reduce duty or clear cargo faster.",
+          "Use a pre-shipment gate. Commercial, logistics, finance and compliance owners should confirm the parties, product, code, value, origin, licenses, labels, destination, transport, insurance, invoice, packing list and payment plan before cargo moves. Keep evidence of the review and require escalation when facts differ from the approved shipment.",
+          "After clearance, reconcile the Customs declaration with inventory, accounts payable or receivable, bank activity, duties, taxes and fapiao. Retain the records for the applicable statutory periods and in a form the company can retrieve. Regularly review broker powers, user access, dormant accounts, product master changes and repeated declaration corrections."
+        ]
+      },
+      {
+        heading: "Common setup mistakes and practical launch sequence",
+        paragraphs: [
+          "Common mistakes include registering a broad company before checking whether the intended goods are controlled, using an overseas HS code without China analysis, relying on a broker as the only record holder, underestimating import tax cash flow, mixing agency and principal trading models, and assuming that a business license or Customs registration replaces product permissions.",
+          "A safer launch sequence is to validate the business model and first products, form or amend the company, complete tax and banking setup, register with Customs, activate controlled digital access, confirm classification and product requirements, appoint qualified service providers, test the document chain and approve the first shipment through a written checklist.",
+          "ZYS Advisory helps foreign investors coordinate China company registration, business scope planning, Customs and trading setup, accounting, tax and cross-border payment readiness. To request a scoped review, send the proposed products, trade direction, China city, ownership structure, expected shipment route and target launch date through the consultation form, WhatsApp or info@zysadvisory.com. Do not send passwords, bank tokens or sensitive identity documents in an unsecured first message. ZYS does not guarantee registration, Customs clearance, tax refunds or a fixed completion date."
+        ],
+        subsections: [
+          {
+            heading: "Official sources checked for this update",
+            paragraphs: [
+              "This article was reviewed on August 25, 2026 against the Foreign Trade Law of the People's Republic of China as amended on December 30, 2022, the Customs Law of the People's Republic of China, current General Administration of Customs enterprise service guidance, and China International Trade Single Window materials. Product catalogs, tax settings, system procedures and local implementation can change, so the position for each product and shipment should be confirmed before action."
+            ]
+          }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Does a China company still need a foreign trade operator filing in 2026?",
+        answer:
+          "The general foreign-trade-operator filing requirement was removed from the Foreign Trade Law in December 2022. A trading company still needs the relevant company scope, Customs registration and any product-specific licenses, inspection, quarantine, tax, foreign-exchange and system steps."
+      },
+      {
+        question: "Can a foreign-owned company import and export goods in China?",
+        answer:
+          "Yes, a properly established foreign-invested company can conduct trading activities when its business scope, Customs status and any industry or product permissions support the actual goods and transactions."
+      },
+      {
+        question: "Is Customs registration the same as an import-export license?",
+        answer:
+          "No. Customs registration enables the enterprise to participate in declaration procedures, but it does not authorize every product. Controlled goods may require separate licenses, registrations, inspection, quarantine, testing or labeling compliance."
+      },
+      {
+        question: "Can a company use a Customs broker for every shipment?",
+        answer:
+          "A registered broker can be appointed to handle declarations. The importer or exporter should still verify the classification, value, origin, licenses and documents because delegation does not remove its compliance responsibility."
+      },
+      {
+        question: "How long does China import-export company setup take?",
+        answer:
+          "There is no reliable universal timeline. Shareholder documents, city, business scope, company formation, banking, Customs activation, products, permissions and system access all affect readiness. Product feasibility should be checked before promising a shipment date."
+      },
+      {
+        question: "Does every export qualify for a China VAT refund?",
+        answer:
+          "No. Eligibility and the applicable treatment depend on the goods, taxpayer status, purchase and invoice evidence, declaration data and current tax rules. The expected treatment should be verified before pricing the export."
+      }
+    ]
   }
 ];
