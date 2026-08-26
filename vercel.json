@@ -1,1 +1,8 @@
-{}
+{
+  "crons": [
+    {
+      "path": "/api/cron/publish-social/china-import-export-company-registration-customs-guide-2026",
+      "schedule": "20 3 * * *"
+    }
+  ]
+}
