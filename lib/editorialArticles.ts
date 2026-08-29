@@ -3333,5 +3333,165 @@ ${siteUrl}/blog/china-employer-of-record-vs-wfoe-guide-2026
           "No. Tax exposure depends on the employees' real activities, authority, location, duration, service delivery and applicable treaty. The employment vendor does not decide the foreign company's tax position."
       }
     ]
+  },
+  {
+    slug: "change-china-wfoe-legal-representative-guide-2026",
+    title: "How to Change a China WFOE Legal Representative in 2026",
+    metaTitle: "Change China WFOE Legal Representative | 2026 Guide",
+    description:
+      "A practical 2026 guide to changing a China WFOE legal representative, covering corporate approvals, registration, business license, chops, bank, tax, customs, work permits and handover controls.",
+    summary:
+      "Changing a WFOE's legal representative is not only a business-license update. The company should align its articles and corporate approvals, register the new representative, replace or update connected seals and authority profiles, notify banks and government systems, and complete a documented handover from the outgoing representative.",
+    published: "2026-08-29",
+    updated: "2026-08-29",
+    category: "China Corporate Changes",
+    readingTime: "12 min read",
+    keyword: "change China WFOE legal representative",
+    imageAlt:
+      "ZYS Advisory 2026 guide to changing the legal representative of a China WFOE",
+    relatedServiceHrefs: [
+      "/services/annual-compliance",
+      "/services/company-registration-in-china",
+      "/services/wfoe-registration",
+      "/services/company-deregistration"
+    ],
+    relatedArticleSlugs: [
+      "china-legal-representative-guide",
+      "china-company-chops-guide-2026",
+      "china-annual-compliance-checklist-2026",
+      "china-beneficial-owner-information-filing-2026"
+    ],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+How to Change a China WFOE Legal Representative
+
+A legal representative change is more than a new business license. Our new guide explains corporate approvals, registration, chops, bank mandates, tax and customs profiles, work permits and the outgoing-to-incoming handover.
+
+Read the full guide:
+${siteUrl}/blog/change-china-wfoe-legal-representative-guide-2026
+
+#ChinaBusiness #WFOE #CorporateCompliance #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why the legal representative change needs a full transition plan",
+        paragraphs: [
+          "A China company's legal representative is the individual designated under its articles of association to represent the company. Under the Company Law effective from July 1, 2024, the role is held by a director or manager who executes company affairs in accordance with the articles. The company bears the legal consequences of civil activities conducted by its legal representative in the company's name.",
+          "For a WFOE, changing this person commonly affects the business license, articles, corporate resolutions, legal-representative name chop, bank authority, tax and government profiles, electronic accounts, contracts, permits, customs records and work-permit arrangements. Treating the project as a single market-regulation filing can leave the old representative with access or the new representative unable to operate.",
+          "The shareholder and China management team should approve a transition plan before announcing the change. It should identify the legal basis for appointment and removal, the intended effective sequence, documents, physical and electronic assets, institutions to update, responsible advisers and temporary signing controls."
+        ]
+      },
+      {
+        heading: "Confirm who is eligible under the articles and Company Law",
+        paragraphs: [
+          "The current Company Law provides that the legal representative is a director or manager who represents the company in executing company affairs, as specified in the articles. Review the WFOE's registered articles before selecting the successor. If the articles name a particular office or person, the change may require an articles amendment alongside the appointment.",
+          "The candidate should also be checked for applicable disqualification, conflict, sanctions, credit, immigration and practical availability issues. A foreign national can serve in appropriate circumstances, but nationality does not eliminate identity, signature, authentication, tax-residency, travel or local-system requirements.",
+          "Clarify whether the new representative will also become a director, executive director, board chair, manager or employee. Each capacity has a different source of authority and may require its own resolution, appointment letter, employment document or filing. Avoid using the title 'legal representative' as if it automatically grants every management power."
+        ]
+      },
+      {
+        heading: "Prepare valid shareholder, board and articles documents",
+        paragraphs: [
+          "The company should follow the decision-making body and voting rules in its articles and the Company Law. Depending on the governance structure, the change may involve a shareholder decision, board resolution, removal and appointment documents, acceptance or consent, an amended articles document or amendment, and authorization for the filing agent.",
+          "China's current Company Law states that an application to change the legal representative is signed by the incoming legal representative. Market-entity registration rules likewise provide for the new representative to sign the change application. Local forms and electronic identity-verification steps should be checked before signatures are collected.",
+          "If the shareholder is overseas, confirm whether corporate authority, signatures, notarization, apostille, consular treatment, translation or originals are required for the particular filing. Do not formalize documents until names, passport details, company numbers and signing capacities have been reconciled."
+        ]
+      },
+      {
+        heading: "Complete market-regulation registration and obtain the new license",
+        paragraphs: [
+          "The WFOE submits the change application, corporate decision documents, appointment and removal evidence, identity information and any amended articles to the competent market-regulation authority through the available online or in-person route. Requirements vary by city, company type, industry and the identity-verification method.",
+          "Once approved, the registration authority updates the registered legal representative and issues or enables collection of the updated business license. The company should verify the Chinese name, unified social credit code, address, business scope and new representative immediately rather than assuming every field carried forward correctly.",
+          "The statutory registration is the central milestone, but it is not the end of the project. Create a certified or controlled copy pack for banks, tax advisers, key counterparties, customs, permit authorities and internal records. The old license and obsolete copies should be handled under the authority's and company's document-control process."
+        ]
+      },
+      {
+        heading: "Replace or update chops and signing controls",
+        paragraphs: [
+          "The legal representative's personal-name chop may be registered with banks or used with the finance chop in payment and account procedures. Determine whether a new chop is required, where it will be produced or recorded, and how the outgoing chop will be cancelled, destroyed or archived with evidence.",
+          "Review the company chop, finance chop, contract chop, invoice chop, customs-related tools, electronic seals, banking tokens and signature specimens. The legal representative change may not require every physical chop to be remade, but every authority and custody record should be tested for continued accuracy.",
+          "Use a written handover register showing each seal, token, certificate, original document, password-reset process and custodian. No outgoing manager should retain an unrecorded company asset or active approval channel after the effective transition. Do not transmit passwords or one-time codes through ordinary email or chat."
+        ]
+      },
+      {
+        heading: "Update bank accounts and treasury authority",
+        paragraphs: [
+          "Banks perform their own customer due diligence and mandate update. They may request the new license, articles, resolutions, identity documents, specimens, company and finance chops, beneficial-ownership information, business evidence and an in-person or video process. Requirements differ by bank and account type.",
+          "Map all RMB and foreign-currency accounts, capital accounts, online banking administrators, payment approvers, cards, guarantees, loans, merchant services and cross-border arrangements. Confirm what remains operational during the change and whether the bank will temporarily restrict certain functions.",
+          "Treasury should reconcile balances and pending payments immediately before and after the mandate update. Update approval matrices and notify authorized finance staff. The new representative should not receive broader payment powers than intended merely because the bank uses the role in its standard forms."
+        ]
+      },
+      {
+        heading: "Align tax, customs, foreign exchange and licenses",
+        paragraphs: [
+          "Government information-sharing has improved, but a market-regulation change should not be assumed to update every connected system automatically. Review tax registration and e-tax accounts, invoice and tax-control profiles, social insurance, housing fund, statistics, customs, China International Trade Single Window, foreign-exchange records and industry permits.",
+          "A trading company should verify Customs and operator information before the next declaration. A regulated company should review whether its permits name the legal representative or responsible person. A company sponsoring foreign staff should also check employer and immigration records.",
+          "Record each system's status, submission date, approval and responsible person. Where information is shared automatically, retain evidence that the downstream record actually changed. Where it is not, make the required filing instead of relying on verbal confirmation."
+        ]
+      },
+      {
+        heading: "Manage the outgoing representative's duties and exposure",
+        paragraphs: [
+          "The outgoing representative should deliver company property, records, seals, credentials, litigation and government notices, banking information, contracts and open compliance matters. If the individual also resigns as director, manager or employee, handle each capacity separately under the articles, corporate approvals and applicable employment terms.",
+          "The new Company Law provides that a director or manager who resigns from the office that made the person legal representative is deemed also to resign as legal representative, and the company should determine a new representative within 30 days of that resignation. The company should not leave governance and registration misaligned.",
+          "A registration change does not erase responsibility for past conduct, nor does it transfer the company's liabilities to the new representative personally. Obtain case-specific legal advice where there are disputes, enforcement restrictions, missing chops, inaccessible systems, suspected misconduct or an unwilling outgoing representative."
+        ]
+      },
+      {
+        heading: "Notify counterparties and stabilize operations",
+        paragraphs: [
+          "Review contracts, powers of attorney, bank guarantees, leases, insurance, supplier portals, major-customer records and group policies for notification or signature requirements. External communication should state the effective change without implying that the company itself, its contracts or obligations have ended.",
+          "Update websites, letterhead and compliance questionnaires only where the legal representative is actually shown. Retain copies of notices and acknowledgments for high-value counterparties. If litigation, arbitration, financing or a regulated approval is pending, coordinate timing with counsel or the relevant institution.",
+          "For the first month, monitor rejected payments, system-access failures, returned invoices, customs issues and correspondence addressed to the former representative. A short post-change review often catches connected records missed by the initial checklist."
+        ]
+      },
+      {
+        heading: "2026 change checklist and consultation CTA",
+        paragraphs: [
+          "Start with the current business license, articles, shareholder and board records, full list of the outgoing person's roles, candidate identity documents, bank and government-system inventory, permits, chops, tokens, contracts and open disputes. Confirm the corporate approval route and prepare a dated responsibility matrix.",
+          "Complete the market-regulation filing, verify the replacement license, control the old and new chops, update banks and treasury authority, then close tax, customs, foreign-exchange, work-permit, license and counterparty actions. Finish with a signed handover and post-change audit.",
+          "ZYS Advisory helps foreign shareholders coordinate China WFOE legal representative changes, corporate documents, business-license amendments, tax and banking updates, chops, customs, work permits and compliance handovers. Request a scoped review through the contact form, WhatsApp or info@zysadvisory.com. Do not send passwords, tokens or sensitive identity documents in an unsecured first message. ZYS does not guarantee approval, bank processing or a fixed completion date."
+        ],
+        subsections: [
+          {
+            heading: "Official sources checked for this update",
+            paragraphs: [
+              "This article was reviewed on August 29, 2026 against the Company Law of the People's Republic of China revised on December 29, 2023 and effective July 1, 2024; the SAMR Implementation Rules for the Regulations on Administration of Registration of Market Entities; and current official enterprise-change service guidance. Local, bank and industry procedures should be confirmed before filing."
+            ]
+          }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Who can be the legal representative of a China WFOE?",
+        answer:
+          "Under the current Company Law, the role is held by a director or manager who executes company affairs, as specified in the articles. The candidate must also satisfy applicable eligibility and practical filing requirements."
+      },
+      {
+        question: "Who signs the legal representative change application?",
+        answer:
+          "The current Company Law and market-entity registration rules provide that the incoming legal representative signs the change-registration application."
+      },
+      {
+        question: "Does changing the legal representative change the WFOE's contracts or debts?",
+        answer:
+          "No. The company remains the same legal entity. Its existing rights, contracts and liabilities do not disappear merely because its legal representative changes."
+      },
+      {
+        question: "Must the legal representative chop be replaced?",
+        answer:
+          "Often the personal-name chop and related bank specimens need replacement or updating. The company should confirm the exact requirements with its bank, local chop process and other users of the chop."
+      },
+      {
+        question: "Will the bank update automatically after the business license changes?",
+        answer:
+          "Do not assume so. Banks conduct their own due diligence and mandate process and commonly require updated documents, identity verification, specimens and approvals."
+      },
+      {
+        question: "What if the outgoing legal representative refuses to cooperate?",
+        answer:
+          "The shareholder and company should review the articles, valid removal and appointment process, control of seals and records, registration options and any dispute or enforcement issues with case-specific counsel."
+      }
+    ]
   }
 ];
