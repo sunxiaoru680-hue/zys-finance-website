@@ -8,6 +8,7 @@ export type EditorialFaq = {
 export type EditorialSection = {
   heading: string;
   paragraphs: string[];
+  links?: { href: string; label: string }[];
   subsections?: {
     heading: string;
     paragraphs: string[];
@@ -25,6 +26,7 @@ export type EditorialArticle = {
   category: string;
   readingTime: string;
   keyword: string;
+  longTailKeywords?: string[];
   imageAlt: string;
   sections: EditorialSection[];
   faqs: EditorialFaq[];
@@ -3782,6 +3784,116 @@ ${siteUrl}/blog/dubai-free-zone-vs-mainland-company-guide-2026
         question: "Does company registration guarantee UAE residence visas or a bank account?",
         answer: "No. Immigration authorities and financial institutions apply separate eligibility and due-diligence processes. Facility, role, documentation, source of funds and business substance can all matter."
       }
+    ]
+  },
+  {
+    slug: "singapore-resident-director-requirements-foreign-founders-2026",
+    title: "Singapore Resident Director Requirements 2026: A Foreign Founder's Guide",
+    metaTitle: "Singapore Resident Director Requirements 2026",
+    description: "Plan Singapore resident director requirements for foreign founders: eligibility, nominee director services, CSP checks, disclosure, tax residence and replacement.",
+    summary: "A Singapore local company needs at least one ordinarily resident director. Foreign founders should resolve that appointment before incorporation, without confusing a nominee service with ownership, work permission or tax residence. Here is how to evaluate the options and request a properly scoped setup proposal.",
+    published: "2026-09-04",
+    updated: "2026-09-04",
+    category: "Singapore Company Registration",
+    readingTime: "7 min read",
+    keyword: "Singapore resident director requirements",
+    longTailKeywords: [
+      "Singapore company registration for non-residents",
+      "Singapore nominee director service",
+      "Singapore local director for foreign-owned company",
+      "Singapore corporate service provider due diligence",
+      "replace nominee director in Singapore",
+      "Singapore resident director and tax residency"
+    ],
+    imageAlt: "Singapore resident director planning for foreign founders and company registration",
+    relatedServiceHrefs: ["/services/singapore-company-registration", "/services/tax-consulting"],
+    relatedArticleSlugs: ["singapore-company-registration-for-china-market-entry", "hong-kong-vs-singapore-holding-company-for-china", "china-vs-singapore-company-registration"],
+    facebookPost: `New guide from ZYS Advisory
+
+Singapore Resident Director Requirements 2026
+
+Setting up from overseas? Understand resident-director eligibility, nominee service checks, disclosure, replacement planning and why a local director does not automatically establish company tax residence.
+
+${siteUrl}/blog/singapore-resident-director-requirements-foreign-founders-2026
+
+#SingaporeCompanyRegistration #ForeignFounders #CorporateGovernance #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Who needs a resident-director plan before registration?",
+        paragraphs: [
+          "Singapore resident director requirements are a practical incorporation issue for founders who live overseas and have no eligible local board member. This guide concerns a Singapore local company, not the separate authorised-representative rules for a foreign-company branch. Start by identifying who will own the shares, who will direct the business and who can genuinely satisfy the local appointment requirement.",
+          "The problem is different from choosing Singapore instead of Hong Kong or mainland China. Once Singapore is the intended jurisdiction, the commercial question is whether an eligible founder, resident business partner or professionally arranged nominee director fits the operating plan. Decide this before committing to incorporation, banking or relocation dates."
+        ],
+        links: [{href: "/services/singapore-company-registration", label: "Discuss Singapore company registration and director readiness"}, {href: "/blog/hong-kong-vs-singapore-holding-company-for-china", label: "Still choosing a jurisdiction? Read the holding-company comparison"}]
+      },
+      {
+        heading: "Separate local eligibility from ownership and work permission",
+        paragraphs: [
+          "A local company must have at least one director ordinarily resident in Singapore. Directors must be natural persons aged at least 18 and meet applicable capacity and disqualification rules. Singapore citizens, permanent residents and certain other residents may qualify; a FIN holder should check with the pass issuer before accepting a role. Do not assume that a mailing address or short visit establishes eligibility.",
+          "Share ownership, a board appointment and permission to work are different questions. Confirm the proposed person's residency and pass conditions rather than using an employment title as proof. If the founder plans to relocate later, prepare an eligible appointment for incorporation and assess any subsequent change separately. A hoped-for pass approval is not a completed resident-director solution."
+        ],
+        links: [{href: "https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/", label: "Official ACRA guidance: directors and other key officers"}]
+      },
+      {
+        heading: "Evaluate a Singapore nominee director service properly",
+        paragraphs: [
+          "A nominee arrangement may address the appointment gap when no suitable local operating director is available. It should not be described as renting a name with no responsibility. All directors retain statutory duties; an agreement cannot simply remove the need to act in the company's interests, review records and oversee compliance.",
+          "Under the framework effective from 9 June 2025, persons acting as nominee directors by way of business must have their appointments arranged by registered corporate service providers, which assess whether they are fit and proper. Ask which registered CSP arranges the appointment and how the named director has the capacity to supervise your company.",
+          "Compare the engagement scope: information access, approval process, response times, restricted activities, fee changes, security deposit, termination and replacement support. Ask what happens if the company changes its business, opens additional accounts or adds shareholders. These are proposal-review questions, not a universal government price list."
+        ],
+        links: [{href: "https://www.acra.gov.sg/news-events/news-announcements/865/", label: "ACRA: corporate service provider and nominee-director framework"}]
+      },
+      {
+        heading: "Prepare due diligence without surrendering account security",
+        paragraphs: [
+          "For Singapore corporate service provider due diligence, prepare the ownership chain, identities, address evidence, business model, expected funding, customer and supplier countries, and corporate-shareholder authority documents. Ask the selected provider to specify its evidence and verification process before arranging certifications or translations.",
+          "Explain the company's actual transactions, especially for international trading, holding investments or related-party services. A useful business summary identifies who signs contracts, delivers work, receives revenue and bears risk. Inconsistent descriptions between the provider, bank and tax adviser can delay onboarding.",
+          "Use an agreed secure document channel. Never give an adviser personal passwords, one-time codes or unrestricted access merely because incorporation is urgent. Confirm who holds original records and which company officers approve submissions. Legitimate identity checks should not be replaced with invented information or blank signed forms."
+        ]
+      },
+      {
+        heading: "Disclose nominee arrangements and maintain company records",
+        paragraphs: [
+          "A nominee director acts for a nominator; the arrangement is not a way to conceal control. ACRA requires non-exempt companies to maintain private Registers of Nominee Directors and Nominee Shareholders and file with the central registers. These duties can apply even where no nominees are present. New companies establish their private registers on incorporation.",
+          "Collect accurate nominator particulars and agree who updates records and makes the required filings when circumstances change. Keep nominee disclosure separate from beneficial-controller analysis: one record does not automatically replace another. Ask the company secretary to confirm current filing procedures, deadlines and any applicable exemption.",
+          "The local company must appoint a secretary within six months of incorporation; the sole director cannot also act as secretary. Budget for continuing corporate administration rather than treating the resident-director fee as the entire compliance package."
+        ],
+        links: [{href: "https://www.acra.gov.sg/manage/companies/legal-requirements-common-offences/maintaining-local-companys-information-registers/rond-rons/setting-up-maintaining/", label: "ACRA: maintaining nominee-director and nominee-shareholder registers"}]
+      },
+      {
+        heading: "Singapore resident director and tax residency are not equivalent",
+        paragraphs: [
+          "IRAS determines company tax residence by where the business is controlled and managed, not merely its incorporation address. Strategic decision-making, directors and key employees are relevant facts. Appointing a resident nominee does not by itself establish tax residence or guarantee a Certificate of Residence or treaty benefit.",
+          "For a China-connected group, document the actual board process and where important commercial decisions occur. Review transactions and overseas obligations with qualified tax advisers before relying on a Singapore structure. Do not create artificial minutes suggesting decisions occurred somewhere they did not.",
+          "A company that needs genuine regional management may require an operating director and resources beyond a nominee appointment. Discuss that objective at the proposal stage so governance, staffing and tax assumptions are consistent."
+        ],
+        links: [{href: "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/tax-residency-of-a-company-certificate-of-residence", label: "IRAS: company tax residence and control and management"}, {href: "/services/tax-consulting", label: "Discuss the group's cross-border tax questions"}]
+      },
+      {
+        heading: "Plan to replace a nominee director without a compliance gap",
+        paragraphs: [
+          "If the nominee is an interim arrangement, agree an exit process before appointment. Identify the trigger, such as an eligible founder moving to Singapore or recruitment of a resident operating director. Confirm eligibility and effective appointment before implementing the outgoing director's cessation; obtain company-secretarial advice on the required sequence.",
+          "Reconcile board approvals, register updates, bank mandates, portal roles, document custody and outstanding compliance work. Avoid assuming that changing the registry automatically updates a bank or service provider. Keep a handover checklist and named owner for each action.",
+          "The engagement should explain notice, outstanding fees, deposit settlement and how urgent compliance issues are handled. No provider should promise unrestricted resignation regardless of the company's remaining board composition."
+        ]
+      },
+      {
+        heading: "Request a scoped incorporation proposal",
+        paragraphs: [
+          "Send a short brief covering shareholder locations, planned activities, expected transactions, local staff, the proposed director, relocation plans and target launch date. Ask the provider to separate incorporation, resident-director support, secretarial administration, registered office, accounting and tax work. Require the renewal and replacement terms as well as the first-year price.",
+          "ZYS Advisory can help scope Singapore company registration for non-residents and coordinate the governance and cross-border planning questions that need local professional review. Confirm the registered Singapore CSP responsible for regulated filings and any commercial nominee arrangement in the engagement. ZYS does not promise nominee availability, bank approval, immigration approval or tax residence.",
+          "Reviewed September 4, 2026 against the ACRA and IRAS guidance linked above. This is general planning information, not case-specific legal or tax advice. Request a consultation using the service page or contact form; keep sensitive identity and financial documents out of an unsecured first message."
+        ],
+        links: [{href: "/contact", label: "Request a Singapore setup and resident-director readiness consultation"}, {href: "/blog/singapore-company-registration-for-china-market-entry", label: "Related background: Singapore registration and China market entry"}]
+      }
+    ],
+    faqs: [
+      {question: "Does a Singapore company need a local director?", answer: "A Singapore local company needs at least one ordinarily resident director. Check the proposed individual's eligibility before registration."},
+      {question: "Must every foreign founder buy a nominee director service?", answer: "No. A suitable resident founder or business partner may satisfy the requirement. A professionally arranged nominee is one option when no suitable local director is available."},
+      {question: "Can a nominee director have no legal responsibility?", answer: "No. A nominee remains a director with statutory duties. The service agreement should support proper oversight, not promise immunity."},
+      {question: "Does a resident director guarantee Singapore tax residence?", answer: "No. IRAS considers where the company is actually controlled and managed. The appointment alone does not establish entitlement to tax-residence certification or treaty benefits."},
+      {question: "Can a founder replace the nominee after moving to Singapore?", answer: "Potentially, once eligibility is verified. Coordinate the new appointment, outgoing cessation, company filings and bank updates without leaving a local-director gap."},
+      {question: "What should a resident-director proposal include?", answer: "Identify the arranging CSP, director oversight, required records, approvals, first-year and renewal charges, deposits, termination and replacement process, and services excluded from the price."}
     ]
   }
 ];

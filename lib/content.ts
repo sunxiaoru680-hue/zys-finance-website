@@ -37,6 +37,7 @@ export type BlogArticle = {
   title: string;
   metaTitle?: string;
   keyword: string;
+  longTailKeywords?: string[];
   description: string;
   summary?: string;
   published: string;
