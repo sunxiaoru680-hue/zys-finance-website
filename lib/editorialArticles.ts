@@ -3895,5 +3895,127 @@ ${siteUrl}/blog/singapore-resident-director-requirements-foreign-founders-2026
       {question: "Can a founder replace the nominee after moving to Singapore?", answer: "Potentially, once eligibility is verified. Coordinate the new appointment, outgoing cessation, company filings and bank updates without leaving a local-director gap."},
       {question: "What should a resident-director proposal include?", answer: "Identify the arranging CSP, director oversight, required records, approvals, first-year and renewal charges, deposits, termination and replacement process, and services excluded from the price."}
     ]
+  },
+  {
+    slug: "china-wfoe-shareholder-change-equity-transfer-guide-2026",
+    title: "China WFOE Shareholder Change 2026: Equity Transfer and Registration Guide",
+    metaTitle: "China WFOE Shareholder Change | 2026 Guide",
+    description: "Plan a China WFOE shareholder change in 2026: equity transfer terms, pre-emption, foreign-investment access, tax, registration, bank updates and handover.",
+    summary: "Changing the shareholder of a China WFOE is a transaction, not a name edit. The parties need to coordinate corporate approvals, equity-transfer documents, tax treatment, market-regulation registration, foreign-investment reporting, bank records and the transfer of control.",
+    published: "2026-09-05",
+    updated: "2026-09-05",
+    category: "China Corporate Changes",
+    readingTime: "9 min read",
+    keyword: "China WFOE shareholder change",
+    longTailKeywords: [
+      "China WFOE equity transfer",
+      "change shareholder of foreign invested company China",
+      "China company equity transfer tax",
+      "WFOE shareholder change registration",
+      "foreign investor acquisition of China company",
+      "China WFOE ownership restructuring"
+    ],
+    imageAlt: "China WFOE shareholder change and equity transfer process for foreign investors in 2026",
+    relatedServiceHrefs: ["/services/annual-compliance", "/services/tax-consulting", "/services/wfoe-registration", "/services/accounting-services"],
+    relatedArticleSlugs: ["change-china-wfoe-legal-representative-guide-2026", "china-wfoe-registered-capital-requirements-2026", "china-beneficial-owner-information-filing-2026", "china-company-deregistration-liquidation-guide-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China WFOE Shareholder Change: Equity Transfer and Registration
+
+A shareholder change is more than a business-license update. Our new guide covers transfer terms, corporate approvals, tax, registration, foreign-investment reporting, banking and the control handover.
+
+Read the guide:
+${siteUrl}/blog/china-wfoe-shareholder-change-equity-transfer-guide-2026
+
+#ChinaBusiness #WFOE #EquityTransfer #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Confirm the transaction before preparing a registration form",
+        paragraphs: [
+          "A China WFOE shareholder change normally occurs through an equity transfer, group restructuring, merger-related step or acquisition. The project changes ownership of an existing legal entity; it does not create a clean company. The buyer should understand the WFOE's liabilities, contracts, employees, taxes, licences and records before accepting the equity.",
+          "Define the seller, buyer, percentage transferred, price, currency, payment route, effective conditions and target completion date. Check whether the transfer is between existing shareholders or introduces an outside buyer. Review the articles of association, shareholder agreements, financing documents and regulated-industry approvals before promising completion.",
+          "Build one closing plan connecting legal, tax, registration, banking and operational work. If the deal also changes the legal representative, directors, registered capital, business scope or address, treat each item as a separate workstream with its own documents and downstream updates."
+        ],
+        links: [{ href: "/services/annual-compliance", label: "Review the existing WFOE before changing ownership" }]
+      },
+      {
+        heading: "Apply the current Company Law and the company's articles",
+        paragraphs: [
+          "Under the Company Law effective from July 1, 2024, shareholders of a limited liability company may transfer all or part of their equity to one another. For a transfer to a person outside the existing shareholder group, the transferring shareholder gives the other shareholders written notice of the quantity, price, payment method and term; the other shareholders have a pre-emptive right on equal terms. The articles can contain different transfer provisions.",
+          "The Company Law states that a shareholder requesting a change should notify the company in writing. The transferee may assert shareholder rights from the time it is entered in the register of shareholders. The company should cancel the former contribution certificate, issue the new certificate and update the articles and shareholder register as required.",
+          "Do not reuse approvals from an earlier law or another group company. Confirm who validly signs for each corporate party and whether the seller, buyer and WFOE need board or shareholder resolutions, waivers, consents or powers of attorney. Overseas corporate documents may need notarisation, apostille treatment, authentication or Chinese translation depending on the filing and authority."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/djzcj/zcfg/fl/art/2026/art_9b4263a169cf43c2aba950cfc9ac1af2.html", label: "Official source: current Company Law published by SAMR" }]
+      },
+      {
+        heading: "Check foreign-investment access and transaction approvals",
+        paragraphs: [
+          "A new foreign investor and the post-transfer ownership structure must fit China's foreign-investment access framework, sector rules and licence conditions. Review the current national and any applicable free-trade-zone negative list, security review exposure, merger-control questions and sector-specific ownership or qualification rules.",
+          "A transfer can change the company from foreign-invested to domestic-invested, introduce foreign ownership into a domestic company, or change the ultimate controller while the direct shareholder remains the same. Those cases do not necessarily follow an identical reporting or registration route. Map both direct and ultimate ownership before drafting the closing sequence.",
+          "Regulated businesses should ask the responsible authority whether a prior consent, revised permit or responsible-person update is required. Registration approval should not be treated as proof that every industry, data, antitrust or national-security requirement has been satisfied."
+        ],
+        links: [{ href: "/services/wfoe-registration", label: "Discuss foreign-investment structure and WFOE registration requirements" }]
+      },
+      {
+        heading: "Negotiate an equity transfer agreement that matches completion",
+        paragraphs: [
+          "The agreement should identify the equity precisely and address price, payment, taxes, approvals, conditions precedent, representations, indemnities, employee and contract matters, records, dispute resolution and termination. Use a bilingual execution strategy where Chinese documents are needed for registration, and state how inconsistencies are handled.",
+          "Coordinate the contractual effective date, tax event, registration, shareholder-register update and operational handover. The parties should not assume that signing, payment and public registration occur simultaneously. Define who controls the company, seals, accounts and decisions during the interim period.",
+          "Complete legal, financial, tax and operational due diligence in proportion to the risk. Review licences, litigation, tax filings, social insurance, debt, guarantees, related-party balances, registered-capital contributions, assets, intellectual property, customs, data practices and environmental obligations where relevant."
+        ]
+      },
+      {
+        heading: "Model China company equity transfer tax before signing",
+        paragraphs: [
+          "Tax depends on the seller, buyer, consideration, tax basis, residence, transaction form and any applicable restructuring or treaty rules. For a non-resident enterprise selling equity in a China resident enterprise, Chinese-source equity-transfer gain can fall within enterprise income tax and withholding administration. The taxable calculation and payer obligations require case-specific review.",
+          "The State Taxation Administration's non-resident withholding rules describe equity-transfer income as consideration received in monetary and non-monetary forms, with the taxable gain generally based on proceeds less the relevant tax basis. Related-party or non-arm's-length pricing can invite scrutiny. A nominal or zero price is not automatically tax neutral.",
+          "Before execution, prepare acquisition cost evidence, contribution records, audited or management accounts, valuation support, payment mechanics and treaty documents if relevant. Confirm whether stamp tax, individual income tax, special reorganisation treatment or indirect-transfer rules apply to the actual parties. Do not remit the price or promise net proceeds before tax and foreign-exchange steps are mapped."
+        ],
+        links: [{ href: "https://12366.chinatax.gov.cn/bzds/036/036-5-6.html", label: "Official source: STA non-resident enterprise withholding rules" }, { href: "/services/tax-consulting", label: "Request a scoped equity-transfer tax review" }]
+      },
+      {
+        heading: "Complete registration and foreign-investment information reporting",
+        paragraphs: [
+          "Prepare the application, valid transaction and corporate approvals, amended articles, new shareholder identity and qualification documents, licence and any authority-specific materials. File the shareholder change with the competent market-regulation authority and verify the updated public and licence information after approval.",
+          "China's foreign-investment information-reporting system connects relevant initial and change reports with the enterprise registration system. Some changes not requiring market-regulation registration, including specified actual-controller changes, have separate reporting treatment. The Ministry of Commerce announcement provides a 20-working-day reporting period for listed examples that do not go through registration.",
+          "Do not assume data sharing completes every field correctly. Reconcile the new direct shareholder, ultimate controller, investment information and annual-report records. Correct omissions through the official route and preserve submission receipts. The applicable report depends on whether the company enters, remains in or exits foreign-invested status."
+        ],
+        links: [{ href: "https://www.mofcom.gov.cn/zcfb/blgg/art/2019/art_d343e38cf1c34ff0a8ea4675d2c81717.html", label: "Official source: MOFCOM foreign-investment information reporting announcement" }]
+      },
+      {
+        heading: "Update beneficial ownership, bank, tax and operating records",
+        paragraphs: [
+          "A shareholder or ultimate-controller change can trigger beneficial owner information review. Compare the post-closing ownership, voting rights, profit rights, appointment powers and other control arrangements with the filed record. China's beneficial owner measures require relevant updates within the applicable period; do not rely solely on the direct equity percentage.",
+          "Banks conduct their own know-your-customer review. Prepare the updated licence, articles, resolutions, shareholder and controller documents, transaction evidence, tax support and group chart. Update online banking administrators, signatories and payment approvals only through controlled procedures. Never share passwords or one-time codes with a seller or filing agent.",
+          "Also review tax-system profiles, customs and foreign-exchange records, invoices, contracts, licences, insurance, customer portals and related-party agreements. A public shareholder update does not automatically amend every connected system. Assign an owner and evidence of completion to each item."
+        ],
+        links: [{ href: "/blog/china-beneficial-owner-information-filing-2026", label: "Related guide: China beneficial owner information filing" }, { href: "/blog/change-china-wfoe-legal-representative-guide-2026", label: "If management also changes: legal representative guide" }]
+      },
+      {
+        heading: "Control closing, payment and the company handover",
+        paragraphs: [
+          "Use a closing checklist covering signed agreements, approvals, tax actions, registration acceptance, price payment, shareholder-register entry, contribution certificates and releases. Consider escrow or staged payment only after obtaining legal and banking advice on enforceability, cross-border settlement and release conditions.",
+          "The buyer should receive a documented inventory of company chops, banking tools, licences, original corporate records, accounting data, tax credentials, employee files, contracts, litigation and open compliance matters. Reset access securely and verify balances and pending payments on the agreed control date.",
+          "Post-closing, test whether the new ownership can actually exercise governance rights and operate bank, tax and commercial workflows. Schedule a 30-day review for unresolved filings, counterparties, access failures and warranties. Registration is a milestone, not the end of integration."
+        ]
+      },
+      {
+        heading: "Request a scoped WFOE shareholder change plan",
+        paragraphs: [
+          "Prepare the current licence, articles, shareholder register, capital contribution evidence, ownership chart, proposed seller and buyer details, transfer percentage and price, financial statements, tax filings, licences, contracts, bank list and target timetable. Flag disputes, unpaid capital, losses, guarantees or missing records immediately.",
+          "ZYS Advisory helps foreign investors coordinate China WFOE shareholder changes, corporate documents, accounting and tax review, registration workstreams, foreign-investment reporting and post-closing updates. Request a scoped consultation through the contact form, WhatsApp or info@zysadvisory.com. ZYS does not guarantee authority approval, tax treatment, bank processing or a completion date.",
+          "Reviewed September 5, 2026 against the current Company Law, SAMR materials, Ministry of Commerce foreign-investment information-reporting rules and State Taxation Administration non-resident withholding guidance linked above. Local and transaction-specific requirements should be confirmed before signing or payment."
+        ],
+        links: [{ href: "/contact", label: "Request a WFOE shareholder change consultation" }, { href: "/blog/china-wfoe-registered-capital-requirements-2026", label: "Related guide: check unpaid registered capital before transfer" }]
+      }
+    ],
+    faqs: [
+      { question: "Can a foreign investor buy equity in an existing China company?", answer: "Potentially, subject to the current foreign-investment access rules, the company's articles, valid transfer procedure, registration, tax and any sector or transaction approvals." },
+      { question: "Do other shareholders have a pre-emptive right?", answer: "For a limited liability company transfer to an outsider, the current Company Law provides an equal-terms pre-emptive right after written notice, unless the articles provide otherwise. Review the exact transaction documents." },
+      { question: "Is signing the equity transfer agreement enough to change the shareholder?", answer: "No. The parties must coordinate the company's shareholder register and documents, required market-regulation registration, reporting, tax and downstream updates." },
+      { question: "Does a WFOE equity transfer create China tax?", answer: "It can. The outcome depends on the seller, consideration, tax basis, residence, transaction structure and applicable tax rules or treaty. Obtain advice before fixing the price and payment." },
+      { question: "Must the bank be updated after a shareholder change?", answer: "Yes, the bank should be contacted for its ownership and beneficial-owner review. Registration-system data should not be assumed to update bank records automatically." },
+      { question: "Can the shareholder and legal representative change together?", answer: "They can be coordinated, but they are distinct corporate and registration changes. Prepare valid approvals and track each downstream bank, tax, licence and access update." }
+    ]
   }
 ];
