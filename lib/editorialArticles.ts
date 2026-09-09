@@ -4145,5 +4145,129 @@ ${siteUrl}/blog/us-llc-annual-compliance-foreign-owners-2026
       { question: "Is an EIN an annual compliance filing?", answer: "No. An EIN identifies the entity for specified federal purposes. It does not replace tax returns, information filings, state reports, licences or registered-agent duties." },
       { question: "Can I abandon an unused LLC instead of dissolving it?", answer: "That is risky. State taxes, fees and agent charges can continue while the LLC remains active. Obtain advice and complete the formal cancellation and withdrawal steps for relevant jurisdictions." }
     ]
+  },
+  {
+    slug: "china-tax-health-check-foreign-companies-2026",
+    title: "China Tax Health Check for Foreign Companies in 2026",
+    metaTitle: "China Tax Health Check for Foreign Companies 2026",
+    description: "Scope a China tax health check for a WFOE: reconcile filings, VAT invoices, corporate income tax, payroll, related parties, tax credit and remediation priorities.",
+    summary: "A China tax health check tests whether registrations, books, invoices, returns, payments and related-party evidence tell the same commercial story. It helps a foreign-invested company identify and prioritise issues before an audit, financing, dividend, ownership change or management handover.",
+    published: "2026-09-08",
+    updated: "2026-09-08",
+    category: "China Tax Advisory",
+    readingTime: "9 min read",
+    keyword: "China tax health check for foreign companies",
+    longTailKeywords: [
+      "China tax compliance review for WFOE",
+      "WFOE tax risk assessment",
+      "China VAT and fapiao health check",
+      "China corporate income tax health check",
+      "China related party transaction tax review",
+      "China tax due diligence before profit repatriation",
+      "foreign company tax audit readiness China"
+    ],
+    imageAlt: "China tax health check and WFOE tax risk assessment for foreign companies",
+    relatedServiceHrefs: ["/services/tax-consulting", "/services/tax-planning", "/services/accounting-services", "/services/audit-services"],
+    relatedArticleSlugs: ["china-vat-fapiao-compliance-guide-2026", "china-accounting-bookkeeping-requirements-2026", "china-profit-repatriation-guide-2026", "cross-border-tax-risk-for-service-fees-from-china"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China Tax Health Check for Foreign Companies
+
+Before an audit, dividend, financing or ownership change, test whether registrations, books, invoices, returns and related-party evidence agree. Our new guide explains how to scope a practical WFOE tax risk review.
+
+Read the guide:
+${siteUrl}/blog/china-tax-health-check-foreign-companies-2026
+
+#ChinaTax #WFOE #TaxCompliance #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "When a WFOE should commission a tax health check",
+        paragraphs: [
+          "A China tax health check for foreign companies is a structured diagnostic, not a promise that no authority will raise questions. It compares the WFOE's registered profile, accounting records, invoices, tax returns, payments and commercial evidence to identify inconsistent or unsupported positions.",
+          "Common triggers include a new finance director, an upcoming statutory audit, acquisition or shareholder change, profit repatriation, financing, business-model change, rapid growth, historic provider transition, tax credit deterioration or an authority query. A pre-transaction review gives management time to investigate before a deadline controls the response.",
+          "Define the review period, entities, taxes, locations and deliverables. Agree whether the output is an executive risk register, transaction testing, return reconciliation, remediation plan or deeper legal opinion. No responsible provider can quote a complete review from revenue alone."
+        ],
+        links: [{ href: "/services/tax-consulting", label: "Request a scoped China tax compliance review" }, { href: "/services/audit-services", label: "Coordinate tax review with audit readiness" }]
+      },
+      {
+        heading: "Reconcile registrations and the filing calendar",
+        paragraphs: [
+          "Start with the business licence, taxpayer profile, tax types, filing frequency, bank and invoice information, branches, customs status and applicable preferential registrations. Compare those records with the actual address, business scope, legal representative, finance contacts, employees and operating model.",
+          "Build a filing matrix from electronic tax records and internal archives. Verify that required VAT, corporate income tax, withholding, individual income tax, surcharges and other relevant returns were submitted and payments cleared. Investigate amended, late, zero or inconsistent filings rather than treating a portal receipt as substantive proof.",
+          "Check notices, risk prompts, outstanding amounts, uncompleted tasks and the company's current tax and fee credit result. China's Tax and Fee Payment Credit Management Measures took effect in 2025 and the first evaluation results under the measures were released in 2026; filing and payment behaviour can affect the evaluation."
+        ],
+        links: [{ href: "https://www.chinatax.gov.cn/chinatax/n810219/n810724/c5240873/content.html", label: "Official STA overview: Tax and Fee Payment Credit Management Measures" }]
+      },
+      {
+        heading: "Test accounting records against returns and bank activity",
+        paragraphs: [
+          "Reconcile monthly trial balances to VAT returns, corporate income tax prepayments, annual tax filings, payroll declarations, invoice platform data and bank statements. Trace unexplained differences by period and account. A clean general ledger total can still hide wrong tax treatment or transactions booked in the wrong entity.",
+          "Review revenue cut-off, customer advances, deposits, inventory, fixed assets, accruals, bad debts, employee expenses, entertainment, gifts, travel, director balances and non-deductible items. Sample source documents based on value and risk rather than checking only neatly filed vouchers.",
+          "Identify entries created solely at year end or carried forward without current support. Agree adjustments with a qualified adviser and preserve the rationale. Do not backdate documents or create artificial contracts to make the ledger appear consistent."
+        ],
+        links: [{ href: "/services/accounting-services", label: "Improve the accounting records supporting tax filings" }, { href: "/blog/china-accounting-bookkeeping-requirements-2026", label: "Related guide: China accounting and bookkeeping requirements" }]
+      },
+      {
+        heading: "Perform a China VAT and fapiao health check",
+        paragraphs: [
+          "Compare sales contracts, delivery or service evidence, invoices, receipts and VAT reporting. Confirm that invoice descriptions, rates or treatment, buyer information, timing and red invoices reflect genuine transactions. Investigate revenue without invoices and invoices without recorded revenue.",
+          "For input VAT and deductions, test supplier identity, business purpose, invoice verification, goods or service receipt, payment and treatment of non-creditable items. The State Taxation Administration notes that invoices serve multiple tax functions and identifies patterns such as mismatched purchases and sales or invoices from high-risk suppliers as potential risk signals.",
+          "Review digital invoice access, approval and cancellation controls. Restrict credentials, separate preparation and approval where practical, and reconcile invoice data monthly. A technically valid invoice does not replace evidence that the underlying transaction occurred."
+        ],
+        links: [{ href: "https://www.chinatax.gov.cn/chinatax/c102414/c5249173/content.html", label: "Official STA guidance: compliant invoice issuance and risk indicators" }, { href: "/blog/china-vat-fapiao-compliance-guide-2026", label: "Related guide: China VAT and fapiao compliance" }]
+      },
+      {
+        heading: "Review corporate income tax and annual reconciliation",
+        paragraphs: [
+          "Test the bridge from accounting profit to taxable income. Review permanent and timing differences, depreciation and amortisation, asset disposals, provisions, losses, deductions, incentives and supporting schedules. Reconcile annual figures with quarterly prepayments and financial statements.",
+          "China's annual corporate income tax reconciliation is not merely a repeat of the final quarterly filing. Official guidance describes the process as calculating annual taxable income and tax, comparing it with prepayments, submitting the annual return and required materials, and settling the balance under the applicable rules.",
+          "Examine loss carryforwards, preferential treatment and high-value deductions with current source evidence. If a prior return needs correction, establish the facts, periods and potential tax, surcharge or credit impact before filing an amendment."
+        ],
+        links: [{ href: "https://guangdong.chinatax.gov.cn/gdsw/swsw_kjxz/2024-03/07/933511e6ccbc4f0da65ee08de66fa3f7/files/ee0859c74fe14e0d831224015028173a.pdf", label: "Official tax authority explanation: annual corporate income tax reconciliation" }]
+      },
+      {
+        heading: "Check payroll, individual income tax and benefits",
+        paragraphs: [
+          "Reconcile employee rosters, contracts, payroll, bank payments, social insurance information and individual income tax withholding. Review bonuses, allowances, reimbursements, equity incentives, severance, director remuneration and payments made by an overseas group company for China-based work.",
+          "Foreign employee files may need additional review of residence, treaty, tax-exempt benefit and work-location facts. Immigration status and payroll tax treatment are connected but not interchangeable. Do not infer tax exemption from a visa or work permit.",
+          "Test the joiner, leaver and annual reconciliation process and whether employee identity and deduction data remain current. Where a service provider runs payroll, management should still approve inputs and reconcile the final filings."
+        ],
+        links: [{ href: "/blog/china-payroll-individual-income-tax-guide-2026", label: "Related guide: China payroll and individual income tax" }]
+      },
+      {
+        heading: "Review cross-border and related-party transactions",
+        paragraphs: [
+          "List dividends, service fees, royalties, interest, goods, cost allocations, loans, guarantees and reimbursements involving overseas or related parties. Reconcile contracts, invoices, withholding, foreign-exchange or bank materials and accounting entries across both entities.",
+          "Check whether related relationships and transaction types were completely identified for annual associated reporting and whether contemporaneous documentation requirements apply. Official STA guidance covers the definition of related relationships, transaction categories, country-by-country reporting and contemporaneous documentation conditions and content.",
+          "Assess pricing, benefit, substance, permanent establishment, withholding and treaty claims based on the actual functions, assets and risks. A signed intercompany agreement is evidence, not proof that services were delivered or the charge is arm's length."
+        ],
+        links: [{ href: "https://www.chinatax.gov.cn/chinatax/n810341/n810760/c2208475/content.html", label: "Official STA explanation: related-party reporting and contemporaneous documentation" }, { href: "/blog/cross-border-tax-risk-for-service-fees-from-china", label: "Related guide: cross-border service fee tax" }]
+      },
+      {
+        heading: "Turn findings into a defensible remediation plan",
+        paragraphs: [
+          "Classify each finding by tax amount, filing period, evidence gap, recurrence, credit or penalty impact, authority visibility and business urgency. Separate confirmed errors from questions requiring specialist analysis. Name an owner, decision date and evidence of completion for every action.",
+          "Remediation can include obtaining missing records, correcting ledgers, revising controls, amending filings, paying tax, responding to prompts or requesting professional advice. Do not assume voluntary correction automatically removes every consequence; confirm the available route and timing with the competent tax authority or adviser.",
+          "Report material issues to appropriate directors and shareholders with clear assumptions. Preserve the original records and an audit trail of changes. A health check should improve future monthly processes, not create a one-time binder that becomes outdated."
+        ]
+      },
+      {
+        heading: "Prepare the document pack and consultation CTA",
+        paragraphs: [
+          "Prepare the business licence, tax profile, credit result, returns and payment records, ledgers, bank statements, invoices, payroll, annual accounts, audit reports, contracts, customs data, related-party schedules, prior advice, notices and a description of recent business changes. Share sensitive documents only through an agreed secure channel.",
+          "ZYS Advisory helps foreign-invested companies scope China tax health checks, reconcile accounting and filings, review VAT and fapiao controls, coordinate corporate income tax and cross-border transaction analysis, and build remediation plans. Request a consultation through the contact form, WhatsApp or info@zysadvisory.com. ZYS does not guarantee tax outcomes, credit ratings, authority acceptance or absence of future review.",
+          "Reviewed September 8, 2026 against the State Taxation Administration sources linked above. This article is general planning information, not legal, tax or accounting advice. Tax treatment, local procedure and filing obligations must be confirmed for the company's facts."
+        ],
+        links: [{ href: "/contact", label: "Request a China tax health check consultation" }, { href: "/blog/china-profit-repatriation-guide-2026", label: "Planning a dividend? Review profit repatriation readiness" }]
+      }
+    ],
+    faqs: [
+      { question: "What is a China tax health check?", answer: "It is a scoped review that reconciles registrations, books, invoices, tax returns, payments and transaction evidence to identify, prioritise and remediate tax compliance risks." },
+      { question: "Is a tax health check the same as a statutory audit?", answer: "No. A tax diagnostic has a different scope and purpose from a financial statement audit. The two workstreams can share records but should not be treated as substitutes." },
+      { question: "When should a WFOE perform a tax risk assessment?", answer: "Useful triggers include an audit, financing, dividend, acquisition, shareholder or provider change, major business-model change, authority query or unexplained tax credit decline." },
+      { question: "Does a valid fapiao prove an expense is tax deductible?", answer: "Not by itself. The company should also support the genuine transaction, business purpose, receipt, payment and applicable tax treatment." },
+      { question: "Should related-party service fees be included?", answer: "Yes. Review the contract, benefit, deliverables, pricing, withholding, associated reporting, payment route and consistency between both parties' records." },
+      { question: "Can a health check guarantee that the tax authority will not audit the company?", answer: "No. It can improve visibility, evidence and controls, but it cannot prevent authority review or guarantee a particular tax or credit outcome." }
+    ]
   }
 ];
