@@ -4269,5 +4269,139 @@ ${siteUrl}/blog/china-tax-health-check-foreign-companies-2026
       { question: "Should related-party service fees be included?", answer: "Yes. Review the contract, benefit, deliverables, pricing, withholding, associated reporting, payment route and consistency between both parties' records." },
       { question: "Can a health check guarantee that the tax authority will not audit the company?", answer: "No. It can improve visibility, evidence and controls, but it cannot prevent authority review or guarantee a particular tax or credit outcome." }
     ]
+  },
+  {
+    slug: "china-permanent-establishment-risk-guide-2026",
+    title: "China Permanent Establishment Risk in 2026: A Guide for Foreign Companies",
+    metaTitle: "China Permanent Establishment Risk | 2026 Guide",
+    description: "Assess China permanent establishment risk from employees, service projects, offices, agents and contract activity, with practical tax, evidence and WFOE planning steps.",
+    summary: "A foreign company can face China tax exposure before it forms a local subsidiary. Permanent establishment analysis depends on domestic law, the applicable tax treaty and the facts: where people work, who controls them, what premises are used and who negotiates or concludes business. This guide turns those questions into a practical risk review.",
+    published: "2026-09-10",
+    updated: "2026-09-10",
+    category: "China Cross-Border Tax",
+    readingTime: "10 min read",
+    keyword: "China permanent establishment",
+    longTailKeywords: [
+      "China permanent establishment risk",
+      "service permanent establishment China",
+      "foreign employee creates permanent establishment China",
+      "dependent agent permanent establishment China",
+      "China PE tax for foreign company",
+      "China permanent establishment risk assessment",
+      "WFOE vs permanent establishment China"
+    ],
+    imageAlt: "China permanent establishment risk map for foreign companies with employees services offices and agents",
+    relatedServiceHrefs: ["/services/tax-consulting", "/services/tax-planning", "/services/company-registration-in-china", "/services/wfoe-registration"],
+    relatedArticleSlugs: ["cross-border-tax-risk-for-service-fees-from-china", "china-employer-of-record-vs-wfoe-guide-2026", "china-representative-office-registration-guide-2026", "how-to-register-foreign-owned-company-in-china-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China Permanent Establishment Risk for Foreign Companies
+
+Employees, service projects, offices and agents can create China tax questions before a foreign company forms a subsidiary. Our new guide explains the core PE tests, evidence and when a WFOE review may be needed.
+
+Read the guide:
+${siteUrl}/blog/china-permanent-establishment-risk-guide-2026
+
+#ChinaTax #PermanentEstablishment #ChinaBusiness #WFOE #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why permanent establishment matters before company registration",
+        paragraphs: [
+          "China permanent establishment is a broad cross-border tax topic for overseas companies that sell into China, send employees or contractors, deliver projects, use local premises or rely on people who negotiate business. A foreign company can face tax and filing questions even though it has not incorporated a China subsidiary.",
+          "The analysis normally begins with China's domestic rules for non-resident enterprises and then considers the applicable double tax treaty or arrangement. The treaty can limit China's taxing rights, but its wording, thresholds and anti-avoidance provisions vary. There is no responsible universal number of days or safe activity list for every country and project.",
+          "This guide is for business owners, tax directors and legal teams deciding whether a limited China activity remains supportable, needs clearer controls or should move to a registered operating structure. It is general information, not a conclusion on any particular enterprise."
+        ],
+        links: [{ href: "/services/tax-consulting", label: "Request a China permanent establishment risk assessment" }]
+      },
+      {
+        heading: "Start with domestic establishment or place rules",
+        paragraphs: [
+          "China's Enterprise Income Tax framework defines a non-resident enterprise as an enterprise formed under foreign law whose effective management is outside China but which has an establishment or place in China, or China-source income without one. Official tax guidance lists management, business and representative offices, factories, places providing services and construction or installation sites among relevant examples.",
+          "The domestic concept and a treaty permanent establishment are related but should not be assumed identical. First identify the activity and potential establishment under domestic law; then determine whether the foreign enterprise is eligible for a treaty and whether the treaty restricts taxation.",
+          "Map every China location the business uses, including customer sites, coworking space, group-company offices, warehouses, project rooms and home offices. Record who controls access, how long the arrangement lasts and whether the place is available for the foreign enterprise's business."
+        ],
+        links: [{ href: "https://www.chinatax.gov.cn/chinatax/n810356/n3255681/c5221098/content.html", label: "Official STA explanation: non-resident enterprises and establishments or places" }]
+      },
+      {
+        heading: "Test fixed-place permanent establishment risk",
+        paragraphs: [
+          "Many treaties describe a permanent establishment as a fixed place of business through which an enterprise's business is wholly or partly carried on, and list examples such as a place of management, branch or office. The exact treaty text and any protocols or multilateral modifications must be checked.",
+          "A formal lease in the foreign company's name is not the only fact. Consider duration, geographic and commercial continuity, disposal or access, staff presence, customer communications, signage, equipment and whether core business is carried on there. A preparatory or auxiliary exception, where present, depends on substance rather than the label in an internal memo.",
+          "Document why a location is used and who directs the activity. If employees routinely operate from a China group company's office for the overseas enterprise, an informal desk arrangement should not be ignored merely because no rent is charged."
+        ],
+        links: [{ href: "https://www.chinatax.gov.cn/eng/c101276/c101732/index.html", label: "Official STA tax treaty library: check the applicable agreement" }]
+      },
+      {
+        heading: "Count service-project presence using the actual treaty",
+        paragraphs: [
+          "Some treaties contain a service permanent establishment test based on services furnished through employees or other personnel for a specified period. Others use different wording or do not contain the same service rule. Count people, connected projects and days only after identifying the applicable treaty definition.",
+          "State Taxation Administration Announcement No. 11 of 2018 explains that treaty wording referring to more than six months in a twelve-month period for a service PE is construed as more than 183 days in a twelve-month period. That interpretation does not mean every treaty uses that clause or that activity below it is automatically risk free under every other PE test.",
+          "Maintain a project calendar showing personnel, arrival and departure dates, work location, contract, connected projects, deliverables and payer. Reconcile immigration, travel, expense, customer-site and timesheet data; an estimate made after an audit request is much harder to defend."
+        ],
+        links: [{ href: "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5245851/content.html", label: "Official STA guidance: implementation of treaty PE provisions" }]
+      },
+      {
+        heading: "Assess dependent agent and contract activity",
+        paragraphs: [
+          "An agent or other person in China can create risk where the relevant domestic or treaty conditions are met. Official Chinese guidance notes that a business agent regularly concluding contracts, or storing and delivering goods on behalf of a non-resident enterprise, can be treated as an establishment or place under domestic rules.",
+          "Treaty agent provisions must be reviewed separately, including any multilateral changes applicable to that treaty. Examine who identifies customers, negotiates material terms, approves discounts, commits inventory, signs or routinely drives contracts that the overseas company accepts without meaningful change.",
+          "Job titles and signature location are not enough. Preserve approval records and evidence of genuine overseas decision-making. If a distributor or agent is legally and economically independent, document its ordinary-course conduct, customer base, commercial risk and authority rather than relying only on an agreement describing it as independent."
+        ]
+      },
+      {
+        heading: "Review seconded employees and group-company support",
+        paragraphs: [
+          "Employee secondment is a frequent China PE risk area. The 2013 STA announcement on personnel dispatched by non-resident enterprises considers which enterprise bears responsibilities and risks for the work and normally evaluates performance, together with payment, cost, control and other facts.",
+          "The same announcement distinguishes personnel sent solely to exercise shareholder rights and protect the foreign shareholder's legitimate interests, giving examples such as investment advice and participation in shareholder or board meetings. Calling an employee a shareholder representative does not control the result if the person actually manages operations or supplies services.",
+          "Reconcile employment contracts, dispatch letters, reporting lines, performance reviews, payroll recharges, service fees, work products and day-to-day instructions. Coordinate PE analysis with individual income tax, work permits, social insurance, transfer pricing and deductibility; one conclusion does not automatically settle the others."
+        ],
+        links: [{ href: "https://www.chinatax.gov.cn/eng/c102441/c5238651/content.html", label: "Official STA announcement: personnel dispatched to provide services in China" }, { href: "/blog/china-employer-of-record-vs-wfoe-guide-2026", label: "Related guide: China EOR vs WFOE hiring" }]
+      },
+      {
+        heading: "Do remote sales and e-commerce eliminate PE risk?",
+        paragraphs: [
+          "Selling through a website or signing contracts overseas does not answer the full question. Review where inventory is held and delivered, who provides installation or after-sales services, whether local people solicit or negotiate customers, and whether the foreign enterprise has premises or equipment at its disposal.",
+          "Pure goods trading, licensing, consulting and bundled technology or service arrangements can produce different income classifications and treaty analyses. The STA's treaty guidance distinguishes certain after-sales and professional services from royalties while noting that personnel services constituting a PE may fall under business-profits provisions.",
+          "Map the complete value chain from marketing and negotiation to fulfilment, payment, returns and support. Also assess VAT, customs, withholding and platform obligations separately. Absence of a PE does not mean absence of every China tax or regulatory obligation."
+        ],
+        links: [{ href: "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5250715/content.html", label: "Official STA treaty guidance: service and royalty classification" }]
+      },
+      {
+        heading: "Understand the consequences without guessing the tax bill",
+        paragraphs: [
+          "If an establishment or PE exists, China may tax profits attributable to the relevant China activity under domestic law and the applicable treaty. Registration, returns, accounting records, invoicing, withholding and individual tax issues may also need attention. The answer is not necessarily a flat percentage of the global contract.",
+          "Profit attribution should reflect functions, assets, risks and reliable evidence. Where records do not accurately determine attributable profit, tax authorities may apply available statutory methods. A tax assessment can also affect pricing, customer contracts and prior-period financial statements.",
+          "Treaty benefits require the relevant eligibility and documentation. China's framework generally places responsibility on the non-resident taxpayer and withholding agent to determine and support treaty treatment, subject to tax authority follow-up. Obtain specialist advice before filing or responding to an inquiry."
+        ],
+        links: [{ href: "https://12366.chinatax.gov.cn/bzds/057/057-5-1.html", label: "Official source: Enterprise Income Tax Law" }, { href: "/blog/cross-border-tax-risk-for-service-fees-from-china", label: "Related guide: tax on service fees paid from China" }]
+      },
+      {
+        heading: "Choose controls, contract changes or a China entity",
+        paragraphs: [
+          "Low or temporary activity may call for better travel tracking, clearer authority limits, corrected intercompany documents and periodic review. Those controls must match conduct; a policy that staff ignore will not change the facts. Do not split one connected project artificially to avoid a time threshold.",
+          "Where the business needs permanent staff, local customer contracting, RMB invoicing, a continuing office, import or export operations, regulated licences or sustained management, evaluate a WFOE or other lawful structure. Forming a subsidiary does not retroactively erase the foreign company's earlier PE exposure, so review the transition date and contracts.",
+          "Compare the compliance cost and operational control of a registered entity with the tax uncertainty and limitations of operating cross-border. The right outcome may be a WFOE, a properly managed distributor or service model, or a narrower China activity supported by documented controls."
+        ],
+        links: [{ href: "/services/company-registration-in-china", label: "Evaluate China company registration for sustained operations" }, { href: "/services/wfoe-registration", label: "Discuss WFOE registration and operating readiness" }, { href: "/blog/china-representative-office-registration-guide-2026", label: "Compare the limited representative office route" }]
+      },
+      {
+        heading: "Run a China PE risk assessment and request advice",
+        paragraphs: [
+          "Prepare the group chart, tax residence, applicable treaty, China contracts, customer and supplier list, people and travel calendar, work locations, agent or distributor agreements, signature authority, project descriptions, invoices, payment flows, secondment documents and earlier filings. Interview business staff, not only legal and finance teams.",
+          "Classify potential fixed-place, service, construction, agent and secondment risks by entity and period. Record uncertain facts, responsible owners and remediation steps. Reassess before renewing a project, hiring locally, changing contract authority or exceeding an applicable treaty threshold.",
+          "ZYS Advisory helps foreign companies scope China permanent establishment reviews, coordinate cross-border tax analysis and compare compliant operating structures, including WFOE registration. Request a consultation through the contact form, WhatsApp or info@zysadvisory.com. ZYS does not guarantee treaty benefits, tax outcomes, authority acceptance or entity approval.",
+          "Reviewed September 10, 2026 against the State Taxation Administration and Enterprise Income Tax Law sources linked above. Treaty text and facts control the result; verify current rules and obtain case-specific legal and tax advice before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a China permanent establishment risk consultation" }]
+      }
+    ],
+    faqs: [
+      { question: "What is a permanent establishment in China?", answer: "It is generally a sufficiently connected business presence through which a foreign enterprise carries on activity, as determined under Chinese domestic law and any applicable tax treaty. The precise test depends on facts and treaty wording." },
+      { question: "Can an employee working in China create a PE?", answer: "Potentially. Review the work, location, duration, authority, project, employer control and applicable treaty. Work-permit or payroll treatment does not by itself decide the corporate PE question." },
+      { question: "Is 183 days always the China service PE threshold?", answer: "No. The 183-day interpretation applies to specified treaty wording, but treaties differ and other fixed-place or agent tests may apply. Check the actual agreement and connected-project rules." },
+      { question: "Can a sales agent create a China PE?", answer: "Potentially, depending on contract authority, the person's role in concluding business, independence and the applicable domestic and treaty rules. Substance matters more than the agent's title." },
+      { question: "Does having no China subsidiary prevent PE risk?", answer: "No. PE rules specifically address when a foreign enterprise's China activity creates a taxable presence even without a locally incorporated subsidiary." },
+      { question: "Should the foreign company register a WFOE instead?", answer: "Consider a WFOE when operations require permanent staff, local contracts, invoicing, premises or licences. Compare commercial needs and tax consequences; incorporation does not automatically resolve historic PE exposure." }
+    ]
   }
 ];
