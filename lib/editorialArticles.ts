@@ -4403,5 +4403,132 @@ ${siteUrl}/blog/china-permanent-establishment-risk-guide-2026
       { question: "Does having no China subsidiary prevent PE risk?", answer: "No. PE rules specifically address when a foreign enterprise's China activity creates a taxable presence even without a locally incorporated subsidiary." },
       { question: "Should the foreign company register a WFOE instead?", answer: "Consider a WFOE when operations require permanent staff, local contracts, invoicing, premises or licences. Compare commercial needs and tax consequences; incorporation does not automatically resolve historic PE exposure." }
     ]
+  },
+  {
+    slug: "hong-kong-company-registration-for-foreigners-2026",
+    title: "Hong Kong Company Registration for Foreigners in 2026: Requirements, Cost and Process",
+    metaTitle: "Hong Kong Company Registration for Foreigners | 2026",
+    description: "Plan Hong Kong company registration as a foreigner: ownership, director, secretary, address, documents, official fees, banking preparation and first-year compliance.",
+    summary: "Foreign founders can own and direct a Hong Kong private company without being Hong Kong residents, but incorporation still requires a Hong Kong registered office, an eligible company secretary, accurate ownership records and a workable post-registration plan. This guide connects the filing steps with banking, tax and annual compliance decisions.",
+    published: "2026-09-12",
+    updated: "2026-09-12",
+    category: "Hong Kong Company Formation",
+    readingTime: "11 min read",
+    keyword: "Hong Kong company registration for foreigners",
+    longTailKeywords: [
+      "how to register a company in Hong Kong as a foreigner",
+      "Hong Kong company registration requirements",
+      "Hong Kong company formation cost",
+      "Hong Kong company registration documents",
+      "Hong Kong company secretary for foreigners",
+      "Hong Kong registered office requirement",
+      "Hong Kong business bank account for foreign owners",
+      "Hong Kong company setup and annual compliance"
+    ],
+    imageAlt: "Hong Kong company registration process for foreign founders from incorporation to banking and compliance",
+    relatedServiceHrefs: ["/services/hong-kong-company-registration", "/services/accounting-bookkeeping", "/services/tax-consulting"],
+    relatedArticleSlugs: ["hong-kong-company-annual-compliance-guide-2026", "china-vs-hong-kong-company-registration", "hong-kong-vs-singapore-holding-company-for-china", "hong-kong-company-registration-for-china-trading-businesses"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+Hong Kong Company Registration for Foreigners
+
+Can a non-resident own and direct a Hong Kong company? What address, secretary, documents and government fees are required—and what should be ready for banking and first-year compliance? Our new guide explains the complete planning path.
+
+Read the guide:
+${siteUrl}/blog/hong-kong-company-registration-for-foreigners-2026
+
+#HongKongCompany #CompanyFormation #HongKongBusiness #InternationalBusiness #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Can a foreigner register a company in Hong Kong?",
+        paragraphs: [
+          "Yes. Hong Kong's Companies Ordinance does not require a private-company director to be a Hong Kong resident, and foreign shareholders can use a Hong Kong private company limited by shares. A private company must have at least one natural-person director and a company secretary; the sole director cannot also act as company secretary.",
+          "Foreign ownership does not remove local infrastructure requirements. The registered office must be in Hong Kong. If the secretary is an individual, that person must ordinarily reside in Hong Kong; if the secretary is a body corporate, its registered or principal office must be in Hong Kong.",
+          "Start with commercial substance, not only eligibility. Define customers, contracting, payment flows, management, staff, suppliers, intellectual property and the countries where work occurs. Incorporation alone does not establish a bank account, tax exemption, visa, licence or operational substance."
+        ],
+        links: [{ href: "https://www.cr.gov.hk/en/faq/local-company/incorporation.htm", label: "Official Companies Registry incorporation FAQ" }, { href: "/services/hong-kong-company-registration", label: "Discuss Hong Kong company registration" }]
+      },
+      {
+        heading: "Choose the company structure and ownership before filing",
+        paragraphs: [
+          "A private company limited by shares is the common structure for an operating, trading or holding business because liability is generally limited and ownership is represented by shares. A branch of an overseas corporation and other structures follow different registration and liability rules, so do not treat them as interchangeable.",
+          "Decide the founder, shareholder percentages, initial share capital, director authority and reserved decisions before preparing forms. The Companies Registry states that there is no statutory minimum paid-up capital, but the chosen amount should still fit funding, banking, contracts and accounting records.",
+          "Where a corporate shareholder is used, map the ownership chain to the ultimate controllers and prepare current entity documents. Consider tax residence, management and control, controlled-foreign-company rules and reporting in every relevant jurisdiction before inserting a holding entity."
+        ],
+        links: [{ href: "/blog/hong-kong-vs-singapore-holding-company-for-china", label: "Compare Hong Kong and Singapore holding-company planning" }]
+      },
+      {
+        heading: "Prepare the Hong Kong company registration documents",
+        paragraphs: [
+          "The incorporation package normally identifies the proposed company name, registered office, founder member or members, share structure, first director or directors, company secretary and required contact and identification particulars. Articles of association and the prescribed incorporation form are central company documents.",
+          "Foreign individuals should prepare clear passport and residential-address evidence. A corporate shareholder may need its certificate, constitutional documents, registers, ownership chart, board approval and evidence for directors and beneficial owners. Certification, translation and due-diligence requirements depend on the document, origin and service provider.",
+          "Names and addresses should be consistent across passports, corporate documents, the filing forms, banking materials and contracts. Explain transliteration or address differences before submission. A registry filing and a regulated service provider's customer due diligence are separate checks."
+        ],
+        links: [{ href: "https://www.cr.gov.hk/en/forms/filing.htm", label: "Official Companies Registry filing tips" }]
+      },
+      {
+        heading: "Complete the incorporation and business registration process",
+        paragraphs: [
+          "Check the proposed name, prepare the incorporation form and articles, confirm officer consents and submit through the Companies Registry route. A company-name registration does not grant trademark rights; search the relevant trademark register and obtain advice where brand risk matters.",
+          "Hong Kong operates a one-stop company and business registration arrangement for local companies. Successful incorporation produces the certificate of incorporation and the applicable business registration certificate, but those documents do not replace sector licences or other approvals.",
+          "Processing time is not a promise. Name issues, incomplete particulars, due diligence, document quality, regulated activities or further questions can extend the project. Do not commit to contracts, payroll or launch dates until the company, banking and any required permissions are actually ready."
+        ],
+        links: [{ href: "https://www.cr.gov.hk/en/services/register-company.htm", label: "Official guide: register a new Hong Kong company" }]
+      },
+      {
+        heading: "Budget official fees and the real company formation cost",
+        paragraphs: [
+          "As reviewed on September 12, 2026, the Companies Registry lists HK$1,545 for an electronic incorporation application for a local company with share capital and HK$1,720 for hard copy, excluding the business registration fee and levy. Official charges can change, so verify the live fee tables on the submission date.",
+          "Hong Kong company formation cost also includes the registered office, company secretary, significant-controllers-register support, document certification or translation, bookkeeping, audit, tax filing and any licence or banking assistance. A low headline incorporation price may exclude mandatory or recurring work.",
+          "Ask for a written scope separating government charges, one-time professional work, annual renewals and optional services. Confirm refund treatment, extra due-diligence charges, mail handling, document custody, accounting volume assumptions and whether bank-account support is advisory rather than guaranteed."
+        ],
+        links: [{ href: "https://www.cr.gov.hk/en/services/fees.htm", label: "Official Companies Registry fee schedule" }, { href: "https://www.ird.gov.hk/eng/tax/bre_lcc.htm", label: "Official IRD business registration charges" }]
+      },
+      {
+        heading: "Set up the significant controllers register and company records",
+        paragraphs: [
+          "An applicable Hong Kong company must take reasonable steps to identify significant controllers and keep a significant controllers register. Control can arise through more than 25 percent of shares or voting rights, power to appoint or remove a board majority, or other significant influence or control.",
+          "The company must designate at least one eligible representative to assist law-enforcement officers regarding the register. The representative may be a Hong Kong-resident director, member or employee, or a qualifying accounting, legal or licensed trust or company service professional.",
+          "Prepare the register of members, directors' records, share certificates, ownership evidence, resolutions and accounting-record process immediately. If the controllers register is kept somewhere in Hong Kong other than the registered office, check the notification requirement and deadline."
+        ],
+        links: [{ href: "https://www.cr.gov.hk/en/legislation/scr/faq.htm", label: "Official FAQ: significant controllers register" }]
+      },
+      {
+        heading: "Prepare for a Hong Kong business bank account",
+        paragraphs: [
+          "Company registration and bank-account approval are separate. A bank or payment provider may examine owners, directors, expected turnover, source of funds and wealth, customers, suppliers, countries, transaction purpose, contracts, website, office arrangements and tax residence. Its risk decision cannot be guaranteed by an incorporation agent.",
+          "Build a coherent banking file: certificates, articles, ownership chart, passports and addresses, business plan, contracts or invoices, supplier evidence, funding records and an explanation of cross-border flows. The proposed activity should match the registered business description and actual operations.",
+          "Compare account capabilities, currencies, payment rails, fees, platform access and safeguarding—not only opening speed. Never provide passwords or one-time codes to an intermediary. Treat requests to disguise owners, activities or transaction countries as a serious warning sign."
+        ]
+      },
+      {
+        heading: "Plan tax, accounting and first-year compliance from day one",
+        paragraphs: [
+          "Hong Kong incorporation does not automatically mean zero tax. Profits-tax treatment depends on the law and facts, including the nature and source of profits. An offshore claim or other position requires analysis and supporting evidence; it is not created by foreign customers or a non-resident owner alone.",
+          "Establish bookkeeping, invoice, expense, bank-reconciliation and document-retention controls from the first transaction. Hong Kong companies generally need annual financial statements and statutory audit subject to the Companies Ordinance and limited exceptions, together with profits-tax and corporate filings as applicable.",
+          "Track the annual return, business registration renewal, accounting close, audit and tax return as separate obligations. Cross-border founders should also review tax residence, permanent establishment, transfer pricing, withholding and personal reporting outside Hong Kong."
+        ],
+        links: [{ href: "/services/accounting-bookkeeping", label: "Arrange bookkeeping and accounting support" }, { href: "/services/tax-consulting", label: "Request cross-border tax advice" }, { href: "/blog/hong-kong-company-annual-compliance-guide-2026", label: "Read the Hong Kong annual compliance guide" }]
+      },
+      {
+        heading: "Use a pre-filing checklist and request a scoped quotation",
+        paragraphs: [
+          "Before instructing registration, confirm the structure, name, activities, shareholders, directors, secretary, registered office, share capital, controllers, funding, banking profile, licences, accounting owner and first-year budget. Identify every jurisdiction connected to management, staff, sales and owners.",
+          "Send ZYS Advisory a short business description, ownership chart, expected countries and currencies, director plan, target launch timing and required services. We can scope Hong Kong incorporation, registered-office and secretary coordination, bookkeeping, audit support, tax compliance and China-connected planning.",
+          "Request a consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send passwords, bank tokens or complete identity files in an unsecured first message. ZYS does not guarantee incorporation, bank, tax, visa, licence or regulatory outcomes.",
+          "Reviewed September 12, 2026 against the Hong Kong Companies Registry and Inland Revenue Department sources linked above. Fees, forms and procedures can change; verify current official guidance and obtain case-specific legal and tax advice before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a Hong Kong company registration consultation" }]
+      }
+    ],
+    faqs: [
+      { question: "Can a foreigner own 100% of a Hong Kong company?", answer: "A foreign individual or overseas company can generally hold all shares in a Hong Kong private company, subject to customer due diligence, sanctions, regulated-activity and case-specific legal requirements." },
+      { question: "Does a Hong Kong company need a local director?", answer: "No Hong Kong residency requirement applies to a director under the Companies Ordinance, but a private company needs at least one natural-person director. The company secretary and registered office must meet Hong Kong requirements." },
+      { question: "Can the sole director also be the company secretary?", answer: "No. The sole director of a Hong Kong private company cannot also act as its company secretary." },
+      { question: "What is the official Hong Kong incorporation fee?", answer: "As reviewed September 12, 2026, the Companies Registry lists HK$1,545 for an electronic application for a local company with share capital, excluding the business registration fee and levy. Always verify the current official schedules." },
+      { question: "Is a Hong Kong bank account included with company registration?", answer: "No. Incorporation and account approval are separate. Financial institutions conduct their own ownership, business, source-of-funds and risk checks, and approval cannot be guaranteed." },
+      { question: "Does a Hong Kong company automatically pay zero tax?", answer: "No. Profits-tax treatment depends on Hong Kong law and the facts, including the source of profits. Any offshore or exemption position needs analysis, filings and evidence." },
+      { question: "What must a foreign founder arrange after incorporation?", answer: "Common priorities include company records, significant-controllers-register compliance, banking, bookkeeping, licences where relevant, business registration, annual return, audit and tax planning." }
+    ]
   }
 ];
