@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return createPageMetadata({
     title: service.title === service.keyword ? `${service.title} | China Business & Tax Advisory` : `${service.title} | ${service.keyword}`,
     description: `${service.summary} ZYS provides ${service.keyword} support for foreign investors, international SMEs, and Chinese companies expanding overseas.`,
-    keywords: [service.keyword, service.title, "China Company Registration", "China WFOE Registration", "China Business License", "China Accounting Service", "China Bookkeeping", "China Tax Filing", "China VAT", "China Payroll Service", "China Work Permit", "China Tax Advisory", "China Audit", "Foreign Investment China"],
+    keywords: [service.keyword, service.title, "China Company Registration", "China WFOE Registration", "China Business License", "China Corporate Legal Advisory", "China Legal Consulting", "China Accounting Service", "China Bookkeeping", "China Tax Filing", "China VAT", "China Payroll Service", "China Work Permit", "China Tax Advisory", "China Audit", "Foreign Investment China"],
     path: `/services/${service.slug}`
   });
 }
@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <StructuredData data={serviceSchema(service.title, service.summary, [service.keyword, "China Company Registration", "China WFOE Registration", "China Business License", "China Accounting Service", "China Bookkeeping", "China Tax Filing", "China VAT", "China Payroll Service", "China Work Permit", "China Tax Advisory", "China Audit", "Hong Kong Company Registration", "Singapore Company Registration", "US Company Registration", "Dubai Company Registration", "Cross-border Tax", "Foreign Investment China"])} />
+      <StructuredData data={serviceSchema(service.title, service.summary, [service.keyword, "China Company Registration", "China WFOE Registration", "China Business License", "China Corporate Legal Advisory", "China Legal Consulting", "China Accounting Service", "China Bookkeeping", "China Tax Filing", "China VAT", "China Payroll Service", "China Work Permit", "China Tax Advisory", "China Audit", "Hong Kong Company Registration", "Singapore Company Registration", "US Company Registration", "Dubai Company Registration", "Cross-border Tax", "Foreign Investment China"])} />
       <StructuredData data={faqSchema(faqs)} />
       <StructuredData data={breadcrumbSchema(breadcrumbs)} />
       <Breadcrumbs items={breadcrumbs.map((item) => ({ name: item.name, href: item.path }))} />

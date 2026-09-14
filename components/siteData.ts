@@ -7,6 +7,7 @@ import {
   Globe2,
   Landmark,
   Plane,
+  Scale,
   ShieldCheck,
   Timer
 } from "lucide-react";
@@ -20,6 +21,7 @@ export const navItems = [
   { href: "/tax-accounting", label: "Tax & Accounting" },
   { href: "/services/china-visa-service", label: "Visa Services" },
   { href: "/services/business-license", label: "Business Licenses" },
+  { href: "/services/corporate-legal-advisory", label: "Legal Advisory" },
   { href: "/blog", label: "Blog" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/contact", label: "Contact" }
@@ -67,6 +69,13 @@ export const services = [
     icon: FileCheck2,
     description:
       "Assessment and application coordination for China business licenses, operating permits, regulated industry qualifications, scope amendments, renewals, and compliance checklists."
+  },
+  {
+    title: "Corporate Legal Advisory",
+    href: "/services/corporate-legal-advisory",
+    icon: Scale,
+    description:
+      "Corporate legal consulting for foreign-invested companies, including governance, contracts, employment compliance, shareholder changes, IP coordination, and dispute prevention."
   },
   {
     title: "Work Visa",

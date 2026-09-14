@@ -17,6 +17,7 @@ const serviceTopicMap: Record<string, string[]> = {
   "wfoe-registration": ["wfoe", "foreign invested", "representative office", "joint venture", "requirements"],
   "china-company-formation": ["company formation", "startup", "subsidiary", "market entry", "checklist"],
   "business-license": ["business license", "license", "scope", "restaurant", "medical device"],
+  "corporate-legal-advisory": ["legal", "contract", "compliance", "shareholder", "trademark", "employment", "governance", "dispute"],
   "china-visa-service": ["visa", "work permit", "residence permit", "foreign employee", "families"],
   "trademark-registration": ["trademark", "brand", "registration"],
   "audit-services": ["audit", "audit trail", "annual audit", "preparation"],

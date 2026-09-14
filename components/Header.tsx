@@ -19,7 +19,8 @@ const serviceItems = [
   { href: "/services/company-registration-in-china", label: "China Registration" },
   { href: "/tax-accounting", label: "Tax & Accounting" },
   { href: "/services/china-visa-service", label: "Visa Services" },
-  { href: "/services/business-license", label: "Business Licenses" }
+  { href: "/services/business-license", label: "Business Licenses" },
+  { href: "/services/corporate-legal-advisory", label: "Legal Advisory" }
 ];
 
 const mainItems = [

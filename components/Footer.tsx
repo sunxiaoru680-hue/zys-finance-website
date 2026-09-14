@@ -22,9 +22,9 @@ export function Footer() {
           <p className="text-lg font-bold">{companyName}</p>
           <p className="mt-1 text-sm font-semibold text-white/75">Logo: ZYS</p>
           <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
-            Professional China company registration, accounting, tax advisory,
-            work visa, business license, audit, and overseas registration support
-            for international clients.
+            Professional China company registration, corporate legal advisory,
+            accounting, tax advisory, work visa, business license, audit, and
+            overseas registration support for international clients.
           </p>
           <div className="mt-5">
             <p className="text-sm font-semibold text-white">Follow ZYS Advisory</p>
@@ -93,7 +93,7 @@ export function Footer() {
       <div className="border-t border-white/10 py-5">
         <div className="container-shell flex flex-col gap-2 text-xs text-white/60 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {companyName}. All rights reserved.</p>
-          <p>Company formation, tax, accounting, visa, licensing, and audit support.</p>
+          <p>Company formation, legal advisory, tax, accounting, visa, licensing, and audit support.</p>
         </div>
       </div>
     </footer>

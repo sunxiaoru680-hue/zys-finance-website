@@ -14,6 +14,7 @@ import {
   Landmark,
   Plane,
   PlayCircle,
+  Scale,
   ShieldCheck,
   Timer
 } from "lucide-react";
@@ -60,6 +61,12 @@ const priorityServices = [
     href: "/services/business-license",
     icon: FileCheck2,
     text: "Business scope review, permit pathway assessment, application coordination, renewals, amendments, and license checklists."
+  },
+  {
+    title: "Corporate Legal Advisory",
+    href: "/services/corporate-legal-advisory",
+    icon: Scale,
+    text: "Corporate legal consulting for governance, contracts, employment compliance, shareholder changes, IP coordination, and dispute prevention."
   },
   {
     title: "Overseas Company Registration",
@@ -241,7 +248,7 @@ const faqItems = [
 const baseMetadata = createPageMetadata({
   title: "China Company Registration, Tax, Accounting & Business Advisory",
   description:
-    "Nanjing ZYS Advisory Co., Ltd. helps international businesses with China company registration, accounting, tax compliance, bookkeeping, work permits, business licenses, and overseas company formation.",
+    "Nanjing ZYS Advisory Co., Ltd. helps international businesses with China company registration, corporate legal advisory, accounting, tax compliance, bookkeeping, work permits, business licenses, and overseas company formation.",
   keywords: [
     "Nanjing ZYS Advisory",
     "China company registration",
@@ -249,6 +256,7 @@ const baseMetadata = createPageMetadata({
     "China tax services",
     "China work permit",
     "business license application China",
+    "corporate legal advisory China",
     "foreign investment consulting China",
     "overseas company registration"
   ],
@@ -272,12 +280,13 @@ export default function HomePage() {
       <StructuredData
         data={serviceSchema(
           "Nanjing ZYS Advisory Co., Ltd. China Business & Tax Advisory",
-          "China company registration, accounting, bookkeeping, tax advisory, business license, work permit, visa, audit support, and overseas company formation services for international businesses.",
+          "China company registration, corporate legal advisory, accounting, bookkeeping, tax advisory, business license, work permit, visa, audit support, and overseas company formation services for international businesses.",
           [
             "China company registration",
             "China accounting services",
             "China tax services",
             "China work permit",
+            "corporate legal advisory China",
             "business license China",
             "overseas company formation"
           ]

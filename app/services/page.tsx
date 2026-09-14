@@ -14,6 +14,7 @@ const serviceCategories = [
       ["WFOE Registration", "/services/wfoe-registration"],
       ["Foreign Investment Consulting", "/services/foreign-investment"],
       ["Business Licenses", "/services/business-license"],
+      ["Corporate Legal Advisory", "/services/corporate-legal-advisory"],
       ["Trademark Registration", "/services/trademark-registration"]
     ]
   },
@@ -49,15 +50,17 @@ const serviceCategories = [
 ];
 
 export const metadata: Metadata = createPageMetadata({
-  title: "China Company Registration, Accounting, Tax, Visa & Audit Services",
+  title: "China Company Registration, Legal, Accounting, Tax, Visa & Audit Services",
   description:
-    "Explore ZYS services for China company registration, accounting and bookkeeping, tax advisory, tax planning, audit services, business license applications, work visas, foreign investment consulting, and overseas company registration.",
+    "Explore ZYS services for China company registration, corporate legal advisory, accounting and bookkeeping, tax advisory, tax planning, audit services, business license applications, work visas, foreign investment consulting, and overseas company registration.",
   keywords: [
     "China company registration services",
     "accounting and bookkeeping China",
     "China tax advisory",
     "tax planning China",
     "audit services China",
+    "corporate legal advisory China",
+    "China legal consulting for foreign companies",
     "work visa China",
     "foreign investment consulting China",
     "overseas company registration",
@@ -80,19 +83,21 @@ export default function ServicesPage() {
       <StructuredData
         data={faqSchema([
           { question: "Which specialist services does ZYS provide?", answer: "ZYS provides support for China company registration, WFOE registration, accounting and bookkeeping, tax advisory, payroll, visas, company deregistration, business license applications, CFO advisory, and overseas company formation." },
+          { question: "Does ZYS provide corporate legal advisory?", answer: "Yes. ZYS provides practical corporate legal advisory coordination for foreign-invested companies, including governance, contracts, employment compliance, shareholder changes, IP coordination, dispute prevention, and external counsel collaboration where formal legal representation is required." },
           { question: "Can ZYS support overseas company registration?", answer: "Yes. ZYS supports Hong Kong company registration, Singapore company registration, US company registration, Dubai company registration, and cross-border tax coordination connected with China operations." }
         ])}
       />
       <StructuredData
         data={serviceSchema(
           "China Business Consulting Services",
-          "Company registration, accounting, bookkeeping, tax advisory, tax planning, audit services, work visas, business licenses, foreign investment consulting, and overseas company registration.",
+          "Company registration, corporate legal advisory, accounting, bookkeeping, tax advisory, tax planning, audit services, work visas, business licenses, foreign investment consulting, and overseas company registration.",
           [
             "China company registration services",
             "WFOE registration China",
             "China accounting service",
             "China bookkeeping",
             "China tax advisory",
+            "China corporate legal advisory",
             "China tax filing",
             "China VAT",
             "China payroll service",
@@ -107,8 +112,8 @@ export default function ServicesPage() {
       />
       <PageHero
         eyebrow="Services"
-        title="Company formation, accounting, tax, visa, licensing, audit, and overseas setup services."
-        description="ZYS supports international clients that need coordinated execution across China company registration, accounting and bookkeeping, tax advisory, tax planning, work visa support, business license applications, audit services, foreign investment consulting, payroll service, CFO advisory, company deregistration, Hong Kong company registration, Singapore company registration, US company registration, Dubai company registration, and long-term compliance."
+        title="Company formation, legal advisory, accounting, tax, visa, licensing, audit, and overseas setup services."
+        description="ZYS supports international clients that need coordinated execution across China company registration, corporate legal advisory, accounting and bookkeeping, tax advisory, tax planning, work visa support, business license applications, audit services, foreign investment consulting, payroll service, CFO advisory, company deregistration, Hong Kong company registration, Singapore company registration, US company registration, Dubai company registration, and long-term compliance."
       />
       <section className="py-16 md:py-24">
         <div className="container-shell">
