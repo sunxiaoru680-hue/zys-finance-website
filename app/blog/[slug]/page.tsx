@@ -26,7 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const baseMetadata = createPageMetadata({
     title: article.metaTitle || `${article.title} | ${article.category}`,
     description: article.description,
-    keywords: [article.keyword, article.category, "China Company Registration", "China WFOE Registration", "China Accounting Service", "China Tax Filing", "China VAT", "China Payroll Service", "China Tax Advisory", "Foreign Investment China"],
+    keywords: article.longTailKeywords?.length
+      ? [article.keyword, ...article.longTailKeywords]
+      : [article.keyword, article.category, "China Company Registration", "China WFOE Registration", "China Accounting Service", "China Tax Filing", "China VAT", "China Payroll Service", "China Tax Advisory", "Foreign Investment China"],
     path: `/blog/${article.slug}`
   });
   const canonical = articleCanonicalUrl(article);
@@ -192,6 +194,11 @@ export default async function BlogArticlePage({ params }: Props) {
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph} className="mt-4 text-base leading-8 text-graphite">
                       {paragraph}
+                    </p>
+                  ))}
+                  {section.links?.map((link) => (
+                    <p key={link.href} className="mt-4 text-sm font-semibold text-evergreen">
+                      <Link href={link.href} className="underline underline-offset-4">{link.label}</Link>
                     </p>
                   ))}
                   {section.subsections?.map((subsection) => (
