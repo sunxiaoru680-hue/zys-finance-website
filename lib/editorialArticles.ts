@@ -4656,5 +4656,139 @@ ${siteUrl}/blog/china-wfoe-capital-reduction-guide-2026
       { question: "How long does a China WFOE capital reduction take?", answer: "There is no responsible universal promise. Statutory creditor-notice periods apply, while governance, objections, registration, tax, banking, foreign exchange and local practice affect the full timeline." },
       { question: "Is capital reduction the same as WFOE deregistration?", answer: "No. Capital reduction changes the capital of a continuing company. Deregistration ends the legal entity after dissolution, liquidation, tax clearance and other required closure steps." }
     ]
+  },
+  {
+    slug: "china-company-closure-employee-termination-guide-2026",
+    title: "China Company Closure and Employee Termination in 2026: Severance, Payroll and Exit Compliance",
+    metaTitle: "China Company Closure Employee Termination | 2026",
+    description: "Plan employee termination during a China company closure: legal basis, severance, payroll, leave, social insurance, foreign work permits, records and liquidation priority.",
+    summary: "Closing a China company does not allow management to dismiss staff informally or postpone employee liabilities until the end of liquidation. Employers need a documented legal basis, employee-by-employee calculations, a funded payment plan and coordinated payroll, social-insurance, immigration and handover steps.",
+    published: "2026-09-17",
+    updated: "2026-09-17",
+    category: "China Employment and Exit",
+    readingTime: "11 min read",
+    keyword: "China company closure employee termination",
+    longTailKeywords: [
+      "employee termination when closing a company in China",
+      "China company closure severance pay",
+      "WFOE liquidation employee compensation",
+      "China office closure employee termination process",
+      "China closure payroll and social insurance",
+      "foreign employee work permit cancellation China",
+      "China employee termination documents",
+      "China company closure HR checklist"
+    ],
+    imageAlt: "China company closure employee termination workflow for severance payroll social insurance and work permits",
+    relatedServiceHrefs: ["/services/company-deregistration", "/services/corporate-legal-advisory", "/services/china-payroll-service", "/services/china-visa-service"],
+    relatedArticleSlugs: ["china-company-deregistration-liquidation-guide-2026", "china-payroll-individual-income-tax-guide-2026", "china-work-permit-residence-permit-guide-2026", "china-employer-of-record-vs-wfoe-guide-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+Employee Termination During a China Company Closure
+
+Closing a WFOE requires more than issuing termination letters. Our new guide connects the legal basis, severance, final payroll, social insurance, work permits, records and liquidation payment order into one practical HR exit plan.
+
+Read the guide:
+${siteUrl}/blog/china-company-closure-employee-termination-guide-2026
+
+#ChinaEmployment #WFOE #CompanyClosure #HRCompliance #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why employee termination must lead the closure plan",
+        paragraphs: [
+          "China company closure employee termination should be planned before the business publicly announces its exit or loses key HR, finance and legal staff. Stopping operations, revoking system access or asking employees to stay home does not by itself end labor contracts or settle wages, social insurance and compensation.",
+          "The 2025 revised national Enterprise Deregistration Guide states that a company must address employee wages, social-insurance amounts and statutory compensation or damages before liquidation is completed. These employee liabilities rank ahead of taxes and ordinary company debts in the statutory distribution order described by the guide.",
+          "Build the people workstream alongside the corporate dissolution, creditor, tax and cash plan. The legal basis and effective date for each termination affect documents, economic compensation, payroll, social insurance, individual income tax, work permits and the evidence needed for deregistration."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2025/art_1b0f53c66d4c4daf893f7220a394ac7b.html", label: "Official SAMR Enterprise Deregistration Guide (2025 Revision)" }, { href: "/services/company-deregistration", label: "Request a coordinated China closure review" }]
+      },
+      {
+        heading: "Identify the correct legal basis and effective date",
+        paragraphs: [
+          "Article 44 of the PRC Labor Contract Law provides that a labor contract terminates when an employer is declared bankrupt, has its business licence revoked, is ordered to close or is dissolved, or decides on early dissolution. Article 46 requires economic compensation for termination under the relevant Article 44 circumstances.",
+          "A planned shutdown often has a transition period between the shareholder decision, dissolution, liquidation and final deregistration. Do not assume that every employee's contract automatically ends on the day headquarters announces the closure. Match the termination route and date to the corporate facts and local implementation.",
+          "Some employers seek mutual termination before the formal dissolution event. A negotiated agreement can define timing and handover, but consent must be genuine and the documents must not waive non-waivable statutory rights. If the employer proposes mutual termination, Article 46 may also require economic compensation."
+        ],
+        links: [{ href: "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/fl/202011/t20201102_394622_wap.html", label: "Official Ministry text: PRC Labor Contract Law" }, { href: "/services/corporate-legal-advisory", label: "Review the termination route with employment counsel" }]
+      },
+      {
+        heading: "Do not confuse dissolution termination with redundancy",
+        paragraphs: [
+          "Economic redundancy under Article 41 and termination resulting from employer dissolution under Article 44 are different legal routes. A workforce reduction while the company will continue operating may involve consultation, reporting and selection requirements that do not disappear because a later closure is being considered.",
+          "Conversely, management should not adopt a dissolution resolution merely to label a workforce reduction as closure while continuing the same employer's business. Authorities and tribunals can examine the actual corporate event, operating continuity, employee selection and timing rather than the title on a headquarters presentation.",
+          "Prepare a short legal-basis memorandum for each employee population: employees needed through liquidation, employees ending by agreement, contracts ending through the dissolution event, fixed-term expiries, protected or special cases and any disputed or absent employees."
+        ]
+      },
+      {
+        heading: "Calculate severance and final payroll employee by employee",
+        paragraphs: [
+          "Article 47 generally calculates economic compensation by years of service with the employer, using one month's wages for each full year. More than six months but less than one year is counted as one year; less than six months generally produces half a month's wages. Statutory caps and local average-wage figures can apply to higher-paid employees.",
+          "That formula is only a starting point. Confirm the relevant wage base, service dates, transfers or continuity, prior settlements, contract terms, local rules and whether the payment is economic compensation, damages for unlawful termination, salary, bonus, unused leave, expense reimbursement or another item. Different labels can have different legal and tax consequences.",
+          "Build a reconciliation for base salary, overtime where applicable, commission, earned bonus, unused annual leave, allowances, expenses, social-insurance and housing-fund adjustments, individual income tax, statutory compensation and agreed additional payment. Have HR, payroll, finance and counsel review the same version before documents are issued."
+        ],
+        links: [{ href: "https://www.hlj.gov.cn/hlj/c116413/202406/c00_31742150.shtml", label: "Official government guidance: compensation when a company dissolves" }, { href: "/services/china-payroll-service", label: "Coordinate final payroll calculations" }, { href: "/blog/china-payroll-individual-income-tax-guide-2026", label: "Related guide: China payroll and IIT" }]
+      },
+      {
+        heading: "Review protected employees and special circumstances",
+        paragraphs: [
+          "Pregnancy, maternity or nursing status, medical treatment, occupational disease or work injury, long service and proximity to statutory retirement can affect ordinary termination restrictions and contract extension. How those rules interact with genuine dissolution requires case-specific analysis rather than a blanket policy.",
+          "Also identify employees on sick leave, parental leave, secondment, dispatch arrangements, fixed-term contracts, non-compete obligations, equity plans, immigration sponsorship or pending disputes. An employee's absence or refusal to sign does not authorise the company to skip notice, evidence, payment or administrative steps.",
+          "Review collective contracts, employee handbooks, union or employee-representative procedures, local consultation expectations and contractual enhanced benefits. Use consistent decision criteria and retain the facts supporting different treatment."
+        ]
+      },
+      {
+        heading: "Prepare termination documents and a controlled communication plan",
+        paragraphs: [
+          "Documents may include the shareholder or company dissolution evidence, employee notice or mutual agreement, compensation calculation, final payroll statement, property-return record, confidentiality and non-compete reminder, separation certificate and proof of delivery and payment. Exact documents depend on the route and location.",
+          "Coordinate communications so employees receive accurate information about the employer, reason, effective date, work expectations, pay, benefits, claims contact and document collection. Avoid promising a deregistration date or payment outcome that depends on unresolved cash, tax, banking or creditor issues.",
+          "Preserve personnel files, contracts, attendance, leave, payroll, tax, social-insurance, performance and disciplinary records. Restrict access lawfully and maintain a designated contact after the local HR team leaves. Personal data should be retained and transferred only on a lawful, necessary basis."
+        ]
+      },
+      {
+        heading: "Coordinate social insurance, housing fund and tax",
+        paragraphs: [
+          "Complete final payroll and individual income tax withholding and reconcile employee social-insurance and housing-fund records through the applicable local systems. Do not close bank or payroll access before employee payments and required corrections can be completed.",
+          "The 2025 Enterprise Deregistration Guide states that the company must settle unpaid social-insurance contributions, late charges and penalties before social-insurance deregistration. The guide also describes social-insurance deregistration after enterprise deregistration and information sharing through the integrated closure platform, but local handling should be confirmed.",
+          "Classify each payment accurately for payroll and tax reporting. Statutory compensation, negotiated additional amounts, salary, bonus and unused leave should not be combined into an unexplained bank transfer. Provide employees with usable payment and separation evidence."
+        ],
+        links: [{ href: "https://www.jiangmen.gov.cn/gzhd/ysb/content/post_3086922.html", label: "Official social-insurance deregistration guidance" }]
+      },
+      {
+        heading: "Cancel foreign employee work permits and coordinate residence status",
+        paragraphs: [
+          "Foreign employees require a separate immigration workstream. Current official Beijing and Shanghai guidance states that an employer should apply to cancel a Foreigner's Work Permit within 10 working days after early contract termination or termination of the employment relationship. Required evidence and handling of an uncooperative employee can vary by authority.",
+          "Work-permit cancellation is not the same as residence-permit cancellation or transfer. Coordinate the employee, employer, work-permit authority and exit-entry administration, and clarify whether the individual will leave China, change employer or seek another lawful status.",
+          "Issue accurate separation evidence and protect enough company access, chops and authorised signatories to complete the applications. Do not promise that a new work permit, residence status or transfer will be approved; the authorities decide based on current rules and the individual's facts."
+        ],
+        links: [{ href: "https://www.bjhwxr.gov.cn/xfw/wgrlhgzxk/gzxkswblzn/art/2026/art_9cf082e7a79a40d482eb4aa7029f7503.html", label: "Official 2026 Beijing work-permit cancellation guide" }, { href: "https://english.shanghai.gov.cn/en-ChangeExtensionReissuanceandCancellation/20231209/6d8d813a7a3744399941bc381d4c5dbc.html", label: "Official Shanghai work-permit cancellation service" }, { href: "/services/china-visa-service", label: "Coordinate foreign employee permit closure" }]
+      },
+      {
+        heading: "Fund employee claims before shareholder distributions",
+        paragraphs: [
+          "A closure budget should reserve enough cash for wages, benefits, social insurance, statutory compensation, disputed claims, professional fees and administrative completion. Do not upstream cash merely because headquarters has approved the exit.",
+          "The national deregistration guide places employee wages, social-insurance amounts and statutory compensation ahead of taxes and general company debts in the liquidation distribution sequence. Company assets must not be distributed to shareholders before the required liabilities are settled.",
+          "If the company may be unable to pay employee or other debts, obtain insolvency advice immediately. Management should not selectively pay related parties, sign unsupported releases or assume the overseas parent automatically replaces the China employer."
+        ],
+        links: [{ href: "/blog/china-company-deregistration-liquidation-guide-2026", label: "Read the full China liquidation and deregistration guide" }]
+      },
+      {
+        heading: "Use a China company closure HR checklist and request advice",
+        paragraphs: [
+          "Create one roster showing contract type, service date, wage base, leave, bonus, social insurance, housing fund, work permit, protected status, termination route, effective date, compensation, documents, payment, property return and dispute status. Reconcile the roster to payroll, accounting and the liquidation balance sheet.",
+          "ZYS Advisory can help foreign shareholders coordinate the HR, payroll, tax, corporate and work-permit workstreams with qualified employment counsel and local authorities. Begin before the public announcement so that cash, authorised signatories, company chops, records and system access remain available.",
+          "Request a scoped closure consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send passwords, bank tokens or full employee identity files in an unsecured first message. ZYS does not guarantee employee agreement, dispute outcomes, permit processing or a closure date.",
+          "Reviewed September 17, 2026 against the PRC Labor Contract Law, the SAMR-led Enterprise Deregistration Guide (2025 Revision), and current official Beijing and Shanghai work-permit guidance linked above. Local implementation and individual facts control; obtain case-specific legal advice before terminating employees."
+        ],
+        links: [{ href: "/contact", label: "Request a China company closure employee review" }]
+      }
+    ],
+    faqs: [
+      { question: "Do employees receive severance when a China company closes?", answer: "The Labor Contract Law requires economic compensation when contracts terminate because the employer is bankrupt, has its licence revoked, is ordered to close or dissolve, or decides on early dissolution, subject to the facts and applicable rules." },
+      { question: "How is China closure severance calculated?", answer: "Article 47 generally uses one month's wages for each full year of service, with rules for partial years and caps for higher-paid employees. The correct wage base, service continuity and local figures must be reviewed." },
+      { question: "Can a WFOE terminate all employees before formal dissolution?", answer: "The company needs a valid legal route and effective date for each employee. Mutual termination, redundancy and dissolution-based termination are different and should not be treated as interchangeable." },
+      { question: "What must be paid in final payroll?", answer: "Review outstanding salary, overtime where applicable, commission, earned bonus, unused leave, expenses, social insurance, housing fund, IIT, economic compensation and any lawful contractual or negotiated amounts." },
+      { question: "What happens to foreign employees' work permits?", answer: "The employer generally must apply for work-permit cancellation after early termination or the end of employment and coordinate residence status separately. Current local documents and deadlines should be confirmed." },
+      { question: "Can shareholders receive remaining cash before employees are paid?", answer: "No. During liquidation, employee wages, social-insurance amounts and statutory compensation must be handled in the statutory payment order before residual assets are distributed to shareholders." },
+      { question: "Is there one fixed timeline for terminating staff during closure?", answer: "No. The legal route, employee population, consultations, disputes, payroll, permits and local procedures affect timing. Statutory administrative deadlines do not guarantee the entire closure schedule." }
+    ]
   }
 ];
