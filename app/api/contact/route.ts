@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { mapBudgetToHubSpotValue, mapServiceInterestedToHubSpotValue } from "@/lib/contactOptions";
 import { createOrUpdateHubSpotContact, type ContactSubmission } from "@/lib/hubspot";
 
 export const runtime = "nodejs";
@@ -11,6 +12,7 @@ type ContactRequestBody = Partial<ContactSubmission> & {
 
 const submissions = new Map<string, number[]>();
 const requiredFields: Array<keyof ContactSubmission> = ["firstName", "lastName", "email", "serviceInterested", "message"];
+const genericSubmissionError = "We could not submit your inquiry right now. Please contact us by WhatsApp or email, or try again later.";
 
 function clean(value: unknown, maxLength: number) {
   return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
@@ -68,6 +70,15 @@ function validateSubmission(body: ContactRequestBody) {
     }
   }
 
+  if (!mapServiceInterestedToHubSpotValue(clean(body.serviceInterested, 160))) {
+    return "Please select a valid service.";
+  }
+
+  const budget = clean(body.budget, 100);
+  if (budget && !mapBudgetToHubSpotValue(budget)) {
+    return "Please select a valid budget range.";
+  }
+
   return "";
 }
 
@@ -79,8 +90,8 @@ function normalizeSubmission(body: ContactRequestBody): ContactSubmission {
     country: clean(body.country, 100),
     email: clean(body.email, 254).toLowerCase(),
     whatsapp: clean(body.whatsapp, 80),
-    serviceInterested: clean(body.serviceInterested, 160),
-    budget: clean(body.budget, 100),
+    serviceInterested: mapServiceInterestedToHubSpotValue(clean(body.serviceInterested, 160)),
+    budget: mapBudgetToHubSpotValue(clean(body.budget, 100)),
     message: clean(body.message, 4000)
   };
 }
@@ -111,7 +122,7 @@ export async function POST(request: Request) {
       contactId: result.contactId
     });
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Unable to submit contact form.";
-    return NextResponse.json({ ok: false, error: message }, { status: 502 });
+    console.error("Contact form HubSpot submission failed", error);
+    return NextResponse.json({ ok: false, error: genericSubmissionError }, { status: 502 });
   }
 }

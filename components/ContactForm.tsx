@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Send } from "lucide-react";
 import { trackConsultationRequest } from "@/components/analytics";
+import { contactBudgetOptions, contactServiceOptions } from "@/lib/contactOptions";
+
+const fallbackErrorMessage = "We could not submit your inquiry right now. Please contact us by WhatsApp or email, or try again later.";
 
 export function ContactForm() {
   const router = useRouter();
@@ -45,14 +48,14 @@ export function ContactForm() {
           const result = (await response.json()) as { ok?: boolean; error?: string };
 
           if (!response.ok || !result.ok) {
-            throw new Error(result.error || "Unable to submit the form.");
+            throw new Error(result.error || fallbackErrorMessage);
           }
 
           trackConsultationRequest("contact_form");
-          router.push("/contact/thank-you");
+          router.push("/thank-you");
         } catch (submitError) {
           setStatus("error");
-          setError(submitError instanceof Error ? submitError.message : "Unable to submit the form.");
+          setError(submitError instanceof Error ? submitError.message : fallbackErrorMessage);
         }
       }}
     >
@@ -126,15 +129,11 @@ export function ContactForm() {
             <option value="" disabled>
               Select a service
             </option>
-            <option>China company registration</option>
-            <option>Overseas company registration</option>
-            <option>Accounting & bookkeeping</option>
-            <option>Tax advisory</option>
-            <option>Tax planning</option>
-            <option>Audit services</option>
-            <option>Business license application</option>
-            <option>Work visa</option>
-            <option>Foreign investment consulting</option>
+            {contactServiceOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
           </select>
         </label>
         <label className="grid gap-2 text-sm font-semibold text-ink">
@@ -145,12 +144,11 @@ export function ContactForm() {
             defaultValue=""
           >
             <option value="">Select a budget range</option>
-            <option>Under USD 1,000</option>
-            <option>USD 1,000 - 3,000</option>
-            <option>USD 3,000 - 5,000</option>
-            <option>USD 5,000 - 10,000</option>
-            <option>USD 10,000+</option>
-            <option>Not sure yet</option>
+            {contactBudgetOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
           </select>
         </label>
       </div>

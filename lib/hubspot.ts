@@ -71,6 +71,9 @@ async function hubSpotFetch<T>(path: string, init: RequestInit) {
 
 export function buildHubSpotContactProperties(submission: ContactSubmission) {
   const config = getHubSpotConfig();
+  const messageWithBudget = submission.budget
+    ? `${submission.message}\n\nBudget: ${submission.budget}`
+    : submission.message;
 
   return cleanProperties({
     firstname: submission.firstName,
@@ -80,8 +83,7 @@ export function buildHubSpotContactProperties(submission: ContactSubmission) {
     email: submission.email,
     phone: submission.whatsapp,
     [config.serviceInterestedProperty]: submission.serviceInterested,
-    [config.budgetProperty]: submission.budget,
-    [config.messageProperty]: submission.message,
+    [config.messageProperty]: messageWithBudget,
     [config.sourceProperty]: "ZYS Advisory website contact form"
   });
 }
