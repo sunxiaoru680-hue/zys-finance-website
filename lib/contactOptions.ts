@@ -1,13 +1,13 @@
 export const contactServiceOptions = [
   { label: "China company registration", value: "China Company Registration" },
   { label: "Overseas company registration", value: "Overseas Company Registration" },
-  { label: "Accounting & bookkeeping", value: "Accounting & Bookkeeping" },
-  { label: "Tax advisory", value: "Tax Advisory" },
-  { label: "Tax planning", value: "Tax Planning" },
-  { label: "Audit services", value: "Audit Services" },
-  { label: "Business license application", value: "Business License Application" },
-  { label: "Work visa", value: "Work Visa" },
-  { label: "Foreign investment consulting", value: "Foreign Investment Consulting" }
+  { label: "Accounting & bookkeeping", value: "VAccounting & bookkeeping" },
+  { label: "Tax advisory", value: "Tax Consulting" },
+  { label: "Tax planning", value: "Tax planning" },
+  { label: "Audit services", value: "Accounting Service" },
+  { label: "Business license application", value: "Other" },
+  { label: "Work visa", value: "Visa Service" },
+  { label: "Foreign investment consulting", value: "Other" }
 ] as const;
 
 export const contactBudgetOptions = [
