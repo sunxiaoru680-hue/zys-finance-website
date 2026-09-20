@@ -14,8 +14,7 @@ import {
   ogImage,
   socialSharingDescription,
   socialSharingTitle,
-  gaId,
-  gtmId,
+  googleAdsId,
   localBusinessSchema,
   organizationSchema,
   siteUrl,
@@ -87,10 +86,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAdsId}');
+          `}
+        </Script>
+      </head>
       <body>
         <StructuredData data={organizationSchema()} />
         <StructuredData data={localBusinessSchema()} />
-        <Script id="gtm-ready" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "zys_site_ready", gtmId: "${gtmId}", gaId: "${gaId}" });`}</Script>
         <MetaPixel />
         <Header />
         <LanguagePrompt />

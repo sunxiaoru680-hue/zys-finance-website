@@ -22,8 +22,7 @@ export const whatsappQrAlt = "WhatsApp Business QR code for Nanjing ZYS Advisory
 export const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20ZYS%2C%20I%20would%20like%20to%20book%20a%20free%20consultation%20about%20China%20company%20registration%2C%20tax%2C%20accounting%2C%20visa%2C%20or%20business%20advisory%20services.`;
 export const calendlyUrl = "https://calendly.com/zysconsulting/consultation";
 export const liveChatUrl = whatsappUrl;
-export const gtmId = "GTM-XXXXXXX";
-export const gaId = "G-XXXXXXXXXX";
+export const googleAdsId = "AW-18461502765";
 export const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID || "";
 
 export const coreKeywords = [
