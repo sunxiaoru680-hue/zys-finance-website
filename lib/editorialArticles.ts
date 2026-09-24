@@ -4790,5 +4790,131 @@ ${siteUrl}/blog/china-company-closure-employee-termination-guide-2026
       { question: "Can shareholders receive remaining cash before employees are paid?", answer: "No. During liquidation, employee wages, social-insurance amounts and statutory compensation must be handled in the statutory payment order before residual assets are distributed to shareholders." },
       { question: "Is there one fixed timeline for terminating staff during closure?", answer: "No. The legal route, employee population, consultations, disputes, payroll, permits and local procedures affect timing. Statutory administrative deadlines do not guarantee the entire closure schedule." }
     ]
+  },
+  {
+    slug: "china-wfoe-registered-address-change-guide-2026",
+    title: "China WFOE Registered Address Change in 2026: Documents, Tax Migration and Compliance",
+    metaTitle: "China WFOE Registered Address Change | 2026",
+    description: "Plan a China WFOE registered address change: premises checks, resolutions, market registration, cross-district tax migration, licences, banking and employee updates.",
+    summary: "Changing a WFOE's registered address is more than replacing the address on its business licence. The company must validate the new premises, approve and register the change, and coordinate tax jurisdiction, banking, customs, licences, contracts, payroll and public information without disrupting operations.",
+    published: "2026-09-24",
+    updated: "2026-09-24",
+    category: "China Corporate Changes",
+    readingTime: "10 min read",
+    keyword: "China WFOE registered address change",
+    longTailKeywords: [
+      "change WFOE registered address China",
+      "China company address change procedure",
+      "WFOE address change documents",
+      "China company cross-district relocation",
+      "WFOE tax migration after address change",
+      "China business licence address amendment",
+      "foreign-invested company relocation China",
+      "China registered address change checklist"
+    ],
+    imageAlt: "China WFOE registered address change workflow for premises registration tax migration banking and licences",
+    relatedServiceHrefs: ["/services/corporate-legal-advisory", "/services/business-license", "/services/tax-consulting", "/services/accounting-services"],
+    relatedArticleSlugs: ["china-registered-address-requirements-2026", "china-business-license-scope-examples-2026", "change-china-wfoe-legal-representative-guide-2026", "china-annual-compliance-checklist-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China WFOE Registered Address Change
+
+Moving a foreign-invested company involves more than updating its business licence. Our new guide explains premises checks, corporate approval, market registration, cross-district tax migration, licences, banking and operational updates.
+
+Read the guide:
+${siteUrl}/blog/china-wfoe-registered-address-change-guide-2026
+
+#WFOE #ChinaBusiness #BusinessLicense #CorporateCompliance #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Why a WFOE address change is a compliance project",
+        paragraphs: [
+          "A China WFOE registered address change may be triggered by an office move, lease expiry, landlord issue, district incentive change, consolidation, business expansion or the loss of a compliant service address. The registered domicile is an official company-registration item, not simply a mailing preference.",
+          "The address can determine the competent market-regulation and tax authorities and can affect licences, customs, banking, invoices, social insurance, housing fund, work permits, contracts and government correspondence. A physical move without completing required changes can lead to missed notices or inconsistencies in official records.",
+          "This guide focuses on changing the registered domicile of an existing foreign-invested limited liability company. It does not replace the separate review required for a branch, representative office, factory site, regulated facility or move between provinces."
+        ],
+        links: [{ href: "/services/corporate-legal-advisory", label: "Request a WFOE address-change review" }, { href: "/blog/china-registered-address-requirements-2026", label: "Review China's registered-address requirements" }]
+      },
+      {
+        heading: "Validate the new premises before signing or moving",
+        paragraphs: [
+          "Confirm that the proposed premises can lawfully support company registration and the intended activity. Review the ownership certificate or other property evidence, permitted use, landlord authority, lease, subdivision or room identification, local address format and any building or zone restrictions.",
+          "A commercial lease does not itself guarantee registration acceptance. Industrial, food, education, medical, hazardous, retail and other regulated activities may require premises that satisfy additional planning, safety, environmental or licensing conditions. Virtual or clustered-address arrangements depend on current local rules and provider eligibility.",
+          "Ask the competent registration authority or qualified local adviser what address-use evidence is accepted before committing to rent and fit-out. Align the Chinese address across the lease, property documents and application; explain building, unit or transliteration differences in advance."
+        ],
+        links: [{ href: "/services/business-license", label: "Check address and business-licence feasibility" }]
+      },
+      {
+        heading: "Approve the change and prepare the registration documents",
+        paragraphs: [
+          "Review the WFOE's articles of association and governance documents to identify the body authorised to approve a domicile change. Prepare the required shareholder or board decision, amended articles or amendment, application and authorisation for the filing representative.",
+          "The Market Entity Registration Implementation Rules state that a market entity changing its domicile should apply to the registration authority at the destination before moving into the new domicile and submit documents relating to lawful use of the new premises. The exact local submission path and signatures should be confirmed.",
+          "From May 1, 2026, registration authorities use SAMR's 2026 national forms and materials standards. Those standards also optimise migration: the entity applies to the destination registration authority, which requests the file from the former authority, rather than requiring the company to repeat the file-transfer application at the former location."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2026/art_3321d681741f48cfa3a8e6ef4b15cccd.html", label: "Official SAMR 2026 registration forms and materials standards" }, { href: "https://www.beijing.gov.cn/zhengce/zhengcefagui/202206/t20220614_2739340.html", label: "Official Market Entity Registration Implementation Rules" }]
+      },
+      {
+        heading: "Distinguish an in-district move from cross-district migration",
+        paragraphs: [
+          "An address change within the same registration jurisdiction may be handled as a straightforward change filing. A move to another district, city or province can require migration of the registration file and coordination between destination and former authorities.",
+          "Do not assume that every district accepts the same documents or that a company can retain all existing incentives, licences or tax arrangements after moving. Industrial parks and development zones may have contractual conditions, subsidies, refund mechanisms or exit obligations that need review.",
+          "Map the destination authority, registration-file transfer, tax jurisdiction, invoices, bank, customs, foreign exchange, social insurance, housing fund and licences before selecting a move date. Maintain access to the former registered address until official notices and file transfers are under control."
+        ]
+      },
+      {
+        heading: "Coordinate tax migration and unfinished tax matters",
+        paragraphs: [
+          "If the move changes the competent tax authority, the company may need a cross-regional tax migration process rather than only a business-licence update. Current procedures vary by location and by whether the move is within a city, across cities or across provinces.",
+          "Tax authorities can review unfinished filings, unpaid tax, penalties, export tax refunds, invoices, tax-control matters, audits and other open items before migration. Shanghai's 2026 electronic-tax guidance, for example, uses a cross-regional migration report and requires unfinished matters at the former authority to be handled.",
+          "Reconcile tax registration details, invoice information, bank-tax agreements, digital accounts and taxpayer contacts after the move. Do not promise an immediate migration or a fixed completion date without checking the company's tax status and the current source and destination procedures."
+        ],
+        links: [{ href: "https://shanghai.chinatax.gov.cn/jstax/ztzl/yshj/sycz/202602/t479410.html", label: "Official 2026 Shanghai tax-migration guidance" }, { href: "/services/tax-consulting", label: "Review cross-district tax migration" }]
+      },
+      {
+        heading: "Update licences, customs, bank and foreign-exchange records",
+        paragraphs: [
+          "After the business-licence change, review every permit and filing that displays or relies on the address. Regulated licences may require advance approval, a premises inspection or a separate amendment rather than an automatic update.",
+          "Coordinate customs registration, import-export records, bank accounts, foreign-exchange information, capital accounts, payment platforms, insurance and other financial counterparties. Banks may request the updated licence, articles, resolution, lease, beneficial-ownership information and authorised-person documents.",
+          "Sequence changes so the company can continue receiving funds, issuing compliant invoices, clearing goods and paying employees. An updated electronic or paper business licence does not prove that every connected system has already changed."
+        ],
+        links: [{ href: "https://english.shanghai.gov.cn/en-EstablishaCompany/20231212/5f32387110da41188bea7d58b8dab8b1.html", label: "Official Shanghai guidance: foreign-invested company change registration" }]
+      },
+      {
+        heading: "Align contracts, payroll, employees and public information",
+        paragraphs: [
+          "Update contracts, purchase orders, invoices, letterhead, website, privacy notices, customer and supplier master data, registered mail instructions and internal policies where the address is stated or operationally relevant. Notify counterparties under the agreed contract procedure.",
+          "Review employee work locations, labor-contract wording, commuting impact, remote-work arrangements, social insurance and housing-fund jurisdiction. A significant workplace relocation can create employment-law questions that should be assessed separately from corporate registration.",
+          "For foreign employees, check whether employer address information in work-permit or residence records requires change. Do not assume corporate data sharing automatically updates immigration, payroll or benefit systems."
+        ],
+        links: [{ href: "/services/china-payroll-service", label: "Coordinate payroll and employee-record updates" }, { href: "/services/china-visa-service", label: "Check foreign employee permit updates" }]
+      },
+      {
+        heading: "Avoid common address-change failures",
+        paragraphs: [
+          "Common failures include signing a non-registrable lease, moving before destination approval, allowing the old address to lapse too early, using inconsistent unit details, overlooking regulated permits and assuming tax migration is automatic.",
+          "Companies also miss bank correspondence, tax notices and court documents when mail controls are weak. Maintain authorised recipients and forwarding arrangements, and monitor the National Enterprise Credit Information Publicity System and other official accounts during the transition.",
+          "Do not use a false address or a provider that cannot show the legal basis for registration. A low-cost address that fails inspection or loses provider support can create abnormal-operation records and a second urgent change."
+        ]
+      },
+      {
+        heading: "Use a WFOE address-change checklist and request support",
+        paragraphs: [
+          "Prepare the current business licence, articles, governance records, proposed lease and premises evidence, current licences, tax and customs status, bank list, employee locations, incentive agreements and a complete register of systems and contracts showing the old address.",
+          "ZYS Advisory can coordinate address feasibility, corporate approvals, registration materials, tax migration, accounting, licence and operational update workstreams with the relevant authorities and specialist advisers. Scope the project before signing the new lease or surrendering the old premises.",
+          "Request a consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send company seals, banking credentials or complete identity files in an unsecured first message. ZYS does not guarantee registration acceptance, tax migration, licence approval, incentives or a completion date.",
+          "Reviewed September 24, 2026 against SAMR's 2026 registration standards, the Market Entity Registration Implementation Rules and current official Shanghai foreign-invested-company and tax-migration guidance linked above. Local requirements and regulated activities must be confirmed before action."
+        ],
+        links: [{ href: "/contact", label: "Request a China WFOE registered address change consultation" }]
+      }
+    ],
+    faqs: [
+      { question: "Can a WFOE change its registered address in China?", answer: "Yes. The company must validate the new premises, obtain the required corporate approval, amend its articles where applicable and complete change or migration registration with the competent authority." },
+      { question: "What documents are needed for a China company address change?", answer: "Common materials include the application, company decision, amended articles and evidence of lawful use of the new premises. Exact forms, signatures and additional licences depend on the location and activity." },
+      { question: "Must the company apply before moving?", answer: "The implementation rules state that a market entity changing domicile should apply to the destination registration authority before moving into the new domicile." },
+      { question: "Does moving to another district change the tax authority?", answer: "It may. Cross-district, cross-city or cross-province moves can require tax migration and completion of outstanding tax matters. Confirm the source and destination rules." },
+      { question: "Will the bank and licences update automatically?", answer: "No. The company should separately review bank, foreign-exchange, customs, permit, invoice and other records and submit updates where required." },
+      { question: "How long does a WFOE address change take?", answer: "There is no reliable universal timeline. Premises eligibility, destination review, file transfer, tax matters, licences and connected updates all affect completion." },
+      { question: "Can a company use a virtual registered address?", answer: "Only where current local rules and the company's activity allow the specific arrangement. Verify the provider, premises evidence and registration authority requirements before signing." }
+    ]
   }
 ];
