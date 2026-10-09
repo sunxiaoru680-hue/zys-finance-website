@@ -4916,5 +4916,140 @@ ${siteUrl}/blog/china-wfoe-registered-address-change-guide-2026
       { question: "How long does a WFOE address change take?", answer: "There is no reliable universal timeline. Premises eligibility, destination review, file transfer, tax matters, licences and connected updates all affect completion." },
       { question: "Can a company use a virtual registered address?", answer: "Only where current local rules and the company's activity allow the specific arrangement. Verify the provider, premises evidence and registration authority requirements before signing." }
     ]
+  },
+  {
+    slug: "china-wfoe-business-scope-change-guide-2026",
+    title: "China WFOE Business Scope Change in 2026: Licence, Negative List and Compliance Guide",
+    metaTitle: "China WFOE Business Scope Change | 2026 Guide",
+    description: "Change a China WFOE business scope with the right feasibility review, corporate approvals, licence amendment, permits, tax, customs, banking and operational updates.",
+    summary: "Adding a new service, product, trading activity or business line to a China WFOE is not just a wording exercise. The company must test foreign-investment access, sector licensing, premises and capital needs, adopt valid corporate approvals, amend registration and align tax, customs, banking, contracts and operations before launch.",
+    published: "2026-10-09",
+    updated: "2026-10-09",
+    category: "China Corporate Changes",
+    readingTime: "11 min read",
+    keyword: "China WFOE business scope change",
+    longTailKeywords: [
+      "change WFOE business scope China",
+      "China company business scope amendment",
+      "WFOE business licence scope change",
+      "China business scope change procedure",
+      "foreign-invested company add business activity China",
+      "China business scope pre-approval licence",
+      "WFOE business scope change documents",
+      "China business scope change compliance checklist"
+    ],
+    imageAlt: "China WFOE business scope change workflow covering negative list licences registration tax and operations",
+    relatedServiceHrefs: ["/services/business-license", "/services/corporate-legal-advisory", "/services/tax-consulting", "/services/foreign-investment"],
+    relatedArticleSlugs: ["china-business-license-scope-examples-2026", "china-wfoe-registered-address-change-guide-2026", "china-import-export-company-registration-customs-guide-2026", "china-annual-compliance-checklist-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China WFOE Business Scope Change
+
+Adding a new service, product or trading activity is more than changing wording on a business licence. Our new guide explains foreign-investment access, sector permits, corporate approval, registration and the tax, customs, banking and operational updates that follow.
+
+Read the guide:
+${siteUrl}/blog/china-wfoe-business-scope-change-guide-2026
+
+#WFOE #ChinaBusiness #BusinessLicense #ForeignInvestment #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "When does a WFOE need a business scope change?",
+        paragraphs: [
+          "A China WFOE business scope change should be considered when the company adds or removes products, services, trading, consulting, technology, manufacturing, import-export or other activities that are not properly reflected in its registered scope. Commercial expansion should not run ahead of the legal and licensing review.",
+          "The registered business scope is shown in the company's official registration information and articles of association. It is different from a marketing description, invoice line, contract recital or internal industry code. A broad slogan cannot substitute for legally appropriate registered wording and any required permits.",
+          "Begin with an activity map: what the company will sell, to whom, how it earns revenue, where work occurs, whether goods cross borders, which data or technology is handled, what facilities and staff are needed, and whether an authority regulates the activity."
+        ],
+        links: [{ href: "/services/business-license", label: "Request a China business-scope feasibility review" }, { href: "/blog/china-business-license-scope-examples-2026", label: "Review business-scope wording examples" }]
+      },
+      {
+        heading: "Check foreign-investment access before drafting wording",
+        paragraphs: [
+          "A foreign-invested company must first test the proposed activity against the Foreign Investment Law and the effective Special Administrative Measures for Foreign Investment Access, commonly called the negative list. Prohibited fields are unavailable to foreign investors; restricted fields require the conditions stated in the list.",
+          "For fields outside the negative list, the Foreign Investment Law applies the principle of equal treatment for domestic and foreign investment, while project approval, industry licensing and other generally applicable rules can still apply. Free-trade-zone rules, pilot measures and sector-specific ownership or qualification requirements should be checked separately.",
+          "As reviewed on October 9, 2026, the official national source linked below identifies the 2024 national negative list as effective from November 1, 2024. Always verify whether a newer list, local pilot measure or sector rule applies on the actual filing date."
+        ],
+        links: [{ href: "https://www.ndrc.gov.cn/xxgk/zcfb/fzggwl/202409/t20240907_1392875_ext.html", label: "Official NDRC/MOFCOM foreign-investment negative list" }, { href: "https://english.www.gov.cn/services/mvestment/202102/24/content_WS6035aa38c6d0719374af9609.html", label: "Official Foreign Investment Law" }, { href: "/services/foreign-investment", label: "Assess foreign-investment access" }]
+      },
+      {
+        heading: "Separate pre-approval, post-licensing and ordinary activities",
+        paragraphs: [
+          "China's business-scope rules distinguish activities requiring approval before registration from activities that may be registered first but cannot be operated until the relevant post-registration licence is obtained. Many ordinary activities do not require a sector licence, but the exact classification depends on current law and the actual business model.",
+          "Where a proposed scope item requires prior approval under laws, administrative regulations or a State Council decision, the company should obtain the approval document or licence before applying for the scope change. For post-licensing activities, registration alone does not authorise operations.",
+          "Identify the competent regulator, eligibility, personnel, premises, equipment, cybersecurity, capital, technical and ongoing compliance conditions before adopting the shareholder decision. A licence may use terminology different from market-registration wording, so the two workstreams must be reconciled."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/djzcj/zcfg/gz/art/2023/art_9f46298792814f5680488c5eb3248733.html", label: "Official SAMR business-scope registration rules" }]
+      },
+      {
+        heading: "Confirm the WFOE can operationally support the new activity",
+        paragraphs: [
+          "Review whether the registered address and actual premises are suitable for the added activity. Manufacturing, food, medical, education, logistics, hazardous, retail and other activities can require specific property use, zoning, environmental, fire-safety or facility conditions.",
+          "Test registered capital, funding, staffing, professional qualifications, systems, suppliers, insurance, data flows and contract capability. Changing the scope does not automatically change capital, address or other registration items; if those also need amendment, treat each as a coordinated but distinct workstream.",
+          "Model tax and customs consequences before launch. A new activity can affect VAT treatment, invoicing, enterprise income tax incentives, transfer pricing, import-export status, product classification, withholding, payroll or local surcharges."
+        ],
+        links: [{ href: "/blog/china-wfoe-registered-address-change-guide-2026", label: "If premises also change: WFOE address-change guide" }, { href: "/services/tax-consulting", label: "Review tax consequences of the new activity" }]
+      },
+      {
+        heading: "Approve the change and amend the articles of association",
+        paragraphs: [
+          "Review the current articles and governance structure to determine the shareholder or other corporate approval required. The decision should identify the existing and proposed scope, commercial reason, licensing dependencies, effective implementation and authorised filing representative.",
+          "Business-scope rules require the registered scope to align with the articles of association. Prepare the amended articles or amendment and ensure Chinese terminology is consistent across the decision, application, permits, activity description and foreign-investment reporting information.",
+          "Do not copy a competitor's scope. Similar businesses may have different licences, locations, ownership structures and legacy registrations. The final wording is subject to the registration authority's standardisation and review."
+        ],
+        links: [{ href: "/services/corporate-legal-advisory", label: "Coordinate corporate approvals and articles" }]
+      },
+      {
+        heading: "File the business-scope change under the 2026 standards",
+        paragraphs: [
+          "The filing package generally includes the current application, valid corporate decision, amended articles and any prior-approval document required for an added activity. Local electronic identity checks, signatures, business-licence return and supporting materials should be confirmed before submission.",
+          "SAMR's 2026 registration forms and materials standards have applied nationally since May 1, 2026. Official Shanghai guidance for foreign-invested company changes likewise lists the application, corporate decision and amended articles, plus prior approvals or licences where the proposed scope requires them.",
+          "The business-scope registration rules state that a company generally applies within 30 days after the change decision, and separately address approval-dependent changes. These statutory references are not a guarantee that feasibility review, licensing and all downstream updates will finish within a fixed period."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2026/art_3321d681741f48cfa3a8e6ef4b15cccd.html", label: "Official SAMR 2026 registration standards" }, { href: "https://english.shanghai.gov.cn/en-EstablishaCompany/20231212/5f32387110da41188bea7d58b8dab8b1.html", label: "Official Shanghai FIE change-registration guidance" }]
+      },
+      {
+        heading: "Update tax, customs, bank, permits and foreign-investment information",
+        paragraphs: [
+          "After registration, verify the updated business licence and electronic record. Then review tax profiles and invoice categories, Customs and import-export records, bank know-your-customer information, foreign-exchange registrations, insurance, statistical reporting and relevant authority accounts.",
+          "Complete every post-registration sector licence before conducting the regulated activity. If an existing licence is removed, changed or expires, assess whether the registered scope should be amended again and when operations must stop.",
+          "Foreign-investment information reporting should remain consistent with the company's actual activity and registered information. Interdepartmental data sharing can reduce duplicate submission, but it does not eliminate the company's duty to verify accuracy and make required reports or amendments."
+        ],
+        links: [{ href: "https://wzxxbg.mofcom.gov.cn/gspt/", label: "MOFCOM foreign-investment information reporting portal" }, { href: "/blog/china-import-export-company-registration-customs-guide-2026", label: "Related guide: import-export and Customs setup" }]
+      },
+      {
+        heading: "Align contracts, invoices, staff and controls before launch",
+        paragraphs: [
+          "Update customer and supplier contracts, quotations, invoices, websites, platform profiles, internal policies and accounting codes only when the company is lawfully ready to perform the added activity. Contract wording cannot cure a missing licence or prohibited foreign-investment activity.",
+          "Train sales, finance and operations teams on the effective date, permitted services or products, invoicing, approval limits and evidence required. Separate pre-launch preparation from actual regulated operations.",
+          "Review employment roles, professional qualifications, work permits and payroll where the new activity changes what employees do. Also assess data protection, intellectual property, product liability, sanctions, export controls and consumer obligations relevant to the new business."
+        ]
+      },
+      {
+        heading: "Avoid common WFOE business-scope change mistakes",
+        paragraphs: [
+          "Common mistakes include drafting vague wording before analysing the revenue model, ignoring the negative list, assuming licence approval follows automatically, using unsuitable premises and commencing business while applications are pending.",
+          "Companies also forget to remove discontinued activities, reconcile articles, update tax and Customs systems or notify banks and counterparties. An overbroad scope can create unnecessary licence questions; an overly narrow scope can fail to support the intended operation.",
+          "Do not promise a fixed result or timeline. Authority interpretation, industry access, documents, premises, ownership, licence inspections and the company's existing compliance status can all affect the outcome."
+        ]
+      },
+      {
+        heading: "Use a business-scope change checklist and request support",
+        paragraphs: [
+          "Prepare the current licence and articles, ownership chart, detailed new-activity description, revenue and contract flow, premises evidence, existing permits, staffing and qualification plan, tax and Customs profiles, data map and target launch date. Identify every activity to add or remove.",
+          "ZYS Advisory can coordinate feasibility, negative-list and licensing review, corporate documents, business-licence amendment, tax and Customs analysis and downstream compliance updates with the relevant authorities and qualified specialist counsel.",
+          "Request a scoped consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send company seals, bank credentials or complete identity files in an unsecured first message. ZYS does not guarantee registration, licence, tax, Customs or foreign-investment outcomes.",
+          "Reviewed October 9, 2026 against the Foreign Investment Law, the official national negative-list source, SAMR business-scope rules and 2026 registration standards, and official FIE change guidance linked above. Verify all current national, local and sector requirements before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a China WFOE business scope change consultation" }]
+      }
+    ],
+    faqs: [
+      { question: "Can a WFOE change its business scope in China?", answer: "Yes, if the proposed activity is open to foreign investment and the company meets applicable registration, licensing, premises and sector requirements. The articles and business registration normally need amendment." },
+      { question: "What documents are needed for a WFOE business scope change?", answer: "Common materials include the change application, valid corporate decision, amended articles and any prior approval or licence required for the proposed activity. Confirm current local forms and signatures." },
+      { question: "Must the WFOE check the foreign-investment negative list?", answer: "Yes. Prohibited fields are unavailable to foreign investors, while restricted fields require the conditions stated in the effective negative list. Sector and local pilot rules may also apply." },
+      { question: "Can the company operate a licensed activity immediately after the licence scope changes?", answer: "Not necessarily. A post-registration regulated activity cannot begin until the required sector licence or approval is obtained and all operating conditions are met." },
+      { question: "Does a business-scope change affect tax or Customs?", answer: "It can. Review VAT, invoicing, enterprise income tax, incentives, withholding, Customs, import-export records and related system profiles before launching the new activity." },
+      { question: "Can a WFOE use very broad business-scope wording?", answer: "The scope should accurately reflect the business, align with standardised registration wording and the articles, and account for licensing. Broad wording does not override access restrictions or permit requirements." },
+      { question: "How long does a China WFOE business scope change take?", answer: "There is no reliable universal timeline. Feasibility, prior approvals, registration review, licences, premises and downstream updates all affect completion." }
+    ]
   }
 ];
