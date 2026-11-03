@@ -5051,5 +5051,140 @@ ${siteUrl}/blog/china-wfoe-business-scope-change-guide-2026
       { question: "Can a WFOE use very broad business-scope wording?", answer: "The scope should accurately reflect the business, align with standardised registration wording and the articles, and account for licensing. Broad wording does not override access restrictions or permit requirements." },
       { question: "How long does a China WFOE business scope change take?", answer: "There is no reliable universal timeline. Feasibility, prior approvals, registration review, licences, premises and downstream updates all affect completion." }
     ]
+  },
+  {
+    slug: "china-branch-office-deregistration-guide-2026",
+    title: "China Branch Office Deregistration in 2026: Tax, Employees, Licences and Closure Steps",
+    metaTitle: "China Branch Office Deregistration | 2026 Guide",
+    description: "Close a China branch office with a controlled plan for parent approval, liabilities, employees, tax clearance, licences, customs, banking and deregistration.",
+    summary: "A China branch is not closed merely because its office shuts or the parent stops funding it. The parent must identify the branch type and liabilities, settle employees and contracts, clear tax and regulatory matters, cancel connected registrations and complete formal branch deregistration in the correct sequence.",
+    published: "2026-11-03",
+    updated: "2026-11-03",
+    category: "China Corporate Exit",
+    readingTime: "11 min read",
+    keyword: "China branch office deregistration",
+    longTailKeywords: [
+      "close a branch office in China",
+      "China foreign-invested company branch closure",
+      "China branch deregistration procedure",
+      "China branch tax clearance",
+      "China branch closure employee termination",
+      "China branch business licence cancellation",
+      "foreign company branch liquidation China",
+      "China branch closure checklist"
+    ],
+    imageAlt: "China branch office deregistration workflow covering parent approval tax employees licences customs and final cancellation",
+    relatedServiceHrefs: ["/services/company-deregistration", "/services/corporate-legal-advisory", "/services/tax-consulting", "/services/accounting-services"],
+    relatedArticleSlugs: ["china-company-deregistration-liquidation-guide-2026", "china-company-closure-employee-termination-guide-2026", "china-accounting-bookkeeping-requirements-2026", "china-import-export-company-registration-customs-guide-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China Branch Office Deregistration
+
+Closing a branch requires more than leaving the premises. Our new guide explains parent-company responsibility, employee and contract settlement, tax clearance, licences, customs, banking and formal deregistration for China branches.
+
+Read the guide:
+${siteUrl}/blog/china-branch-office-deregistration-guide-2026
+
+#ChinaBusiness #BranchClosure #CompanyDeregistration #CorporateCompliance #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Identify the branch before planning its closure",
+        paragraphs: [
+          "China branch office deregistration begins by identifying the legal structure. A branch established by a China-incorporated WFOE or other foreign-invested company is different from a branch established directly by an overseas foreign company, and both are different from a resident representative office.",
+          "Under the current PRC Company Law, a branch of a China company does not have separate legal-person status and its civil liabilities are borne by the company. A foreign company's China branch also lacks Chinese legal-person status, while the foreign company bears civil responsibility for its China operations.",
+          "Obtain the branch business licence, establishment approval or filing records, parent authorisations, tax and customs profiles, bank accounts, permits, leases, employee files and contracts. Do not use a representative-office checklist or assume every branch is administered identically."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_067c072db6ef4679a2e0180996be4cf8.html", label: "Official SAMR text: PRC Company Law" }, { href: "/services/company-deregistration", label: "Request a China branch closure review" }]
+      },
+      {
+        heading: "Approve closure and map parent-company responsibility",
+        paragraphs: [
+          "The parent or head office should adopt the closure decision through the authority required by its governance documents and the branch records. The decision should identify the branch, closure reason, effective operating cut-off, responsible people, settlement authority and filing representative.",
+          "Closing a branch does not erase its contracts, employee claims, taxes, customer deposits, lease obligations, guarantees or disputes. Because a domestic company's branch is not a separate legal person, the China parent remains responsible. An overseas foreign company likewise needs to address the statutory responsibility for its China branch.",
+          "Build a branch-specific balance and obligation register, then reconcile it to the parent's accounting. Determine whether assets and liabilities legally belong to the parent, how interoffice balances are recorded and which contracts must be terminated, assigned or completed."
+        ],
+        links: [{ href: "/services/corporate-legal-advisory", label: "Coordinate parent approvals and liability review" }]
+      },
+      {
+        heading: "Distinguish a domestic-company branch from a foreign-company branch",
+        paragraphs: [
+          "A branch of a China-incorporated foreign-invested company normally follows the branch deregistration, tax-clearance and connected administrative processes applicable to that registered branch. Its closure does not dissolve the China parent, which may continue operating through its head office and other branches.",
+          "For a branch established directly by an overseas foreign company, Article 249 of the Company Law states that the foreign company must lawfully settle debts and liquidate under the relevant company-liquidation provisions when withdrawing the branch. Branch property may not be transferred out of China before debts are settled.",
+          "The article's remaining checklist is a planning framework for both structures, but the exact liquidation, approval, foreign-exchange and application documents differ. Confirm the registered branch category and competent authorities before implementing any transfer or filing."
+        ]
+      },
+      {
+        heading: "Stop new business without losing closure controls",
+        paragraphs: [
+          "Set a controlled operating cut-off for new orders, invoicing, purchasing and hiring while preserving the ability to collect receivables, complete valid obligations, pay employees and taxes, respond to authorities and maintain records. A branch may remain legally registered while these closure steps are underway.",
+          "Secure business licences, permits, company and branch seals where applicable, bank tools, tax accounts, invoice systems, customs credentials, leases, contracts and digital access. Assign a responsible person and alternative contact before the branch manager or finance staff leave.",
+          "Notify customers, suppliers, landlords and other counterparties according to contract terms. Do not redirect receivables or move inventory to the parent or another entity without documented legal, accounting, tax and customs treatment."
+        ]
+      },
+      {
+        heading: "Settle employees and branch-related benefits",
+        paragraphs: [
+          "Review who is the legal employer under each labor contract: the branch, the China parent or another group entity. The correct employer, closure event and proposed transition determine the termination, transfer or continued-employment route.",
+          "Prepare employee-by-employee calculations for salary, overtime where applicable, bonus, commission, unused leave, expenses, social insurance, housing fund, individual income tax and statutory or agreed compensation. Closing the office does not allow informal dismissal or delayed payment.",
+          "Coordinate separation documents, property return, records, social-insurance changes and foreign work-permit or residence matters. If staff move to the parent or another affiliate, document the lawful arrangement rather than assuming group employment automatically transfers."
+        ],
+        links: [{ href: "/blog/china-company-closure-employee-termination-guide-2026", label: "Detailed guide: employee termination during China closure" }, { href: "/services/china-payroll-service", label: "Coordinate branch final payroll" }]
+      },
+      {
+        heading: "Complete tax clearance and accounting reconciliation",
+        paragraphs: [
+          "Determine how the branch is registered and administered for VAT, enterprise income tax, individual income tax and other taxes. Branches can have local filing obligations even where enterprise income tax is aggregated or allocated under rules applicable to cross-regional operations.",
+          "Reconcile invoices, tax returns, bank records, fixed assets, inventory, receivables, payables, employee items and interoffice balances. Resolve unused invoices, tax-control matters, refunds, audits, abnormal status and outstanding filings before requesting tax clearance.",
+          "Official Shanghai guidance for foreign-invested branch deregistration lists tax-clearance documents among the application materials. Information sharing may remove the need for a paper document in some locations, but it does not remove the underlying obligation to complete tax matters."
+        ],
+        links: [{ href: "https://english.shanghai.gov.cn/en-Business-BusinessSetup-Foreign-investedCompanies/20260818/88ff08e5634944efab5eebfd49bcfe37.html", label: "Official Shanghai FIE branch deregistration guidance" }, { href: "/services/tax-consulting", label: "Prepare branch tax clearance" }, { href: "/services/accounting-services", label: "Reconcile branch closure accounts" }]
+      },
+      {
+        heading: "Cancel licences, customs, bank and connected registrations",
+        paragraphs: [
+          "Inventory every sector licence, filing, customs or import-export registration, bank account, payment platform, social-insurance profile, lease, utility and government portal connected to the branch. Each item may have its own order, evidence and authority.",
+          "The 2025 revised Enterprise Deregistration Guide connects enterprise exit with tax, social insurance, Customs, bank accounts and seals through integrated local platforms. Actual availability and branch handling should be confirmed in the location concerned rather than assumed.",
+          "For a branch with Customs activity, complete declarations, duties, guarantees, bonded goods and other unfinished matters before cancellation. Keep bank access until authorised receipts, employee payments, tax and closure costs are complete; then obtain closure evidence and reconcile the final balance."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2025/art_1b0f53c66d4c4daf893f7220a394ac7b.html", label: "Official Enterprise Deregistration Guide (2025 Revision)" }, { href: "/blog/china-import-export-company-registration-customs-guide-2026", label: "Related guide: China Customs setup and records" }]
+      },
+      {
+        heading: "File formal branch deregistration",
+        paragraphs: [
+          "After required approvals and clearances, submit the current branch deregistration application to the competent market-regulation authority. Official Shanghai guidance lists the branch application, tax-clearance materials, any legally required approval and return of paper business-licence originals where issued.",
+          "Forms, electronic signatures, document sharing and local materials should be confirmed at filing. A published administrative processing time begins only when an acceptable application is submitted; it is not a promise for the complete branch closure project.",
+          "If the China parent will also deregister, the branch should generally be closed first. The 2025 national guide expressly states that an enterprise should lawfully complete branch deregistration before applying for its own deregistration, and an unresolved non-legal-person branch can prevent simplified deregistration."
+        ],
+        links: [{ href: "/blog/china-company-deregistration-liquidation-guide-2026", label: "If the parent will close: full company deregistration guide" }]
+      },
+      {
+        heading: "Retain closure evidence after the branch disappears",
+        paragraphs: [
+          "Create a closure file containing the parent decision, licence and deregistration notice, tax clearance, employee settlements, contract and lease terminations, asset and liability reconciliation, customs and permit cancellations, bank closure, seals handling and final accounting evidence.",
+          "Assign a custodian at the continuing parent or another lawful location and record access controls. Registration-authority archives and the company's own accounting, tax, employment and commercial records are different record sets with different retention rules.",
+          "Do not destroy data simply because the branch is deregistered. Preserve what is needed for tax review, employee claims, contracts, litigation, audits, insurance and group reporting, while applying personal-information and data-security requirements."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2025/art_07c4af50a2184d92974a33f7efb62f63.html", label: "Official SAMR registration archive rules" }]
+      },
+      {
+        heading: "Use a China branch closure checklist and request support",
+        paragraphs: [
+          "Prepare the branch and parent licences, governance and authorisation records, tax and Customs profiles, employee roster, permits, bank accounts, contracts, lease, assets, liabilities, disputes, accounting ledgers, seals and target operating cut-off. Identify whether the parent will continue or also close.",
+          "ZYS Advisory can coordinate branch liability mapping, accounting cleanup, tax clearance preparation, employee and contract workstreams, connected cancellations and market-registration filing with the relevant authorities and qualified specialist counsel.",
+          "Request a scoped consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send seals, banking credentials or complete employee identity files in an unsecured first message. ZYS does not guarantee tax clearance, authority acceptance, creditor outcomes or a fixed completion date.",
+          "Reviewed November 3, 2026 against the current PRC Company Law, the SAMR-led Enterprise Deregistration Guide (2025 Revision), current official Shanghai branch-cancellation guidance and SAMR archive rules linked above. Confirm the branch type, location and sector requirements before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a China branch office deregistration consultation" }]
+      }
+    ],
+    faqs: [
+      { question: "Is a China branch office a separate legal entity?", answer: "A branch of a China company does not have separate legal-person status, and the company bears its civil liabilities. A foreign company's China branch also lacks Chinese legal-person status, with responsibility borne by the foreign company." },
+      { question: "Must a branch close before the China parent company deregisters?", answer: "Generally yes. The 2025 Enterprise Deregistration Guide states that an enterprise should complete branch deregistration before applying for its own deregistration." },
+      { question: "Does a China branch need tax clearance?", answer: "Tax matters must be resolved, and current official branch-deregistration guidance may require tax-clearance evidence. The exact process depends on the branch's tax registration and local information sharing." },
+      { question: "What happens to branch employees when the office closes?", answer: "Identify the legal employer and use a lawful termination, transfer or continued-employment route. Settle payroll, benefits, social insurance, tax, compensation and foreign work-permit matters as applicable." },
+      { question: "Can branch assets be transferred to the parent before debts are settled?", answer: "Transfers require legal, accounting and tax support. For an overseas foreign company's China branch, the Company Law expressly prohibits moving branch property abroad before debts are settled." },
+      { question: "What documents are commonly filed for branch deregistration?", answer: "Common materials include the branch deregistration application, tax-clearance evidence, any legally required approval and return of paper business-licence originals where issued. Confirm current local requirements." },
+      { question: "How long does China branch office deregistration take?", answer: "There is no reliable universal timeline. Employees, contracts, tax, Customs, permits, banking, disputes, branch type and filing readiness all affect completion." }
+    ]
   }
 ];
