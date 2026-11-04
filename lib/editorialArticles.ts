@@ -5186,5 +5186,140 @@ ${siteUrl}/blog/china-branch-office-deregistration-guide-2026
       { question: "What documents are commonly filed for branch deregistration?", answer: "Common materials include the branch deregistration application, tax-clearance evidence, any legally required approval and return of paper business-licence originals where issued. Confirm current local requirements." },
       { question: "How long does China branch office deregistration take?", answer: "There is no reliable universal timeline. Employees, contracts, tax, Customs, permits, banking, disputes, branch type and filing readiness all affect completion." }
     ]
+  },
+  {
+    slug: "china-customs-registration-cancellation-guide-2026",
+    title: "China Customs Registration Cancellation in 2026: A Closure Guide for Importers and Exporters",
+    metaTitle: "China Customs Registration Cancellation | 2026 Guide",
+    description: "Cancel China Customs registration with a controlled plan for declarations, duties, bonded business, permits, China E-Port access and company deregistration.",
+    summary: "A China importer or exporter should not treat Customs cancellation as a final click after business stops. Before its Customs declarant filing can be cancelled, the company should identify and close unfinished declarations, duties, guarantees, bonded matters, licences and connected digital access, while coordinating the sequence with tax and company deregistration.",
+    published: "2026-11-04",
+    updated: "2026-11-04",
+    category: "China Corporate Exit",
+    readingTime: "11 min read",
+    keyword: "China customs registration cancellation",
+    longTailKeywords: [
+      "cancel China customs registration",
+      "China importer exporter deregistration",
+      "China customs declarant filing cancellation",
+      "close China import export company customs account",
+      "China customs cancellation before company deregistration",
+      "China E-Port card cancellation",
+      "WFOE customs deregistration China",
+      "China customs closure checklist"
+    ],
+    imageAlt: "China Customs registration cancellation workflow for importers exporters duties bonded matters and E-Port access",
+    relatedServiceHrefs: ["/services/company-deregistration", "/services/tax-consulting", "/services/accounting-services", "/services/corporate-legal-advisory"],
+    relatedArticleSlugs: ["china-company-deregistration-liquidation-guide-2026", "china-import-export-company-registration-customs-guide-2026", "china-branch-office-deregistration-guide-2026", "china-vat-fapiao-compliance-guide-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China Customs Registration Cancellation
+
+Closing an importer or exporter requires more than cancelling its business licence. Our new guide explains how to review unfinished declarations, duties, guarantees, bonded matters, licences, China E-Port access and the sequence with company deregistration.
+
+Read the guide:
+${siteUrl}/blog/china-customs-registration-cancellation-guide-2026
+
+#ChinaBusiness #CustomsCompliance #CompanyDeregistration #ImportExport #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Decide whether Customs cancellation is actually required",
+        paragraphs: [
+          "China Customs registration cancellation applies to a company recorded with Customs as a consignee or consignor of imported or exported goods, a customs declaration enterprise or another declarant unit that is ending the relevant qualification. It is different from cancelling a single declaration, closing a China E-Port card or merely stopping shipments.",
+          "Under the current Customs declarant-unit filing rules, a declarant unit should cancel its filing when it terminates because of dissolution, bankruptcy or another legal cause; when its market registration is cancelled, revoked or its business licence is withdrawn; when the relevant foreign-trade qualification ceases; or in another legally prescribed case. A company that remains active but stops importing may need a different compliance decision.",
+          "Start by confirming the Customs filing type, unified social credit code, supervising Customs office, branches, customs brokers, current declarations, permits and special-regulatory qualifications. Do not cancel an active filing until the company has protected access to the records and completed transactions it still needs to finish."
+        ],
+        links: [{ href: "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/t20220413_2675765.html", label: "Current Customs declarant-unit filing rules" }, { href: "/services/company-deregistration", label: "Request a China exit and Customs review" }]
+      },
+      {
+        heading: "Map every open Customs matter before filing",
+        paragraphs: [
+          "Create a transaction-level register of open import and export declarations, amendments, inspections, valuation or classification questions, duty and import-tax payments, refunds, guarantees, temporary imports or exports, returned goods, post-clearance audits and enforcement matters. Reconcile the register to logistics, inventory, tax and bank records.",
+          "The governing filing rules state that a declarant unit must complete relevant Customs procedures before its filing is cancelled. Cancellation therefore should not be treated as a way to erase an unfinished declaration, debt, investigation or documentary obligation.",
+          "Confirm whether any subsidiary, branch, customs broker or logistics provider is using the company's Customs identity or holding original documents. Obtain status evidence directly from the responsible teams and systems rather than relying only on a general-ledger balance."
+        ]
+      },
+      {
+        heading: "Clear duties, taxes, guarantees and refunds",
+        paragraphs: [
+          "Reconcile Customs duties, import VAT and consumption tax where applicable, late-payment charges, penalties, deposits and guarantees. Check whether payment data agrees with import declarations, Customs payment records, tax deductions and the accounting ledger.",
+          "Review pending duty refunds, export-related tax records and declaration corrections with the tax workstream. Customs cancellation and tax deregistration are separate procedures, but mismatched import or export data can delay both and can survive an attempted corporate exit.",
+          "Do not distribute cash or release a guarantee simply because routine shipments have stopped. Establish which authority or bank can release it, what evidence is required, and whether a potential assessment or open case remains."
+        ],
+        links: [{ href: "/services/tax-consulting", label: "Coordinate Customs and tax reconciliation" }, { href: "/blog/china-vat-fapiao-compliance-guide-2026", label: "Related guide: China VAT and fapiao compliance" }]
+      },
+      {
+        heading: "Close bonded, processing-trade and special-regulatory business",
+        paragraphs: [
+          "A company with bonded inventory, processing-trade handbooks or accounts, temporary-admission goods, duty-relief equipment, warehousing activity or other Customs-supervised goods needs a separate closure plan. Physical goods, electronic balances and accounting records should agree before the underlying Customs item is closed.",
+          "Determine whether goods will be exported, imported into the domestic market with required tax treatment, transferred through an authorised route, destroyed under supervision or otherwise disposed of lawfully. The correct option depends on the programme, goods and Customs approval; there is no universal shortcut.",
+          "Also review sector registrations and inspection or quarantine records for food, cosmetics, medical products, animals, plants, dangerous goods or other regulated products. Cancelling the general declarant filing does not automatically prove that every product or facility qualification is closed."
+        ]
+      },
+      {
+        heading: "Control China E-Port cards, Single Window users and broker authority",
+        paragraphs: [
+          "Inventory the legal-person card, operator cards or keys, digital certificates, China International Trade Single Window users, electronic authorisations and broker mandates. Preserve controlled access until authorised final declarations, downloads and status checks are complete, then revoke access through the applicable channel.",
+          "China E-Port guidance explains that its cards carry keys and digital certificates used for identity authentication and electronic signatures. Card and certificate handling is therefore a security and authority issue, not merely an IT housekeeping step.",
+          "Remove departed employees and external agents promptly, retain an access log and secure the media and passwords. Never send card PINs, Single Window credentials or banking authentication details to an adviser by ordinary email or chat."
+        ],
+        links: [{ href: "https://www.chinaport.gov.cn/tcmsfile/u/cms/www/202411/20101711w000.pdf", label: "Official China E-Port card use notice" }, { href: "https://www.chinaport.gov.cn/pages/customer/customer.html", label: "China E-Port service centre" }]
+      },
+      {
+        heading: "Choose the filing channel and prepare the cancellation record",
+        paragraphs: [
+          "Current official Customs guidance allows electronic applications through connected market-regulation platforms, Customs online services or the International Trade Single Window, depending on the route available. A window filing may use the current Customs declarant-unit information form. Confirm the live local process before submission.",
+          "Prepare the current company and Customs identifiers, authorised applicant details and evidence needed to resolve open matters. Keep the electronic acceptance, authority response and final status record in the liquidation file; a screenshot of an unsubmitted form is not completion evidence.",
+          "The published service route describes Customs review after receipt of an electronic application, but it does not guarantee a complete company-closure timeline. Open declarations, debts, bonded balances, audits, penalties or incomplete information can require further work."
+        ],
+        links: [{ href: "https://online.customs.gov.cn/static/pages/guides/000729014000/000729014000.html", label: "Official Customs filing service guide" }]
+      },
+      {
+        heading: "Sequence Customs cancellation with company deregistration",
+        paragraphs: [
+          "For a company that is closing, Customs is one workstream within liquidation and deregistration. The 2025 revised Enterprise Deregistration Guide provides an integrated route for tax, market registration, Customs declarant filing, social insurance, bank accounts and seals where local systems support it.",
+          "The guide states that Customs can synchronously cancel the declarant filing for a unit whose Customs procedures are completed after receiving shared company-deregistration information. Integration reduces repeated applications; it does not waive the duty to finish Customs matters.",
+          "Build one dependency plan covering operating cut-off, inventory, employees, contracts, tax, Customs, licences, banking, creditor settlement and market deregistration. Keep the bank and authorised personnel available until Customs payments, refunds and closure costs are completed."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2025/art_1b0f53c66d4c4daf893f7220a394ac7b.html", label: "Official Enterprise Deregistration Guide (2025 Revision)" }, { href: "/blog/china-company-deregistration-liquidation-guide-2026", label: "Full China company liquidation and deregistration guide" }]
+      },
+      {
+        heading: "Handle branches and group entities separately",
+        paragraphs: [
+          "Customs records are entity-specific. A parent company's cancellation does not replace the review of a branch, subsidiary or other group company that has its own filing, declarations, goods or guarantees. The current filing rules also require branches belonging to a declarant unit whose filing has been cancelled to complete their cancellation procedures.",
+          "Identify which entity is importer or exporter of record on every open transaction and which entity owns the goods. Avoid transferring stock, receivables, guarantees or Customs responsibility within the group without a documented legal, tax, accounting and Customs basis.",
+          "If only a branch is closing while the parent continues, preserve the parent's valid Customs operations and isolate the branch workstream. If the whole group entity is leaving China, coordinate the branch sequence with the parent's corporate exit."
+        ],
+        links: [{ href: "/blog/china-branch-office-deregistration-guide-2026", label: "Related guide: China branch office deregistration" }]
+      },
+      {
+        heading: "Retain evidence after the filing is cancelled",
+        paragraphs: [
+          "Archive the Customs status confirmation, declarations, supporting commercial documents, payment and guarantee evidence, bonded-account closure, permits, broker correspondence, E-Port access actions and reconciliation to tax and accounting records. Assign a lawful custodian after the operating team leaves.",
+          "Cancellation of the filing does not authorise destruction of records or prevent later questions about transactions completed while the company operated. Apply the relevant Customs, tax, accounting, litigation, data-protection and contractual retention requirements to each record category.",
+          "Record unresolved contingencies in the liquidation report and keep contact details current for the responsible custodian. Do not leave evidence solely in a departing employee's mailbox, a broker's portal or an inaccessible hardware key."
+        ],
+        links: [{ href: "/services/accounting-services", label: "Reconcile and retain China closure records" }]
+      },
+      {
+        heading: "Use a China Customs closure checklist and request support",
+        paragraphs: [
+          "Prepare the business licence, Customs filing details, branches, declarations, duties and taxes, guarantees, bonded or supervised goods, permits, inspection records, brokers, E-Port users, bank accounts, inventory and proposed company-closure sequence. Identify any audit, dispute or enforcement matter at the outset.",
+          "ZYS Advisory can coordinate the corporate, accounting and tax closure plan, Customs data reconciliation, document collection and workstreams with the company, Customs brokers, banks, authorities and qualified specialist counsel.",
+          "Request a scoped consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send card credentials, bank tokens, seals or complete shipment datasets in an unsecured first message. ZYS does not guarantee Customs acceptance, tax outcomes, release of guarantees or a fixed completion date.",
+          "Reviewed November 4, 2026 against the current Customs declarant-unit filing rules, official Customs service guidance, the SAMR-led Enterprise Deregistration Guide (2025 Revision) and official China E-Port materials linked above. Confirm the company's location, goods and regulatory programmes before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a China Customs registration cancellation consultation" }, { href: "/blog/china-import-export-company-registration-customs-guide-2026", label: "For continuing businesses: China Customs setup guide" }]
+      }
+    ],
+    faqs: [
+      { question: "When must a company cancel its China Customs registration?", answer: "Current filing rules require cancellation in specified termination and registration-loss scenarios, including dissolution or bankruptcy and cancellation, revocation or withdrawal of market registration. Confirm the company's exact filing and status." },
+      { question: "Can China Customs registration be cancelled with open declarations or duties?", answer: "The company must complete relevant Customs procedures before cancellation. Open declarations, duties, guarantees, bonded matters, audits or penalties should be identified and resolved through the applicable process." },
+      { question: "Where can a company apply for Customs filing cancellation?", answer: "Depending on the available route, applications may be made through connected market-regulation services, Customs online services, the International Trade Single Window or the responsible Customs office." },
+      { question: "Does company deregistration automatically cancel the Customs filing?", answer: "Integrated platforms may share deregistration information and synchronously cancel a completed Customs filing, but integration does not waive unfinished Customs obligations. Verify the final Customs status." },
+      { question: "Is cancelling a China E-Port card the same as Customs deregistration?", answer: "No. The E-Port card or certificate controls digital identity and signatures; the Customs declarant-unit filing is a regulatory record. Both should be reviewed, but one does not substitute for the other." },
+      { question: "What happens to bonded goods when an importer closes?", answer: "Bonded or Customs-supervised goods require an approved treatment and reconciliation. Possible routes depend on the programme and goods; do not transfer, destroy or sell them without confirming the lawful procedure." },
+      { question: "How long does China Customs registration cancellation take?", answer: "There is no reliable universal project timeline. Open declarations, duties, guarantees, bonded balances, audits, permits, system access and application readiness can all affect completion." }
+    ]
   }
 ];
