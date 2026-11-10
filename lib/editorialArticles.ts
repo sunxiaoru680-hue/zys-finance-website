@@ -5321,5 +5321,152 @@ ${siteUrl}/blog/china-customs-registration-cancellation-guide-2026
       { question: "What happens to bonded goods when an importer closes?", answer: "Bonded or Customs-supervised goods require an approved treatment and reconciliation. Possible routes depend on the programme and goods; do not transfer, destroy or sell them without confirming the lawful procedure." },
       { question: "How long does China Customs registration cancellation take?", answer: "There is no reliable universal project timeline. Open declarations, duties, guarantees, bonded balances, audits, permits, system access and application readiness can all affect completion." }
     ]
+  },
+  {
+    slug: "china-wfoe-company-name-change-guide-2026",
+    title: "China WFOE Company Name Change in 2026: Registration, Bank, Tax and Contract Updates",
+    metaTitle: "China WFOE Company Name Change | 2026 Guide",
+    description: "Change a China WFOE company name with a controlled plan for name declaration, corporate approval, registration, chops, tax, Customs, banks, licences and contracts.",
+    summary: "Changing a China WFOE name is more than obtaining a revised business licence. A foreign-invested company should screen and declare the new name, approve and register the change, then update chops, tax and invoicing, Customs, banks, licences, employees, contracts and public-facing records without disrupting operations.",
+    published: "2026-11-10",
+    updated: "2026-11-10",
+    category: "China Corporate Changes",
+    readingTime: "12 min read",
+    keyword: "China WFOE company name change",
+    longTailKeywords: [
+      "change company name in China",
+      "China foreign-invested company name change",
+      "China company name change procedure",
+      "China business licence name change",
+      "China company name change bank account update",
+      "China company name change tax and fapiao",
+      "China company name change Customs update",
+      "WFOE rebranding compliance China"
+    ],
+    imageAlt: "China WFOE company name change workflow for registration chops tax banks licences contracts and rebranding",
+    relatedServiceHrefs: ["/services/corporate-legal-advisory", "/services/company-registration-in-china", "/services/tax-consulting", "/services/accounting-services"],
+    relatedArticleSlugs: ["change-china-wfoe-legal-representative-guide-2026", "china-wfoe-business-scope-change-guide-2026", "china-wfoe-registered-address-change-guide-2026", "china-customs-registration-cancellation-guide-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+China WFOE Company Name Change
+
+A new business licence is only the first milestone. Our guide explains name declaration, corporate approval, registration and the downstream updates for chops, tax and fapiao, Customs, banks, licences, contracts and rebranding.
+
+Read the guide:
+${siteUrl}/blog/china-wfoe-company-name-change-guide-2026
+
+#ChinaBusiness #WFOE #CompanyChange #CorporateCompliance #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Treat a WFOE name change as a legal and operational project",
+        paragraphs: [
+          "A China WFOE company name change may support a global rebrand, group restructuring, acquisition, new positioning or correction of an existing name. It changes the registered name of the same China legal entity; it does not by itself replace the company with a new entity or erase existing rights and obligations.",
+          "The project nevertheless touches almost every place where the company is identified. The business licence, articles of association, chops, tax and invoicing profile, Customs filing, bank accounts, permits, contracts, employment records, insurance, digital platforms and customer communications may all require review.",
+          "Create a dependency plan before announcing the new name. An early public launch can leave customers unable to verify the company or pay an invoice, while a late operational update can cause mismatches after registration is completed."
+        ],
+        links: [{ href: "/services/corporate-legal-advisory", label: "Plan a China WFOE company change" }]
+      },
+      {
+        heading: "Screen and declare the proposed Chinese company name",
+        paragraphs: [
+          "China uses an enterprise-name self-declaration system rather than the former general pre-approval model. The official 2025 Enterprise Name Declaration Guide explains that an applicant may search, compare and select a proposed name through the declaration system or at the registration authority's service window, while remaining responsible for lawful use and respect for prior rights.",
+          "A conventional enterprise name contains an administrative-division name, trade name, industry or business characteristic, and organisational form in the permitted order. Special rules apply to names without an administrative division or industry expression, group names, branches and foreign-invested enterprises.",
+          "Screen more than registry availability. Review trademarks, company names, domains, social accounts, product registrations, app-store names and the risk of consumer confusion. A system comparison is a filing aid, not a guarantee against an earlier right or later dispute."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2026/art_4f5535ffbfb64c98bdb3c10473f0675d.html", label: "Official interpretation of the 2025 Enterprise Name Declaration Guide" }, { href: "https://zwfw.samr.gov.cn/eportal/ui?articleKey=058dadb9b82b4f52b68d7db9e4ead72c&columnId=4b45b76ba06b44f4b36190cb76872611&pageId=367f34a0a01c4e9d9de2b2f7fc164a5b", label: "SAMR enterprise-name declaration service" }]
+      },
+      {
+        heading: "Check foreign-invested enterprise naming rules",
+        paragraphs: [
+          "A WFOE or other foreign-invested company follows the enterprise-name rules applicable to its registered form, with additional provisions relevant to foreign investment. Official guidance specifically addresses the composition and use of foreign-invested enterprise names.",
+          "A wholly foreign-owned or foreign-controlled enterprise using a foreign investor's trade name may be able to include the expression '(China)' in the registered name if the applicable conditions are met. Do not assume a global parent name, English brand or translated word can automatically be registered as the China company's legal name.",
+          "Confirm the investor name, ownership and supporting evidence, especially if the proposed trade name relies on a relationship, authorisation or earlier right. Align Chinese and English-facing branding, but distinguish the registered Chinese name from a marketing translation."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_7ba91e86d5794ed890f12c1b529038d5.html", label: "Enterprise Name Registration Provisions" }]
+      },
+      {
+        heading: "Approve the change and amend corporate documents",
+        paragraphs: [
+          "Review the articles of association, joint-venture contract if relevant, shareholder authorities, board powers and group approval policy. Adopt the shareholder or other competent-body resolution required for the company, approve the new name and authorise the filing and downstream implementation.",
+          "Update the articles where the registered name appears and prepare the current company change application and supporting documents under the 2026 registration document and submission standards. If the change affects a licensed name or a regulated sector, identify any approval, consent or parallel filing before submission.",
+          "Use consistent Chinese characters across the name declaration, resolution, amended articles, application and authorisation. Small discrepancies can create rejection or later mismatch, particularly where a foreign investor's name or authorisation evidence is involved."
+        ],
+        links: [{ href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2026/art_3321d681741f48cfa3a8e6ef4b15cccd.html", label: "SAMR 2026 registration document and submission standards" }]
+      },
+      {
+        heading: "Register the name change and verify the revised business licence",
+        paragraphs: [
+          "Submit the company change registration through the competent local market-regulation channel. Local integrated 'one thing' services may connect market registration with tax, social insurance, housing fund, banking appointments or other updates, but availability and scope vary by location and change type.",
+          "After approval, check the revised business licence character by character: registered name, unified social credit code, legal representative, registered address, business scope, registered capital and company type. A name change should not be used to conceal an unrelated data error.",
+          "Record the legal effective point used by the authority and preserve the application, approval, old and new licence evidence, resolution, amended articles and name-declaration result. Do not promise a universal processing time; name questions, regulated-sector review, document defects and local workflow can change the schedule."
+        ],
+        links: [{ href: "/services/company-registration-in-china", label: "Coordinate China company change registration" }]
+      },
+      {
+        heading: "Replace chops and control the transition",
+        paragraphs: [
+          "Inventory the company chop, financial chop, invoice chop, contract chop, legal-representative chop, Customs declaration chop and any sector-specific seals. Confirm which chops show the legal company name and the applicable local replacement and public-security filing process.",
+          "Set a documented cutover: who holds the old chops, when each stops being used, who may collect and activate replacements, and how old chops are cancelled or destroyed through the proper route. Maintain dual-control and a handover record throughout the transition.",
+          "Do not use old and new name chops interchangeably or leave obsolete chops with departing staff or agents. Notify relevant internal signatories and update approval matrices, electronic seals and contract-management systems."
+        ],
+        links: [{ href: "/blog/china-company-chops-guide-2026", label: "China company chop control guide" }]
+      },
+      {
+        heading: "Update tax, fapiao and accounting records",
+        paragraphs: [
+          "Verify whether the market-regulation change has flowed automatically to the local tax system. Information sharing can reduce a separate filing, but the company should still check its electronic tax account, taxpayer profile, authorised users, invoice settings and tax-control arrangements rather than assume every field is correct.",
+          "Coordinate the date used on customer and supplier invoices, contracts, purchase orders, expense documents and bank receipts. Explain the legal-name continuity to counterparties and retain the change evidence supporting documents issued under the old name.",
+          "Update accounting master data, statutory books, payroll, individual-income-tax administration and tax-service authorisations. A name change does not reset tax history, eliminate open filings or create a new tax basis."
+        ],
+        links: [{ href: "/services/tax-consulting", label: "Review tax updates after a company name change" }, { href: "/services/accounting-services", label: "Update accounting and invoice master data" }, { href: "/blog/china-vat-fapiao-compliance-guide-2026", label: "China VAT and fapiao compliance guide" }]
+      },
+      {
+        heading: "Update Customs, China E-Port and import-export records",
+        paragraphs: [
+          "A company recorded with Customs should update its declarant-unit information after the registered name changes. Current Customs declarant-unit rules require specified filing information, including the company name, to be changed through the responsible Customs process within the applicable period.",
+          "Review China E-Port cards and digital certificates, International Trade Single Window users, Customs broker authorisations, inspection and quarantine records, bonded or processing-trade accounts, permits, shipping documents and overseas supplier or customer master data.",
+          "Keep import and export declarations consistent with the legally effective name and preserve evidence linking transactions under the old name to the same unified social credit code. Do not cancel the Customs filing when the business is continuing merely because its name changed."
+        ],
+        links: [{ href: "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/t20220413_2675765.html", label: "Current Customs declarant-unit filing rules" }, { href: "/blog/china-import-export-company-registration-customs-guide-2026", label: "China import-export and Customs setup guide" }]
+      },
+      {
+        heading: "Update banks, foreign exchange and payment channels",
+        paragraphs: [
+          "Contact each bank before the legal cutover and obtain its current checklist. Banks perform customer due diligence and may require the revised business licence, resolution, articles, chops, identity and authority documents, beneficial-owner information and bank-specific forms.",
+          "Update the basic account, general accounts, foreign-currency accounts, cross-border payment arrangements, online banking, payment platforms, cards, direct debits, payroll and authorised signatories where affected. The account-number treatment and operational sequence depend on the bank and account product.",
+          "Plan incoming and outgoing payments around the transition. Tell customers and suppliers through a verified channel, but treat any simultaneous request to change bank details as a fraud-sensitive event requiring independent confirmation."
+        ],
+        links: [{ href: "https://www.pbc.gov.cn/chubanwu/114566/114579/4356048/4356270/2021100915352066755.pdf", label: "People's Bank of China enterprise bank-account rules" }]
+      },
+      {
+        heading: "Update licences, contracts, employees and public records",
+        paragraphs: [
+          "List every permit, qualification, lease, insurance policy, court or arbitration matter, financing document, guarantee, customer and supplier contract, data filing, intellectual-property record, domain and platform account using the old name. Prioritise items that can block revenue, shipment, payment or regulatory access.",
+          "A name change normally does not require contracts to be replaced solely because the same legal entity continues, but notice, evidence, amendment or counterparty-system updates may be required by the contract or business process. Review financing, security and government contracts carefully rather than relying on a generic notice.",
+          "Update employment templates, payroll records, social-insurance and housing-fund profiles where needed, staff letters, privacy notices, signage, websites, email signatures and marketing materials. Preserve an old-to-new-name statement and the revised licence for legitimate verification requests."
+        ],
+        links: [{ href: "/blog/change-china-wfoe-legal-representative-guide-2026", label: "If management is also changing: legal representative guide" }, { href: "/blog/china-wfoe-business-scope-change-guide-2026", label: "If activities are also changing: business scope guide" }]
+      },
+      {
+        heading: "Use a WFOE name-change checklist and request support",
+        paragraphs: [
+          "Prepare the current licence and articles, investor and ownership documents, proposed Chinese names, brand and trademark findings, governance approvals, chops, tax and Customs profiles, banks, permits, contracts, employees, domains and target rebrand date. Identify any simultaneous address, scope, director or legal-representative change.",
+          "ZYS Advisory can coordinate name feasibility, corporate approvals, change registration, accounting and tax updates, and the downstream checklist with banks, Customs, licensing authorities and qualified specialist counsel.",
+          "Request a scoped consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send bank tokens, chop images, E-Port credentials or complete identity files in an unsecured first message. ZYS does not guarantee name availability, authority approval, bank acceptance or a fixed completion date.",
+          "Reviewed November 10, 2026 against the Enterprise Name Registration Provisions, the current implementation measures, the official 2025 Enterprise Name Declaration Guide interpretation, the 2026 registration standards, current Customs filing rules and official enterprise bank-account rules linked above. Confirm local and sector-specific requirements before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a China WFOE company name change consultation" }, { href: "/blog/china-wfoe-registered-address-change-guide-2026", label: "Related guide: WFOE registered address change" }]
+      }
+    ],
+    faqs: [
+      { question: "Can a WFOE change its registered company name in China?", answer: "Yes. The company should declare a compliant proposed name, obtain the required corporate approval, register the change and complete all relevant downstream updates." },
+      { question: "Does a China company name change create a new legal entity?", answer: "A registered name change generally changes the name of the same legal entity rather than creating a replacement company. Existing obligations remain, but counterparties and authorities need reliable continuity evidence." },
+      { question: "Can a foreign investor use its global brand in a China WFOE name?", answer: "Not automatically. The proposed Chinese name must comply with enterprise-name rules and respect prior rights. Investor-name use, authorisation, translations and trademark risk should be checked." },
+      { question: "Must company chops be replaced after a WFOE name change?", answer: "Chops bearing the old legal name should be reviewed and replaced through the applicable process. Control the old and new chops with documented custody, activation and cancellation steps." },
+      { question: "Will tax information update automatically after the company name changes?", answer: "Government information sharing may update core tax registration data in some locations, but the company should verify its tax profile, invoicing, users and related systems rather than assume every item changed correctly." },
+      { question: "Must banks and Customs be updated after a China company name change?", answer: "Yes, where the company has relevant accounts or Customs records. Each bank applies its customer due-diligence process, while Customs filing and E-Port information should be reviewed and updated through the applicable route." },
+      { question: "Do existing contracts need to be signed again after a company name change?", answer: "Not necessarily, because the legal entity normally continues. However, contractual notice clauses, evidence requirements and counterparty systems may require notices, amendments or master-data updates." },
+      { question: "How long does a China WFOE company name change take?", answer: "There is no reliable universal timeline. Name screening, corporate approvals, registration, licences, chop replacement, bank review, Customs and system updates can all affect completion." }
+    ]
   }
 ];
