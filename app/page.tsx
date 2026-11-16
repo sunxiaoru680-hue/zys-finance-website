@@ -30,6 +30,7 @@ import {
   siteUrl,
   StructuredData
 } from "@/components/seo";
+import { blogArticles } from "@/lib/content";
 
 const priorityServices = [
   {
@@ -124,20 +125,9 @@ const introServices = [
   "Business licenses, trademarks and cross-border formation"
 ];
 
-const latestUpdates = [
-  {
-    title: "China market entry guidance",
-    text: "Practical notes on entity setup, tax registration, licenses, and ongoing compliance for international businesses."
-  },
-  {
-    title: "Tax and accounting reminders",
-    text: "Updates can highlight filing calendars, bookkeeping priorities, and documents management teams should prepare."
-  },
-  {
-    title: "Visa and work permit insights",
-    text: "Future posts can cover planning points for foreign founders, employees, and eligible family members."
-  }
-];
+const latestUpdates = [...blogArticles]
+  .sort((a, b) => b.published.localeCompare(a.published))
+  .slice(0, 3);
 
 const clientGroups = [
   {
@@ -269,7 +259,19 @@ export const metadata: Metadata = {
     canonical: siteUrl,
     languages: {
       en: siteUrl,
-      "zh-CN": `${siteUrl}/zh`
+      "zh-CN": `${siteUrl}/zh`,
+      de: `${siteUrl}/de`,
+      fr: `${siteUrl}/fr`,
+      es: `${siteUrl}/es`,
+      pt: `${siteUrl}/pt`,
+      ru: `${siteUrl}/ru`,
+      vi: `${siteUrl}/vi`,
+      th: `${siteUrl}/th`,
+      id: `${siteUrl}/id`,
+      ar: `${siteUrl}/ar`,
+      ja: `${siteUrl}/ja`,
+      ko: `${siteUrl}/ko`,
+      "x-default": siteUrl
     }
   }
 };
@@ -515,22 +517,32 @@ export default function HomePage() {
             </p>
             <SocialIcons className="mt-7" showLabel />
           </div>
-          <div className="rounded-md border border-line bg-white p-6 shadow-sm md:p-8">
+          <div className="border-t border-line pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-bold uppercase text-evergreen">Latest Updates</p>
+                <p className="text-sm font-bold uppercase text-evergreen">Latest Insights</p>
                 <h3 className="mt-2 text-2xl font-bold text-ink">
-                  Prepared for future Facebook posts.
+                  Current guidance for companies entering and operating in China.
                 </h3>
               </div>
-              <p className="text-sm font-semibold text-gold">Facebook feed ready</p>
+              <Link href="/blog" className="focus-ring whitespace-nowrap text-sm font-semibold text-evergreen hover:text-ink">
+                View all insights
+              </Link>
             </div>
-            <div className="mt-7 grid gap-4">
+            <div className="mt-7 divide-y divide-line border-y border-line">
               {latestUpdates.map((update) => (
-                <article key={update.title} className="rounded-md border border-line bg-paper p-5">
-                  <h4 className="font-bold text-ink">{update.title}</h4>
-                  <p className="mt-2 text-sm leading-7 text-graphite">{update.text}</p>
-                </article>
+                <Link
+                  key={update.slug}
+                  href={`/blog/${update.slug}`}
+                  className="focus-ring group grid gap-2 py-5 sm:grid-cols-[1fr_auto] sm:items-center"
+                >
+                  <span>
+                    <span className="text-xs font-semibold uppercase text-gold">{update.category}</span>
+                    <span className="mt-1 block font-bold leading-6 text-ink group-hover:text-evergreen">{update.title}</span>
+                    <span className="mt-1 block text-sm leading-6 text-graphite">{update.summary || update.description}</span>
+                  </span>
+                  <ArrowRight aria-hidden="true" className="hidden h-4 w-4 text-evergreen transition group-hover:translate-x-1 sm:block" />
+                </Link>
               ))}
             </div>
           </div>

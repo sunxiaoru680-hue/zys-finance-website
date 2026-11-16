@@ -102,7 +102,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <span>{phoneNumber}</span>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="focus-ring rounded-md bg-evergreen px-5 py-3 text-sm font-bold text-white" href="/contact">Request Consultation</a>
+            <Link className="focus-ring rounded-md bg-evergreen px-5 py-3 text-sm font-bold text-white" href="/contact">Request Consultation</Link>
             <Link className="focus-ring rounded-md border border-line px-5 py-3 text-sm font-bold text-ink" href="/blog">Read Insights</Link>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <p className="mt-4 text-base leading-8 text-graphite">{section.body}</p>
                 <h3 className="mt-5 text-lg font-bold text-ink">Related planning points</h3>
                 <p className="mt-3 text-base leading-8 text-graphite">For {service.keyword}, ZYS documents the responsible parties, likely timeline, expected evidence, authority touchpoints where applicable, tax and accounting impact, and follow-up obligations so overseas management can approve the work with fewer surprises.</p>
-                <p className="mt-4 text-base leading-8 text-graphite">A strong engagement may connect <a className="font-semibold text-evergreen" href="/china-company-registration">China company registration</a>, <a className="font-semibold text-evergreen" href="/tax-accounting">tax and accounting</a>, <a className="font-semibold text-evergreen" href="/business-licenses">business licenses</a>, <a className="font-semibold text-evergreen" href="/visa-services">visa services</a>, and <a className="font-semibold text-evergreen" href="/contact">consultation booking</a>, depending on the client&apos;s circumstances.</p>
+                <p className="mt-4 text-base leading-8 text-graphite">A strong engagement may connect <Link className="font-semibold text-evergreen" href="/china-company-registration">China company registration</Link>, <Link className="font-semibold text-evergreen" href="/tax-accounting">tax and accounting</Link>, <Link className="font-semibold text-evergreen" href="/business-licenses">business licenses</Link>, <Link className="font-semibold text-evergreen" href="/visa-services">visa services</Link>, and <Link className="font-semibold text-evergreen" href="/contact">consultation booking</Link>, depending on the client&apos;s circumstances.</p>
               </section>
             ))}
           </article>

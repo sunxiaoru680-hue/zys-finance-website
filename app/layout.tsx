@@ -29,6 +29,14 @@ export const metadata: Metadata = {
   },
   description:
     "Nanjing ZYS Advisory Co., Ltd. helps foreign investors, international SMEs, and Chinese companies expanding overseas with China company registration, accounting, tax advisory, work visas, business licenses, audit services, and overseas company registration.",
+  icons: {
+    icon: [
+      { url: "/branding/favicon.ico" },
+      { url: "/branding/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/branding/favicon-16.png", sizes: "16x16", type: "image/png" }
+    ],
+    apple: [{ url: "/branding/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
+  },
   keywords: [
     ...coreKeywords,
     "Nanjing ZYS Advisory",

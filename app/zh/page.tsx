@@ -14,7 +14,19 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}/zh`,
     languages: {
       en: siteUrl,
-      "zh-CN": `${siteUrl}/zh`
+      "zh-CN": `${siteUrl}/zh`,
+      de: `${siteUrl}/de`,
+      fr: `${siteUrl}/fr`,
+      es: `${siteUrl}/es`,
+      pt: `${siteUrl}/pt`,
+      ru: `${siteUrl}/ru`,
+      vi: `${siteUrl}/vi`,
+      th: `${siteUrl}/th`,
+      id: `${siteUrl}/id`,
+      ar: `${siteUrl}/ar`,
+      ja: `${siteUrl}/ja`,
+      ko: `${siteUrl}/ko`,
+      "x-default": siteUrl
     }
   },
   openGraph: {

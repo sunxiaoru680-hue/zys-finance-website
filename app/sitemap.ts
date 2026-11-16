@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteUrl } from "@/components/seo";
 import { cityRegistrationPages } from "@/lib/cityRegistration";
 import { blogArticles, servicePages } from "@/lib/content";
+import { internationalLocales } from "@/lib/localizedLanding";
 
 const staticRoutes = [
   "",
@@ -29,6 +30,7 @@ const staticRoutes = [
 ];
 
 const zhRoutes = ["/zh", "/zh/company-profile", "/zh/contact"];
+const internationalRoutes = internationalLocales.map((locale) => `/${locale}`);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-07-03T00:00:00.000Z");
@@ -39,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((route) => ({ route, updated: "2026-07-03" })),
     ...zhRoutes.map((route) => ({ route, updated: "2026-07-10" })),
+    ...internationalRoutes.map((route) => ({ route, updated: "2026-11-14" })),
     ...serviceRoutes.map((route) => ({ route, updated: "2026-07-03" })),
     ...cityRoutes.map((route) => ({ route, updated: "2026-07-07" })),
     ...blogRoutes

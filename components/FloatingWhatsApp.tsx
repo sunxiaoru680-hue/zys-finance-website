@@ -2,7 +2,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export function FloatingWhatsApp() {
   return (
-    <div className="fixed bottom-5 right-5 z-50 sm:bottom-6 sm:right-6">
+    <div className="fixed bottom-5 right-5 z-50 hidden md:block md:bottom-6 md:right-6">
       <WhatsAppButton
         source="floating_whatsapp"
         className="focus-ring group relative grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition duration-200 hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30 sm:h-16 sm:w-16"
