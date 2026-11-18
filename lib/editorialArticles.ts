@@ -5468,5 +5468,149 @@ ${siteUrl}/blog/china-wfoe-company-name-change-guide-2026
       { question: "Do existing contracts need to be signed again after a company name change?", answer: "Not necessarily, because the legal entity normally continues. However, contractual notice clauses, evidence requirements and counterparty systems may require notices, amendments or master-data updates." },
       { question: "How long does a China WFOE company name change take?", answer: "There is no reliable universal timeline. Name screening, corporate approvals, registration, licences, chop replacement, bank review, Customs and system updates can all affect completion." }
     ]
+  },
+  {
+    slug: "china-wfoe-bank-foreign-exchange-account-closure-2026",
+    title: "Closing China WFOE Bank and Foreign Exchange Accounts in 2026: A Practical Exit Guide",
+    metaTitle: "China WFOE Bank Account Closure | 2026 Guide",
+    description: "Close China WFOE RMB and foreign-exchange accounts with a controlled plan for final payments, capital accounts, FDI registration, liquidation remittance and bank access.",
+    summary: "A China WFOE should not close its last bank account simply because operations have stopped. The liquidation team must map every RMB, foreign-currency and capital account, preserve payment capability for taxes and creditors, reconcile balances, complete foreign-exchange registration and lawful shareholder remittance, then close accounts and revoke access in a controlled sequence.",
+    published: "2026-11-18",
+    updated: "2026-11-18",
+    category: "China Corporate Exit",
+    readingTime: "12 min read",
+    keyword: "China WFOE bank account closure",
+    longTailKeywords: [
+      "close a company bank account in China",
+      "China WFOE foreign exchange account closure",
+      "China company liquidation bank account",
+      "China basic RMB account cancellation",
+      "foreign-invested enterprise FDI deregistration China",
+      "remit liquidation proceeds from China",
+      "China capital account closure",
+      "WFOE bank account closure checklist"
+    ],
+    imageAlt: "China WFOE bank and foreign exchange account closure workflow for liquidation payments FDI deregistration and remittance",
+    relatedServiceHrefs: ["/services/company-deregistration", "/services/tax-consulting", "/services/accounting-services", "/services/corporate-legal-advisory"],
+    relatedArticleSlugs: ["china-company-deregistration-liquidation-guide-2026", "china-wfoe-capital-reduction-guide-2026", "china-profit-repatriation-guide-2026", "china-customs-registration-cancellation-guide-2026"],
+    facebookPost: `New 2026 Guide from ZYS Advisory
+
+Closing China WFOE Bank and Foreign Exchange Accounts
+
+The final bank account should not disappear before taxes, employees, creditors and liquidation remittance are complete. Our new guide explains account mapping, payment sequencing, FDI deregistration, capital-account closure, shareholder remittance and access controls.
+
+Read the guide:
+${siteUrl}/blog/china-wfoe-bank-foreign-exchange-account-closure-2026
+
+#ChinaBusiness #WFOE #CompanyDeregistration #ForeignExchange #ZYSAdvisory`,
+    sections: [
+      {
+        heading: "Do not close the last account at the start of liquidation",
+        paragraphs: [
+          "China WFOE bank account closure is a late-stage workstream, not the first action after a shutdown decision. The company may still need to collect receivables, pay employees and suppliers, settle taxes and Customs liabilities, fund professional fees, receive refunds and transfer lawful liquidation proceeds.",
+          "Closing payment capability too early can make an orderly liquidation harder. Keeping every account open indefinitely creates different risks: ongoing fees, dormant access, fraud exposure, unreconciled balances and an incomplete corporate exit.",
+          "Build an account-by-account closure sequence that matches the liquidation plan. Confirm the bank's current requirements before setting dates because account type, currency, balance, online-banking products, authorised signatories and unresolved compliance reviews can change the process."
+        ],
+        links: [{ href: "/services/company-deregistration", label: "Plan a China WFOE exit" }, { href: "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2025/art_1b0f53c66d4c4daf893f7220a394ac7b.html", label: "Official Enterprise Deregistration Guide (2025 Revision)" }]
+      },
+      {
+        heading: "Create a complete bank and foreign-exchange account map",
+        paragraphs: [
+          "List every basic RMB settlement account, general RMB account, special-purpose account, foreign-currency current account, foreign-exchange capital account, guarantee or deposit account, loan account, payroll arrangement, card, merchant facility and payment platform. Include dormant accounts and accounts held outside the head-office city.",
+          "For each account, record the bank and branch, account purpose, currency, balance, restrictions, linked products, authorised signatories, online-banking users, tokens, direct debits, guarantees and open compliance requests. Reconcile the map to accounting ledgers, bank confirmations and prior foreign-exchange registration records.",
+          "Identify which account is the basic RMB account and which accounts depend on it or on a specific foreign-exchange registration. Do not assume that a zero balance means the account is closed or that cancelling one banking product cancels the underlying account."
+        ],
+        links: [{ href: "/services/accounting-services", label: "Reconcile liquidation bank accounts" }]
+      },
+      {
+        heading: "Separate ordinary settlement accounts from capital accounts",
+        paragraphs: [
+          "An operating RMB settlement account is not the same as a foreign-exchange capital account or the WFOE's direct-investment registration. Each can have a different purpose, documentary basis and closure dependency.",
+          "The People's Bank of China rules address withdrawal of enterprise bank settlement accounts when an entity is dissolved, declared bankrupt, closed, deregistered or has its licence revoked. Separate foreign-exchange rules and bank operating guidance govern direct-investment registration, capital accounts and cross-border remittance.",
+          "Classify the accounts before instructing the bank. A generic letter asking to 'close all accounts' can miss a capital-account balance, collateral, pending receipt or registration step and can remove access needed for the final remittance."
+        ],
+        links: [{ href: "https://www.pbc.gov.cn/zhengwugongkai/attachDir/2025/11/2025111818223720079.pdf", label: "PBOC bank settlement account rules" }]
+      },
+      {
+        heading: "Preserve cash for employees, tax, Customs and creditors",
+        paragraphs: [
+          "Forecast all remaining cash flows before distributing or remitting anything to shareholders. Include payroll, statutory compensation, social insurance, housing fund, rent, supplier claims, tax, Customs duties, penalties, professional costs, bank charges and a contingency for unresolved matters.",
+          "The official national deregistration guide requires the company to complete liquidation, clear debts and taxes and handle connected deregistrations. Shareholder distribution should follow lawful liquidation and creditor settlement rather than being treated as an ordinary dividend or an early capital return.",
+          "Maintain documented approval for each liquidation payment and reconcile it to the liquidation accounts. If assets are insufficient or a material claim is disputed, obtain qualified legal and insolvency advice before transferring the remaining cash."
+        ],
+        links: [{ href: "/blog/china-company-deregistration-liquidation-guide-2026", label: "China company liquidation and deregistration guide" }, { href: "/services/tax-consulting", label: "Coordinate final tax and cash reconciliation" }]
+      },
+      {
+        heading: "Clear linked banking products and payment instructions",
+        paragraphs: [
+          "Cancel or settle corporate cards, merchant acquiring, payroll services, direct debits, standing orders, collection arrangements, e-commerce settlement, letters of credit, guarantees, deposits, loans, cash pooling and other products linked to each account. A bank may not close an account while a dependent product or liability remains active.",
+          "Review expected tax refunds, customer receipts, deposits and chargebacks. Redirecting funds to an affiliate or shareholder without a legal and accounting basis can create tax, foreign-exchange, creditor and audit problems.",
+          "Notify legitimate counterparties through verified channels and establish a cut-off for new payment instructions. Treat any simultaneous change of beneficiary details as fraud-sensitive and independently confirm it with the counterparty."
+        ]
+      },
+      {
+        heading: "Complete foreign-investment registration deregistration",
+        paragraphs: [
+          "A foreign-invested enterprise should review its direct-investment foreign-exchange basic-information registration before closing the capital workstream. Current official operating guidance provides for registration change or deregistration through a qualified bank and distinguishes the registration step from the later funds remittance.",
+          "Prepare the current application, dissolution or liquidation basis, tax evidence, liquidation report or audit evidence where applicable, investor information and other documents required for the case. Merger, court-led closure, licence revocation and voluntary liquidation do not necessarily use identical evidence.",
+          "Do not rely on an old checklist without confirmation. Foreign-exchange administration has progressively delegated direct-investment procedures to banks and updated operational guidance; the processing bank must assess authenticity, compliance and the information recorded in the capital-account system."
+        ],
+        links: [{ href: "https://www.safe.gov.cn/beijing/file/file/20250829/80c933e04bb745cc891439f544d945c8.pdf", label: "Official direct-investment foreign-exchange operating guidance" }]
+      },
+      {
+        heading: "Plan the lawful remittance of liquidation proceeds",
+        paragraphs: [
+          "After lawful liquidation and settlement, a WFOE may have residual property distributable to its foreign shareholder. The company and bank should distinguish liquidation proceeds from dividends, service fees, capital reduction proceeds or repayment of shareholder debt because the legal basis, tax evidence and foreign-exchange treatment differ.",
+          "Reconcile the amount to the confirmed liquidation report, tax treatment, investor entitlement and foreign-exchange registration. Confirm the beneficiary name and account against the registered investor and explain any legitimate discrepancy before submission.",
+          "Allow for bank review of transaction authenticity, source of funds and sanctions or anti-money-laundering controls. ZYS does not promise approval, an exchange rate, a fixed remittance date or that every balance can be remitted in its existing currency."
+        ],
+        links: [{ href: "/blog/china-profit-repatriation-guide-2026", label: "Distinguish liquidation proceeds from China dividends" }, { href: "/blog/china-wfoe-capital-reduction-guide-2026", label: "Related guide: WFOE capital reduction" }]
+      },
+      {
+        heading: "Close RMB and foreign-currency accounts in the right sequence",
+        paragraphs: [
+          "Ask each bank to confirm the order for its general accounts, special accounts, foreign-currency accounts, capital accounts and basic RMB account. Transfer or lawfully remit balances only after pending payments, receipts, guarantees and fees are resolved.",
+          "The national deregistration guide states that a closing enterprise should apply to its bank to withdraw bank settlement accounts. Integrated local deregistration platforms may transmit an account-closure appointment request to participating banks, but this does not itself reconcile the account or replace the bank's review.",
+          "Retain at least one suitable payment route until authorised final costs and remittance are complete, then obtain evidence for every closed account. Do not leave a nominal balance, active token or forgotten general account after the basic account is addressed."
+        ],
+        links: [{ href: "https://www.pbc.gov.cn/chubanwu/114566/114579/4356048/4356270/2021100915352066755.pdf", label: "Official enterprise bank-account administration rules" }]
+      },
+      {
+        heading: "Handle chops, signatories and a company already deregistered",
+        paragraphs: [
+          "Confirm who can sign bank instructions during liquidation and whether the bank requires the legal representative, liquidation-group representative, existing signatory or another authorised person. Preserve valid identification, resolutions, chops and powers of attorney until the bank workstream is complete.",
+          "If the market-registration cancellation occurs before the final bank closure, contact the bank immediately about its post-deregistration procedure. The 2025 national guide expressly recognises that a deregistered enterprise may still apply to close a bank settlement account and provides a route for cases where its company chop is lost.",
+          "Do not destroy chops, deactivate all authorised persons or let identity documents expire before checking bank requirements. At the same time, use dual control, restrict transaction limits and remove staff who no longer have authority."
+        ]
+      },
+      {
+        heading: "Revoke digital access and retain closure evidence",
+        paragraphs: [
+          "After the bank confirms closure, revoke online-banking users, mobile access, API connections, host-to-host services, tokens, cards and third-party payment permissions. Collect or destroy security devices through the bank's required process and record custody until completion.",
+          "Archive final statements, bank confirmations, account-closure receipts, direct-investment deregistration evidence, remittance records, exchange and bank fee evidence, cancelled-product confirmations, approvals and the reconciliation to the liquidation report.",
+          "Assign a lawful records custodian after the operating team leaves. Account closure does not eliminate accounting, tax, Customs, employment, litigation, anti-money-laundering or data-retention obligations."
+        ]
+      },
+      {
+        heading: "Use a WFOE bank-account closure checklist and request support",
+        paragraphs: [
+          "Prepare the business licence and deregistration status, liquidation decision and report, shareholder and beneficial-owner records, tax and Customs status, full account list, bank statements, capital and foreign-exchange registration, open products, signatories, chops, expected payments and target remittance.",
+          "ZYS Advisory can coordinate liquidation accounting, final tax work, account reconciliation, bank document preparation and the company-exit sequence with banks, authorities and qualified legal or foreign-exchange specialists.",
+          "Request a scoped consultation through the contact form, WhatsApp or info@zysadvisory.com. Do not send passwords, tokens, card PINs, specimen signatures, chop images or full bank statements in an unsecured first message.",
+          "Reviewed November 18, 2026 against the PBOC bank settlement account rules, official enterprise bank-account administration rules, the SAMR-led Enterprise Deregistration Guide (2025 Revision) and current official direct-investment foreign-exchange guidance linked above. Confirm the specific bank, location, account types and investor facts before acting."
+        ],
+        links: [{ href: "/contact", label: "Request a China WFOE bank account closure consultation" }, { href: "/services/corporate-legal-advisory", label: "Coordinate a multi-workstream WFOE exit" }]
+      }
+    ],
+    faqs: [
+      { question: "When should a WFOE close its bank accounts during liquidation?", answer: "Use a dependency-based sequence. Keep a suitable payment route until authorised employee, tax, Customs, creditor and professional costs and lawful shareholder remittance are complete, then close all remaining accounts promptly." },
+      { question: "Is closing a China WFOE bank account the same as cancelling its FDI registration?", answer: "No. Bank settlement accounts, foreign-exchange capital accounts and direct-investment basic-information registration are related but distinct. Identify and complete each applicable step." },
+      { question: "Can a WFOE remit its remaining cash to the foreign shareholder before paying creditors?", answer: "Liquidation distribution should follow lawful settlement of employees, taxes, creditors and other liabilities. An early transfer can create creditor, tax, foreign-exchange and director or liquidation-duty risk." },
+      { question: "Can an integrated company-deregistration platform close the bank account automatically?", answer: "A local platform may share information or provide a bank appointment service. The bank still needs the company's application and must address balances, linked products, customer due diligence and its closure requirements." },
+      { question: "What documents are commonly needed for a WFOE bank account closure?", answer: "The bank may request company and liquidation documents, identity and authority records, chops, account materials, tax or deregistration evidence and product-specific forms. Obtain the current checklist from every bank." },
+      { question: "What happens to a WFOE foreign-exchange capital account on closure?", answer: "The company should reconcile the balance, complete applicable direct-investment registration steps and use a lawful transfer, conversion or remittance route before the account is closed, subject to bank review." },
+      { question: "Can a company close its bank account after its business licence has been deregistered?", answer: "The national deregistration guide recognises post-deregistration bank-account closure, including a route where the company chop is lost. Coordinate early with the bank because signatory and evidence requirements still apply." },
+      { question: "How long does China WFOE bank account closure take?", answer: "There is no reliable universal project timeline. Open balances, guarantees, loans, refunds, foreign-exchange registration, shareholder remittance, bank compliance review and missing documents can all affect completion." }
+    ]
   }
 ];
