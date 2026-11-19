@@ -21,7 +21,7 @@ const hrefLangByLocale = {
   ko: "ko"
 } as const;
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
   const pathname = usePathname() || "/";
   const currentLocale = getLocaleFromPathname(pathname);
   const current = locales.find((locale) => locale.code === currentLocale) || locales[0];
@@ -30,12 +30,12 @@ export function LanguageSwitcher() {
     <details className="group/language relative">
       <summary className="focus-ring flex min-h-9 cursor-pointer list-none items-center gap-1.5 rounded-sm border border-line bg-white px-2.5 text-xs font-semibold text-graphite transition hover:border-gold hover:text-ink">
         <Globe2 aria-hidden="true" className="h-3.5 w-3.5" />
-        <span>{current.shortLabel}</span>
+        <span>{compact ? current.shortLabel : `Languages · ${current.shortLabel}`}</span>
         <ChevronDown aria-hidden="true" className="h-3.5 w-3.5 text-gold transition group-open/language:rotate-180" />
         <span className="sr-only">Choose language</span>
       </summary>
-      <div className="absolute right-0 top-full z-[70] w-44 pt-2">
-        <div className="grid max-h-[min(70vh,420px)] overflow-y-auto rounded-sm border border-line bg-white py-1.5 shadow-[0_18px_45px_rgba(15,36,31,0.16)]">
+      <div className="absolute right-0 top-full z-[70] w-[280px] pt-2 sm:w-[320px]">
+        <div className="grid max-h-[min(70vh,420px)] grid-cols-2 overflow-y-auto rounded-sm border border-line bg-white p-1.5 shadow-[0_18px_45px_rgba(15,36,31,0.16)]">
           {locales.map((locale) => {
             const active = locale.code === currentLocale;
             return (

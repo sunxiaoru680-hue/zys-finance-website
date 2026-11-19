@@ -15,13 +15,12 @@ import {
   Plane,
   PlayCircle,
   Scale,
-  ShieldCheck,
-  Timer
+  ShieldCheck
 } from "lucide-react";
 import { CTA } from "@/components/CTA";
+import { HomeHeroCarousel } from "@/components/HomeHeroCarousel";
 import { SocialIcons } from "@/components/SocialIcons";
 import { TrackedLink } from "@/components/TrackedLink";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 import {
   companyName,
   createPageMetadata,
@@ -296,61 +295,12 @@ export default function HomePage() {
       />
       <StructuredData data={faqSchema(faqItems)} />
 
-      <section className="relative overflow-hidden bg-ink text-white">
-        <Image
-          src="/images/global-finance-consulting-hero.png"
-          alt="International consultants reviewing China business registration and tax documents"
-          fill
-          priority
-          className="object-cover object-center opacity-[0.36]"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/86 to-ink/30" />
-        <div className="container-shell relative grid min-h-[650px] items-center py-20 md:py-24">
-          <div className="max-w-4xl">
-            <p className="text-sm font-bold uppercase text-white/75">
-              Nanjing ZYS Advisory Co., Ltd.
-            </p>
-            <h1 className="mt-5 text-4xl font-bold leading-tight tracking-normal md:text-6xl">
-              China Company Registration, Tax and Accounting Services for International Businesses
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/84">
-              Establish and operate your China business with coordinated support
-              for company formation, bookkeeping, tax compliance, work permits,
-              licenses and ongoing advisory.
-            </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <TrackedLink
-                href="/contact"
-                source="home_hero_consultation"
-                className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:bg-paper"
-              >
-                Book a Consultation
-                <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </TrackedLink>
-              <Link
-                href="/services"
-                className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/70 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                Explore Our Services
-                <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </Link>
-            </div>
-            <WhatsAppButton
-              source="home_hero_whatsapp"
-              className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white/78 transition hover:text-white"
-              iconClassName="h-4 w-4 text-[#25D366]"
-            >
-              Prefer WhatsApp? Contact ZYS directly
-            </WhatsAppButton>
-          </div>
-        </div>
-      </section>
+      <HomeHeroCarousel />
 
-      <section className="bg-white py-12">
-        <div className="container-shell grid gap-4 md:grid-cols-3">
-          {trustSignals.map((item) => (
-            <div key={item} className="flex gap-3 rounded-md border border-line bg-paper p-5">
+      <section className="border-b border-line bg-white">
+        <div className="container-shell grid divide-y divide-line md:grid-cols-3 md:divide-x md:divide-y-0">
+          {trustSignals.map((item, index) => (
+            <div key={item} className={`flex gap-3 py-7 ${index === 0 ? "md:pr-8" : "md:px-8"}`}>
               <CheckCircle2 aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-evergreen" />
               <p className="text-sm font-semibold leading-7 text-ink">{item}</p>
             </div>
@@ -358,7 +308,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-paper py-14 md:py-20">
+      <section className="bg-[#f6f8f7] py-14 md:py-20">
         <div className="container-shell grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-stretch">
           <div className="relative min-w-0 overflow-hidden rounded-md border border-line bg-ink shadow-soft">
             <div className="relative h-full min-h-[360px] lg:min-h-[460px]">
@@ -404,7 +354,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="min-w-0 rounded-md border border-line bg-white p-6 shadow-sm md:p-8 lg:flex lg:flex-col lg:justify-center">
+          <div className="min-w-0 border-t border-line bg-white p-6 md:p-8 lg:flex lg:flex-col lg:justify-center lg:border-l lg:border-t-0 lg:px-10">
             <p className="text-sm font-bold uppercase text-evergreen">About ZYS Advisory</p>
             <h2 className="mt-3 text-2xl font-bold leading-tight text-ink md:text-3xl">
               A coordinated business, tax and compliance partner for international clients.
@@ -454,28 +404,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="container-shell">
           <div className="max-w-3xl">
             <p className="text-sm font-bold uppercase text-evergreen">
               Core Services
             </p>
             <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
-              Six priority services for China market entry and ongoing operation.
+              Core services across the China business lifecycle.
             </h2>
+            <p className="mt-5 text-base leading-8 text-graphite">
+              From market entry and entity setup to recurring finance, people and
+              governance obligations, ZYS keeps each workstream connected.
+            </p>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {priorityServices.map((service) => {
+          <div className="mt-10 grid gap-px overflow-hidden border border-line bg-line md:grid-cols-2 lg:grid-cols-4">
+            {priorityServices.map((service, index) => {
               const Icon = service.icon;
               return (
                 <Link
                   key={service.href}
                   href={service.href}
-                  className="focus-ring rounded-md border border-line bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"
+                  className={`focus-ring group bg-white p-6 transition hover:bg-[#f6f8f7] md:p-7 ${
+                    index === priorityServices.length - 1 ? "md:col-span-2" : ""
+                  }`}
                 >
                   <Icon aria-hidden="true" className="h-7 w-7 text-evergreen" />
                   <h3 className="mt-4 text-lg font-bold text-ink">{service.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-graphite">{service.text}</p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-evergreen">
+                    Learn more
+                    <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
                 </Link>
               );
             })}
@@ -483,15 +443,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-[#f6f8f7] py-16 md:py-24">
         <div className="container-shell">
           <p className="text-sm font-bold uppercase text-evergreen">Who We Help</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-tight md:text-4xl">
             Advisory support for international founders, finance teams, and cross-border business owners.
           </h2>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {clientGroups.map((group) => (
-              <article key={group.title} className="rounded-md border border-line bg-paper p-6">
+          <div className="mt-10 grid border-y border-line md:grid-cols-3 md:divide-x md:divide-line">
+            {clientGroups.map((group, index) => (
+              <article key={group.title} className={`py-7 ${index === 0 ? "md:pr-8" : "md:px-8"}`}>
                 <Building2 aria-hidden="true" className="h-6 w-6 text-gold" />
                 <h3 className="mt-4 text-lg font-bold text-ink">{group.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-graphite">{group.text}</p>

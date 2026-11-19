@@ -203,7 +203,7 @@ export function Header() {
         </div>
       </div>
       <div className="mx-auto flex min-h-[92px] w-full max-w-[1520px] items-center justify-between gap-4 px-5 xl:gap-6 xl:px-8">
-        <Link href={homeHref} className="focus-ring flex min-w-0 flex-none basis-[260px] items-center gap-3 rounded-md xl:basis-[320px] 2xl:basis-[340px]">
+        <Link href={homeHref} className="focus-ring flex min-w-0 flex-none basis-[190px] items-center gap-3 rounded-md sm:basis-[260px] xl:basis-[320px] 2xl:basis-[340px]">
           <span className="grid h-12 w-12 flex-none place-items-center rounded-sm bg-ink text-white">
             <span className="text-sm font-black tracking-normal">ZYS</span>
           </span>
@@ -211,7 +211,7 @@ export function Header() {
             <span className="block whitespace-nowrap text-[18px] font-bold tracking-normal text-ink">
               {headerBrandName}
             </span>
-            <span className="mt-1 block whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.08em] text-graphite">
+            <span className="mt-1 hidden whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.08em] text-graphite sm:block">
               {brandSubtitle}
             </span>
           </span>
@@ -307,12 +307,14 @@ export function Header() {
           </TrackedLink>
         </div>
 
-        <details className="group lg:hidden">
-          <summary className="focus-ring flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-sm border border-line bg-white">
-            <Menu aria-hidden="true" className="h-5 w-5" />
-            <span className="sr-only">Open navigation</span>
-          </summary>
-          <div className="absolute left-0 right-0 top-[128px] hidden border-b border-line bg-white p-4 shadow-soft group-open:block">
+        <div className="flex items-center gap-2 lg:hidden">
+          <LanguageSwitcher compact />
+          <details className="group">
+            <summary className="focus-ring flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-sm border border-line bg-white">
+              <Menu aria-hidden="true" className="h-5 w-5" />
+              <span className="sr-only">Open navigation</span>
+            </summary>
+            <div className="absolute left-0 right-0 top-[128px] hidden border-b border-line bg-white p-4 shadow-soft group-open:block">
             <nav aria-label="Mobile navigation" className="container-shell grid gap-1">
               {(localNavigation?.items || [{ href: "/", label: "Home" }, ...aboutItems, ...serviceItems, ...mainItems]).map((item) => (
                 <Link
@@ -323,9 +325,6 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-3 py-2">
-                <LanguageSwitcher />
-              </div>
               <div className="pt-3">
                 <TrackedLink
                   href={localNavigation?.contactHref || "/contact"}
@@ -336,8 +335,9 @@ export function Header() {
                 </TrackedLink>
               </div>
             </nav>
-          </div>
-        </details>
+            </div>
+          </details>
+        </div>
       </div>
     </header>
   );

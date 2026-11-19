@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadCapture } from "@/components/LeadCapture";
 import { articleSchema, companyName, createPageMetadata, emailAddress, faqSchema, phoneNumber, siteUrl, StructuredData } from "@/components/seo";
-import { articleCanonicalUrl, articleFaqs, articleFeaturedImageUrl, blogArticles, breadcrumbSchema, getArticleBySlug, servicePages } from "@/lib/content";
+import { articleCanonicalUrl, articleFaqs, articleFeaturedImageUrl, blogArticles, breadcrumbSchema, getArticleBySlug, isEditoriallyReviewedArticle, servicePages } from "@/lib/content";
 import type { EditorialSection } from "@/lib/editorialArticles";
 import { cityLinkForArticle, relatedBlogLinksForArticle, relatedServiceLinksForArticle } from "@/lib/internalLinks";
 
@@ -36,6 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     ...baseMetadata,
+    robots: isEditoriallyReviewedArticle(article)
+      ? baseMetadata.robots
+      : { index: false, follow: true },
     authors: [{ name: article.author }],
     publisher: companyName,
     alternates: {

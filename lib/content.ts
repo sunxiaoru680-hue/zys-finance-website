@@ -1,5 +1,6 @@
 import { siteUrl } from "@/components/seo";
 import { editorialArticles, type EditorialFaq, type EditorialSection } from "@/lib/editorialArticles";
+import { professionalArticles } from "@/lib/professionalArticles";
 
 export type ServicePage = {
   slug: string;
@@ -280,7 +281,8 @@ const generatedBlogArticles: BlogArticle[] = blogTitles.map((title, index) => ({
   readingTime: articleReadingTime(title)
 }));
 
-const editorialBySlug = new Map(editorialArticles.map((article) => [article.slug, article]));
+const allEditorialArticles = [...editorialArticles, ...professionalArticles];
+const editorialBySlug = new Map(allEditorialArticles.map((article) => [article.slug, article]));
 const generatedSlugs = new Set(generatedBlogArticles.map((article) => article.slug));
 
 const generatedWithEditorialArticles: BlogArticle[] = generatedBlogArticles.map((article) => {
@@ -299,7 +301,7 @@ const generatedWithEditorialArticles: BlogArticle[] = generatedBlogArticles.map(
   };
 });
 
-const editorialOnlyArticles: BlogArticle[] = editorialArticles
+const editorialOnlyArticles: BlogArticle[] = allEditorialArticles
   .filter((article) => !generatedSlugs.has(article.slug))
   .map((article) => ({
     ...article,
@@ -308,7 +310,15 @@ const editorialOnlyArticles: BlogArticle[] = editorialArticles
     featuredImage: `/blog/${article.slug}/opengraph-image`
   }));
 
-export const blogArticles: BlogArticle[] = [...generatedWithEditorialArticles, ...editorialOnlyArticles].sort(byPublishedDateDesc);
+const allBlogArticles: BlogArticle[] = [...generatedWithEditorialArticles, ...editorialOnlyArticles].sort(byPublishedDateDesc);
+
+export function isEditoriallyReviewedArticle(article: BlogArticle) {
+  return Boolean(article.sections && article.sections.length >= 5 && article.faqs && article.faqs.length >= 4);
+}
+
+// Keep thin legacy drafts accessible for controlled rewriting, but do not surface
+// them in discovery feeds until they meet the full editorial standard.
+export const blogArticles: BlogArticle[] = allBlogArticles.filter(isEditoriallyReviewedArticle);
 
 export function articleCanonicalUrl(article: BlogArticle) {
   return `${siteUrl}/blog/${article.slug}`;
@@ -323,7 +333,7 @@ export function getServiceBySlug(slug: string) {
 }
 
 export function getArticleBySlug(slug: string) {
-  return blogArticles.find((article) => article.slug === slug);
+  return allBlogArticles.find((article) => article.slug === slug);
 }
 
 export function relatedArticles(slug: string) {

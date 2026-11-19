@@ -5,6 +5,7 @@ import { navItems } from "@/components/siteData";
 import { businessHours, companyName, contactChannels, emailAddress, emailMailto, location, phoneNumber, whatsappQrAlt, whatsappQrImage } from "@/components/seo";
 import { SocialIcons } from "@/components/SocialIcons";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { locales } from "@/lib/i18n";
 
 const legalLinks = [
   { href: "/privacy-policy", label: "Privacy Policy" },
@@ -88,6 +89,23 @@ export function Footer() {
               </Link>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="border-t border-white/10 py-6">
+        <div className="container-shell">
+          <p className="text-xs font-semibold uppercase text-white/55">International editions</p>
+          <nav aria-label="International language editions" className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+            {locales.map((locale) => (
+              <Link
+                key={locale.code}
+                href={locale.pathPrefix || "/"}
+                hrefLang={locale.code === "zh" ? "zh-CN" : locale.code}
+                className="text-sm font-medium text-white/75 transition hover:text-gold"
+              >
+                {locale.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
       <div className="border-t border-white/10 py-5">
