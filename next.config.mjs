@@ -14,6 +14,18 @@ const nextConfig = {
         permanent: true
       }
     ];
+  },
+  async headers() {
+    return [
+      {
+        source: "/blog/:slug/opengraph-image",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }]
+      },
+      {
+        source: "/rss.xml",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, follow" }]
+      }
+    ];
   }
 };
 
