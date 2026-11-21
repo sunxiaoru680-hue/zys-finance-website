@@ -20,7 +20,6 @@ const staticRoutes = [
   "/visa-services",
   "/business-licenses",
   "/blog",
-  "/rss.xml",
   "/contact",
   "/privacy-policy",
   "/data-deletion",

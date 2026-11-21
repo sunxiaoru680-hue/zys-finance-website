@@ -4426,7 +4426,7 @@ ${siteUrl}/blog/china-permanent-establishment-risk-guide-2026
       "Hong Kong company setup and annual compliance"
     ],
     imageAlt: "Hong Kong company registration process for foreign founders from incorporation to banking and compliance",
-    relatedServiceHrefs: ["/services/hong-kong-company-registration", "/services/accounting-bookkeeping", "/services/tax-consulting"],
+    relatedServiceHrefs: ["/services/hong-kong-company-registration", "/services/accounting-services", "/services/tax-consulting"],
     relatedArticleSlugs: ["hong-kong-company-annual-compliance-guide-2026", "china-vs-hong-kong-company-registration", "hong-kong-vs-singapore-holding-company-for-china", "hong-kong-company-registration-for-china-trading-businesses"],
     facebookPost: `New 2026 Guide from ZYS Advisory
 
@@ -4508,7 +4508,7 @@ ${siteUrl}/blog/hong-kong-company-registration-for-foreigners-2026
           "Establish bookkeeping, invoice, expense, bank-reconciliation and document-retention controls from the first transaction. Hong Kong companies generally need annual financial statements and statutory audit subject to the Companies Ordinance and limited exceptions, together with profits-tax and corporate filings as applicable.",
           "Track the annual return, business registration renewal, accounting close, audit and tax return as separate obligations. Cross-border founders should also review tax residence, permanent establishment, transfer pricing, withholding and personal reporting outside Hong Kong."
         ],
-        links: [{ href: "/services/accounting-bookkeeping", label: "Arrange bookkeeping and accounting support" }, { href: "/services/tax-consulting", label: "Request cross-border tax advice" }, { href: "/blog/hong-kong-company-annual-compliance-guide-2026", label: "Read the Hong Kong annual compliance guide" }]
+        links: [{ href: "/services/accounting-services", label: "Arrange bookkeeping and accounting support" }, { href: "/services/tax-consulting", label: "Request cross-border tax advice" }, { href: "/blog/hong-kong-company-annual-compliance-guide-2026", label: "Read the Hong Kong annual compliance guide" }]
       },
       {
         heading: "Use a pre-filing checklist and request a scoped quotation",
@@ -4553,7 +4553,7 @@ ${siteUrl}/blog/hong-kong-company-registration-for-foreigners-2026
       "China registered capital reduction timeline"
     ],
     imageAlt: "China WFOE capital reduction workflow covering shareholder decision creditor notice registration tax and foreign exchange",
-    relatedServiceHrefs: ["/services/corporate-legal-advisory", "/services/tax-consulting", "/services/accounting-bookkeeping", "/services/wfoe-registration"],
+    relatedServiceHrefs: ["/services/corporate-legal-advisory", "/services/tax-consulting", "/services/accounting-services", "/services/wfoe-registration"],
     relatedArticleSlugs: ["china-wfoe-registered-capital-requirements-2026", "china-company-deregistration-liquidation-guide-2026", "change-china-wfoe-legal-representative-guide-2026", "china-wfoe-shareholder-change-equity-transfer-guide-2026"],
     facebookPost: `New 2026 Guide from ZYS Advisory
 
@@ -4626,7 +4626,7 @@ ${siteUrl}/blog/china-wfoe-capital-reduction-guide-2026
           "A payment to an overseas shareholder is not automatically tax-free merely because the resolution calls it a capital return. Analyse the amount and character of any distribution, the shareholder's tax basis, retained earnings, withholding, related transactions and supporting documents under the applicable rules and facts.",
           "For cross-border payment or registration changes, coordinate with the company's bank and relevant foreign-exchange procedures. The bank may review the updated registration, resolution, creditor process, financial statements, tax evidence, capital inflow history and beneficial ownership. Approval and remittance timing cannot be guaranteed."
         ],
-        links: [{ href: "https://fdi.mofcom.gov.cn/resource/pdf/wx2024/2025EN.pdf", label: "Official foreign-investment guide: foreign-exchange change and deregistration matters" }, { href: "/services/tax-consulting", label: "Request capital-reduction tax analysis" }, { href: "/services/accounting-bookkeeping", label: "Coordinate accounting records and statements" }]
+        links: [{ href: "https://fdi.mofcom.gov.cn/resource/pdf/wx2024/2025EN.pdf", label: "Official foreign-investment guide: foreign-exchange change and deregistration matters" }, { href: "/services/tax-consulting", label: "Request capital-reduction tax analysis" }, { href: "/services/accounting-services", label: "Coordinate accounting records and statements" }]
       },
       {
         heading: "Avoid common WFOE capital-reduction failures",
